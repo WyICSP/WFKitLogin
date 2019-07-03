@@ -2,17 +2,28 @@
 //  WFAppDelegate.m
 //  WFKitLogin
 //
-//  Created by wyxlh on 07/03/2019.
+//  Created by wyxlh on 04/15/2019.
 //  Copyright (c) 2019 wyxlh. All rights reserved.
 //
 
 #import "WFAppDelegate.h"
+#import "WFLoginViewController.h"
+#import "YFMainPublicModelAPI.h"
+#import "WFViewController.h"
 
 @implementation WFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UITabBarController *rootVC = [YFMainPublicModelAPI rootTabBarCcontroller];
+    
+    [YFMainPublicModelAPI addChildVC:[WFViewController new] normalImageName:@"" selectedImageName:@"" title:@"登录"];
+    [YFMainPublicModelAPI setGlobalBackGroundColor:[UIColor whiteColor]];
+    [YFMainPublicModelAPI setNarBarGlobalTextColor:[UIColor blackColor] andFontSize:18];
+    
+    [self.window setRootViewController:rootVC];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

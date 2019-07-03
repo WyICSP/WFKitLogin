@@ -1,0 +1,6 @@
+framework module WFKitMain {
+  umbrella header "WFKitMain-umbrella.h"
+
+  export *
+  module * { export * }
+}

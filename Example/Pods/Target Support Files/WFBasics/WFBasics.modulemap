@@ -1,0 +1,6 @@
+framework module WFBasics {
+  umbrella header "WFBasics-umbrella.h"
+
+  export *
+  module * { export * }
+}

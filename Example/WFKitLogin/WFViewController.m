@@ -2,11 +2,14 @@
 //  WFViewController.m
 //  WFKitLogin
 //
-//  Created by wyxlh on 07/03/2019.
+//  Created by wyxlh on 04/15/2019.
 //  Copyright (c) 2019 wyxlh. All rights reserved.
 //
 
 #import "WFViewController.h"
+#import "WFLoginViewController.h"
+#import "WKNavigationController.h"
+#import "WFRegisterViewController.h"
 
 @interface WFViewController ()
 
@@ -17,13 +20,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    WFLoginViewController *login = [[WFLoginViewController alloc] initWithNibName:@"WFLoginViewController" bundle:[NSBundle bundleForClass:[self class]]];
+    WKNavigationController *navUserlogin    = [[WKNavigationController alloc]initWithRootViewController:login];
+    [self presentViewController:navUserlogin animated:YES completion:nil];
+    //    login.hidesBottomBarWhenPushed = YES;
+    //    [self.navigationController pushViewController:login animated:YES];
 }
 
 @end

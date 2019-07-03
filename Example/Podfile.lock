@@ -1,0 +1,58 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - SVProgressHUD (2.2.5)
+  - WFBasics (0.1.0):
+    - WFBasics/Category (= 0.1.0)
+    - WFBasics/MediatorManager (= 0.1.0)
+    - WFBasics/Utils (= 0.1.0)
+    - WFBasics/WKRequest (= 0.1.0)
+  - WFBasics/Category (0.1.0)
+  - WFBasics/MediatorManager (0.1.0)
+  - WFBasics/Utils (0.1.0)
+  - WFBasics/WKRequest (0.1.0):
+    - AFNetworking
+    - SVProgressHUD
+  - WFKitLogin (0.1.0):
+    - WFKitMain
+  - WFKitMain (0.1.0):
+    - WFBasics
+
+DEPENDENCIES:
+  - WFKitLogin (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - SVProgressHUD
+  https://github.com/WyICSP/WFSpecs.git:
+    - WFBasics
+    - WFKitMain
+
+EXTERNAL SOURCES:
+  WFKitLogin:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  WFBasics: 03c4fee76fbffe0bfe4655cac27eb1f535b5db0b
+  WFKitLogin: ae864049b1e78635d56f5bafe77b73aa526febba
+  WFKitMain: 164a7791a3432d407c5e07265e304b4b967067d0
+
+PODFILE CHECKSUM: e23f2daf43e067d6f7b34b450aaabfccce348a88
+
+COCOAPODS: 1.7.3

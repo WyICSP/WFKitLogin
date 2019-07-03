@@ -1,0 +1,6 @@
+framework module WFKitLogin {
+  umbrella header "WFKitLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}

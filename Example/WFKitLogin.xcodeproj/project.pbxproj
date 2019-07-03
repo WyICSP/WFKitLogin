@@ -23,6 +23,14 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		8885242B22CC978B00385F61 /* WFForgetPswViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8885241D22CC978B00385F61 /* WFForgetPswViewController.xib */; };
+		8885242C22CC978B00385F61 /* WFRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8885241E22CC978B00385F61 /* WFRegisterViewController.m */; };
+		8885242D22CC978B00385F61 /* WFRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8885241F22CC978B00385F61 /* WFRegisterViewController.xib */; };
+		8885242E22CC978B00385F61 /* WFForgetPswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8885242022CC978B00385F61 /* WFForgetPswViewController.m */; };
+		8885242F22CC978B00385F61 /* WFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8885242222CC978B00385F61 /* WFLoginViewController.xib */; };
+		8885243022CC978B00385F61 /* WFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8885242422CC978B00385F61 /* WFLoginViewController.m */; };
+		8885243122CC978B00385F61 /* WFLoginBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8885242922CC978B00385F61 /* WFLoginBottomView.xib */; };
+		8885243222CC978B00385F61 /* WFLoginBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8885242A22CC978B00385F61 /* WFLoginBottomView.m */; };
 		F71A21FA695B7DBD036616B3 /* Pods_WFKitLogin_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF6214615D8908AFF1054B5 /* Pods_WFKitLogin_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,12 +69,24 @@
 		6FF6214615D8908AFF1054B5 /* Pods_WFKitLogin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WFKitLogin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8D959E0B241C37A621504893 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A591D83C161EBA13779274EC /* WFKitLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WFKitLogin.podspec; path = ../WFKitLogin.podspec; sourceTree = "<group>"; };
+		8885241D22CC978B00385F61 /* WFForgetPswViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WFForgetPswViewController.xib; sourceTree = "<group>"; };
+		8885241E22CC978B00385F61 /* WFRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFRegisterViewController.m; sourceTree = "<group>"; };
+		8885241F22CC978B00385F61 /* WFRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WFRegisterViewController.xib; sourceTree = "<group>"; };
+		8885242022CC978B00385F61 /* WFForgetPswViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFForgetPswViewController.m; sourceTree = "<group>"; };
+		8885242122CC978B00385F61 /* WFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFLoginViewController.h; sourceTree = "<group>"; };
+		8885242222CC978B00385F61 /* WFLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WFLoginViewController.xib; sourceTree = "<group>"; };
+		8885242322CC978B00385F61 /* WFRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFRegisterViewController.h; sourceTree = "<group>"; };
+		8885242422CC978B00385F61 /* WFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFLoginViewController.m; sourceTree = "<group>"; };
+		8885242522CC978B00385F61 /* WFForgetPswViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFForgetPswViewController.h; sourceTree = "<group>"; };
+		8885242822CC978B00385F61 /* WFLoginBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFLoginBottomView.h; sourceTree = "<group>"; };
+		8885242922CC978B00385F61 /* WFLoginBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WFLoginBottomView.xib; sourceTree = "<group>"; };
+		8885242A22CC978B00385F61 /* WFLoginBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFLoginBottomView.m; sourceTree = "<group>"; };
+		8D959E0B241C37A621504893 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A591D83C161EBA13779274EC /* WFKitLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WFKitLogin.podspec; path = ../WFKitLogin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7F25AD322B2B1529058D420 /* Pods_WFKitLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WFKitLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE29F24E79CC66E378D5B2F /* Pods-WFKitLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFKitLogin_Example.release.xcconfig"; path = "Target Support Files/Pods-WFKitLogin_Example/Pods-WFKitLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B23BD9757792C460249DD4AB /* Pods-WFKitLogin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFKitLogin_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WFKitLogin_Tests/Pods-WFKitLogin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C2BD014F2F88F1397D651595 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C2BD014F2F88F1397D651595 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +123,6 @@
 				B23BD9757792C460249DD4AB /* Pods-WFKitLogin_Tests.debug.xcconfig */,
 				4EB5C4730EA6BCA9003843C1 /* Pods-WFKitLogin_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,6 +163,7 @@
 		6003F593195388D20070C39A /* Example for WFKitLogin */ = {
 			isa = PBXGroup;
 			children = (
+				8885241A22CC978B00385F61 /* Login */,
 				6003F59C195388D20070C39A /* WFAppDelegate.h */,
 				6003F59D195388D20070C39A /* WFAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -197,6 +217,57 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		8885241A22CC978B00385F61 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8885241B22CC978B00385F61 /* DataTool */,
+				8885241C22CC978B00385F61 /* Controller */,
+				8885242622CC978B00385F61 /* Model */,
+				8885242722CC978B00385F61 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8885241B22CC978B00385F61 /* DataTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataTool;
+			sourceTree = "<group>";
+		};
+		8885241C22CC978B00385F61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8885242122CC978B00385F61 /* WFLoginViewController.h */,
+				8885242422CC978B00385F61 /* WFLoginViewController.m */,
+				8885242222CC978B00385F61 /* WFLoginViewController.xib */,
+				8885242322CC978B00385F61 /* WFRegisterViewController.h */,
+				8885241E22CC978B00385F61 /* WFRegisterViewController.m */,
+				8885241F22CC978B00385F61 /* WFRegisterViewController.xib */,
+				8885242522CC978B00385F61 /* WFForgetPswViewController.h */,
+				8885242022CC978B00385F61 /* WFForgetPswViewController.m */,
+				8885241D22CC978B00385F61 /* WFForgetPswViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8885242622CC978B00385F61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8885242722CC978B00385F61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8885242822CC978B00385F61 /* WFLoginBottomView.h */,
+				8885242922CC978B00385F61 /* WFLoginBottomView.xib */,
+				8885242A22CC978B00385F61 /* WFLoginBottomView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,6 +280,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				4E0F65DE557985718669544A /* [CP] Embed Pods Frameworks */,
+				31EA6ADF33A344E8985D75AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +330,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,7 +350,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8885242D22CC978B00385F61 /* WFRegisterViewController.xib in Resources */,
+				8885242B22CC978B00385F61 /* WFForgetPswViewController.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				8885242F22CC978B00385F61 /* WFLoginViewController.xib in Resources */,
+				8885243122CC978B00385F61 /* WFLoginBottomView.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -295,6 +372,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		31EA6ADF33A344E8985D75AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WFKitLogin_Example/Pods-WFKitLogin_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/WFKitLogin/WFKitLogin.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WFKitLogin.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WFKitLogin_Example/Pods-WFKitLogin_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4E0F65DE557985718669544A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,11 +397,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WFKitLogin_Example/Pods-WFKitLogin_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/WFKitLogin/WFKitLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/WFBasics/WFBasics.framework",
+				"${BUILT_PRODUCTS_DIR}/WFKitMain/WFKitMain.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WFKitLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WFBasics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WFKitMain.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,8 +465,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8885243222CC978B00385F61 /* WFLoginBottomView.m in Sources */,
 				6003F59E195388D20070C39A /* WFAppDelegate.m in Sources */,
+				8885242E22CC978B00385F61 /* WFForgetPswViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* WFViewController.m in Sources */,
+				8885243022CC978B00385F61 /* WFLoginViewController.m in Sources */,
+				8885242C22CC978B00385F61 /* WFRegisterViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
