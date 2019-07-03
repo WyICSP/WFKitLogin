@@ -30,7 +30,7 @@ WFKitLogin是云智充的登录模块主骨架组件
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'WFKitLogin/Classes/**/*'
+  #s.source_files = 'WFKitLogin/Classes/**/*'
   
   s.resource_bundles = {
      'WFKitLogin' => ['WFKitLogin/Assets/*.png']

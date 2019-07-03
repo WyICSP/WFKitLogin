@@ -18,7 +18,6 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "WFKitLogin/Classes/**/*",
   "resource_bundles": {
     "WFKitLogin": [
       "WFKitLogin/Assets/*.png"
