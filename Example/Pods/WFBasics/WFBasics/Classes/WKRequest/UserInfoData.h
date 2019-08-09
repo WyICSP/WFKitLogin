@@ -10,25 +10,36 @@
 
 @interface UserInfoData : NSObject
 NS_ASSUME_NONNULL_BEGIN
+/**公司地址*/
+@property (nonatomic, copy) NSString *companyAddress;
+/**性别*/
+@property (nonatomic, copy) NSString *gender;
+/**用户充值赠送金额*/
+@property (nonatomic, copy) NSString *giveMoney;
+/**头像*/
+@property (nonatomic, copy) NSString *headImage;
+/**记录ID*/
+@property (nonatomic, copy) NSString *Id;
+/**实名认证的身份证号*/
+@property (nonatomic, copy) NSString *idCard;
+/**uuid*/
+@property (nonatomic, copy) NSString *uuid;
+/**上月花费总金额*/
+@property (nonatomic, copy) NSString *lastMonthSpendMoney;
+/**经纬度*/
+@property (nonatomic, copy) NSString *lastTimeLatitude;
+/**经纬度*/
+@property (nonatomic, copy) NSString *lastTimeLongitude;
+/**手机*/
 @property (nonatomic, copy) NSString *mobile;
-@property (nonatomic, copy) NSString *token;
-
-@property (nonatomic, copy) NSString *accountId;
-/**1,//是否第一次登陆 1为第一次 0为非第一次*/
-@property (nonatomic, copy) NSString *loginFirstFlag;
-@property (nonatomic, copy) NSString *memberType;
-@property (nonatomic, copy) NSString *receiveAddress;
-@property (nonatomic, copy) NSString *receiveSite;
-/**结算方式 1 月结 2 到付*/
-@property (nonatomic, copy) NSString *settlementMethod;
-/**logo*/
-@property (nonatomic, copy) NSString *shopDoorPhotoUrl;
-/**店名*/
-@property (nonatomic, copy) NSString *shopName;
-/**店主名*/
-@property (nonatomic, copy) NSString *shopkeeperName;
-/**0为app账号 1 为 wms*/
-@property (nonatomic, copy) NSString *type;
+/**用户充值余额*/
+@property (nonatomic, copy) NSString *money;
+/**昵称*/
+@property (nonatomic, copy) NSString *nickname;
+/**密码*/
+@property (nonatomic, copy) NSString *password;
+/**积分*/
+@property (nonatomic, copy) NSString *points;
 -(instancetype)initWithDictionary:(NSDictionary *)dic;
 NS_ASSUME_NONNULL_END
 @end

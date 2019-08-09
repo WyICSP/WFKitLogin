@@ -22,11 +22,11 @@
 + (void)setUserName:(NSString *)UserName;
 
 /**
- 修改 token
-
- @param token token description
+ 修改 密码
+ 
+ @param password password description
  */
-+ (void)setToken:(NSString *)token;
++ (void)setPassword:(NSString *)password;
 
 /**
   是否是第一次登录

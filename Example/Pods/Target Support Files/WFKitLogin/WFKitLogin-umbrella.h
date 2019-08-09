@@ -10,6 +10,14 @@
 #endif
 #endif
 
+#import "WFHomeViewController.h"
+#import "WFHomeFirstItemCollectionViewCell.h"
+#import "WFHomeSectionItemCollectionViewCell.h"
+#import "WFApplyPartnerViewController.h"
+#import "WFLoginViewController.h"
+#import "WFLoginDataTool.h"
+#import "WFHomeSaveDataTool.h"
+#import "WFApplyPartnerUserView.h"
 
 FOUNDATION_EXPORT double WFKitLoginVersionNumber;
 FOUNDATION_EXPORT const unsigned char WFKitLoginVersionString[];

@@ -10,19 +10,17 @@
 #import "WFLoginViewController.h"
 #import "YFMainPublicModelAPI.h"
 #import "WFViewController.h"
+#import "WKNavigationController.h"
 
 @implementation WFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    UITabBarController *rootVC = [YFMainPublicModelAPI rootTabBarCcontroller];
-    
-    [YFMainPublicModelAPI addChildVC:[WFViewController new] normalImageName:@"" selectedImageName:@"" title:@"登录"];
-    [YFMainPublicModelAPI setGlobalBackGroundColor:[UIColor whiteColor]];
-    [YFMainPublicModelAPI setNarBarGlobalTextColor:[UIColor blackColor] andFontSize:18];
-    
-    [self.window setRootViewController:rootVC];
+    WFLoginViewController *login     = [WFLoginViewController new];
+    self.window.rootViewController    = [[WKNavigationController alloc] initWithRootViewController:login];
+    [YFMainPublicModelAPI setGlobalBackGroundColor:UIColor.whiteColor];
+    [YFMainPublicModelAPI setNarBarGlobalTextColor:UIColor.blackColor andFontSize:18.0f];
     [self.window makeKeyAndVisible];
     return YES;
 }

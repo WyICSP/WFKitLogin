@@ -20,7 +20,7 @@
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
     UserInfoData *infodata = nil;
     if ([dic isKindOfClass:[NSDictionary class]]) {
-        infodata = [[UserInfoData alloc]initWithDictionary:dic];
+        infodata = [[UserInfoData alloc] initWithDictionary:dic];
     }else{
         return nil;
     }
@@ -35,9 +35,10 @@
         [[NSUserDefaults standardUserDefaults] synchronize];
     }else{
         [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"Info"];
-        [[NSUserDefaults standardUserDefaults] setObject:@[] forKey:@"ProductCount"];
-        [[NSUserDefaults standardUserDefaults] setObject:@(0) forKey:@"ProductTotalCount"];
+        [[NSUserDefaults standardUserDefaults] setObject:@[] forKey:@"TAOBAO_USERID"];
+        [[NSUserDefaults standardUserDefaults] setObject:@[] forKey:@"SearchHistoryArray"];
         [[NSUserDefaults standardUserDefaults] synchronize];
+        
         
     }
 }
@@ -50,11 +51,9 @@
     NSData *data = [dicStr dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
     if ([dic isKindOfClass:[NSDictionary class]]) {
-        if ([dic isKindOfClass:[NSDictionary class]]) {
-            NSString *token = [dic objectForKey:@"token"];
-            if (![NSString isBlankString:token]) {
-                return YES;
-            }
+        NSString *Id = [NSString stringWithFormat:@"%@",[dic objectForKey:@"id"]];
+        if (![NSString isBlankString:Id]) {
+            return YES;
         }
     }
     return NO;
@@ -73,14 +72,14 @@
     dict = nil;
 }
 
-+ (void)setToken:(NSString *)token{
++ (void)setPassword:(NSString *)password {
     NSString *dicStr = [[NSUserDefaults standardUserDefaults] objectForKey:@"Info"];
     if ([NSString isBlankString:dicStr]) {
         return;
     }
     NSData *data = [dicStr dataUsingEncoding:NSUTF8StringEncoding];
     NSMutableDictionary *dict = [[NSMutableDictionary alloc]initWithDictionary:[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil]];
-    [dict setObject:token forKey:@"token"];
+    [dict setObject:password forKey:@"password"];
     NSString *userInfoStr = [NSString dictionTransformationJson:dict];
     [[NSUserDefaults standardUserDefaults] setObject:userInfoStr forKey:@"Info"];
     [[NSUserDefaults standardUserDefaults] synchronize];

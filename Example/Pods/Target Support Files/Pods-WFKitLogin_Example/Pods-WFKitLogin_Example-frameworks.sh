@@ -162,15 +162,23 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WFBasics/WFBasics.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WFHomeAddress/WFHomeAddress.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WFKitLogin/WFKitLogin.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WFKitMain/WFKitMain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WYAutoLayout/WYAutoLayout.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WFBasics/WFBasics.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WFHomeAddress/WFHomeAddress.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WFKitLogin/WFKitLogin.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WFKitMain/WFKitMain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WYAutoLayout/WYAutoLayout.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

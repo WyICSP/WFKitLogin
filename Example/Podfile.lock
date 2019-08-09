@@ -14,22 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - MJExtension (3.1.0)
   - SVProgressHUD (2.2.5)
-  - WFBasics (0.1.0):
-    - WFBasics/Category (= 0.1.0)
-    - WFBasics/MediatorManager (= 0.1.0)
-    - WFBasics/Utils (= 0.1.0)
-    - WFBasics/WKRequest (= 0.1.0)
-  - WFBasics/Category (0.1.0)
-  - WFBasics/MediatorManager (0.1.0)
-  - WFBasics/Utils (0.1.0)
-  - WFBasics/WKRequest (0.1.0):
+  - WFBasics (0.1.4):
     - AFNetworking
     - SVProgressHUD
+    - WYAutoLayout
+  - WFHomeAddress (0.1.2):
+    - MJExtension
   - WFKitLogin (0.1.0):
+    - MJExtension
+    - WFHomeAddress
     - WFKitMain
   - WFKitMain (0.1.0):
     - WFBasics
+  - WYAutoLayout (1.0.1)
 
 DEPENDENCIES:
   - WFKitLogin (from `../`)
@@ -37,9 +36,12 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - MJExtension
     - SVProgressHUD
+    - WYAutoLayout
   https://github.com/WyICSP/WFSpecs.git:
     - WFBasics
+    - WFHomeAddress
     - WFKitMain
 
 EXTERNAL SOURCES:
@@ -48,10 +50,13 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  MJExtension: 6b69b3bef2864fd550ce1a184eda219e321209d2
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  WFBasics: 03c4fee76fbffe0bfe4655cac27eb1f535b5db0b
-  WFKitLogin: c790d22a0c0db688b77b2b48d749ef8e1198db7c
+  WFBasics: 3c923bee878711b231997b0843d69cd8df2e87aa
+  WFHomeAddress: 637f941c3280c931e16fbe70466df288a53f3f17
+  WFKitLogin: a27885c9ce376ec5c91c9aeb5fb77d0303636799
   WFKitMain: 164a7791a3432d407c5e07265e304b4b967067d0
+  WYAutoLayout: 3cb136ddc2efa9faaecf15876e6a9b2a6fd7c6cb
 
 PODFILE CHECKSUM: e23f2daf43e067d6f7b34b450aaabfccce348a88
 
