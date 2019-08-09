@@ -11,8 +11,6 @@
 #import "WKTabbarController.h"
 #import "WKNavigationController.h"
 
-#import "WKHelp.h"
-
 @interface WKTabbarController ()
 
 @end

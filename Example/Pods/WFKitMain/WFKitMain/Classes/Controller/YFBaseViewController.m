@@ -36,7 +36,7 @@
 //        [self.noNetView removeFromSuperview];
 //    }
     //设置导航栏颜色 白色 UIBarStyleDefault 黑色 UIBarStyleBlack 白色
-    [self.navigationController.navigationBar setBarStyle:UIBarStyleDefault];
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
 }
 
 /**

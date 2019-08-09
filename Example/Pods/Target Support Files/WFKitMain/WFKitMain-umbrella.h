@@ -10,8 +10,6 @@
 #endif
 #endif
 
-#import "WKHelp.h"
-#import "WKSetting.h"
 #import "WFStartUpViewController.h"
 #import "WKNavigationController.h"
 #import "WKTabbarController.h"

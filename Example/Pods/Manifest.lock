@@ -16,7 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - MJExtension (3.1.0)
   - SVProgressHUD (2.2.5)
-  - WFBasics (0.1.4):
+  - WFBasics (0.1.5):
     - AFNetworking
     - SVProgressHUD
     - WYAutoLayout
@@ -26,7 +26,7 @@ PODS:
     - MJExtension
     - WFHomeAddress
     - WFKitMain
-  - WFKitMain (0.1.0):
+  - WFKitMain (0.1.1):
     - WFBasics
   - WYAutoLayout (1.0.1)
 
@@ -52,10 +52,10 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   MJExtension: 6b69b3bef2864fd550ce1a184eda219e321209d2
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  WFBasics: 3c923bee878711b231997b0843d69cd8df2e87aa
+  WFBasics: 75104ab05adf03ea36a2e4c5865bd32070eb3c01
   WFHomeAddress: 637f941c3280c931e16fbe70466df288a53f3f17
   WFKitLogin: a27885c9ce376ec5c91c9aeb5fb77d0303636799
-  WFKitMain: 164a7791a3432d407c5e07265e304b4b967067d0
+  WFKitMain: 75939c975f779cc4293ff49387bb79170b45a540
   WYAutoLayout: 3cb136ddc2efa9faaecf15876e6a9b2a6fd7c6cb
 
 PODFILE CHECKSUM: e23f2daf43e067d6f7b34b450aaabfccce348a88
