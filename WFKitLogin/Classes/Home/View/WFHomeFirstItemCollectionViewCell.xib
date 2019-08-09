@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="335"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeHeadBg" translatesAutoresizingMaskIntoConstraints="NO" id="7HG-GU-KhX">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WFKitLogin.bundle/homeHeadBg" translatesAutoresizingMaskIntoConstraints="NO" id="7HG-GU-KhX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="277"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="7HG-GU-KhX" secondAttribute="height" multiplier="375:277" id="MKy-pK-vIZ"/>
@@ -37,7 +37,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRH-dB-O4Q">
                         <rect key="frame" x="7" y="246" width="361" height="89"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="statisticsData" translatesAutoresizingMaskIntoConstraints="NO" id="Vk6-si-bKL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WFKitLogin.bundle/statisticsData" translatesAutoresizingMaskIntoConstraints="NO" id="Vk6-si-bKL">
                                 <rect key="frame" x="0.0" y="0.0" width="361" height="89"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充电桩(台)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rd-x8-e1S">
@@ -198,7 +198,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="homeHeadBg" width="375" height="277.5"/>
-        <image name="statisticsData" width="362" height="88.5"/>
+        <image name="WFKitLogin.bundle/homeHeadBg" width="16" height="16"/>
+        <image name="WFKitLogin.bundle/statisticsData" width="16" height="16"/>
     </resources>
 </document>

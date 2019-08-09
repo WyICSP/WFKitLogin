@@ -17,7 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    WFLoginViewController *login     = [WFLoginViewController new];
+    WFLoginViewController *login     = [WFLoginViewController shareInstance];
     self.window.rootViewController    = [[WKNavigationController alloc] initWithRootViewController:login];
     [YFMainPublicModelAPI setGlobalBackGroundColor:UIColor.whiteColor];
     [YFMainPublicModelAPI setNarBarGlobalTextColor:UIColor.blackColor andFontSize:18.0f];
