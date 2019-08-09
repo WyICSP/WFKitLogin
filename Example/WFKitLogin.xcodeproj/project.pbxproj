@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		88160B4E22E1A15200678A22 /* UIButton+GradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88160B4B22E1A15200678A22 /* UIButton+GradientLayer.m */; };
+		881A968B22FD16760005B9E0 /* WFLoginPublicAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 881A968A22FD16760005B9E0 /* WFLoginPublicAPI.m */; };
 		F71A21FA695B7DBD036616B3 /* Pods_WFKitLogin_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF6214615D8908AFF1054B5 /* Pods_WFKitLogin_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88160B4B22E1A15200678A22 /* UIButton+GradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GradientLayer.m"; sourceTree = "<group>"; };
 		88160B4D22E1A15200678A22 /* UIButton+GradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GradientLayer.h"; sourceTree = "<group>"; };
+		881A968922FD16760005B9E0 /* WFLoginPublicAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFLoginPublicAPI.h; sourceTree = "<group>"; };
+		881A968A22FD16760005B9E0 /* WFLoginPublicAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFLoginPublicAPI.m; sourceTree = "<group>"; };
 		8D959E0B241C37A621504893 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A591D83C161EBA13779274EC /* WFKitLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WFKitLogin.podspec; path = ../WFKitLogin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7F25AD322B2B1529058D420 /* Pods_WFKitLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WFKitLogin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +149,7 @@
 		6003F593195388D20070C39A /* Example for WFKitLogin */ = {
 			isa = PBXGroup;
 			children = (
+				881A968822FD165A0005B9E0 /* Model */,
 				6003F59C195388D20070C39A /* WFAppDelegate.h */,
 				6003F59D195388D20070C39A /* WFAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -199,6 +203,16 @@
 				C2BD014F2F88F1397D651595 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		881A968822FD165A0005B9E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				881A968922FD16760005B9E0 /* WFLoginPublicAPI.h */,
+				881A968A22FD16760005B9E0 /* WFLoginPublicAPI.m */,
+			);
+			name = Model;
+			path = ../../WFKitLogin/Classes/Home/Controller/Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +400,7 @@
 				6003F5A7195388D20070C39A /* WFViewController.m in Sources */,
 				88160B4E22E1A15200678A22 /* UIButton+GradientLayer.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				881A968B22FD16760005B9E0 /* WFLoginPublicAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -75,6 +75,16 @@
     return UIStatusBarStyleLightContent;
 }
 
+#pragma mark 接口
++ (instancetype)shareInstance {
+    static WFLoginViewController *login;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        login = [[WFLoginViewController alloc] initWithNibName:@"WFLoginViewController" bundle:[NSBundle bundleForClass:[self class]]];
+    });
+    return login;
+}
+
 #pragma mark 页面调用
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];

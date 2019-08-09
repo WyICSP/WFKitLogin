@@ -10,228 +10,230 @@
 		0077E2C1E1042512F36A3204CFD42BEF /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 320B56ED0CC9033A65CC5B804018E6DE /* NSObject+MJClass.m */; };
 		00CB72154B1B5BFD732503994EE725BC /* UIFont+Main.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6A7B900D1D60BC7FE059C8A93A0230 /* UIFont+Main.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01BD61CADCA1B52B585AF45F13D59C36 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 524B16B99547A5B7BB107064678CEC89 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01CE1257E44B65F79F83C38961A537F4 /* WKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0037DEAEB51AF672C7502ABC085BC8 /* WKNavigationController.m */; };
 		01E3E1FB1F9A0FA56C79608F8139A32F /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E7222A428FAC5274DC18491AB86CEFC3 /* MJExtensionConst.m */; };
 		0254EABA2D0AACFBFA5E2BAD753C5E2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
-		027DD374278860208142131EBA12DDF1 /* wechat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD79B8C7A592AA9A9AE82D3177996F82 /* wechat@2x.png */; };
-		030E8A03DFEC1927C8740CB26837BAB9 /* WFLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 314045509ECC79E032EF4385EAF5BCAF /* WFLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		033484819373AB7E020C0026CAE0F7BF /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 079C6D6D3354D00F691E5D339EE41E58 /* MJFoundation.m */; };
+		035D0E6347BDB2332663704054F0C6E8 /* WFApplyPartnerUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = E21E6CE8E2338563E5C565F874B8CD1C /* WFApplyPartnerUserView.m */; };
 		0427B6EB444C2E8BAFC43AF92907FF52 /* NSLayoutConstraint+adaptateScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7A430AFF751CBE10F7B14134CE9F63 /* NSLayoutConstraint+adaptateScreen.m */; };
 		05452B06007B8F1969A23C3C9D494CBD /* MJExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA43C170FA5260799D501C76D6CCFDDA /* MJExtension-dummy.m */; };
 		07288680C9E7EDC1E240E0E3C50EE65C /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 861A52D6BD44906D61B7243F64FE2A0E /* NSObject+MJProperty.m */; };
+		077FD6C6EB19F0FFEF7ABA1A2109D53C /* WFKitMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC0E8F5AA93591669102EC21CC00DD4 /* WFKitMain.framework */; };
 		09E2F57C3C2B897ACC8AF5C49F1E9592 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1291D0FA61C376161C70FC24BDDF8940 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09E785555B549DE5974C744DB8324B91 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 03260258B16CBA9B3FCFF5C4929E5116 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E3D3DD1391306F0E14F0EB44D71507 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D40EE6956924384435BBBD4B718DEC8 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F67E3CBE4D8A2B89343CF2B589D66 /* AFImageDownloader.m */; };
+		0D9C1A79DE27C33E72F1499B03E7B52A /* WFLoginDataTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 70DE8B3F2286405533A23DE900C31EE7 /* WFLoginDataTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E590C9DB28183367979B60429E42577 /* itemImgLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C75836F1934A0D04A2942BB9527969 /* itemImgLogo@2x.png */; };
 		10EEF6FB7AF269EAF240203009D666FF /* UserInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = E9458AC4634925BD5F822520714273E1 /* UserInfoData.m */; };
+		1333804FE60242B6E555FBBF6C56C949 /* wechat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD79B8C7A592AA9A9AE82D3177996F82 /* wechat@2x.png */; };
 		155B38080767EA6B8AD9A393A767AF65 /* AttributedLbl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5523819BDC0DF57FBA61E29ADE1CC904 /* AttributedLbl.m */; };
+		161AC516F673E96391E1B5C0CC3AC130 /* WKTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43271E30402D390F20B5BF5680760E0E /* WKTabbarController.m */; };
 		1684D4D8512DAC86C5988E98FD91AADB /* SKSafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8182634213FD697584C544B218A4175D /* SKSafeObject.m */; };
+		168E4FDF8BF9BD27176B2C40B9298B06 /* homeHeadBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B95199C86786C1AB44CF13C6C311D28 /* homeHeadBg@2x.png */; };
 		169B3FC2BD33B8FBC2D4C35A1C1DC6BF /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D810C10ACC40B29B9D0BC72AAC50999 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17945050795BE68E105D821EF980ABC6 /* Back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F06AB7058C7EC5E24000360046C9758 /* Back@2x.png */; };
 		17D6A066C5F987FEFF8B89D7EFDFD375 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 5423942424BD7C1075FCE2435CDC0BBC /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18E3A0C078F3F730471F1BA14B7C07DD /* statisticsData@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6678405C789A25C5FB6F7C3A331969E4 /* statisticsData@3x.png */; };
+		1845B148D2ACB9AE11B5D1DEB8E9454B /* YFBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E57E74074AD7A943FC5ACF926ACC1A /* YFBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1AC36159DEDD4452C304D5B1FFB688D1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E015DE45BB30ED1A232E0BB87E09A172 /* MobileCoreServices.framework */; };
 		1B4B2BD601852EEF71D0A3FB0099EA5A /* NSLayoutConstraint+adaptateScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = CE10D792D6B660BAF88B24EA0B18AAB5 /* NSLayoutConstraint+adaptateScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BE53AC7D581945E6B81C5199C84CC5F /* YFMediatorManager+YFKitMain.h in Headers */ = {isa = PBXBuildFile; fileRef = D44B919E69D7F72858F5E0303484AEDE /* YFMediatorManager+YFKitMain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E4D1ECF2295720A87FC896F3AA6FE98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
 		1FC8B55B1790F7F6CFB0C2EDF87A87C9 /* UILabel+aptateFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D23EC402E8A72407C89D953E7A8167A /* UILabel+aptateFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21E4D774BF13C41DADC7E9F0EB68216F /* MJExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9C0463FC18336FB5F8C7AA0FB1EAC8 /* MJExtension.framework */; };
-		22A880F1004E446F92C18F903A138A7A /* jumpNext@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BAE48AF40DA26040BA55BBAA58CBF9A /* jumpNext@3x.png */; };
+		25BAD155A3775D83522A3C4CEB2CB9AA /* WFLoginDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EBF2F200BD26EA479EF471084FA9F5 /* WFLoginDataTool.m */; };
 		25E03213AA01D83EB415A04635B34F1A /* NSObject+MJKeyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = EDDE731C93B6563AA0392E18E874916D /* NSObject+MJKeyValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 313857776280294B8ED1A1FEF067ED1C /* SVProgressHUD.bundle */; };
 		2A285E12EE19E79EE57F46E6BB349150 /* YFToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E51DC5EAEAB256D7B83E4CDB25FCA4 /* YFToast.m */; };
+		2ACC0CF644465085A70C70600FE0CA1D /* Back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 072A4FADDBC808544CCC8FBA8D45B501 /* Back@2x.png */; };
 		2AE1F29F045D02727E815DBBAC8C7B4F /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EF88A5E1ACAF584E25645794C07A6313 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C08C0B1A4B7914B2095C772CF02E245 /* WFPopTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A802C8BF8BC3742E5B51230731A7F8D /* WFPopTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C844FDC16EE4EC64BC55C17269EFB33 /* WYHead.h in Headers */ = {isa = PBXBuildFile; fileRef = 714662E1E6B400C07A842996D514FF02 /* WYHead.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3033C2DE9CB2085ECBB95717CFB6425A /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C51C5C08773100F6B5C851406CE73F77 /* AFAutoPurgingImageCache.m */; };
 		30B8C0D1EAFBD03D48A0CD4C2C6C9B26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
 		3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 018038AF7122E54F4F15E22F0F2FCBC7 /* SVProgressHUD.m */; };
-		33C8760E4077D3D150D8829F0B117D5F /* WFLoginDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EBF2F200BD26EA479EF471084FA9F5 /* WFLoginDataTool.m */; };
-		345DCD622E753901BA7FF6B7B57C3138 /* itemImgLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03C75836F1934A0D04A2942BB9527969 /* itemImgLogo@2x.png */; };
-		346F6A67E674224E559F680F24B0B1C6 /* WFKitLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 315299BF022A5A95B280DFAD1C76DF15 /* WFKitLogin-dummy.m */; };
+		33B21F26D9302915C72D9A9B402EF716 /* statisticsData@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 951217C8CF44F0EEF7485AABC239CA93 /* statisticsData@2x.png */; };
 		34A7C5747B4C0825465453E196E57FAA /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 218909799F32BA21EF8BCD6113E61E14 /* UIButton+AFNetworking.m */; };
+		35AC2D3F1D2F00044235CF541ACCEB31 /* jumpNext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23504CE1A30B899AAD531062EFB4C98F /* jumpNext@2x.png */; };
+		36D32DA378A0CAEB1587584BB2E97711 /* WFKitMain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F57BFB349DCA8F4C5B704F2BCC50434 /* WFKitMain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38E88B78E8C0BF91AB19F9FCC17AD155 /* WFKitMain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E8708DE24DBBB3B97F454DD33463351 /* WFKitMain.bundle */; };
 		396DBB95499543A4E327274E4057C68E /* YFMediatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94009932549E127FD4FDEB18B00F9745 /* YFMediatorManager.m */; };
+		3A0F57DDD8289759C4AC392A271EC3F0 /* Back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8209AFF01F118FE6D7D414F385797BF8 /* Back@3x.png */; };
 		3A186F3A7711FAAB8C60562D63FF0D9F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC4FE2484C059394B9E864B877ABF41 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BAA6DDBE44238B40D6A72A16EF41814 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2D00227BAF88EC5E494C0FE6F7B68B /* MJProperty.m */; };
 		3BDC8FBDB7922AA1ABA2C90DBA2DBB35 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E5FEDBFCAE1F2A9BAADC78D86001C /* AFNetworking-dummy.m */; };
 		3C92EEC710C42C05A88891A23783173D /* WFApplyAddressModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C9A62374078DB54CCE8BE93E1E9717D /* WFApplyAddressModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D38E4D5FC6E84A390FCD95136A7E587 /* WKProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = CCFC196AFD7C500760C1B12EB7ACA984 /* WKProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E112DA53DD725C9A3185A54EB342EAF /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF8F336F26B391F698F83EF733B9B7 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E895FC3027626DCA5D6895F2A63B134 /* YFBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E57E74074AD7A943FC5ACF926ACC1A /* YFBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4018726347DF8769C0B1FE0F6CD2C9EB /* WFLoginPublicAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D898DFF45A6ECA1D0D3A7944FC01DC9F /* WFLoginPublicAPI.m */; };
 		40378C459606E340D1A099C85A1771D5 /* WKProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AB19468ADC4A0C7F3EFA667D5FAB16 /* WKProxy.m */; };
+		4129A2ED4C5FF96271F8B3412BA8F3CB /* WFHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4139FDED464CB75D14976BAA9D3B2462 /* WFHomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41BBD20F99D3D0EFD9D38337503D4C1F /* MJExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B13AE713EFBF0B51A3C552491A5EDB03 /* MJExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41E0491A73BF00FDDC8BF70B61AC671A /* Pods-WFKitLogin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8260F8ABB88C10F852671042EE823152 /* Pods-WFKitLogin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41F1B77507F5D03868DDB8161121F855 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F12747CECBED3B5D8CC6D73402F063B /* RSAEncryptor.m */; };
 		43C1A7A7F9314A9A0F5343BB8CCEC98B /* Pods-WFKitLogin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8497363FB322D9638D266C1C4C6C1AF1 /* Pods-WFKitLogin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45AD6149EEB2883EAC09063B5FDD6F5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9570CD016F5FB378764002B11CB4B90 /* CoreGraphics.framework */; };
-		47DB7AF1B83E702CBB23C79C402FD8C0 /* WKNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = A97C4720733F1C8D57AC5BE726C7F2D7 /* WKNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		475EA100643954D2AC3A3068EB97E47B /* WFHomeAddress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C00564823A0147193A91E29D40F5AA2 /* WFHomeAddress.framework */; };
+		47F08BEC31721EDF9F418E164536F4F5 /* homeItem@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 651696625C4FCBB0BD07E55ACE1AC091 /* homeItem@3x.png */; };
 		47FF1D17418AB1144FDE0E46427F4877 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = DB4F7FE027DFA00FB6FD7D208E7829B4 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4878B5C72AD93CF82E3E779B801B6F7E /* YFEmptyDataView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 43206410163AA6FAAF6823ADE0227779 /* YFEmptyDataView.xib */; };
-		49E6D29B8CB0AA7544188A10A85B4E52 /* WFHomeSaveDataTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B5DEFB0F2A011625CFA1A54EA6CD77C /* WFHomeSaveDataTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B33E2E51590FAD784C8C6CDCE47796F /* Back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8209AFF01F118FE6D7D414F385797BF8 /* Back@3x.png */; };
 		4DB9B0F564BD248E07B88F18DFBBFC6E /* WKBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A831F8F4807D3FBE4DD650B1ED3C7EA9 /* WKBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4EE6F49E133320651F61729FBBDFD45E /* WFHomeFirstItemCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FD7E9BC91523C92D5A5D5E5E07F7AF /* WFHomeFirstItemCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ED9D98F8EAAE868810519965322449B /* WKTabbarController.h in Headers */ = {isa = PBXBuildFile; fileRef = B686B0CEA8B6A821F115CB41E1B1114C /* WKTabbarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5036C1D6D87D4DA731C972A410C17ABC /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8763CA4A97FD6F3A623792C181E1D9C6 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51367DFB16080F0B507686B0BF01C0CB /* YFFunctionPublicAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CD8AC746BA4057DF06D176B41E9D95 /* YFFunctionPublicAPI.m */; };
 		51E7A17D617310CE81444F5D315EAEF0 /* NSString+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A681347E8B416F46722E85F03F0AB47 /* NSString+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		521A1CA2DBA387A0E9613FF134BF0571 /* WFLoginDataTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 70DE8B3F2286405533A23DE900C31EE7 /* WFLoginDataTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		522B06CC8089D855FA82A2C63437EC57 /* YFMainPublicModelAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 67716204B41670A0C1E3908A9DCDBC84 /* YFMainPublicModelAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52BA3C7F82F8F2BBFC89EC52FD3A5E3A /* WFKitLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD09BAD6E498E1FFE38AE634F137748 /* WFKitLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54DCEDBF61F96C943E468626204A0D39 /* WKRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F81B74296A1B334CB506CB5642EE516 /* WKRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		576F905E304A8F49EE6FBFA2E95867F5 /* Pods-WFKitLogin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A307E97D3EE3CCBCBC2C097206A1B /* Pods-WFKitLogin_Tests-dummy.m */; };
-		5B89D39EA3649750CEE42D0912F5A470 /* WFStartUpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E15069B5E9FC9D61F4472919731A0086 /* WFStartUpViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C799A8011C8B0787B176ED8EDC61CED /* WYAutoLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A48F775A72A8C88CFADAC042BE6B60F /* WYAutoLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C7B1AED3DB95907DEBE46CA273257BA /* YFKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DB66FDAA6A8F588B66BE31D9DA221 /* YFKeyWindow.m */; };
 		5D6855F2856727B5752B3512491018C1 /* empty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D839E19EB96D7CF5B70E855AACAF41FD /* empty@3x.png */; };
-		5DB6D571E07E7135B154B67B0BD61ACA /* WFKitMain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F57BFB349DCA8F4C5B704F2BCC50434 /* WFKitMain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61975CFD9CF39083D6A228EFC551730E /* WFHomeSectionItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9090D83DA3743DD5DFD893F3817B8531 /* WFHomeSectionItemCollectionViewCell.m */; };
 		635730ECE92D1F994D755F9C2B4651B8 /* SKSafeObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9B44FA232040EF55F2E2069C473C90 /* SKSafeObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		657EAEC11A61A3131341461032D06554 /* WFApplyPartnerUserView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AB25393AE93889FE48E2AFBECA2ED9D /* WFApplyPartnerUserView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65F29D6FB14E79E1488AB63ED00815DA /* WKTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43271E30402D390F20B5BF5680760E0E /* WKTabbarController.m */; };
-		6829547900AD4EDA6023B814D23FD15C /* Back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F06AB7058C7EC5E24000360046C9758 /* Back@2x.png */; };
-		68A061E31CC5ADA8C22BFF0112B5F235 /* wechat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C35329C773C2E1928BBA583045CB48 /* wechat@3x.png */; };
-		68F773C6B9324C7F77711DA914DBE658 /* WFHomeSectionItemCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 94F2A436932B3BFE7AD3A41BBD11C141 /* WFHomeSectionItemCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69A1DF5EB5C95A4A3DC499FA3B5025B0 /* YFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA11B0FEC6CA74B5941E2BE73552522 /* YFBaseViewController.m */; };
+		6A2AF09B1997D8BFED6D852DF16A6E58 /* WFLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 314045509ECC79E032EF4385EAF5BCAF /* WFLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A72B5D336DADA2C873245AD82DAD1D0 /* WFHomeSaveDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E9C38313CED6D9EE3C55434620E4C1 /* WFHomeSaveDataTool.m */; };
+		6AD798ED06D1F0662052176F2CA95EA1 /* WFApplyPartnerUserView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AB25393AE93889FE48E2AFBECA2ED9D /* WFApplyPartnerUserView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AE060F50A535B68B9311985C04F2285 /* WFHomeFirstItemCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D97CB2ED12943AA8D8A65986849C542B /* WFHomeFirstItemCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E4C66ABA27A0F4EFDAA3E8B21A9384F /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B623621AB8781EC96D3BACA92532CEB /* AFNetworkActivityIndicatorManager.m */; };
 		6EC015330CAC3D60745A20B01928B8DB /* NSObject+MJCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C32EDC87F95A2F849C82D7002BEA7C /* NSObject+MJCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F5BF0025C8EBEC6A76A21061EEA57EA /* MJExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9C0463FC18336FB5F8C7AA0FB1EAC8 /* MJExtension.framework */; };
 		6F6C4414DE96E08267712DA4C17C3CBB /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD1068809A86D1F9267D2377788589F /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F7DB9654B4670C323E9A13AFDEEAD4E /* WFLoginPublicAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 34E77C451E5849C0332713BDB5728B58 /* WFLoginPublicAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7155607EADA71F37CFE188D866B7E40A /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = A38A2AACF1FA216AACA9EA57A2E7C440 /* MJPropertyKey.m */; };
-		7206D3A74BEC7A2F32D770FD0036344E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
 		7223759D45B6FC30AF625AC2120943CE /* YFAddressPickView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9944FA598E1CBCC19E296A782001DC58 /* YFAddressPickView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72ACEA955773DFEEB6948088616DB3D1 /* homeItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770EE80E7EEA57D163FE6904B9BD7D44 /* homeItem@2x.png */; };
-		75EC75F2F450EDEE71F1FA3D9E8FCC0C /* WFKitMain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E8708DE24DBBB3B97F454DD33463351 /* WFKitMain.bundle */; };
+		74EE5F16F79ACF751B1AC1A70645ED4B /* WFHomeSectionItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 018625F581F58C3AD4CD5EC6CFBD95A7 /* WFHomeSectionItemCollectionViewCell.m */; };
 		763BF24104E5A4051991D40EE2828979 /* WFLocationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CE024748BA390C8B1ED68E20B58F0E16 /* WFLocationTools.m */; };
 		7643D5D3DACC8C1654AE8591AA786383 /* WFPopTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0330D74ACAE95F63315CF0A8CFECCE8C /* WFPopTool.m */; };
 		769B6260247C5624A11411541C0AA4E2 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C3231F0EB577FE888EBF1420D2F36 /* AFSecurityPolicy.m */; };
+		777FFDA92CC40DEDA66F81A457EA45D2 /* WFApplyPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05FE9E2BA0EDA87220FF82D44A18C88 /* WFApplyPartnerViewController.m */; };
 		77876997CA63145CC72A2D6FB5758513 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C021DD1057DAA3EC032CAB1EE197D28 /* AFHTTPSessionManager.m */; };
-		77E3260666C6CF5EAC63A5D6CAA7AFD0 /* WFHomeSaveDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E9C38313CED6D9EE3C55434620E4C1 /* WFHomeSaveDataTool.m */; };
-		789D883C7AE06356D36DECB639BDFD8E /* WFHomeSectionItemCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 0110B29D6F8BA9D8D5A7DADEEF3695E0 /* WFHomeSectionItemCollectionViewCell.xib */; };
+		77E7EFC775F4594D9B0A628980BF6893 /* WFKitLogin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F054D9FE8F0152D6AFCF1F4647FAD1BB /* WFKitLogin.bundle */; };
+		78CE7726ACE592738B6EC06D60F07A84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
 		7A4D46D6692337E3133610E405DBA0B6 /* SVProgressHUD+YFHud.m in Sources */ = {isa = PBXBuildFile; fileRef = B32D16E6C1B06432C27962CEFFFF3E86 /* SVProgressHUD+YFHud.m */; };
 		7AFC356CBA0BC8FD1FD114B7097C63FC /* SKSingle.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C1FF01E3187807007EBDDC3823D935 /* SKSingle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B90816B3761D2BA6088EBE1B636C961 /* YFEmptyDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2615F64F4C5A914A1CD591953B4DDCCB /* YFEmptyDataView.m */; };
 		7BB0A67204CB6352173D322BAD0012CF /* WKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D7225E439A14C857C990CFD617647998 /* WKRequest.m */; };
 		7BE71B62F38458AC771581F60006F9CE /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CF33B46CD71EBB898899539F918E13F9 /* NSObject+MJCoding.m */; };
-		7C7CA436E04A39A52ADC37B68DF57A76 /* WFApplyPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F05FE9E2BA0EDA87220FF82D44A18C88 /* WFApplyPartnerViewController.m */; };
+		7F2AD9FBC40B0DD2791983BEF466E666 /* WFHomeSectionItemCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = A53064C0C26CFA0BC25BD1FEC44B0852 /* WFHomeSectionItemCollectionViewCell.xib */; };
 		7F372985CE80B69B5524CC3277E1C1AF /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A3EFA815E8FE2D72D6D0D132EFD0E9CA /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FA287A787F61BD64491AB3B34E54B09 /* loginBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5C3A508A82433FCD85953A30F1F090 /* loginBg@2x.png */; };
 		7FF133585785B5937A5643AB6201EDA7 /* WFBasics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 039F91E7FF4A9F59CF75B6D22C4E67D1 /* WFBasics-dummy.m */; };
 		80C07B5476E9C1C0F079449E92476643 /* WYAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 195E9ED17B05F11174598091B4BD890F /* WYAutoLayout-dummy.m */; };
+		825421C6856D67946DD7E40D4ED1EC8E /* homeItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770EE80E7EEA57D163FE6904B9BD7D44 /* homeItem@2x.png */; };
 		82C2341073129016B1349C51CEA85F05 /* Pods-WFKitLogin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032A76CFE73BE1671BA334C5E1D6746 /* Pods-WFKitLogin_Example-dummy.m */; };
 		82EAF3FA5063E4F214B4FE60229670D3 /* WKHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE92FBEED75EBEEB86D143282286F39 /* WKHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		830A2A4D1CCB260F8D13F6276F15CDAE /* WFHomeFirstItemCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8AD45C4B3707AEFF9455C16218975723 /* WFHomeFirstItemCollectionViewCell.xib */; };
 		856B571FA3AE9D65E81FACB19E3557F4 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E29960A7426FA5457DE5979E6FCCB3D /* AFURLSessionManager.m */; };
 		870044029B3BA449A0932AAE3A495DE9 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6401DC942F6EB4DD3548595FADF2E4 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8836D766122409AABADF546D60FFFA15 /* WKTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3455681840788201E7519D6E06E7AD46 /* WKTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8976611B10358152AD1BA4E0BA887BDD /* YFToast.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A8CBF06514AE9E157E9B850C37AA7F /* YFToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A2E1E487FBFC3DF55C12C056BFA36A1 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D049765F21BB610C505C81B9CE59AFB /* MJPropertyType.m */; };
+		8D1C44928D0F90659601BFEF390685D0 /* WFHomeSaveDataTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B5DEFB0F2A011625CFA1A54EA6CD77C /* WFHomeSaveDataTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EC8C137DA64DF8C83C96FECC2C64C03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
 		8F96E82F250EE718FA3F08AC9AB58423 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C4619405B6FE75EA46C853468B1EC736 /* UIActivityIndicatorView+AFNetworking.m */; };
 		8FC29E832DDAB80383225B6835060BA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
 		9080FC2B5984A4B7CD89C50C5DC320C9 /* AttributedLbl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8593FF35295E47F2263F0F19ED157D24 /* AttributedLbl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90895135215FBF4ECCA59E4C569ADF07 /* UIImage+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD1962CDCB7F0A1EE7094505C426711 /* UIImage+QRCode.m */; };
 		912758556B9AB1DEEABE189955C5B8F2 /* MJExtensionConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 747629D78D81EA9EA3932FF64A8597CB /* MJExtensionConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		947050C22D267A6AB1E22F6EE1A66F0E /* loginBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5790540F5416D73FA77AD674527CCD89 /* loginBg@3x.png */; };
+		93DD817387B6846D404C650F6BE8150C /* WFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6473B0CF927AEBE492936F38E9CA6F54 /* WFLoginViewController.m */; };
+		94357618BF0AAC771B2AA4B2E88A4D7C /* WFHomeSectionItemCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A325FB189C59230BB7C4B51BD9E00321 /* WFHomeSectionItemCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95DAE5AD46A86973A77907D38716F694 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9355C01F5E2D5654F3FBA3C142BD553D /* AFNetworkReachabilityManager.m */; };
-		96411421A6497270731A679D4EA62FFD /* homeHeadBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC1E10A671972DCB5A0188A386D65D /* homeHeadBg@3x.png */; };
-		969B51082F8CE9EC3156CBAB62542E4B /* homeHeadBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B95199C86786C1AB44CF13C6C311D28 /* homeHeadBg@2x.png */; };
 		96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 13280D772944BE70705834F41FE0C374 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9796F9FAC1941A992E8B17F31D62B2E4 /* MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D50EE5A79596D7BCAAB2B561DD73A1E /* MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97DE60E2FEA2F49E2077DEC8CCC248C0 /* WFApplyAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC55C3B5FA1B2F3E495081158E02D68 /* WFApplyAddressModel.m */; };
-		97F4A9FE7496F2ACE3A54C638C6CDF8E /* WFKitMain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FFD6658625AB74A7B915AACD177F8B /* WFKitMain-dummy.m */; };
 		98114570DFFDF5BD81B7724B4810501D /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6081BD330877D5CF735E4D1F0EFA7FC4 /* UIProgressView+AFNetworking.m */; };
 		99456829035D2883017E8EBCDB82C231 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F49D74259A15993ABBDB48D2E38F09 /* QuartzCore.framework */; };
-		994FB72B195C25ED98BDB753DFB9FFC6 /* WFKitLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD09BAD6E498E1FFE38AE634F137748 /* WFKitLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99BF63084CB0EDEA0A9CBB77E8315E6E /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 343775A9AF0672BD576B68A4412B1CDE /* NSObject+MJKeyValue.m */; };
 		99C7793047FAF2CABD8D1BA3AC4E72A5 /* WFLocationTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7A0347B95C687F4E55C012F49705C0 /* WFLocationTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A30C7692DCD80569C39494382812CDA /* WFApplyPartnerUserView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 57EFF6B4D241E1E9AE1E6717E5753262 /* WFApplyPartnerUserView.xib */; };
 		9B110602D02495BC36183E7222C20069 /* UITableView+YFExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C6E347BCBA42DD83C28CD49BCD3EDB0 /* UITableView+YFExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B41316D2DE09092FA0143B33A74B769 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 86F15A78E3DBD8D0EA261A8B7C7AFDFD /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CE841845EC2882A7780B97754B71DD6 /* UITableView+YFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942F8247FDE92BB8FDC70ABF9819791 /* UITableView+YFExtension.m */; };
+		9DA737A85A0B0557C700D6853F03AFE7 /* WFStartUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B49C06D03F712B9C8B9ECB0BDF1D4 /* WFStartUpViewController.m */; };
 		9DBCF8B2B96EC5A45E0F207DB87EEFE6 /* UILabel+aptateFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F497878A8276F675649549A7193E63 /* UILabel+aptateFont.m */; };
 		9EA39FFA842C60CCA678E7B254CA91EE /* YFAddressPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90161B0A7EBBBA48C4BE609367BE999E /* YFAddressPickView.m */; };
 		9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED460A3404180FBB31587E4EDFA2B506 /* SVProgressHUD-dummy.m */; };
+		A121ECBFB42880048DD58EB51C2CF990 /* WFKitLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 315299BF022A5A95B280DFAD1C76DF15 /* WFKitLogin-dummy.m */; };
 		A2F71055204FCEDE50306846514C96AE /* WYAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFA236A796DFE5BA07462B2D8DD9E4D /* WYAutoLayout.framework */; };
 		A4499CB7E7175FF8486727C0E8BEC0B4 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A2F99A3A6A717C4EFABC8A2438026D /* UserData.m */; };
 		A47472F50A3A7869A644789159571A5C /* MJPropertyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 29B26B75530D14F858B73F7171FF9E6F /* MJPropertyKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5D86CC71480778ECD0EE81138D48C91 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A96255FC93AD0EBA84F03B728CB93B4 /* AFURLResponseSerialization.m */; };
+		A70A4D0DB98BF8CD9A75D66B8463CBCF /* WKNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = A97C4720733F1C8D57AC5BE726C7F2D7 /* WKNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A93BD560DD062BA5B515267570761CBE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D404FB1DB503DF94E895204ECA703127 /* Security.framework */; };
 		A9E429ECAF059D9D471F3AE5C1BAC2B0 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A121C548B6CEE2805AF4E537FDD0340 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA933910117CF5F9B6525575B7DB1BF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
 		AC331F332E0C1B46CAFDA2FC81779039 /* UserData.h in Headers */ = {isa = PBXBuildFile; fileRef = CC14A965A3C96301E0B8250E24F96132 /* UserData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD4EE235365164064E7413794215F7AB /* YFMediatorManager+YFKitMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ADCE52F8AB97A7B25C316FDB43ABE /* YFMediatorManager+YFKitMain.m */; };
-		ADC03EEE9E9567C201ACC262EFC5954D /* WFApplyPartnerUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = E21E6CE8E2338563E5C565F874B8CD1C /* WFApplyPartnerUserView.m */; };
+		AD290904B85D68107D26DE1EDA00B816 /* YFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA11B0FEC6CA74B5941E2BE73552522 /* YFBaseViewController.m */; };
+		ADF34A9889BFF4D3AFCDB57E00D7F3DA /* WFHomeFirstItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDA76939417E4D7AA69EA1D53E6884B /* WFHomeFirstItemCollectionViewCell.m */; };
 		AEA4CF8EE7E08C13B4A71A634F9F3B5B /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC509029C9E52BF0FF7BFC8EF0D834C /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AECB9FD1C271F734476CBF6E84BBFC51 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA7763B789DB0C464EA9549BDD9481 /* UIImageView+AFNetworking.m */; };
+		AED0E442837912810AA055DBB3AAA314 /* wechat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C35329C773C2E1928BBA583045CB48 /* wechat@3x.png */; };
 		AFBB1DFF43262B0607D9EB5E13180348 /* UIFont+Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3D5A5C242ABA7E7E3FA2E9023F2E /* UIFont+Main.m */; };
-		B0D0D9E3AD9F2247E9DF4FBF9DF10065 /* WFApplyPartnerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E499B62C2ADEEDF2865C672CE595F10A /* WFApplyPartnerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1534572D357188E53FE33426591E9F0 /* WFKitLogin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F054D9FE8F0152D6AFCF1F4647FAD1BB /* WFKitLogin.bundle */; };
-		B16A2B1543A8598165412EFAF94236F7 /* WFHomeAddress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C00564823A0147193A91E29D40F5AA2 /* WFHomeAddress.framework */; };
+		B02AFC4337983EEC91570C25AC0C34F6 /* WFBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EDF344E1BF5F7683DC6BF7A44BF391 /* WFBasics.framework */; };
 		B26EDD2D9A9BC8CDDEADEA8DBEC606A7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644E12929A1BEE2B6B5A158C28B88D41 /* SystemConfiguration.framework */; };
 		B4A9C327DF449A9144EDAC8F016978B5 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E0C3653AE7CBEDBEFF89EE37D18510 /* AFNetworking.framework */; };
-		B59BD05A5F68CAB3C912883363F56C4D /* WFKitMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC0E8F5AA93591669102EC21CC00DD4 /* WFKitMain.framework */; };
+		B5A8C810F3A2A500D7CFB7A55ECB95F8 /* MJExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9C0463FC18336FB5F8C7AA0FB1EAC8 /* MJExtension.framework */; };
 		B5AD0B8F0F9304975A01978B2908B62F /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BE30F9FBAE324128A390E61F4B612ECB /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6046D3F43F1A00E317629AA5D4DBB7 /* SVIndefiniteAnimatedView.m */; };
-		B5EF769B64A796B54CDB5323CF7720E8 /* Back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 072A4FADDBC808544CCC8FBA8D45B501 /* Back@2x.png */; };
 		B6134964E183AEABD24F9200D2DC503E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
-		B63E633E72A299D1FE615F0B8B1ACB55 /* WFBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EDF344E1BF5F7683DC6BF7A44BF391 /* WFBasics.framework */; };
-		B646D75DD232A4B8FADD67389744A3F7 /* homeItem@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 651696625C4FCBB0BD07E55ACE1AC091 /* homeItem@3x.png */; };
-		B7502D408D074FDC2008D5A60E432DC9 /* WFStartUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555B49C06D03F712B9C8B9ECB0BDF1D4 /* WFStartUpViewController.m */; };
 		B94AD428EA4EFD7BA79BCF57680D390A /* MJPropertyType.h in Headers */ = {isa = PBXBuildFile; fileRef = F79F9D532AEFBFC4545831B5AD2BF3F1 /* MJPropertyType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B99E663EE797F7358323B7CCCB0FB68F /* WFApplyPartnerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E499B62C2ADEEDF2865C672CE595F10A /* WFApplyPartnerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD3C624F0090C5AFA20604C1588E13ED /* YFMediatorManager+YFKitMain.h in Headers */ = {isa = PBXBuildFile; fileRef = D44B919E69D7F72858F5E0303484AEDE /* YFMediatorManager+YFKitMain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD8101D3B06D7F75B97A07D3C9D6A2AA /* NSString+Regular.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AE4BFA965C928A14F27A2646B105E6 /* NSString+Regular.m */; };
 		BEAABE1E5DF09E616C1DAD0C11310E46 /* WKBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B285C33A05358C127D229FEDF74CF /* WKBaseModel.m */; };
 		BF16D6D018A36238E224462C4F10CABB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
 		BF24A5640680BDE0FA581F698D5C5A17 /* WFBasics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEEF30C884EF5A16B12814F3BCA1E5D8 /* WFBasics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF64B68C7A85701652605B3C7B04837B /* WKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0037DEAEB51AF672C7502ABC085BC8 /* WKNavigationController.m */; };
 		C0C8961B2EAF90DA7244B427C569FCFD /* NSObject+MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 4243D5BB7992BB72728E72978B325819 /* NSObject+MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0E18A54CC8B62F95B615EB24163FF4D /* WFHomeAddress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 001559066B85360114769AC7CFAD2B90 /* WFHomeAddress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C12AAF885A5A8F2508E3FA20E5C6883B /* YFMainPublicModelAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D8110D6C2463AB611FD2463AC14F9C1D /* YFMainPublicModelAPI.m */; };
 		C220BD223F902B1C0E96ED825A073489 /* YFFunctionPublicAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C96CA43F95D0D4BC078B945CA24CBB5 /* YFFunctionPublicAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C40C070035174890792F907D020F1321 /* loginBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5C3A508A82433FCD85953A30F1F090 /* loginBg@2x.png */; };
 		C42E7435CEF0B02C5D64514C12CC2773 /* empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4E0200DF6DD62E73617DCF88B601D1 /* empty@2x.png */; };
 		C4A44BBE672182A5A12CFA79E5CCECAD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0F8772E0FAE3EED8EDD7EB3FDB1897 /* Reachability.m */; };
-		C8AC5089CBA0EF2405BAD9809542D205 /* statisticsData@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 951217C8CF44F0EEF7485AABC239CA93 /* statisticsData@2x.png */; };
 		CAD2539BE3C4AB2F1FD1DF30D7629238 /* MJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 88E68BF180B5F8772FA83307F9E6FD84 /* MJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CAFF8E474EA91B659A94998922984FFB /* jumpNext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23504CE1A30B899AAD531062EFB4C98F /* jumpNext@2x.png */; };
+		CBF9F29BED01F95DE082CE438D526692 /* WFHomeFirstItemCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 667357BC7A97034EBAF13C7BE3F5ED4B /* WFHomeFirstItemCollectionViewCell.xib */; };
 		CD5210309C357E805631164E2DB69398 /* WFBasics.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D148F5CA96341B689FD2B1A95C7BE465 /* WFBasics.bundle */; };
+		CEB26C06072DB84A46FB32A59B278EAC /* statisticsData@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6678405C789A25C5FB6F7C3A331969E4 /* statisticsData@3x.png */; };
 		CEB50B6E6DA942F0F3F432943C20B210 /* UIImage+QRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = C0DDF08EC7DEAD95A110E37970B6EE54 /* UIImage+QRCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0D613FD020E466EEE79D4CC93702AE5 /* jumpNext@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BAE48AF40DA26040BA55BBAA58CBF9A /* jumpNext@3x.png */; };
 		D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 986BD5A7930AE47D862087BAB9A8E6B8 /* SVRadialGradientLayer.m */; };
 		D29F2AD07AF58334781F008905C30C35 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC98F3641EC304868DBBC18AC76BE3A /* UIRefreshControl+AFNetworking.m */; };
 		D2DD43D7F3A7D97858678EB948905999 /* SVProgressHUD+YFHud.h in Headers */ = {isa = PBXBuildFile; fileRef = 075DA78FD40E1669D87F041F1B5BA12F /* SVProgressHUD+YFHud.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D34C4EC27403D4FBA24D0C19F3650043 /* YFEmptyDataView.h in Headers */ = {isa = PBXBuildFile; fileRef = B18C8962FFC2F95332F1D8646707EBB5 /* YFEmptyDataView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D466597C1CE35A7E7CDFA84F47829886 /* YFMainPublicModelAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D8110D6C2463AB611FD2463AC14F9C1D /* YFMainPublicModelAPI.m */; };
 		D4914107FF5A197B9D0BC6D1C089E33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
 		D5441B9B4C76C5095B60F59B739870FA /* WFHomeAddress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E410BADC9B9A264109A89ED4B6C53906 /* WFHomeAddress-dummy.m */; };
 		D59E2A517A48D101120EB57F90F140A5 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2969AE6E27045F4D6600D2A52FDBA8 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5EC966107CD47DFD043779E6C58A7C4 /* WFApplyPartnerUserView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 57EFF6B4D241E1E9AE1E6717E5753262 /* WFApplyPartnerUserView.xib */; };
+		D678EE9E3552FAC539C6ACC4EE9AEE22 /* loginBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5790540F5416D73FA77AD674527CCD89 /* loginBg@3x.png */; };
 		D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 699298F6E5FB854A47C7C05E3E911181 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9523517A0251612BD182DF12009327C /* Back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31E899F49B56B1B6D14374AB5E7853AB /* Back@3x.png */; };
-		DB3406D7E6BD1D704D2224921E01B5C4 /* WKTabbarController.h in Headers */ = {isa = PBXBuildFile; fileRef = B686B0CEA8B6A821F115CB41E1B1114C /* WKTabbarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB6D2DFF9CBCCD35AE5BE32E9AE41A83 /* WFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B65A8867F0B56B4318F622913F73E /* WFHomeViewController.m */; };
+		DB8437BAAF4CB56FF733F63B776629AA /* homeHeadBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC1E10A671972DCB5A0188A386D65D /* homeHeadBg@3x.png */; };
 		DB965C961ABFE2AA0307746EE16D33B8 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F43F4EEF1569A185AE3B1B470489F2 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBE94179B129FFC4C00B67908EAB6457 /* NSString+Regular.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0FD9A3E7685F5C0FF2C38AC4B9550D /* NSString+Regular.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC2186197E507C0C73DFB0600D54867A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6F81B7930D78B3C041EC10913054FF /* UIWebView+AFNetworking.m */; };
+		DCAABB1B04FFD114C7FF14AF16447392 /* YFMediatorManager+YFKitMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7ADCE52F8AB97A7B25C316FDB43ABE /* YFMediatorManager+YFKitMain.m */; };
+		DD37055EC812ED3B40D9FCA6D22862DA /* itemImgLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C0907AC7CBA105F7B35FAAF8FA0319 /* itemImgLogo@3x.png */; };
 		DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F929E946D909777B4CC23838DB828F /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E779A11C1F90E65947FC1C835F5A8D /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0A93B4682D7C9235D8D4EDF88F53F98 /* WFHomeFirstItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A53570AA28C99F41BA3607C4ECC79D72 /* WFHomeFirstItemCollectionViewCell.m */; };
 		E15A8D93C6A5AE86E7276B81C7558E5E /* WKTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 748976DB4649FD50405D5BB6C076A032 /* WKTimer.m */; };
 		E17973BC9CEAE4ED0A7492450F95ACEF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C39863877BE28E38B5B231DE88652 /* AFURLRequestSerialization.m */; };
 		E261B82A0EEFE0EA897EA1A36C69C1CE /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B638DF08F2B6ECBF059890C224E6E5 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E31ED8762B2DE04A1CD3A9B2F115BD64 /* WFLoginViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 842CBEBFEF381461E232F4A39A96CC28 /* WFLoginViewController.xib */; };
-		E3F08AA2E299A797341FF0FE256C4E60 /* itemImgLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C0907AC7CBA105F7B35FAAF8FA0319 /* itemImgLogo@3x.png */; };
+		E3B024EF9ABC2A81545C143F273309A6 /* Back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31E899F49B56B1B6D14374AB5E7853AB /* Back@3x.png */; };
 		E4B15D13CB503430A666295D3B5F5094 /* RSAEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1568B6236412B8416E329D15E1FCC44B /* RSAEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6204DF0822C77AE9EF27AE79F70EF7C /* WFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D00223CE8808E4B8973C4E1025493C2 /* WFHomeViewController.m */; };
 		E6775033B3F0080B56E29AB395A08867 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A1079CE8D3B402D4B5A202D0360C2 /* NSString+MJExtension.m */; };
-		ED70EF5B712A10064A8AEBFE723E8F0D /* WFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6473B0CF927AEBE492936F38E9CA6F54 /* WFLoginViewController.m */; };
 		EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = D43EE61E9F8FCE3E737D2DF455E8004F /* SVProgressAnimatedView.m */; };
-		EF53F8218D59C7CC0A970DE87CB818D8 /* WFHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6564F67517C9439A17EEA0F7E3B9945D /* WFHomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F04CF5F9DA8EEA5B4A2A1D29DB3823EC /* YFMainPublicModelAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 67716204B41670A0C1E3908A9DCDBC84 /* YFMainPublicModelAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0B17B0DEFFE1149D22F1611B517F6B2 /* YFMediatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DAE6AE1D5E279828977AE841B2EC18 /* YFMediatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0CB022861232BCF210AEB136859802D /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47A67399054AB37C3CFAB7848325B1B /* SVProgressHUD.framework */; };
 		F0EF96DAB145D1B2247C01B3517B54FE /* NSObject+MJClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 47C13E665C99514C7DD720525C42CDAE /* NSObject+MJClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F29C7D615A06515B0BDB99DED988EF96 /* WFKitMain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FFD6658625AB74A7B915AACD177F8B /* WFKitMain-dummy.m */; };
 		F30426E6E931895BA2789E8F6D4EAF42 /* YFKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B741005126AE16038565A89C0E05609 /* YFKeyWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F407B4E0B40A8AA4CA7443563F105E40 /* AFCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 96300E7C7D4C6A97664E371C84ECDE48 /* AFCompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4FED6C37367BC46B92BB3FE18D233B8 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE83645F0562DD66660EE4FA4B48B6C /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5F1502AA7E211611CECBDE5C03ECC71 /* UserInfoData.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3E848D8DB540EBF09E13F6B2D17575 /* UserInfoData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F64A288B0E580082518AB42DC0944CAF /* WFStartUpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E15069B5E9FC9D61F4472919731A0086 /* WFStartUpViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6D3EAC9263D597A38219BB65C130F59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */; };
+		F8A259247B00E7DB34D22FDE91D4C49E /* WFLoginViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 842CBEBFEF381461E232F4A39A96CC28 /* WFLoginViewController.xib */; };
 		FAB7CF107E7E3EE6FA7949CF18B8BA12 /* MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = E70B5FE09FF334FD961409D9BED3D66B /* MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCDA092CBA72F97EEEA830DCF46CB25B /* WKSetting.h in Headers */ = {isa = PBXBuildFile; fileRef = D056966FB35F11491A4E810C3D6BB88B /* WKSetting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFCB5AAA475C88D6EFC64476513D9020 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A5671F2E1C1EAF934303428F3C98CD /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0BAA7315DD1AFF67CBD005D88A3A8688 /* PBXContainerItemProxy */ = {
+		1539C8C285449430117913A40E722F88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -266,19 +268,19 @@
 			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
 			remoteInfo = MJExtension;
 		};
-		641AB9ED15EBE81E2B3ED5D4D97E5FF1 /* PBXContainerItemProxy */ = {
+		576C12C65C7DAF1B7C9E797500B2BD00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
 			remoteInfo = MJExtension;
 		};
-		68ED00D34C13DC3EA1C4DF510989E751 /* PBXContainerItemProxy */ = {
+		641AB9ED15EBE81E2B3ED5D4D97E5FF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 222428F5F8A112E9A24DE4D2EE84E896;
-			remoteInfo = "WFKitLogin-WFKitLogin";
+			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
+			remoteInfo = MJExtension;
 		};
 		6950C9EE52DEAE6A94BCF8E0026752C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -287,19 +289,19 @@
 			remoteGlobalIDString = 930887923DC0E8AC2A3589A7987F2BDD;
 			remoteInfo = WYAutoLayout;
 		};
-		70967C7D1B0561714CC3330BE1BFF1D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48CC238F44C34EB739121FC020CA96A2;
-			remoteInfo = WFBasics;
-		};
 		7397C596EAF51DCD15DBAA989588C185 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 083A189D185C5AAEA47CC8EA709DBEBA;
 			remoteInfo = WFHomeAddress;
+		};
+		750D4F9ABC513BE11F4B0FC1534A886D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB1DC43B4C7A9BF1564CAABFDDEB52CC;
+			remoteInfo = "WFKitMain-WFKitMain";
 		};
 		7D2C87DE8A5AEFEFB81324C0956AAE34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -308,6 +310,13 @@
 			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
 			remoteInfo = AFNetworking;
 		};
+		7FCBFAE2D7142F4D921EF19AEC51F7B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48CC238F44C34EB739121FC020CA96A2;
+			remoteInfo = WFBasics;
+		};
 		A7B0ABC898A7C81706506371041F34DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -315,12 +324,12 @@
 			remoteGlobalIDString = 56284A979101CB205629C12503122236;
 			remoteInfo = "Pods-WFKitLogin_Example";
 		};
-		AE90498AD00D24B00D0FDC7A3D82544C /* PBXContainerItemProxy */ = {
+		ACDB5E05B765DC30A20FFC9B7700ABEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
-			remoteInfo = MJExtension;
+			remoteGlobalIDString = 083A189D185C5AAEA47CC8EA709DBEBA;
+			remoteInfo = WFHomeAddress;
 		};
 		B7E21D110FF4AFCA010F38FBF2E0D3D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -350,19 +359,12 @@
 			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
 			remoteInfo = SVProgressHUD;
 		};
-		D39B1EB1AF4E5923C026D8CB6D832FF3 /* PBXContainerItemProxy */ = {
+		DCAE2655D2EE0D839AC7E211A59BCB72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CB1DC43B4C7A9BF1564CAABFDDEB52CC;
-			remoteInfo = "WFKitMain-WFKitMain";
-		};
-		DC7ECCB5F16340D4567626387538CD77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 083A189D185C5AAEA47CC8EA709DBEBA;
-			remoteInfo = WFHomeAddress;
+			remoteGlobalIDString = 222428F5F8A112E9A24DE4D2EE84E896;
+			remoteInfo = "WFKitLogin-WFKitLogin";
 		};
 		DD21BD7E6FA20F02A528E975CDDEBF1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -375,8 +377,8 @@
 
 /* Begin PBXFileReference section */
 		001559066B85360114769AC7CFAD2B90 /* WFHomeAddress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WFHomeAddress-umbrella.h"; sourceTree = "<group>"; };
-		0110B29D6F8BA9D8D5A7DADEEF3695E0 /* WFHomeSectionItemCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = WFHomeSectionItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		018038AF7122E54F4F15E22F0F2FCBC7 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		018625F581F58C3AD4CD5EC6CFBD95A7 /* WFHomeSectionItemCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeSectionItemCollectionViewCell.m; sourceTree = "<group>"; };
 		03260258B16CBA9B3FCFF5C4929E5116 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		0330D74ACAE95F63315CF0A8CFECCE8C /* WFPopTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WFPopTool.m; path = WFBasics/Classes/Tools/WFPopTool.m; sourceTree = "<group>"; };
 		039F91E7FF4A9F59CF75B6D22C4E67D1 /* WFBasics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WFBasics-dummy.m"; sourceTree = "<group>"; };
@@ -436,6 +438,7 @@
 		3403BC5BA7851C63C41B0FD44F7E0F9C /* WYAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WYAutoLayout.xcconfig; sourceTree = "<group>"; };
 		343775A9AF0672BD576B68A4412B1CDE /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJKeyValue.m"; path = "MJExtension/NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
 		3455681840788201E7519D6E06E7AD46 /* WKTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKTimer.h; path = WFBasics/Classes/Tools/WKTimer.h; sourceTree = "<group>"; };
+		34E77C451E5849C0332713BDB5728B58 /* WFLoginPublicAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFLoginPublicAPI.h; sourceTree = "<group>"; };
 		38D94FBC1D27F7089273E71A2D4BD8D9 /* WFBasics-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WFBasics-Info.plist"; sourceTree = "<group>"; };
 		38E0C3653AE7CBEDBEFF89EE37D18510 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9D4752524059D5FC427497C0B59891 /* Pods-WFKitLogin_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WFKitLogin_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -443,6 +446,7 @@
 		3E5DB66FDAA6A8F588B66BE31D9DA221 /* YFKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YFKeyWindow.m; path = WFBasics/Classes/Tools/YFKeyWindow.m; sourceTree = "<group>"; };
 		3F06AB7058C7EC5E24000360046C9758 /* Back@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Back@2x.png"; path = "WFKitMain/Assets/Back@2x.png"; sourceTree = "<group>"; };
 		411813A7AF9A0A8354F9D3DA38A769EE /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		4139FDED464CB75D14976BAA9D3B2462 /* WFHomeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeViewController.h; sourceTree = "<group>"; };
 		41C0907AC7CBA105F7B35FAAF8FA0319 /* itemImgLogo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "itemImgLogo@3x.png"; path = "WFKitLogin/Assets/itemImgLogo@3x.png"; sourceTree = "<group>"; };
 		4243D5BB7992BB72728E72978B325819 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJProperty.h"; path = "MJExtension/NSObject+MJProperty.h"; sourceTree = "<group>"; };
 		43206410163AA6FAAF6823ADE0227779 /* YFEmptyDataView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = YFEmptyDataView.xib; path = WFBasics/Classes/Tools/YFEmptyDataView.xib; sourceTree = "<group>"; };
@@ -458,7 +462,6 @@
 		4E29960A7426FA5457DE5979E6FCCB3D /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		4F01D64378AD42C4647BA495E7399E88 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		4F5F67E3CBE4D8A2B89343CF2B589D66 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
-		50FD7E9BC91523C92D5A5D5E5E07F7AF /* WFHomeFirstItemCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeFirstItemCollectionViewCell.h; sourceTree = "<group>"; };
 		524B16B99547A5B7BB107064678CEC89 /* UIView+Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "WFBasics/Classes/Category/UIView+Frame.h"; sourceTree = "<group>"; };
 		52C1FF01E3187807007EBDDC3823D935 /* SKSingle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKSingle.h; path = WFBasics/Classes/Tools/SKSingle.h; sourceTree = "<group>"; };
 		53C32EDC87F95A2F849C82D7002BEA7C /* NSObject+MJCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJCoding.h"; path = "MJExtension/NSObject+MJCoding.h"; sourceTree = "<group>"; };
@@ -471,7 +474,6 @@
 		5BC4FE2484C059394B9E864B877ABF41 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		5C96CA43F95D0D4BC078B945CA24CBB5 /* YFFunctionPublicAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YFFunctionPublicAPI.h; path = WFBasics/Classes/Tools/YFFunctionPublicAPI.h; sourceTree = "<group>"; };
 		5C9A62374078DB54CCE8BE93E1E9717D /* WFApplyAddressModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WFApplyAddressModel.h; path = WFHomeAddress/Classes/Address/WFApplyAddressModel.h; sourceTree = "<group>"; };
-		5F2B65A8867F0B56B4318F622913F73E /* WFHomeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeViewController.m; sourceTree = "<group>"; };
 		6032A76CFE73BE1671BA334C5E1D6746 /* Pods-WFKitLogin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WFKitLogin_Example-dummy.m"; sourceTree = "<group>"; };
 		6081BD330877D5CF735E4D1F0EFA7FC4 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		62B106FA284B83780B78754E24C7EA49 /* Pods-WFKitLogin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WFKitLogin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -480,7 +482,7 @@
 		6473B0CF927AEBE492936F38E9CA6F54 /* WFLoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFLoginViewController.m; sourceTree = "<group>"; };
 		64E779A11C1F90E65947FC1C835F5A8D /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
 		651696625C4FCBB0BD07E55ACE1AC091 /* homeItem@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "homeItem@3x.png"; path = "WFKitLogin/Assets/homeItem@3x.png"; sourceTree = "<group>"; };
-		6564F67517C9439A17EEA0F7E3B9945D /* WFHomeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeViewController.h; sourceTree = "<group>"; };
+		667357BC7A97034EBAF13C7BE3F5ED4B /* WFHomeFirstItemCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = WFHomeFirstItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		6678405C789A25C5FB6F7C3A331969E4 /* statisticsData@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "statisticsData@3x.png"; path = "WFKitLogin/Assets/statisticsData@3x.png"; sourceTree = "<group>"; };
 		67716204B41670A0C1E3908A9DCDBC84 /* YFMainPublicModelAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YFMainPublicModelAPI.h; path = WFKitMain/Classes/PublicModelAPI/YFMainPublicModelAPI.h; sourceTree = "<group>"; };
 		692E43640476359DB26EE05CEC0E4448 /* WFKitMain-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WFKitMain-Info.plist"; sourceTree = "<group>"; };
@@ -502,6 +504,7 @@
 		7CB1AA34ADD17070574FF901BC6D8D76 /* WFKitLogin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WFKitLogin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7CC98F3641EC304868DBBC18AC76BE3A /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		7CE83645F0562DD66660EE4FA4B48B6C /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		7D00223CE8808E4B8973C4E1025493C2 /* WFHomeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeViewController.m; sourceTree = "<group>"; };
 		7D13143BA1F4F25CF5E050F1A50F685F /* Pods_WFKitLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WFKitLogin_Example.framework; path = "Pods-WFKitLogin_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D810C10ACC40B29B9D0BC72AAC50999 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		7F12747CECBED3B5D8CC6D73402F063B /* RSAEncryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSAEncryptor.m; path = WFBasics/Classes/Tools/RSAEncryptor.m; sourceTree = "<group>"; };
@@ -521,7 +524,6 @@
 		88E68BF180B5F8772FA83307F9E6FD84 /* MJFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJFoundation.h; path = MJExtension/MJFoundation.h; sourceTree = "<group>"; };
 		89CF5E475584F6BA25F4FE048D5C632C /* Pods-WFKitLogin_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WFKitLogin_Tests-Info.plist"; sourceTree = "<group>"; };
 		8A802C8BF8BC3742E5B51230731A7F8D /* WFPopTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WFPopTool.h; path = WFBasics/Classes/Tools/WFPopTool.h; sourceTree = "<group>"; };
-		8AD45C4B3707AEFF9455C16218975723 /* WFHomeFirstItemCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = WFHomeFirstItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		8BC509029C9E52BF0FF7BFC8EF0D834C /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
 		8CD09BAD6E498E1FFE38AE634F137748 /* WFKitLogin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WFKitLogin-umbrella.h"; sourceTree = "<group>"; };
 		8D23EC402E8A72407C89D953E7A8167A /* UILabel+aptateFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+aptateFont.h"; path = "WYAutoLayout/Classes/WYAutoLayout/UILabel+aptateFont.h"; sourceTree = "<group>"; };
@@ -531,10 +533,8 @@
 		8E7E5FEDBFCAE1F2A9BAADC78D86001C /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		8EC55C3B5FA1B2F3E495081158E02D68 /* WFApplyAddressModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WFApplyAddressModel.m; path = WFHomeAddress/Classes/Address/WFApplyAddressModel.m; sourceTree = "<group>"; };
 		90161B0A7EBBBA48C4BE609367BE999E /* YFAddressPickView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YFAddressPickView.m; path = WFHomeAddress/Classes/Address/YFAddressPickView.m; sourceTree = "<group>"; };
-		9090D83DA3743DD5DFD893F3817B8531 /* WFHomeSectionItemCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeSectionItemCollectionViewCell.m; sourceTree = "<group>"; };
 		9355C01F5E2D5654F3FBA3C142BD553D /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		94009932549E127FD4FDEB18B00F9745 /* YFMediatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YFMediatorManager.m; path = WFBasics/Classes/MediatorManager/YFMediatorManager.m; sourceTree = "<group>"; };
-		94F2A436932B3BFE7AD3A41BBD11C141 /* WFHomeSectionItemCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeSectionItemCollectionViewCell.h; sourceTree = "<group>"; };
 		951217C8CF44F0EEF7485AABC239CA93 /* statisticsData@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "statisticsData@2x.png"; path = "WFKitLogin/Assets/statisticsData@2x.png"; sourceTree = "<group>"; };
 		95231301E9529BEFC7E0396DFE2E06B6 /* WYAutoLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WYAutoLayout-Info.plist"; sourceTree = "<group>"; };
 		96300E7C7D4C6A97664E371C84ECDE48 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
@@ -550,11 +550,12 @@
 		9F5A307E97D3EE3CCBCBC2C097206A1B /* Pods-WFKitLogin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WFKitLogin_Tests-dummy.m"; sourceTree = "<group>"; };
 		9FC0E8F5AA93591669102EC21CC00DD4 /* WFKitMain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WFKitMain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DF8F336F26B391F698F83EF733B9B7 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		A325FB189C59230BB7C4B51BD9E00321 /* WFHomeSectionItemCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeSectionItemCollectionViewCell.h; sourceTree = "<group>"; };
 		A38A2AACF1FA216AACA9EA57A2E7C440 /* MJPropertyKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyKey.m; path = MJExtension/MJPropertyKey.m; sourceTree = "<group>"; };
 		A3EFA815E8FE2D72D6D0D132EFD0E9CA /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FAEE7FA02105C6F942549AA161E662 /* Pods-WFKitLogin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WFKitLogin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A53570AA28C99F41BA3607C4ECC79D72 /* WFHomeFirstItemCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeFirstItemCollectionViewCell.m; sourceTree = "<group>"; };
+		A53064C0C26CFA0BC25BD1FEC44B0852 /* WFHomeSectionItemCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = WFHomeSectionItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		A831F8F4807D3FBE4DD650B1ED3C7EA9 /* WKBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKBaseModel.h; path = WFBasics/Classes/WKRequest/WKBaseModel.h; sourceTree = "<group>"; };
 		A83D0EC2E2EEA5659587FAB904B29262 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		A8EE03FF63D2C8378FD15F954014FF11 /* Pods-WFKitLogin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WFKitLogin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -611,6 +612,8 @@
 		D7225E439A14C857C990CFD617647998 /* WKRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKRequest.m; path = WFBasics/Classes/Tools/WKRequest.m; sourceTree = "<group>"; };
 		D8110D6C2463AB611FD2463AC14F9C1D /* YFMainPublicModelAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YFMainPublicModelAPI.m; path = WFKitMain/Classes/PublicModelAPI/YFMainPublicModelAPI.m; sourceTree = "<group>"; };
 		D839E19EB96D7CF5B70E855AACAF41FD /* empty@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "empty@3x.png"; path = "WFBasics/Assets/empty@3x.png"; sourceTree = "<group>"; };
+		D898DFF45A6ECA1D0D3A7944FC01DC9F /* WFLoginPublicAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFLoginPublicAPI.m; sourceTree = "<group>"; };
+		D97CB2ED12943AA8D8A65986849C542B /* WFHomeFirstItemCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeFirstItemCollectionViewCell.h; sourceTree = "<group>"; };
 		DA2D00227BAF88EC5E494C0FE6F7B68B /* MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJProperty.m; path = MJExtension/MJProperty.m; sourceTree = "<group>"; };
 		DB4F7FE027DFA00FB6FD7D208E7829B4 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		DB6401DC942F6EB4DD3548595FADF2E4 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
@@ -647,22 +650,14 @@
 		F6EA2754277B0365F3EE0DA7836402D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F71CB6CE00680B3E064301CFC734A07A /* WFKitMain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WFKitMain.xcconfig; sourceTree = "<group>"; };
 		F79F9D532AEFBFC4545831B5AD2BF3F1 /* MJPropertyType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyType.h; path = MJExtension/MJPropertyType.h; sourceTree = "<group>"; };
+		FBDA76939417E4D7AA69EA1D53E6884B /* WFHomeFirstItemCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeFirstItemCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		25E7AA5F5DB440E7FDCA82A7931C6E7A /* Frameworks */ = {
+		123E9E6D40A6A700DC1D20B33F5B5E75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		565237C4D34F777A64EB6F3060C8E75E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7206D3A74BEC7A2F32D770FD0036344E /* Foundation.framework in Frameworks */,
-				B63E633E72A299D1FE615F0B8B1ACB55 /* WFBasics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +666,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D3EAC9263D597A38219BB65C130F59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686C14C1556142328B31AFF792FF0A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78CE7726ACE592738B6EC06D60F07A84 /* Foundation.framework in Frameworks */,
+				B02AFC4337983EEC91570C25AC0C34F6 /* WFBasics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,18 +687,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82B3DD2B0338AFA596319C54B2E210FE /* Frameworks */ = {
+		85F5E924B8AB6CBBA0B68718D63DBE37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA933910117CF5F9B6525575B7DB1BF5 /* Foundation.framework in Frameworks */,
-				21E4D774BF13C41DADC7E9F0EB68216F /* MJExtension.framework in Frameworks */,
-				B16A2B1543A8598165412EFAF94236F7 /* WFHomeAddress.framework in Frameworks */,
-				B59BD05A5F68CAB3C912883363F56C4D /* WFKitMain.framework in Frameworks */,
+				1E4D1ECF2295720A87FC896F3AA6FE98 /* Foundation.framework in Frameworks */,
+				B5A8C810F3A2A500D7CFB7A55ECB95F8 /* MJExtension.framework in Frameworks */,
+				475EA100643954D2AC3A3068EB97E47B /* WFHomeAddress.framework in Frameworks */,
+				077FD6C6EB19F0FFEF7ABA1A2109D53C /* WFKitMain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8C8870D4A66A4DFC20329B446203122A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9243DA6A41544673C4918A720A8B4589 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -719,13 +730,6 @@
 			files = (
 				D4914107FF5A197B9D0BC6D1C089E33D /* Foundation.framework in Frameworks */,
 				99456829035D2883017E8EBCDB82C231 /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D879A692BB7BD65801986F9269A0A175 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1032,11 +1036,11 @@
 			name = Security;
 			sourceTree = "<group>";
 		};
-		5127644E2314F118FDEC0F7BA9769AEF /* Home */ = {
+		5AB83449155FCB77446C2ABE8E108102 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				8CF9692364204B032EEA74444F7A9920 /* Controller */,
-				F1BB61BDA1BAD915B991FD99360D5A4A /* View */,
+				C15C24DE0BC8B8892FC914069AC747A6 /* Controller */,
+				D7CE878E1AAAA8BE39043A3AE7D63D63 /* View */,
 			);
 			name = Home;
 			path = WFKitLogin/Classes/Home;
@@ -1074,7 +1078,7 @@
 		622B393CCDBC69426AE7BC41C626D423 /* WFKitLogin */ = {
 			isa = PBXGroup;
 			children = (
-				5127644E2314F118FDEC0F7BA9769AEF /* Home */,
+				5AB83449155FCB77446C2ABE8E108102 /* Home */,
 				89A2477B843DE2D41569B106F28EF8BB /* Login */,
 				A99FE5624F5C696629DE2BACD6E4C9FA /* Pod */,
 				0A57A3FBBAA276CD00C7407B864ADA04 /* Resources */,
@@ -1215,16 +1219,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8CF9692364204B032EEA74444F7A9920 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				6564F67517C9439A17EEA0F7E3B9945D /* WFHomeViewController.h */,
-				5F2B65A8867F0B56B4318F622913F73E /* WFHomeViewController.m */,
-			);
-			name = Controller;
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		A5433E308AE47D0B588B596819547BB0 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -1278,6 +1272,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C15C24DE0BC8B8892FC914069AC747A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4139FDED464CB75D14976BAA9D3B2462 /* WFHomeViewController.h */,
+				7D00223CE8808E4B8973C4E1025493C2 /* WFHomeViewController.m */,
+				D067CBEB123C42A44DCE69C36D209C52 /* Model */,
+			);
+			name = Controller;
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C65058B348EBE34A234EB724DAA69AD8 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -1321,6 +1326,30 @@
 			);
 			sourceTree = "<group>";
 		};
+		D067CBEB123C42A44DCE69C36D209C52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34E77C451E5849C0332713BDB5728B58 /* WFLoginPublicAPI.h */,
+				D898DFF45A6ECA1D0D3A7944FC01DC9F /* WFLoginPublicAPI.m */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7CE878E1AAAA8BE39043A3AE7D63D63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D97CB2ED12943AA8D8A65986849C542B /* WFHomeFirstItemCollectionViewCell.h */,
+				FBDA76939417E4D7AA69EA1D53E6884B /* WFHomeFirstItemCollectionViewCell.m */,
+				667357BC7A97034EBAF13C7BE3F5ED4B /* WFHomeFirstItemCollectionViewCell.xib */,
+				A325FB189C59230BB7C4B51BD9E00321 /* WFHomeSectionItemCollectionViewCell.h */,
+				018625F581F58C3AD4CD5EC6CFBD95A7 /* WFHomeSectionItemCollectionViewCell.m */,
+				A53064C0C26CFA0BC25BD1FEC44B0852 /* WFHomeSectionItemCollectionViewCell.xib */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
 		DB3CB74D58BF54F296975FE48387516A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1355,20 +1384,6 @@
 				6F124C32F941C688599E18912C270DA9 /* Pods-WFKitLogin_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F1BB61BDA1BAD915B991FD99360D5A4A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				50FD7E9BC91523C92D5A5D5E5E07F7AF /* WFHomeFirstItemCollectionViewCell.h */,
-				A53570AA28C99F41BA3607C4ECC79D72 /* WFHomeFirstItemCollectionViewCell.m */,
-				8AD45C4B3707AEFF9455C16218975723 /* WFHomeFirstItemCollectionViewCell.xib */,
-				94F2A436932B3BFE7AD3A41BBD11C141 /* WFHomeSectionItemCollectionViewCell.h */,
-				9090D83DA3743DD5DFD893F3817B8531 /* WFHomeSectionItemCollectionViewCell.m */,
-				0110B29D6F8BA9D8D5A7DADEEF3695E0 /* WFHomeSectionItemCollectionViewCell.xib */,
-			);
-			name = View;
-			path = View;
 			sourceTree = "<group>";
 		};
 		F818040237649813FF1025B0D188C908 /* Support Files */ = {
@@ -1411,6 +1426,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		23B53213DD22E3CD97163965300E8A91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D32DA378A0CAEB1587584BB2E97711 /* WFKitMain-umbrella.h in Headers */,
+				F64A288B0E580082518AB42DC0944CAF /* WFStartUpViewController.h in Headers */,
+				A70A4D0DB98BF8CD9A75D66B8463CBCF /* WKNavigationController.h in Headers */,
+				4ED9D98F8EAAE868810519965322449B /* WKTabbarController.h in Headers */,
+				1845B148D2ACB9AE11B5D1DEB8E9454B /* YFBaseViewController.h in Headers */,
+				F04CF5F9DA8EEA5B4A2A1D29DB3823EC /* YFMainPublicModelAPI.h in Headers */,
+				BD3C624F0090C5AFA20604C1588E13ED /* YFMediatorManager+YFKitMain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7C044C67F11489EFA3459B8399E7061C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1441,19 +1470,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98F7C1C6D174DCF4AC3C353F9BE7E0A5 /* Headers */ = {
+		A104197F072C3E72797B4A3B821B121E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				657EAEC11A61A3131341461032D06554 /* WFApplyPartnerUserView.h in Headers */,
-				B0D0D9E3AD9F2247E9DF4FBF9DF10065 /* WFApplyPartnerViewController.h in Headers */,
-				4EE6F49E133320651F61729FBBDFD45E /* WFHomeFirstItemCollectionViewCell.h in Headers */,
-				49E6D29B8CB0AA7544188A10A85B4E52 /* WFHomeSaveDataTool.h in Headers */,
-				68F773C6B9324C7F77711DA914DBE658 /* WFHomeSectionItemCollectionViewCell.h in Headers */,
-				EF53F8218D59C7CC0A970DE87CB818D8 /* WFHomeViewController.h in Headers */,
-				994FB72B195C25ED98BDB753DFB9FFC6 /* WFKitLogin-umbrella.h in Headers */,
-				521A1CA2DBA387A0E9613FF134BF0571 /* WFLoginDataTool.h in Headers */,
-				030E8A03DFEC1927C8740CB26837BAB9 /* WFLoginViewController.h in Headers */,
+				6AD798ED06D1F0662052176F2CA95EA1 /* WFApplyPartnerUserView.h in Headers */,
+				B99E663EE797F7358323B7CCCB0FB68F /* WFApplyPartnerViewController.h in Headers */,
+				6AE060F50A535B68B9311985C04F2285 /* WFHomeFirstItemCollectionViewCell.h in Headers */,
+				8D1C44928D0F90659601BFEF390685D0 /* WFHomeSaveDataTool.h in Headers */,
+				94357618BF0AAC771B2AA4B2E88A4D7C /* WFHomeSectionItemCollectionViewCell.h in Headers */,
+				4129A2ED4C5FF96271F8B3412BA8F3CB /* WFHomeViewController.h in Headers */,
+				52BA3C7F82F8F2BBFC89EC52FD3A5E3A /* WFKitLogin-umbrella.h in Headers */,
+				0D9C1A79DE27C33E72F1499B03E7B52A /* WFLoginDataTool.h in Headers */,
+				6F7DB9654B4670C323E9A13AFDEEAD4E /* WFLoginPublicAPI.h in Headers */,
+				6A2AF09B1997D8BFED6D852DF16A6E58 /* WFLoginViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1526,20 +1556,6 @@
 				1FC8B55B1790F7F6CFB0C2EDF87A87C9 /* UILabel+aptateFont.h in Headers */,
 				5C799A8011C8B0787B176ED8EDC61CED /* WYAutoLayout-umbrella.h in Headers */,
 				2C844FDC16EE4EC64BC55C17269EFB33 /* WYHead.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EE0EC98758FB749BE41D2DE8693AD328 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5DB6D571E07E7135B154B67B0BD61ACA /* WFKitMain-umbrella.h in Headers */,
-				5B89D39EA3649750CEE42D0912F5A470 /* WFStartUpViewController.h in Headers */,
-				47DB7AF1B83E702CBB23C79C402FD8C0 /* WKNavigationController.h in Headers */,
-				DB3406D7E6BD1D704D2224921E01B5C4 /* WKTabbarController.h in Headers */,
-				3E895FC3027626DCA5D6895F2A63B134 /* YFBaseViewController.h in Headers */,
-				522B06CC8089D855FA82A2C63437EC57 /* YFMainPublicModelAPI.h in Headers */,
-				1BE53AC7D581945E6B81C5199C84CC5F /* YFMediatorManager+YFKitMain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1630,11 +1646,11 @@
 		};
 		222428F5F8A112E9A24DE4D2EE84E896 /* WFKitLogin-WFKitLogin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD137C9B2850BFEE692927D6A951F2D1 /* Build configuration list for PBXNativeTarget "WFKitLogin-WFKitLogin" */;
+			buildConfigurationList = 5F350C2B84722A0135526A9EF5FDF80E /* Build configuration list for PBXNativeTarget "WFKitLogin-WFKitLogin" */;
 			buildPhases = (
-				A441701F1AD2E6321E62722A28A5C81A /* Sources */,
-				25E7AA5F5DB440E7FDCA82A7931C6E7A /* Frameworks */,
-				B1137676B899814DC1F0E9374FE4CAFA /* Resources */,
+				FBA1AEA007B3F9C2A9762A0F0B71BC58 /* Sources */,
+				123E9E6D40A6A700DC1D20B33F5B5E75 /* Frameworks */,
+				BD9F43C77948A0284042AD93AE7C41F2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1732,20 +1748,20 @@
 		};
 		81EDA870B916C9B9180567EBA4BF9B41 /* WFKitLogin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10DB851889BC83F0E1AA32AE3C9DE1F7 /* Build configuration list for PBXNativeTarget "WFKitLogin" */;
+			buildConfigurationList = E67FC536C9D173C38213ADD830EE6D48 /* Build configuration list for PBXNativeTarget "WFKitLogin" */;
 			buildPhases = (
-				98F7C1C6D174DCF4AC3C353F9BE7E0A5 /* Headers */,
-				A58F1B2E689DDB993C41F6683F35ED86 /* Sources */,
-				82B3DD2B0338AFA596319C54B2E210FE /* Frameworks */,
-				6879E43ED58F11BB2305BE16F0868607 /* Resources */,
+				A104197F072C3E72797B4A3B821B121E /* Headers */,
+				F36EDD93BE801F84B4189B4B329D2B5F /* Sources */,
+				85F5E924B8AB6CBBA0B68718D63DBE37 /* Frameworks */,
+				0C1D9A68891F19DCB1817A1356A2BC53 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				492F6B334BF932F28DCCA795E8645DCA /* PBXTargetDependency */,
-				8D2FB23EFF2511643BE833796205170C /* PBXTargetDependency */,
-				4B986ADC3D4588A7E302ED2B3F62F8B9 /* PBXTargetDependency */,
-				3A9405FCEBDCA4B6FE25CAC6FAA7E85B /* PBXTargetDependency */,
+				78B618E25164A4CE02049F20929837D2 /* PBXTargetDependency */,
+				68DAF40ABD17E2AB87184095E0FCB920 /* PBXTargetDependency */,
+				EC3A676DEA29C1C76E4ACFF8887C8661 /* PBXTargetDependency */,
+				603F33F468E345EB79D932D642F52645 /* PBXTargetDependency */,
 			);
 			name = WFKitLogin;
 			productName = WFKitLogin;
@@ -1789,18 +1805,18 @@
 		};
 		9EDB9909710233EAFFCD178E83A2BCC2 /* WFKitMain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66CF0C5F612EF206D96BB8971D0BEBA4 /* Build configuration list for PBXNativeTarget "WFKitMain" */;
+			buildConfigurationList = 7B9BF3BD75A9E634565B8C89AB73A20F /* Build configuration list for PBXNativeTarget "WFKitMain" */;
 			buildPhases = (
-				EE0EC98758FB749BE41D2DE8693AD328 /* Headers */,
-				EDAE2DAA6B9793E0732EF60E2B19ED61 /* Sources */,
-				565237C4D34F777A64EB6F3060C8E75E /* Frameworks */,
-				5D1956756EFB30528D1859216CFFAB2B /* Resources */,
+				23B53213DD22E3CD97163965300E8A91 /* Headers */,
+				EB26E516078A8CC3687CE73FDD73C940 /* Sources */,
+				686C14C1556142328B31AFF792FF0A4C /* Frameworks */,
+				C93C24E6FDD1FAB635422261A5A83DD4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2E0B025AF8BECB7EDA86BA820F7635D4 /* PBXTargetDependency */,
-				D00EF06915E3996F875F18FECCFFC0E8 /* PBXTargetDependency */,
+				AF5CB5E4519E6B25EA67B879265372EE /* PBXTargetDependency */,
+				0E93615C4C1566A2FB12FBCA3C065BE7 /* PBXTargetDependency */,
 			);
 			name = WFKitMain;
 			productName = WFKitMain;
@@ -1809,11 +1825,11 @@
 		};
 		CB1DC43B4C7A9BF1564CAABFDDEB52CC /* WFKitMain-WFKitMain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B12F8B63373A9E944E31183A287EE7C /* Build configuration list for PBXNativeTarget "WFKitMain-WFKitMain" */;
+			buildConfigurationList = 8294E3160D7C325F6D6355C2E233D385 /* Build configuration list for PBXNativeTarget "WFKitMain-WFKitMain" */;
 			buildPhases = (
-				9B60249289EB8F071B957D0CA6670296 /* Sources */,
-				D879A692BB7BD65801986F9269A0A175 /* Frameworks */,
-				1C0943A6A6EC50CAB1309E72BC5019A2 /* Resources */,
+				0A01A2F74B7F33EE528F95C92A730E28 /* Sources */,
+				9243DA6A41544673C4918A720A8B4589 /* Frameworks */,
+				02A78B422029462F6B3C3567F11594E9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1863,10 +1879,27 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		02A78B422029462F6B3C3567F11594E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17945050795BE68E105D821EF980ABC6 /* Back@2x.png in Resources */,
+				E3B024EF9ABC2A81545C143F273309A6 /* Back@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07F3886C86911466173566086E865A8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1D9A68891F19DCB1817A1356A2BC53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E7EFC775F4594D9B0A628980BF6893 /* WFKitLogin.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1876,15 +1909,6 @@
 			files = (
 				C42E7435CEF0B02C5D64514C12CC2773 /* empty@2x.png in Resources */,
 				5D6855F2856727B5752B3512491018C1 /* empty@3x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1C0943A6A6EC50CAB1309E72BC5019A2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6829547900AD4EDA6023B814D23FD15C /* Back@2x.png in Resources */,
-				D9523517A0251612BD182DF12009327C /* Back@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1916,22 +1940,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D1956756EFB30528D1859216CFFAB2B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75EC75F2F450EDEE71F1FA3D9E8FCC0C /* WFKitMain.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6879E43ED58F11BB2305BE16F0868607 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1534572D357188E53FE33426591E9F0 /* WFKitLogin.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7BB2E885B360CCC1AEF0C191542BA06E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1940,26 +1948,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1137676B899814DC1F0E9374FE4CAFA /* Resources */ = {
+		BD9F43C77948A0284042AD93AE7C41F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5EF769B64A796B54CDB5323CF7720E8 /* Back@2x.png in Resources */,
-				4B33E2E51590FAD784C8C6CDCE47796F /* Back@3x.png in Resources */,
-				969B51082F8CE9EC3156CBAB62542E4B /* homeHeadBg@2x.png in Resources */,
-				96411421A6497270731A679D4EA62FFD /* homeHeadBg@3x.png in Resources */,
-				72ACEA955773DFEEB6948088616DB3D1 /* homeItem@2x.png in Resources */,
-				B646D75DD232A4B8FADD67389744A3F7 /* homeItem@3x.png in Resources */,
-				345DCD622E753901BA7FF6B7B57C3138 /* itemImgLogo@2x.png in Resources */,
-				E3F08AA2E299A797341FF0FE256C4E60 /* itemImgLogo@3x.png in Resources */,
-				CAFF8E474EA91B659A94998922984FFB /* jumpNext@2x.png in Resources */,
-				22A880F1004E446F92C18F903A138A7A /* jumpNext@3x.png in Resources */,
-				7FA287A787F61BD64491AB3B34E54B09 /* loginBg@2x.png in Resources */,
-				947050C22D267A6AB1E22F6EE1A66F0E /* loginBg@3x.png in Resources */,
-				C8AC5089CBA0EF2405BAD9809542D205 /* statisticsData@2x.png in Resources */,
-				18E3A0C078F3F730471F1BA14B7C07DD /* statisticsData@3x.png in Resources */,
-				027DD374278860208142131EBA12DDF1 /* wechat@2x.png in Resources */,
-				68A061E31CC5ADA8C22BFF0112B5F235 /* wechat@3x.png in Resources */,
+				2ACC0CF644465085A70C70600FE0CA1D /* Back@2x.png in Resources */,
+				3A0F57DDD8289759C4AC392A271EC3F0 /* Back@3x.png in Resources */,
+				168E4FDF8BF9BD27176B2C40B9298B06 /* homeHeadBg@2x.png in Resources */,
+				DB8437BAAF4CB56FF733F63B776629AA /* homeHeadBg@3x.png in Resources */,
+				825421C6856D67946DD7E40D4ED1EC8E /* homeItem@2x.png in Resources */,
+				47F08BEC31721EDF9F418E164536F4F5 /* homeItem@3x.png in Resources */,
+				0E590C9DB28183367979B60429E42577 /* itemImgLogo@2x.png in Resources */,
+				DD37055EC812ED3B40D9FCA6D22862DA /* itemImgLogo@3x.png in Resources */,
+				35AC2D3F1D2F00044235CF541ACCEB31 /* jumpNext@2x.png in Resources */,
+				D0D613FD020E466EEE79D4CC93702AE5 /* jumpNext@3x.png in Resources */,
+				C40C070035174890792F907D020F1321 /* loginBg@2x.png in Resources */,
+				D678EE9E3552FAC539C6ACC4EE9AEE22 /* loginBg@3x.png in Resources */,
+				33B21F26D9302915C72D9A9B402EF716 /* statisticsData@2x.png in Resources */,
+				CEB26C06072DB84A46FB32A59B278EAC /* statisticsData@3x.png in Resources */,
+				1333804FE60242B6E555FBBF6C56C949 /* wechat@2x.png in Resources */,
+				AED0E442837912810AA055DBB3AAA314 /* wechat@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C93C24E6FDD1FAB635422261A5A83DD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38E88B78E8C0BF91AB19F9FCC17AD155 /* WFKitMain.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1981,6 +1997,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A01A2F74B7F33EE528F95C92A730E28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11FE39336DA4934C5AF32D7C96D64765 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2064,40 +2087,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B60249289EB8F071B957D0CA6670296 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A441701F1AD2E6321E62722A28A5C81A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A58F1B2E689DDB993C41F6683F35ED86 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADC03EEE9E9567C201ACC262EFC5954D /* WFApplyPartnerUserView.m in Sources */,
-				9A30C7692DCD80569C39494382812CDA /* WFApplyPartnerUserView.xib in Sources */,
-				7C7CA436E04A39A52ADC37B68DF57A76 /* WFApplyPartnerViewController.m in Sources */,
-				E0A93B4682D7C9235D8D4EDF88F53F98 /* WFHomeFirstItemCollectionViewCell.m in Sources */,
-				830A2A4D1CCB260F8D13F6276F15CDAE /* WFHomeFirstItemCollectionViewCell.xib in Sources */,
-				77E3260666C6CF5EAC63A5D6CAA7AFD0 /* WFHomeSaveDataTool.m in Sources */,
-				61975CFD9CF39083D6A228EFC551730E /* WFHomeSectionItemCollectionViewCell.m in Sources */,
-				789D883C7AE06356D36DECB639BDFD8E /* WFHomeSectionItemCollectionViewCell.xib in Sources */,
-				DB6D2DFF9CBCCD35AE5BE32E9AE41A83 /* WFHomeViewController.m in Sources */,
-				346F6A67E674224E559F680F24B0B1C6 /* WFKitLogin-dummy.m in Sources */,
-				33C8760E4077D3D150D8829F0B117D5F /* WFLoginDataTool.m in Sources */,
-				ED70EF5B712A10064A8AEBFE723E8F0D /* WFLoginViewController.m in Sources */,
-				E31ED8762B2DE04A1CD3A9B2F115BD64 /* WFLoginViewController.xib in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C08EB9F83F5B28364B0B8C03618984D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2143,17 +2132,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDAE2DAA6B9793E0732EF60E2B19ED61 /* Sources */ = {
+		EB26E516078A8CC3687CE73FDD73C940 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F4A9FE7496F2ACE3A54C638C6CDF8E /* WFKitMain-dummy.m in Sources */,
-				B7502D408D074FDC2008D5A60E432DC9 /* WFStartUpViewController.m in Sources */,
-				BF64B68C7A85701652605B3C7B04837B /* WKNavigationController.m in Sources */,
-				65F29D6FB14E79E1488AB63ED00815DA /* WKTabbarController.m in Sources */,
-				69A1DF5EB5C95A4A3DC499FA3B5025B0 /* YFBaseViewController.m in Sources */,
-				D466597C1CE35A7E7CDFA84F47829886 /* YFMainPublicModelAPI.m in Sources */,
-				AD4EE235365164064E7413794215F7AB /* YFMediatorManager+YFKitMain.m in Sources */,
+				F29C7D615A06515B0BDB99DED988EF96 /* WFKitMain-dummy.m in Sources */,
+				9DA737A85A0B0557C700D6853F03AFE7 /* WFStartUpViewController.m in Sources */,
+				01CE1257E44B65F79F83C38961A537F4 /* WKNavigationController.m in Sources */,
+				161AC516F673E96391E1B5C0CC3AC130 /* WKTabbarController.m in Sources */,
+				AD290904B85D68107D26DE1EDA00B816 /* YFBaseViewController.m in Sources */,
+				C12AAF885A5A8F2508E3FA20E5C6883B /* YFMainPublicModelAPI.m in Sources */,
+				DCAABB1B04FFD114C7FF14AF16447392 /* YFMediatorManager+YFKitMain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36EDD93BE801F84B4189B4B329D2B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035D0E6347BDB2332663704054F0C6E8 /* WFApplyPartnerUserView.m in Sources */,
+				D5EC966107CD47DFD043779E6C58A7C4 /* WFApplyPartnerUserView.xib in Sources */,
+				777FFDA92CC40DEDA66F81A457EA45D2 /* WFApplyPartnerViewController.m in Sources */,
+				ADF34A9889BFF4D3AFCDB57E00D7F3DA /* WFHomeFirstItemCollectionViewCell.m in Sources */,
+				CBF9F29BED01F95DE082CE438D526692 /* WFHomeFirstItemCollectionViewCell.xib in Sources */,
+				6A72B5D336DADA2C873245AD82DAD1D0 /* WFHomeSaveDataTool.m in Sources */,
+				74EE5F16F79ACF751B1AC1A70645ED4B /* WFHomeSectionItemCollectionViewCell.m in Sources */,
+				7F2AD9FBC40B0DD2791983BEF466E666 /* WFHomeSectionItemCollectionViewCell.xib in Sources */,
+				E6204DF0822C77AE9EF27AE79F70EF7C /* WFHomeViewController.m in Sources */,
+				A121ECBFB42880048DD58EB51C2CF990 /* WFKitLogin-dummy.m in Sources */,
+				25BAD155A3775D83522A3C4CEB2CB9AA /* WFLoginDataTool.m in Sources */,
+				4018726347DF8769C0B1FE0F6CD2C9EB /* WFLoginPublicAPI.m in Sources */,
+				93DD817387B6846D404C650F6BE8150C /* WFLoginViewController.m in Sources */,
+				F8A259247B00E7DB34D22FDE91D4C49E /* WFLoginViewController.xib in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA1AEA007B3F9C2A9762A0F0B71BC58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2165,6 +2182,12 @@
 			name = WFKitLogin;
 			target = 81EDA870B916C9B9180567EBA4BF9B41 /* WFKitLogin */;
 			targetProxy = B7E21D110FF4AFCA010F38FBF2E0D3D8 /* PBXContainerItemProxy */;
+		};
+		0E93615C4C1566A2FB12FBCA3C065BE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WFKitMain-WFKitMain";
+			target = CB1DC43B4C7A9BF1564CAABFDDEB52CC /* WFKitMain-WFKitMain */;
+			targetProxy = 750D4F9ABC513BE11F4B0FC1534A886D /* PBXContainerItemProxy */;
 		};
 		1294778EC08D4058195900AA398409BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2184,35 +2207,23 @@
 			target = 4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */;
 			targetProxy = 3C8A1FEB713C8FAD0298CE964EF004BB /* PBXContainerItemProxy */;
 		};
-		2E0B025AF8BECB7EDA86BA820F7635D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WFBasics;
-			target = 48CC238F44C34EB739121FC020CA96A2 /* WFBasics */;
-			targetProxy = 70967C7D1B0561714CC3330BE1BFF1D1 /* PBXContainerItemProxy */;
-		};
 		323FE9CE3794233C89FFE6303BF850DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AFNetworking;
 			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
 			targetProxy = 29D79610F07D675B0F05C35CBDB7359E /* PBXContainerItemProxy */;
 		};
-		3A9405FCEBDCA4B6FE25CAC6FAA7E85B /* PBXTargetDependency */ = {
+		603F33F468E345EB79D932D642F52645 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WFKitMain;
 			target = 9EDB9909710233EAFFCD178E83A2BCC2 /* WFKitMain */;
-			targetProxy = 0BAA7315DD1AFF67CBD005D88A3A8688 /* PBXContainerItemProxy */;
+			targetProxy = 1539C8C285449430117913A40E722F88 /* PBXContainerItemProxy */;
 		};
-		492F6B334BF932F28DCCA795E8645DCA /* PBXTargetDependency */ = {
+		68DAF40ABD17E2AB87184095E0FCB920 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MJExtension;
-			target = 4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */;
-			targetProxy = AE90498AD00D24B00D0FDC7A3D82544C /* PBXContainerItemProxy */;
-		};
-		4B986ADC3D4588A7E302ED2B3F62F8B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "WFKitLogin-WFKitLogin";
-			target = 222428F5F8A112E9A24DE4D2EE84E896 /* WFKitLogin-WFKitLogin */;
-			targetProxy = 68ED00D34C13DC3EA1C4DF510989E751 /* PBXContainerItemProxy */;
+			name = WFHomeAddress;
+			target = 083A189D185C5AAEA47CC8EA709DBEBA /* WFHomeAddress */;
+			targetProxy = ACDB5E05B765DC30A20FFC9B7700ABEF /* PBXContainerItemProxy */;
 		};
 		6D9182E98CA0B3DFCA4EB9122222CD20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2220,17 +2231,23 @@
 			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
 			targetProxy = 7D2C87DE8A5AEFEFB81324C0956AAE34 /* PBXContainerItemProxy */;
 		};
+		78B618E25164A4CE02049F20929837D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJExtension;
+			target = 4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */;
+			targetProxy = 576C12C65C7DAF1B7C9E797500B2BD00 /* PBXContainerItemProxy */;
+		};
 		859BA1900665F34F6656C26383EE7240 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WFKitMain;
 			target = 9EDB9909710233EAFFCD178E83A2BCC2 /* WFKitMain */;
 			targetProxy = DD21BD7E6FA20F02A528E975CDDEBF1D /* PBXContainerItemProxy */;
 		};
-		8D2FB23EFF2511643BE833796205170C /* PBXTargetDependency */ = {
+		AF5CB5E4519E6B25EA67B879265372EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = WFHomeAddress;
-			target = 083A189D185C5AAEA47CC8EA709DBEBA /* WFHomeAddress */;
-			targetProxy = DC7ECCB5F16340D4567626387538CD77 /* PBXContainerItemProxy */;
+			name = WFBasics;
+			target = 48CC238F44C34EB739121FC020CA96A2 /* WFBasics */;
+			targetProxy = 7FCBFAE2D7142F4D921EF19AEC51F7B4 /* PBXContainerItemProxy */;
 		};
 		C3D1B750FB7ECD9B5E06A6F3FBCF1C87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2243,12 +2260,6 @@
 			name = MJExtension;
 			target = 4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */;
 			targetProxy = 641AB9ED15EBE81E2B3ED5D4D97E5FF1 /* PBXContainerItemProxy */;
-		};
-		D00EF06915E3996F875F18FECCFFC0E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "WFKitMain-WFKitMain";
-			target = CB1DC43B4C7A9BF1564CAABFDDEB52CC /* WFKitMain-WFKitMain */;
-			targetProxy = D39B1EB1AF4E5923C026D8CB6D832FF3 /* PBXContainerItemProxy */;
 		};
 		D49FF449BCD29D9CD4AEBCC3E97DF6F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2273,6 +2284,12 @@
 			name = SVProgressHUD;
 			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
 			targetProxy = CAB89AD6137D73A2E8023769A2E8F8F8 /* PBXContainerItemProxy */;
+		};
+		EC3A676DEA29C1C76E4ACFF8887C8661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WFKitLogin-WFKitLogin";
+			target = 222428F5F8A112E9A24DE4D2EE84E896 /* WFKitLogin-WFKitLogin */;
+			targetProxy = DCAE2655D2EE0D839AC7E211A59BCB72 /* PBXContainerItemProxy */;
 		};
 		F8C781E272583CDCD18EDB0E9E4A2F42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2346,37 +2363,6 @@
 			};
 			name = Release;
 		};
-		06D113384705AA138F1F30ED921E58F1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F71CB6CE00680B3E064301CFC734A07A /* WFKitMain.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WFKitMain/WFKitMain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WFKitMain/WFKitMain-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WFKitMain/WFKitMain.modulemap";
-				PRODUCT_MODULE_NAME = WFKitMain;
-				PRODUCT_NAME = WFKitMain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		3965FF71C1C0B151A20DF3EDAAC91AD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8D769F47C9C34B4100A95EF34CAF4477 /* AFNetworking.xcconfig */;
@@ -2408,35 +2394,35 @@
 			};
 			name = Debug;
 		};
-		5F659CD203342BF3DF93AB6C7E1C69F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F71CB6CE00680B3E064301CFC734A07A /* WFKitMain.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WFKitMain";
-				INFOPLIST_FILE = "Target Support Files/WFKitMain/ResourceBundle-WFKitMain-WFKitMain-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = WFKitMain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		609723EEF1126AE48FEE0D7D746CA887 /* Release */ = {
+		4EA57C7DE6354E5DB4734F8D1BBA0DCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC3B1B2A7B351E1E3898544E9437A992 /* WFKitLogin.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WFKitLogin";
-				INFOPLIST_FILE = "Target Support Files/WFKitLogin/ResourceBundle-WFKitLogin-WFKitLogin-Info.plist";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WFKitLogin/WFKitLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WFKitLogin/WFKitLogin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WFKitLogin/WFKitLogin.modulemap";
+				PRODUCT_MODULE_NAME = WFKitLogin;
 				PRODUCT_NAME = WFKitLogin;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -2467,6 +2453,38 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7698C7A6222F011E434B6F5CFD954AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71CB6CE00680B3E064301CFC734A07A /* WFKitMain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WFKitMain/WFKitMain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WFKitMain/WFKitMain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WFKitMain/WFKitMain.modulemap";
+				PRODUCT_MODULE_NAME = WFKitMain;
+				PRODUCT_NAME = WFKitMain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2506,19 +2524,34 @@
 			};
 			name = Release;
 		};
-		7B2EBA9C31AC1CC8FF50050F6DB659AE /* Debug */ = {
+		7A46F919167F873C5D6048FBD7304C82 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC3B1B2A7B351E1E3898544E9437A992 /* WFKitLogin.xcconfig */;
+			baseConfigurationReference = F71CB6CE00680B3E064301CFC734A07A /* WFKitMain.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WFKitLogin";
-				INFOPLIST_FILE = "Target Support Files/WFKitLogin/ResourceBundle-WFKitLogin-WFKitLogin-Info.plist";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WFKitMain/WFKitMain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WFKitMain/WFKitMain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = WFKitLogin;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WFKitMain/WFKitMain.modulemap";
+				PRODUCT_MODULE_NAME = WFKitMain;
+				PRODUCT_NAME = WFKitMain;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -2615,6 +2648,22 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B5F42B609B004BD83DD71941FD32127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71CB6CE00680B3E064301CFC734A07A /* WFKitMain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WFKitMain";
+				INFOPLIST_FILE = "Target Support Files/WFKitMain/ResourceBundle-WFKitMain-WFKitMain-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = WFKitMain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -2742,7 +2791,39 @@
 			};
 			name = Debug;
 		};
-		93441443F738C44038C97F4AA6C34DB3 /* Debug */ = {
+		9A09E935C1DB2DF07148A284DC3239F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71CB6CE00680B3E064301CFC734A07A /* WFKitMain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WFKitMain";
+				INFOPLIST_FILE = "Target Support Files/WFKitMain/ResourceBundle-WFKitMain-WFKitMain-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = WFKitMain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		9B2C6C011D4926A2DC3FCE6966CE86C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38C4F3BB5295F1270F19CD0FF1F9642 /* WFBasics.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WFBasics";
+				INFOPLIST_FILE = "Target Support Files/WFBasics/ResourceBundle-WFBasics-WFBasics-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = WFBasics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9F65DC1D9C96C393BCDF258DBF9AC678 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC3B1B2A7B351E1E3898544E9437A992 /* WFKitLogin.xcconfig */;
 			buildSettings = {
@@ -2770,54 +2851,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		94BAD795382125A871AF607F6ADA5825 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F71CB6CE00680B3E064301CFC734A07A /* WFKitMain.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WFKitMain/WFKitMain-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WFKitMain/WFKitMain-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WFKitMain/WFKitMain.modulemap";
-				PRODUCT_MODULE_NAME = WFKitMain;
-				PRODUCT_NAME = WFKitMain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9B2C6C011D4926A2DC3FCE6966CE86C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B38C4F3BB5295F1270F19CD0FF1F9642 /* WFBasics.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WFBasics";
-				INFOPLIST_FILE = "Target Support Files/WFBasics/ResourceBundle-WFBasics-WFBasics-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = WFBasics;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -2886,22 +2919,6 @@
 			};
 			name = Debug;
 		};
-		A94AC8982A76451B934F15705D157595 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F71CB6CE00680B3E064301CFC734A07A /* WFKitMain.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WFKitMain";
-				INFOPLIST_FILE = "Target Support Files/WFKitMain/ResourceBundle-WFKitMain-WFKitMain-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = WFKitMain;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		B07626A0BD766A2983B07D221AAB02D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5686787946711C938A9DDDB4DC1AE78 /* WFHomeAddress.xcconfig */;
@@ -2934,35 +2951,35 @@
 			};
 			name = Release;
 		};
-		B3319139CB09A9A418C4B17901EC1F66 /* Release */ = {
+		B6C843E338424A9CFFFD8F5AA184FC68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC3B1B2A7B351E1E3898544E9437A992 /* WFKitLogin.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WFKitLogin/WFKitLogin-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WFKitLogin/WFKitLogin-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WFKitLogin";
+				INFOPLIST_FILE = "Target Support Files/WFKitLogin/ResourceBundle-WFKitLogin-WFKitLogin-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WFKitLogin/WFKitLogin.modulemap";
-				PRODUCT_MODULE_NAME = WFKitLogin;
 				PRODUCT_NAME = WFKitLogin;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B8A5A7806477408DE8C44C6E974AA8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC3B1B2A7B351E1E3898544E9437A992 /* WFKitLogin.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/WFKitLogin";
+				INFOPLIST_FILE = "Target Support Files/WFKitLogin/ResourceBundle-WFKitLogin-WFKitLogin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = WFKitLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -3144,15 +3161,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10DB851889BC83F0E1AA32AE3C9DE1F7 /* Build configuration list for PBXNativeTarget "WFKitLogin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				93441443F738C44038C97F4AA6C34DB3 /* Debug */,
-				B3319139CB09A9A418C4B17901EC1F66 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1B264064059617D374C130FB818B067D /* Build configuration list for PBXNativeTarget "WFBasics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3207,11 +3215,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66CF0C5F612EF206D96BB8971D0BEBA4 /* Build configuration list for PBXNativeTarget "WFKitMain" */ = {
+		5F350C2B84722A0135526A9EF5FDF80E /* Build configuration list for PBXNativeTarget "WFKitLogin-WFKitLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06D113384705AA138F1F30ED921E58F1 /* Debug */,
-				94BAD795382125A871AF607F6ADA5825 /* Release */,
+				B6C843E338424A9CFFFD8F5AA184FC68 /* Debug */,
+				B8A5A7806477408DE8C44C6E974AA8F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3225,11 +3233,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B12F8B63373A9E944E31183A287EE7C /* Build configuration list for PBXNativeTarget "WFKitMain-WFKitMain" */ = {
+		7B9BF3BD75A9E634565B8C89AB73A20F /* Build configuration list for PBXNativeTarget "WFKitMain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A94AC8982A76451B934F15705D157595 /* Debug */,
-				5F659CD203342BF3DF93AB6C7E1C69F6 /* Release */,
+				7A46F919167F873C5D6048FBD7304C82 /* Debug */,
+				7698C7A6222F011E434B6F5CFD954AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8294E3160D7C325F6D6355C2E233D385 /* Build configuration list for PBXNativeTarget "WFKitMain-WFKitMain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B5F42B609B004BD83DD71941FD32127 /* Debug */,
+				9A09E935C1DB2DF07148A284DC3239F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3252,11 +3269,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD137C9B2850BFEE692927D6A951F2D1 /* Build configuration list for PBXNativeTarget "WFKitLogin-WFKitLogin" */ = {
+		E67FC536C9D173C38213ADD830EE6D48 /* Build configuration list for PBXNativeTarget "WFKitLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B2EBA9C31AC1CC8FF50050F6DB659AE /* Debug */,
-				609723EEF1126AE48FEE0D7D746CA887 /* Release */,
+				9F65DC1D9C96C393BCDF258DBF9AC678 /* Debug */,
+				4EA57C7DE6354E5DB4734F8D1BBA0DCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
