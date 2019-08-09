@@ -9,6 +9,7 @@
 #import "WFHomeViewController.h"
 #import "WFHomeFirstItemCollectionViewCell.h"
 #import "WFHomeSectionItemCollectionViewCell.h"
+#import "YFMediatorManager+WFLogin.h"
 #import "WKHelp.h"
 
 @interface WFHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -73,17 +74,24 @@
     return section == 1 ? KWidth(7.0f) : CGFLOAT_MIN;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 1) {
+        if (indexPath.row == 1) {
+            //片区申请
+            [YFMediatorManager openApplyAreaCtrlWithController:self];
+        }
+    }
+}
+
 #pragma mark get set
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-//        layout.sectionInset = UIEdgeInsetsMake(0, KWidth(10.0f), 0, KWidth(10.0f));
         _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.backgroundColor = UIColor.whiteColor;
         _collectionView.alwaysBounceVertical = YES;
-//        _collectionView.contentInset = UIEdgeInsetsMake(0, KWidth(10.0f), 0, KWidth(10.0f));
         if (@available(iOS 11.0, *))
         _collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         [_collectionView registerNib:[UINib nibWithNibName:@"WFHomeFirstItemCollectionViewCell" bundle:[NSBundle bundleForClass:[self class]]] forCellWithReuseIdentifier:@"WFHomeFirstItemCollectionViewCell"];

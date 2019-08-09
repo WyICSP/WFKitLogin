@@ -10,8 +10,9 @@
 #endif
 #endif
 
-#import "WFLoginPublicAPI.h"
 #import "WFHomeViewController.h"
+#import "WFLoginPublicAPI.h"
+#import "YFMediatorManager+WFLogin.h"
 #import "WFHomeFirstItemCollectionViewCell.h"
 #import "WFHomeSectionItemCollectionViewCell.h"
 #import "WFApplyPartnerViewController.h"
