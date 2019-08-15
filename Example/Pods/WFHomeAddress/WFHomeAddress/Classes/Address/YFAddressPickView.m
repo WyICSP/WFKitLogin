@@ -75,18 +75,18 @@ YFAddressPickView *shareInstance;
     //省的
     self.provinceModels = [WFApplyAddressModel mj_objectArrayWithKeyValuesArray:addressDatas];
     WFApplyAddressModel *pModel = [self.provinceModels firstObject];
-    provinceId = pModel.provinceid;
-    provinceString = pModel.province;
+    provinceId = pModel.provinceId;
+    provinceString = pModel.Name;
     //市
-    self.cityArray = pModel.cityEntityList;
+    self.cityArray = pModel.cityList;
     WFHomeCityEntityListModel *cModel = [self.cityArray firstObject];
-    cityId = cModel.cityid;
-    cityString = cModel.city;
+    cityId = cModel.cityId;
+    cityString = cModel.Name;
     //区
-    self.townArray = cModel.areaEntityList;
+    self.townArray = cModel.areaList;
     WFHomeAreaEntityListModel *aModel = [self.townArray firstObject];
-    areaId = aModel.areaid;
-    areaString = aModel.area;
+    areaId = aModel.areaId;
+    areaString = aModel.Name;
     
     [_pickView reloadComponent:0];
     [_pickView selectRow:0 inComponent:0 animated:YES];
@@ -101,6 +101,32 @@ YFAddressPickView *shareInstance;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(hiddenBottomView)];
     [self addGestureRecognizer:tap];
 }
+
+/**获取非空字符串*/
+- (NSString *)getNullOrNoNull:(NSString *)StrNull{
+    if (StrNull.length == 0) {
+        return @"";
+    }
+    return [NSString stringWithFormat:@"/%@",StrNull];
+}
+
+
+/**
+ 获取区域 Id
+ 
+ @return 片区 Id
+ */
+- (NSString *)getAddressId {
+    if (areaId.length != 0) {
+        return areaId;
+    }else if (areaId.length == 0 && cityId.length != 0) {
+        return cityId;
+    }else if (areaId.length ==0 && cityId.length == 0) {
+        return provinceId;
+    }
+    return @"";
+}
+
 -(void)createView
 {
     
@@ -140,18 +166,15 @@ YFAddressPickView *shareInstance;
     _pickView.delegate =self;
     
     [_bottomView addSubview:_pickView];
-    
 }
+
+
 #pragma mark - 确定按钮点击
 -(void)tapButton:(UIButton*)button
 {
     //点击确定回调block
-    //    if (self.DataArray) {
-    //        _block(provinceString,cityString,areaString,provinceId,cityId,areaId);
-    //    }
-    
-    NSString *address = [NSString stringWithFormat:@"%@/%@/%@",provinceString,cityString,areaString];
-    !self.startPlaceBlock ? : self.startPlaceBlock (address);
+    NSString *address = [NSString stringWithFormat:@"%@%@%@",provinceString,[self getNullOrNoNull:cityString],[self getNullOrNoNull:areaString]];
+    !self.startPlaceBlock ? : self.startPlaceBlock (address,[self getAddressId]);
     [self hiddenBottomView];
 }
 -(void)showBottomView
@@ -201,13 +224,13 @@ YFAddressPickView *shareInstance;
     lable.numberOfLines = 2;
     lable.font=[UIFont systemFontOfSize:14.0f];
     if (component == 0) {
-        lable.text = [[self.provinceModels objectAtIndex:row] province];
+        lable.text = [[self.provinceModels objectAtIndex:row] Name];
     } else if (component == 1) {
         //加保险,防止数组越界
-        lable.text = [[self.cityArray objectAtIndex:row] city];
+        lable.text = [[self.cityArray objectAtIndex:row] Name];
     } else {
         //加保险,防止数组越界
-        lable.text = [[self.townArray objectAtIndex:row] area];
+        lable.text = [[self.townArray objectAtIndex:row] Name];
     }
     return lable;
 }
@@ -229,20 +252,22 @@ YFAddressPickView *shareInstance;
         
         //得到城市数据
         WFApplyAddressModel *pModel = self.provinceModels[row];
-        self.cityArray = pModel.cityEntityList;
+        self.cityArray = pModel.cityList;
         //省名
-        provinceString = pModel.province;
+        provinceString = pModel.Name;
+        provinceId = pModel.provinceId;
         
         //得到区的数据
         WFHomeCityEntityListModel *cModel = [self.cityArray firstObject];
-        self.townArray = cModel.areaEntityList;
+        self.townArray = cModel.areaList;
         //市名
-        cityString = cModel.city;
+        cityString = cModel.Name;
+        cityId = cModel.cityId;
         
         //区名
         WFHomeAreaEntityListModel *aModel = [self.townArray firstObject];
-        areaString = aModel.area;
-        
+        areaString = aModel.Name;
+        areaId = aModel.areaId;
         
         [pickerView reloadComponent:1];
         [pickerView reloadComponent:2];
@@ -253,20 +278,22 @@ YFAddressPickView *shareInstance;
     if (component == 1) {
         //得到区的数据逻辑
         WFHomeCityEntityListModel *cModel = [self.cityArray objectAtIndex:row];
-        self.townArray = cModel.areaEntityList;
-        cityString = cModel.city;
+        self.townArray = cModel.areaList;
+        cityString = cModel.Name;
+        cityId = cModel.cityId;
         
         WFHomeAreaEntityListModel *aModel = [self.townArray firstObject];
         //区名
-        areaString = aModel.area;
+        areaString = aModel.Name;
+        areaId = aModel.areaId;
         
         [pickerView reloadComponent:2];
         [pickerView selectRow:0 inComponent:2 animated:YES];
     }else if (component == 2) {
         WFHomeAreaEntityListModel *aModel = [self.townArray objectAtIndex:row];
-        areaString = aModel.area;
+        areaString = aModel.Name;
+        areaId = aModel.areaId;
     }
-    
 }
 
 

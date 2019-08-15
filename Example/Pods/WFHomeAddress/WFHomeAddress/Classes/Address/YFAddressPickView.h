@@ -23,7 +23,7 @@ typedef void(^AdressBlock) (NSString *province,NSString *city,NSString *town, NS
 
 @property (nonatomic, strong) NSArray *addressDatas;
 
-@property (nonatomic, copy) void(^startPlaceBlock)(NSString *);
+@property (nonatomic, copy) void(^startPlaceBlock)(NSString *address,NSString *addressId);
 
 #pragma mark - get data
 - (void)getPickerDataWithProvince:(NSArray *)ProvinceArr CityArr:(NSDictionary *)CityArr ProvinceId:(NSString *)province CityId:(NSString *)city DistrictId:(NSString *)district;

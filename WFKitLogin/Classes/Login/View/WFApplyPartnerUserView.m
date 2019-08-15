@@ -54,8 +54,8 @@
     YFAddressPickView *addressPickView = [YFAddressPickView shareInstance];
     addressPickView.addressDatas = [[WFHomeSaveDataTool shareInstance] readAddressFile];
     WS(weakSelf)
-    addressPickView.startPlaceBlock = ^(NSString *address) {
-        DLog(@"%@",address);
+    addressPickView.startPlaceBlock = ^(NSString *address, NSString *addressId) {
+        DLog(@"地址=%@-addressId=%@",address,addressId);
         [weakSelf.addressBtn setTitle:address forState:UIControlStateNormal];
         [weakSelf.addressBtn setTitleColor:UIColorFromRGB(0x333333) forState:UIControlStateNormal];
     };

@@ -12,33 +12,33 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WFApplyAddressModel : NSObject
 /**省Id*/
-@property (nonatomic, copy) NSString *provinceid;
+@property (nonatomic, copy) NSString *provinceId;
 /**省名*/
-@property (nonatomic, copy) NSString *province;
-@property (nonatomic, copy) NSString *Id;
+@property (nonatomic, copy) NSString *Name;
+@property (nonatomic, copy) NSString *code;
 /**城市*/
-@property (nonatomic, strong) NSArray *cityEntityList;
+@property (nonatomic, strong) NSArray *cityList;
 @end
 
 @interface WFHomeCityEntityListModel : NSObject
 /**城市Id*/
-@property (nonatomic, copy) NSString *cityid;
+@property (nonatomic, copy) NSString *cityId;
 /**城市名*/
-@property (nonatomic, copy) NSString *city;
-@property (nonatomic, copy) NSString *Id;
-@property (nonatomic, copy) NSString *provinceid;
+@property (nonatomic, copy) NSString *Name;
+@property (nonatomic, copy) NSString *code;
+@property (nonatomic, copy) NSString *parentId;
 /**地区*/
-@property (nonatomic, strong) NSArray *areaEntityList;
+@property (nonatomic, strong) NSArray *areaList;
 @end
 
 
 @interface WFHomeAreaEntityListModel : NSObject
-@property (nonatomic, copy) NSString *cityid;
+@property (nonatomic, copy) NSString *parentId;
 /**地区Id*/
-@property (nonatomic, copy) NSString *areaid;
+@property (nonatomic, copy) NSString *areaId;
 /**地区名*/
-@property (nonatomic, copy) NSString *area;
-@property (nonatomic, copy) NSString *Id;
+@property (nonatomic, copy) NSString *Name;
+@property (nonatomic, copy) NSString *code;
 @end
 
 NS_ASSUME_NONNULL_END

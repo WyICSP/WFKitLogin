@@ -12,28 +12,31 @@
 @implementation WFApplyAddressModel
 
 + (NSDictionary *)mj_replacedKeyFromPropertyName {
-    return @{@"Id":@"id"};
+    return @{@"Name":@"name"};
 }
 
 + (NSDictionary *)mj_objectClassInArray {
-    return @{@"cityEntityList":@"WFHomeCityEntityListModel"};
+    return @{@"cityList":@"WFHomeCityEntityListModel"};
 }
 
 @end
 
 @implementation WFHomeCityEntityListModel
 
-+ (NSDictionary *)mj_replacedKeyFromPropertyName {
-    return @{@"Id":@"id"};
++ (NSDictionary *)mj_objectClassInArray {
+    return @{@"areaList":@"WFHomeAreaEntityListModel"};
 }
 
-+ (NSDictionary *)mj_objectClassInArray {
-    return @{@"areaEntityList":@"WFHomeAreaEntityListModel"};
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+    return @{@"Name":@"name"};
 }
 
 @end
 
 @implementation WFHomeAreaEntityListModel
 
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+    return @{@"Name":@"name"};
+}
 
 @end
