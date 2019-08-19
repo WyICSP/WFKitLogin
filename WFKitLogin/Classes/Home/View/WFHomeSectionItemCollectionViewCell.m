@@ -7,6 +7,9 @@
 //
 
 #import "WFHomeSectionItemCollectionViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "NSString+Regular.h"
+#import "WFHomeDataModel.h"
 
 @implementation WFHomeSectionItemCollectionViewCell
 
@@ -23,7 +26,19 @@ static NSString *const cellId = @"WFHomeSectionItemCollectionViewCell";
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.title.adjustsFontSizeToFitWidth = self.detailTitle.adjustsFontSizeToFitWidth = YES;
     // Initialization code
+}
+
+- (void)setModel:(WFHomeDataListModel *)model {
+    //当前文件的 bundle
+    NSBundle *currentBundler = [NSBundle bundleForClass:[self class]];
+    //得到图片的路径
+    NSString *imgPath = [NSString getImagePathWithCurrentBundler:currentBundler PhotoName:@"itemImgLogo" bundlerName:@"WFKitLogin.bundle"];
+    [self.imgView sd_setImageWithURL:[NSURL URLWithString:model.imgUrl] placeholderImage:[UIImage imageWithContentsOfFile:imgPath]];
+    
+    self.title.text = model.title;
+    self.detailTitle.text = model.detail;
 }
 
 @end

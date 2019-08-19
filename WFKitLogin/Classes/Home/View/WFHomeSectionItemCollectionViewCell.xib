@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -34,7 +33,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实时查看充电桩" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFa-e4-FsR">
-                        <rect key="frame" x="16" y="51" width="86" height="14.5"/>
+                        <rect key="frame" x="18" y="51" width="93" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -42,8 +41,8 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="isAdapterFont" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的充电桩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GU-bs-LhR">
-                        <rect key="frame" x="18" y="26" width="82" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的充电桩" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GU-bs-LhR">
+                        <rect key="frame" x="18" y="26" width="93" height="20"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -58,16 +57,22 @@
                 <constraint firstItem="IsB-TM-erh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7ju-Yf-kP5"/>
                 <constraint firstItem="1GU-bs-LhR" firstAttribute="centerY" secondItem="49p-zE-Xkj" secondAttribute="centerY" constant="-10" id="9ac-Sq-IEM"/>
                 <constraint firstItem="1GU-bs-LhR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="B2p-yn-3M3"/>
-                <constraint firstItem="YFa-e4-FsR" firstAttribute="centerY" secondItem="49p-zE-Xkj" secondAttribute="centerY" constant="12" id="DDm-r5-swF"/>
+                <constraint firstItem="YFa-e4-FsR" firstAttribute="top" secondItem="1GU-bs-LhR" secondAttribute="bottom" constant="5" id="Bsd-qx-E8k"/>
                 <constraint firstAttribute="trailing" secondItem="49p-zE-Xkj" secondAttribute="trailing" constant="14" id="K84-YV-cvr"/>
                 <constraint firstItem="49p-zE-Xkj" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="MGw-nd-2RL"/>
+                <constraint firstItem="49p-zE-Xkj" firstAttribute="leading" secondItem="1GU-bs-LhR" secondAttribute="trailing" constant="5" id="Nak-hh-fTN"/>
                 <constraint firstAttribute="bottom" secondItem="IsB-TM-erh" secondAttribute="bottom" id="Rui-KP-GLQ"/>
-                <constraint firstItem="YFa-e4-FsR" firstAttribute="centerX" secondItem="1GU-bs-LhR" secondAttribute="centerX" id="TS4-9u-bbl"/>
+                <constraint firstItem="YFa-e4-FsR" firstAttribute="leading" secondItem="1GU-bs-LhR" secondAttribute="leading" id="V8e-Ad-Q3e"/>
                 <constraint firstItem="IsB-TM-erh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hE5-Ex-REW"/>
+                <constraint firstItem="YFa-e4-FsR" firstAttribute="trailing" secondItem="1GU-bs-LhR" secondAttribute="trailing" id="hbi-kN-Ovx"/>
                 <constraint firstAttribute="trailing" secondItem="IsB-TM-erh" secondAttribute="trailing" id="wUd-5E-ej3"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <size key="customSize" width="50" height="76"/>
+            <connections>
+                <outlet property="detailTitle" destination="YFa-e4-FsR" id="ABY-xV-Jce"/>
+                <outlet property="imgView" destination="49p-zE-Xkj" id="4i5-Nf-u3d"/>
+                <outlet property="title" destination="1GU-bs-LhR" id="7ph-Xm-LOp"/>
+            </connections>
             <point key="canvasLocation" x="-91.304347826086968" y="79.6875"/>
         </collectionViewCell>
     </objects>

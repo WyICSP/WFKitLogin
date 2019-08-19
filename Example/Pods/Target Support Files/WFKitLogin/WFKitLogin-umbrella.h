@@ -11,6 +11,8 @@
 #endif
 
 #import "WFHomeViewController.h"
+#import "WFHomeDataTool.h"
+#import "WFHomeDataModel.h"
 #import "WFLoginPublicAPI.h"
 #import "YFMediatorManager+WFLogin.h"
 #import "WFHomeFirstItemCollectionViewCell.h"

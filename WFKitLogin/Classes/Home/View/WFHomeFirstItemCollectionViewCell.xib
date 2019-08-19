@@ -192,7 +192,11 @@
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <size key="customSize" width="380" height="118"/>
             <connections>
+                <outlet property="banlance" destination="VnB-f5-t4h" id="Gc4-Er-JfA"/>
+                <outlet property="dayIncome" destination="RY2-wk-NhY" id="get-9W-jHS"/>
                 <outlet property="lookBtn" destination="FFR-9d-jwh" id="5dN-rH-bbI"/>
+                <outlet property="pileNumber" destination="2jN-zD-26x" id="3RX-TR-T1S"/>
+                <outlet property="rete" destination="5DC-07-CPP" id="a1G-eU-TIx"/>
             </connections>
             <point key="canvasLocation" x="118.11594202898551" y="85.379464285714278"/>
         </collectionViewCell>

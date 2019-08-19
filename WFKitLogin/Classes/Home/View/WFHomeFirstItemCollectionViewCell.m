@@ -7,6 +7,7 @@
 //
 
 #import "WFHomeFirstItemCollectionViewCell.h"
+#import "WFHomeDataModel.h"
 
 @implementation WFHomeFirstItemCollectionViewCell
 
@@ -25,6 +26,13 @@ static NSString *const cellId = @"WFHomeFirstItemCollectionViewCell";
     [super awakeFromNib];
     self.lookBtn.layer.cornerRadius = 19.0f;
     // Initialization code
+}
+
+- (void)setModel:(WFHomeDataModel *)model {
+    self.banlance.text = [NSString stringWithFormat:@"%.2f",model.income.floatValue/100];
+    self.dayIncome.text = [NSString stringWithFormat:@"%.2f",model.dayIncome.floatValue/100];
+    self.pileNumber.text = [NSString stringWithFormat:@"%ld",model.count];
+    self.rete.text = [NSString stringWithFormat:@"%.f",model.usage*100];
 }
 
 @end

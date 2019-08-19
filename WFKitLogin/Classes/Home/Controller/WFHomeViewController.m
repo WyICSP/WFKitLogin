@@ -10,11 +10,15 @@
 #import "WFHomeFirstItemCollectionViewCell.h"
 #import "WFHomeSectionItemCollectionViewCell.h"
 #import "YFMediatorManager+WFLogin.h"
+#import "WFHomeDataTool.h"
+#import "WFHomeDataModel.h"
 #import "WKHelp.h"
 
 @interface WFHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 /**collectionView*/
 @property (nonatomic, strong, nullable) UICollectionView *collectionView;
+/**数据*/
+@property (nonatomic, strong, nullable) WFHomeDataModel *models;
 @end
 
 @implementation WFHomeViewController
@@ -22,8 +26,8 @@
 #pragma mark 生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.collectionView reloadData];
     // Do any additional setup after loading the view.
+    [self getHomeData];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -40,21 +44,33 @@
     return UIStatusBarStyleLightContent;
 }
 
+#pragma mark 生命周期
+- (void)getHomeData {
+    @weakify(self)
+    [WFHomeDataTool getHomeDataWithParams:@{} resultBlock:^(WFHomeDataModel * _Nonnull models) {
+        @strongify(self)
+        self.models = models;
+        [self.collectionView reloadData];
+    }];
+}
+
 #pragma mark UICollectionViewDelegate,UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 2;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return section == 0 ? 1 : 7;
+    return section == 0 ? 1 : self.models.list.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         WFHomeFirstItemCollectionViewCell *cell = [WFHomeFirstItemCollectionViewCell cellWithCollectionView:collectionView indexPath:indexPath];
+        cell.model = self.models;
         return cell;
     }
     WFHomeSectionItemCollectionViewCell *cell = [WFHomeSectionItemCollectionViewCell cellWithCollectionView:collectionView indexPath:indexPath];
+    cell.model = self.models.list[indexPath.row];
     return cell;
 }
 
@@ -76,9 +92,20 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 1) {
-        if (indexPath.row == 1) {
-            //片区申请
+        WFHomeDataListModel *itemModel = self.models.list[indexPath.row];
+        if (itemModel.typeId == 1) {
+            //我的充电桩
+        }else if (itemModel.typeId == 2) {
+            //我的收入
+        }else if (itemModel.typeId == 3) {
+            //我的钱包
+        }else if (itemModel.typeId == 4) {
+            //我的片区
             [YFMediatorManager openApplyAreaCtrlWithController:self];
+        }else if (itemModel.typeId == 5) {
+            //充电桩申请
+        }else if (itemModel.typeId == 7) {
+            //资料包
         }
     }
 }

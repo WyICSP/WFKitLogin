@@ -15,6 +15,9 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - MJExtension (3.1.0)
+  - SDWebImage (5.1.0):
+    - SDWebImage/Core (= 5.1.0)
+  - SDWebImage/Core (5.1.0)
   - SVProgressHUD (2.2.5)
   - WFBasics (0.1.5):
     - AFNetworking
@@ -22,8 +25,9 @@ PODS:
     - WYAutoLayout
   - WFHomeAddress (0.1.4):
     - MJExtension
-  - WFKitLogin (0.1.3):
+  - WFKitLogin (0.1.4):
     - MJExtension
+    - SDWebImage
     - WFHomeAddress
     - WFKitMain
   - WFKitMain (0.1.2):
@@ -37,6 +41,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - MJExtension
+    - SDWebImage
     - SVProgressHUD
     - WYAutoLayout
   https://github.com/WyICSP/WFSpecs.git:
@@ -51,10 +56,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   MJExtension: 6b69b3bef2864fd550ce1a184eda219e321209d2
+  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   WFBasics: 75104ab05adf03ea36a2e4c5865bd32070eb3c01
   WFHomeAddress: 5f910d0370e0b8b3c62f5b3cc5cd03a800b84125
-  WFKitLogin: 3c43c03fe244856039d0ed9d7a00cb1f9561332c
+  WFKitLogin: 0dac40cf200f4f2567d1d8d14e95754fb7fc5ed1
   WFKitMain: 25bb812b12bbe74e41de37a7461ba18e2e4e0274
   WYAutoLayout: 3cb136ddc2efa9faaecf15876e6a9b2a6fd7c6cb
 

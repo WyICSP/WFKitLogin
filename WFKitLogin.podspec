@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WFKitLogin'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'WFKitLogin登录模块'
 
 # This description is used to generate tags and improve search results.
@@ -42,4 +42,5 @@ WFKitLogin是云智充的登录模块主骨架组件
   s.dependency 'WFKitMain'
   s.dependency 'MJExtension'
   s.dependency 'WFHomeAddress'
+  s.dependency 'SDWebImage'
 end
