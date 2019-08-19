@@ -16,4 +16,8 @@
     [self performTarget:@"WFApplyAreaPublicAPI" action:@"openApplyAreaCtrlWithController:" params:controller isRequiredReturnValue:NO];
 }
 
++ (void)openMyChargePileCtrlWithController:(UIViewController *)controller {
+    [self performTarget:@"WFApplyAreaPublicAPI" action:@"openMyChargePileCtrlWithController:" params:controller isRequiredReturnValue:NO];
+}
+
 @end

@@ -95,6 +95,7 @@
         WFHomeDataListModel *itemModel = self.models.list[indexPath.row];
         if (itemModel.typeId == 1) {
             //我的充电桩
+           [YFMediatorManager openMyChargePileCtrlWithController:self];
         }else if (itemModel.typeId == 2) {
             //我的收入
         }else if (itemModel.typeId == 3) {

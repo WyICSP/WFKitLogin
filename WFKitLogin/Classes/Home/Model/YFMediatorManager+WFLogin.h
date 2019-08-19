@@ -17,6 +17,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)openApplyAreaCtrlWithController:(UIViewController *)controller;
 
+/**
+ 开发我的片区页面
+
+ @param controller 当前页面
+ */
++ (void)openMyChargePileCtrlWithController:(UIViewController *)controller;
+
 @end
 
 NS_ASSUME_NONNULL_END
