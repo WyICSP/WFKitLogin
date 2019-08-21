@@ -5,42 +5,42 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: cocoapods" time="4.465204">
+      <testcase classname="fastlane.lanes" name="0: cocoapods" time="4.352503">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: git_add" time="0.190854">
+      <testcase classname="fastlane.lanes" name="1: git_add" time="0.096001">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: git_commit" time="0.143717">
+      <testcase classname="fastlane.lanes" name="2: git_commit" time="0.066588">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: push_to_git_remote" time="7.844639">
+      <testcase classname="fastlane.lanes" name="3: push_to_git_remote" time="5.354508">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: git_tag_exists" time="0.014">
+      <testcase classname="fastlane.lanes" name="4: git_tag_exists" time="0.012443">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: add_git_tag" time="0.021331">
+      <testcase classname="fastlane.lanes" name="5: add_git_tag" time="0.018201">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: push_git_tags" time="6.314878">
+      <testcase classname="fastlane.lanes" name="6: push_git_tags" time="5.266354">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="7: pod_push" time="99.791883">
+      <testcase classname="fastlane.lanes" name="7: pod_push" time="92.16188">
         
       </testcase>
     
