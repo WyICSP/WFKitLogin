@@ -278,7 +278,7 @@
  */
 - (void)addChildViewControllers {
     
-    [YFMediatorManager setGlobalBackGroundColor:NavColor];
+    [YFMediatorManager setGlobalBackGroundColor:UIColor.whiteColor];
     [YFMediatorManager setTabbarTitleColor:NavColor titleFont:11];
     [YFMediatorManager setNarBarGlobalTextColor:[UIColor whiteColor] andFontSize:20];
     
