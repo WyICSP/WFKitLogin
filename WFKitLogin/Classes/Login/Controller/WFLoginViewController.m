@@ -282,10 +282,10 @@
     [YFMediatorManager setTabbarTitleColor:NavColor titleFont:11];
     [YFMediatorManager setNarBarGlobalTextColor:[UIColor whiteColor] andFontSize:20];
     
-    NSArray *ClassArray = [NSArray arrayWithObjects:@"WFHomeViewController",@"YFCategoryViewController",@"MZFShoppingCartViewController",@"MZFUserCenterController", nil];
-    NSArray *titleArray = [NSArray arrayWithObjects:@"首页",@"分类",@"购物车",@"我的", nil];
-    NSArray *normalImgArray = [NSArray arrayWithObjects:@"TabbarUnHome",@"TabbarUnCategory",@"TabbarUnShoppingCart",@"TabbarUnUserCenter", nil];
-    NSArray *selectImgArray = [NSArray arrayWithObjects:@"TabbarSelectHome",@"TabbarSelectCategory",@"TabbarSelectShoppingCart",@"TabbarSelectUserCenter", nil];
+    NSArray *ClassArray = [NSArray arrayWithObjects:@"WFHomeViewController",@"ViewController",@"ViewController",@"ViewController", nil];
+    NSArray *titleArray = [NSArray arrayWithObjects:@"首页",@"商城",@"商学院",@"我的", nil];
+    NSArray *normalImgArray = [NSArray arrayWithObjects:@"homeNoSelect",@"shopNoSelect",@"schoolNoSelect",@"mineNoSelect", nil];
+    NSArray *selectImgArray = [NSArray arrayWithObjects:@"homeSelect",@"shopSelect",@"schoolSelect",@"mineSelect", nil];
     for (int i = 0; i < ClassArray.count; i++) {
         NSString *className = ClassArray[i];
         Class class = NSClassFromString(className);

@@ -10,6 +10,8 @@
 #import "WFHomeFirstItemCollectionViewCell.h"
 #import "WFHomeSectionItemCollectionViewCell.h"
 #import "YFMediatorManager+WFLogin.h"
+#import <MJExtension/MJExtension.h>
+#import <MJRefresh/MJRefresh.h>
 #import "WFHomeDataTool.h"
 #import "WFHomeDataModel.h"
 #import "WKHelp.h"
@@ -27,7 +29,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self getHomeData];
+    id info = [YFUserDefaults objectForKey:@"HomeData"];
+    
+    if (info) {
+        WFHomeDataModel *models = [WFHomeDataModel mj_objectWithKeyValues:info];
+        [self requestSuccessWithModels:models];
+    }
+    
+    if (info) {
+        //获取全局队列
+        dispatch_queue_t queue = dispatch_queue_create(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        //获取主队列
+        dispatch_queue_t mainQueue = dispatch_get_main_queue();
+        //开启一个异步线程
+        dispatch_async(queue, ^{
+            [self getHomeData];             //耗时操作放在子线程
+            dispatch_async(mainQueue, ^{
+                //回到主线程
+            });
+        });
+    }else {
+        //获取首页数据
+        [self getHomeData];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -49,9 +73,17 @@
     @weakify(self)
     [WFHomeDataTool getHomeDataWithParams:@{} resultBlock:^(WFHomeDataModel * _Nonnull models) {
         @strongify(self)
-        self.models = models;
-        [self.collectionView reloadData];
+        [self requestSuccessWithModels:models];
     }];
+}
+
+- (void)requestSuccessWithModels:(WFHomeDataModel * _Nonnull)models {
+    self.models = models;
+    
+    //结束刷新
+    [self.collectionView.mj_header endRefreshing];
+    
+    [self.collectionView reloadData];
 }
 
 #pragma mark UICollectionViewDelegate,UICollectionViewDataSource
@@ -124,6 +156,13 @@
         _collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         [_collectionView registerNib:[UINib nibWithNibName:@"WFHomeFirstItemCollectionViewCell" bundle:[NSBundle bundleForClass:[self class]]] forCellWithReuseIdentifier:@"WFHomeFirstItemCollectionViewCell"];
         [_collectionView registerNib:[UINib nibWithNibName:@"WFHomeSectionItemCollectionViewCell" bundle:[NSBundle bundleForClass:[self class]]] forCellWithReuseIdentifier:@"WFHomeSectionItemCollectionViewCell"];
+        @weakify(self)
+        MJRefreshStateHeader *header = [MJRefreshStateHeader headerWithRefreshingBlock:^{
+            @strongify(self)
+            [self getHomeData];
+        }];
+        header.lastUpdatedTimeLabel.hidden = YES;
+        _collectionView.mj_header = header;
         [self.view addSubview:_collectionView];
     }
     return _collectionView;

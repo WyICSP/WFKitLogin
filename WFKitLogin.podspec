@@ -41,6 +41,8 @@ WFKitLogin是云智充的登录模块主骨架组件
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'WFKitMain'
   s.dependency 'MJExtension'
+  s.dependency 'MJRefresh'
   s.dependency 'WFHomeAddress'
   s.dependency 'SDWebImage'
+
 end

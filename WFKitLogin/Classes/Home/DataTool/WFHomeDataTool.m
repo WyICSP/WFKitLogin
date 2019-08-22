@@ -23,6 +23,8 @@
     [WKRequest getWithURLString:path parameters:params isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFHomeDataModel mj_objectWithKeyValues:baseModel.data]);
+            //存储数据
+            [YFUserDefaults setObject:baseModel.data forKey:@"HomeData"];
         }else {
             [YFToast showMessage:baseModel.message inView:[[YFKeyWindow shareInstance] getCurrentVC].view];
         }
