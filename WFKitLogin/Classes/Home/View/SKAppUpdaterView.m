@@ -75,10 +75,10 @@
 
 - (IBAction)clickUpdateBtn:(id)sender {
     NSString *appStoreURL = @"";
-    if ([self.appUrl containsString:@"1177512364"]) {
+    if ([self.appUrl containsString:@"1394434776"]) {
         appStoreURL = [self.appUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     }else {
-        appStoreURL = @"https://itunes.apple.com/cn/app/%E4%BA%91%E6%99%BA%E5%85%85/id1177512364?mt=8";
+        appStoreURL = @"https://apps.apple.com/cn/app/%E4%BA%91%E6%99%BA%E5%85%85%E5%90%88%E4%BD%9C%E7%89%88/id1394434776";
     }
     NSURL *appUrl = [NSURL URLWithString:appStoreURL];
     if ([[UIApplication sharedApplication] canOpenURL:appUrl]) {
