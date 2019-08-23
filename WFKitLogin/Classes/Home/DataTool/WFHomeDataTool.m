@@ -33,4 +33,18 @@
     }];
 }
 
+#pragma mark 版本更新
+
++ (void)updateAppWithParams:(NSDictionary *)params
+                resultBlock:(void(^)(NSDictionary *models))resultBlock {
+    NSString *path = [NSString stringWithFormat:@"%@app-system/app-system/v1/get/app/version",NEW_HOST_URL];
+    [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
+        if (CODE_ZERO) {
+            resultBlock([baseModel.mDictionary objectForKey:@"data"]);
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
 @end

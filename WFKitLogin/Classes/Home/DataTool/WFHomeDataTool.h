@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WFHomeDataTool : NSObject
 
+#pragma mark 获取首页数据
 /**
  获取首页数据
 
@@ -21,6 +22,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)getHomeDataWithParams:(NSDictionary *)params
                   resultBlock:(void(^)(WFHomeDataModel *models))resultBlock;
+
+
+#pragma mark 更新版本
+/**
+ 更新版本
+ 
+ @param params 参数
+ @param resultBlock 返回结果
+ */
++ (void)updateAppWithParams:(NSDictionary *)params
+                resultBlock:(void(^)(NSDictionary *models))resultBlock;
 
 @end
 
