@@ -24,7 +24,6 @@
 #import "WFLocationTools.h"
 #import "WFPopTool.h"
 #import "WKProxy.h"
-#import "WKRequest.h"
 #import "WKTimer.h"
 #import "YFEmptyDataView.h"
 #import "YFFunctionPublicAPI.h"
@@ -35,6 +34,7 @@
 #import "UserData.h"
 #import "UserInfoData.h"
 #import "WKBaseModel.h"
+#import "WKRequest.h"
 
 FOUNDATION_EXPORT double WFBasicsVersionNumber;
 FOUNDATION_EXPORT const unsigned char WFBasicsVersionString[];

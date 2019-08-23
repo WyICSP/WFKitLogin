@@ -9,6 +9,7 @@
 #import "WFHomeFirstItemCollectionViewCell.h"
 #import "WFHomeDataModel.h"
 
+
 @implementation WFHomeFirstItemCollectionViewCell
 
 static NSString *const cellId = @"WFHomeFirstItemCollectionViewCell";

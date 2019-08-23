@@ -24,6 +24,18 @@
 }
 
 /**
+ 获取登录根控制器
+ */
++ (UIViewController *)rootLoginViewController {
+    UIViewController *rootVC = [self performTarget:@"WFLoginPublicAPI" action:@"rootLoginViewController" params:nil isRequiredReturnValue:YES];
+    if (rootVC == nil) {
+        NSLog(@"没找到相应的页面");
+        abort();
+    }
+    return rootVC;
+}
+
+/**
  添加自控制器
  */
 + (void)addChildVC:(UIViewController *)vc normalImageName:(NSString *)normalImageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title {

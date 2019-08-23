@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SKAppUpdaterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="685"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzB-f8-AL2">
+                    <rect key="frame" x="171.5" y="568" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="b6Q-ve-OaP"/>
+                        <constraint firstAttribute="width" secondItem="OzB-f8-AL2" secondAttribute="height" multiplier="1:1" id="qkQ-7d-SEK"/>
+                    </constraints>
+                    <state key="normal" image="WFKitLogin.bundle/disapper"/>
+                    <connections>
+                        <action selector="closeBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="T6m-LK-zFt"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbu-Iy-YTj">
+                    <rect key="frame" x="36" y="95" width="303" height="455"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WFKitLogin.bundle/updateView" translatesAutoresizingMaskIntoConstraints="NO" id="Oa0-ZO-2lM">
+                            <rect key="frame" x="0.0" y="0.0" width="303" height="207"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Oa0-ZO-2lM" secondAttribute="height" multiplier="101:69" id="2F0-2c-QeH"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="398-Bg-HPN">
+                            <rect key="frame" x="0.0" y="207" width="303" height="248"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发现新版本" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6u-jy-VgJ">
+                                    <rect key="frame" x="64" y="25" width="122" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0M-kd-Xrk">
+                                    <rect key="frame" x="16" y="125.5" width="271" height="71"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="K0M-kd-Xrk" secondAttribute="height" multiplier="271:71" id="ktT-Ma-E8Z"/>
+                                    </constraints>
+                                    <inset key="titleEdgeInsets" minX="0.0" minY="-19" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="立即升级" backgroundImage="WFKitLogin.bundle/updateBtn">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickUpdateBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="EsN-Rx-8vJ"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h8-n9-HCs">
+                                    <rect key="frame" x="191" y="33" width="50" height="17"/>
+                                    <color key="backgroundColor" red="1" green="0.52156862745098043" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="7h8-n9-HCs" secondAttribute="height" multiplier="50:17" id="Ph2-lv-7kf"/>
+                                        <constraint firstAttribute="width" constant="50" id="lJg-gl-Sg7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCf-2v-Ea9">
+                                    <rect key="frame" x="55" y="69" width="193" height="36.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36.5" id="CNo-VQ-cjO"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="7h8-n9-HCs" firstAttribute="leading" secondItem="H6u-jy-VgJ" secondAttribute="trailing" constant="5" id="3hs-Pp-kqY"/>
+                                <constraint firstAttribute="trailing" secondItem="cCf-2v-Ea9" secondAttribute="trailing" constant="55" id="6ei-W0-sxs"/>
+                                <constraint firstAttribute="trailing" secondItem="K0M-kd-Xrk" secondAttribute="trailing" constant="16" id="8sx-PH-hnj"/>
+                                <constraint firstItem="K0M-kd-Xrk" firstAttribute="top" secondItem="cCf-2v-Ea9" secondAttribute="bottom" constant="20" id="JTK-Jq-Khc"/>
+                                <constraint firstItem="K0M-kd-Xrk" firstAttribute="leading" secondItem="398-Bg-HPN" secondAttribute="leading" constant="16" id="O4x-sV-i88"/>
+                                <constraint firstItem="cCf-2v-Ea9" firstAttribute="top" secondItem="H6u-jy-VgJ" secondAttribute="bottom" constant="15" id="Tk7-qS-LXZ"/>
+                                <constraint firstItem="H6u-jy-VgJ" firstAttribute="centerX" secondItem="398-Bg-HPN" secondAttribute="centerX" constant="-26.5" id="VEB-Xu-AY9"/>
+                                <constraint firstItem="H6u-jy-VgJ" firstAttribute="top" secondItem="398-Bg-HPN" secondAttribute="top" constant="25" id="W6i-Yq-kPC"/>
+                                <constraint firstItem="cCf-2v-Ea9" firstAttribute="leading" secondItem="398-Bg-HPN" secondAttribute="leading" constant="55" id="bMq-V4-9bw"/>
+                                <constraint firstItem="7h8-n9-HCs" firstAttribute="centerY" secondItem="H6u-jy-VgJ" secondAttribute="centerY" constant="2" id="gzL-G8-yNl"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Zbu-Iy-YTj" secondAttribute="height" multiplier="303:455" id="N3C-QB-r4i"/>
+                        <constraint firstAttribute="trailing" secondItem="Oa0-ZO-2lM" secondAttribute="trailing" id="Wpx-th-Acq"/>
+                        <constraint firstItem="398-Bg-HPN" firstAttribute="top" secondItem="Oa0-ZO-2lM" secondAttribute="bottom" id="dWX-sy-WU0"/>
+                        <constraint firstAttribute="trailing" secondItem="398-Bg-HPN" secondAttribute="trailing" id="eIM-Q4-GEX"/>
+                        <constraint firstAttribute="bottom" secondItem="398-Bg-HPN" secondAttribute="bottom" id="naJ-uB-je1"/>
+                        <constraint firstItem="Oa0-ZO-2lM" firstAttribute="top" secondItem="Zbu-Iy-YTj" secondAttribute="top" id="rW2-Sl-8CM"/>
+                        <constraint firstItem="398-Bg-HPN" firstAttribute="leading" secondItem="Zbu-Iy-YTj" secondAttribute="leading" id="xaW-j6-8kA"/>
+                        <constraint firstItem="Oa0-ZO-2lM" firstAttribute="leading" secondItem="Zbu-Iy-YTj" secondAttribute="leading" id="yZV-6l-LhC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OzB-f8-AL2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Jyu-nO-4qA"/>
+                <constraint firstAttribute="trailing" secondItem="Zbu-Iy-YTj" secondAttribute="trailing" constant="36" id="Ofu-o4-Bmh"/>
+                <constraint firstItem="Zbu-Iy-YTj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="eM6-2F-stx"/>
+                <constraint firstItem="OzB-f8-AL2" firstAttribute="top" secondItem="Zbu-Iy-YTj" secondAttribute="bottom" constant="18" id="nVT-zl-hbl"/>
+                <constraint firstItem="Zbu-Iy-YTj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="qyE-EH-eKR"/>
+                <constraint firstItem="Zbu-Iy-YTj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rsi-El-deA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="cCf-2v-Ea9" id="DGh-Dy-FQ7"/>
+                <outlet property="contentViewCons" destination="CNo-VQ-cjO" id="9DB-nF-EW3"/>
+                <outlet property="disapperBtn" destination="OzB-f8-AL2" id="kDg-CC-PoJ"/>
+                <outlet property="updateBgView" destination="Zbu-Iy-YTj" id="u3E-5K-6Df"/>
+                <outlet property="version" destination="7h8-n9-HCs" id="Q28-eo-07n"/>
+            </connections>
+            <point key="canvasLocation" x="-460" y="-262.21889055472263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WFKitLogin.bundle/disapper" width="16" height="16"/>
+        <image name="WFKitLogin.bundle/updateBtn" width="16" height="16"/>
+        <image name="WFKitLogin.bundle/updateView" width="16" height="16"/>
+    </resources>
+</document>

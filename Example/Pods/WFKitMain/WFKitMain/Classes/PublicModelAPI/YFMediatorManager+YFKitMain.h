@@ -19,6 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 + (UITabBarController *)rootTabBarCcontroller;
 
 /**
+ 获取登录根控制器
+ 
+ @return UIViewController
+ */
++ (UIViewController *)rootLoginViewController;
+
+/**
  添加子控制器
 
  @param vc                子控制器

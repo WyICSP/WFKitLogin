@@ -263,7 +263,7 @@
     NSString *headerStr = [NSString stringWithFormat:@"%@%@",timestamp,RSA_CONS_KEY];
     NSString *encryptStr = [RSAEncryptor encryptString:headerStr publicKey:RSA_Public_Key];
     
-    [manager.requestSerializer setValue:@"0" forHTTPHeaderField:@"appType"];
+    [manager.requestSerializer setValue:@"1" forHTTPHeaderField:@"appType"];
     [manager.requestSerializer setValue:APP_VERSION forHTTPHeaderField:@"appVersion"];
     [manager.requestSerializer setValue:@"1" forHTTPHeaderField:@"certType"];
     [manager.requestSerializer setValue:@"yzc-baidu" forHTTPHeaderField:@"channel"];

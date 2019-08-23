@@ -72,41 +72,6 @@
 }
 
 + (void)setProductPriceWithLable:(UILabel *)lable titleString:(NSString *)titleString textSize:(CGFloat)textSize{
-    //仿照淘宝的价格显示 不保留整数后面小数位
-//    if ([titleString containsString:@".00"] && ![titleString containsString:@"x"]) {
-//        //商品价格为整数//如:66.01
-//        NSString *price = [NSString stringWithFormat:@"¥ %ld",(long)[titleString integerValue]];
-//        NSMutableAttributedString *Attributed = [[NSMutableAttributedString alloc] initWithString:price];
-//
-//        [lable setAttributedText:Attributed];
-//    }else if ([titleString containsString:@"."] && ![titleString containsString:@"x"]){
-//        //商品价格有小数点//如:66.01
-//        NSString *price = [NSString stringWithFormat:@"¥ %.2f",titleString.doubleValue];
-//        NSMutableAttributedString *Attributed = [[NSMutableAttributedString alloc] initWithString:price];
-//        [Attributed addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:textSize * 0.8] range:NSMakeRange(price.length-2, 2)];
-//
-//        [lable setAttributedText:Attributed];
-//    }else if ([titleString containsString:@"x"] && [titleString containsString:@"."] && ![titleString containsString:@".00"]) {
-//        //如:66.01x3
-//        NSArray *arrays = [titleString componentsSeparatedByString:@"x"];
-//        NSString *price = [NSString stringWithFormat:@"¥ %@",titleString];
-//        NSMutableAttributedString *Attributed = [[NSMutableAttributedString alloc] initWithString:price];
-//        [Attributed addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:textSize * 0.8] range:NSMakeRange([[arrays firstObject] length], 2)];
-//        [lable setAttributedText:Attributed];
-//    }else if ([titleString containsString:@"x"] && [titleString containsString:@".00"]) {
-//        //如:66.00x3
-//        NSArray *arrays = [titleString componentsSeparatedByString:@"x"];
-//        NSString *price = [NSString stringWithFormat:@"¥ %ldx%@",[[arrays firstObject] integerValue],[arrays lastObject]];
-//        NSMutableAttributedString *Attributed = [[NSMutableAttributedString alloc] initWithString:price];
-//        [lable setAttributedText:Attributed];
-//    }else {
-//        //商品价格为整数
-//        NSString *price = [NSString stringWithFormat:@"¥ %@",titleString];
-//        NSMutableAttributedString *Attributed = [[NSMutableAttributedString alloc] initWithString:price];
-//
-//        [lable setAttributedText:Attributed];
-//    }
-    
     //保留整数后面的小数位
     if (![titleString containsString:@"x"]){
         //商品价格有小数点//如:66.01
@@ -131,15 +96,13 @@
     }
 }
 
-+(void)setRiChLineSpacing:(UILabel *)lable titleString:(NSString *)titleString textColor:(UIColor *)textColor colorRang:(NSRange)colorRang LineSpacing:(CGFloat )LineSpacing{
++(void)setRiChLineSpacing:(UILabel *)lable titleString:(NSString *)titleString LineSpacing:(CGFloat )LineSpacing{
     
     NSMutableAttributedString *Attributed = [[NSMutableAttributedString alloc] initWithString:titleString];
     
-    [Attributed addAttribute:NSForegroundColorAttributeName value:textColor range:colorRang];
-    
     NSMutableParagraphStyle  *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    // 行间距设置为4
-    [paragraphStyle  setLineSpacing:5];
+    // 行间距设置为
+    [paragraphStyle  setLineSpacing:LineSpacing];
     
     [Attributed  addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [titleString length])];
     //    设置之后 为了让位子居中显示

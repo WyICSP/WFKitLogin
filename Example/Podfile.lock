@@ -20,19 +20,19 @@ PODS:
     - SDWebImage/Core (= 5.1.0)
   - SDWebImage/Core (5.1.0)
   - SVProgressHUD (2.2.5)
-  - WFBasics (0.1.5):
+  - WFBasics (0.1.7):
     - AFNetworking
     - SVProgressHUD
     - WYAutoLayout
   - WFHomeAddress (0.1.4):
     - MJExtension
-  - WFKitLogin (0.1.6):
+  - WFKitLogin (0.1.7):
     - MJExtension
     - MJRefresh
     - SDWebImage
     - WFHomeAddress
     - WFKitMain
-  - WFKitMain (0.1.2):
+  - WFKitMain (0.1.3):
     - WFBasics
   - WYAutoLayout (1.0.1)
 
@@ -62,10 +62,10 @@ SPEC CHECKSUMS:
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  WFBasics: 75104ab05adf03ea36a2e4c5865bd32070eb3c01
+  WFBasics: 771c266c673f9319a61e4b3b4a54d61badd5618d
   WFHomeAddress: 5f910d0370e0b8b3c62f5b3cc5cd03a800b84125
-  WFKitLogin: 1d2df042b6da5dd7d4ced7f4527be2c59e17cd94
-  WFKitMain: 25bb812b12bbe74e41de37a7461ba18e2e4e0274
+  WFKitLogin: 3ba2d71015c1e28948d4bbeee46fe9fc2c147e64
+  WFKitMain: ce8771ca853c5b5c91806e263d50c76c125e50b3
   WYAutoLayout: 3cb136ddc2efa9faaecf15876e6a9b2a6fd7c6cb
 
 PODFILE CHECKSUM: 8397cd4f9b857bd307a1406abc955dbe3615252a

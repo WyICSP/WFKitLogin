@@ -41,7 +41,7 @@
 
 /**
  适用于两种字体大小 一种颜色 比如 原价¥100  ¥字体为12号 100位18号, 原价14号
-
+ 
  @param lable Lable
  @param titleString 内容
  @param textColor 字体颜色
@@ -56,7 +56,7 @@
 
 /**
  只设置颜色的不同
-
+ 
  @param lable Lable
  @param titleString 内容
  @param textColor 字体颜色
@@ -76,7 +76,7 @@
 
 /**
  设置商品价格
-
+ 
  @param lable 传进来的 lbl
  @param titleString 价格
  @param textSize lbl 的字体大小 小数点后是字体大小的80%
@@ -86,13 +86,11 @@
 
 /**
  设置行间距
-
+ 
  @param lable lable
  @param titleString titleString
- @param textColor textColor
- @param colorRang colorRang
  @param LineSpacing LineSpacing
  */
-+(void)setRiChLineSpacing:(UILabel *)lable titleString:(NSString *)titleString textColor:(UIColor *)textColor colorRang:(NSRange)colorRang LineSpacing:(CGFloat )LineSpacing;
++(void)setRiChLineSpacing:(UILabel *)lable titleString:(NSString *)titleString LineSpacing:(CGFloat )LineSpacing;
 
 @end

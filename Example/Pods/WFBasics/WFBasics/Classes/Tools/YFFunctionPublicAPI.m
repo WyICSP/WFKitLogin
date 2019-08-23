@@ -40,7 +40,7 @@
 
 + (void)setRiChLineSpacing:(UILabel *)lable titleString:(NSString *)titleString textColor:(UIColor *)textColor colorRang:(NSRange)colorRang LineSpacing:(CGFloat )LineSpacing {
     
-    [AttributedLbl setRiChLineSpacing:lable titleString:titleString textColor:textColor colorRang:colorRang LineSpacing:LineSpacing];
+    [AttributedLbl setRiChLineSpacing:lable titleString:titleString LineSpacing:LineSpacing];
 }
 
 #pragma mark 弹出视图

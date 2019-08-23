@@ -20,7 +20,7 @@
 
     self.navigationBar.translucent = NO;
     
-    [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:18],NSForegroundColorAttributeName:[UIColor blackColor]}];
 }
 
 + (void)setGlobalBackGroundColor:(UIColor *)globalColor{
@@ -41,7 +41,7 @@
 + (void)setGlobalTextColor:(UIColor *)textColor andFontSize:(CGFloat)fontSize {
     if (@available(iOS 9.0, *)) {
         UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self class]]];
-        [navBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:textColor}];
+        [navBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:18],NSForegroundColorAttributeName:textColor}];
     } else {
         // Fallback on earlier versions
     }

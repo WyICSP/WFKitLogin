@@ -15,6 +15,7 @@
 #import "WFHomeDataModel.h"
 #import "WFLoginPublicAPI.h"
 #import "YFMediatorManager+WFLogin.h"
+#import "SKAppUpdaterView.h"
 #import "WFHomeFirstItemCollectionViewCell.h"
 #import "WFHomeSectionItemCollectionViewCell.h"
 #import "WFApplyPartnerViewController.h"

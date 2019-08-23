@@ -30,7 +30,7 @@
         if(!lb)
         {
             lb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 260.0f, 2000.0f)];
-            lb.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.95f];
+            lb.backgroundColor = [[UIColor colorWithWhite:0.2 alpha:1.0f] colorWithAlphaComponent:0.95f];
             lb.textColor = [UIColor whiteColor];
             lb.textAlignment = NSTextAlignmentCenter;
             lb.font = [UIFont boldSystemFontOfSize:14];
@@ -58,7 +58,7 @@
         lbSize.width = MIN(260.0f, MAX(60.0f, lbSize.width + 20.0f));
         lbSize.height = MIN(120.0f, MAX(30.0f, lbSize.height + 20.0f));
         lb.frame = CGRectMake(0, 0, lbSize.width, lbSize.height);
-        lb.center = CGPointMake(vwSize.width / 2.0f, vwSize.height * 0.45);
+        lb.center = CGPointMake(vwSize.width / 2.0f, vwSize.height * 0.75);
         lb.text = msg;
         
     }
