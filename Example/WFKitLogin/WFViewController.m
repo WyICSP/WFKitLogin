@@ -11,6 +11,9 @@
 #import "WKNavigationController.h"
 #import "WFHomeViewController.h"
 #import "SKAppUpdaterView.h"
+#import "WFHomeDataTool.h"
+#import "SKSafeObject.h"
+#import "NSString+Regular.h"
 #import "WKHelp.h"
 
 @interface WFViewController ()
@@ -32,7 +35,63 @@
     [lookBtn setTitle:@"查看详情" forState:(UIControlStateNormal)];
     [self.view addSubview:lookBtn];
     
+    [self updateVersion];
 }
+
+
+#pragma mark 版本更新
+- (void)updateVersion {
+    @weakify(self)
+    [WFHomeDataTool updateAppWithParams:@{} resultBlock:^(NSDictionary * _Nonnull models) {
+        @strongify(self)
+        NSString *version = [NSString stringWithFormat:@"%@",[models safeJsonObjForKey:@"updateVersion"]];
+        NSArray *messageList = [models safeJsonObjForKey:@"updateMessage"];
+        // 1 是强制更新  2 是非强制更新
+        BOOL updateFlag = [[models safeJsonObjForKey:@"updateFlag"] boolValue];
+        NSString *updateDownloadUrl = [models safeJsonObjForKey:@"updateDownloadUrl"];
+        
+        if ([self AppVersion:[NSString getAppVersion]] < [self AppVersion:version]) {
+            [self compulsoryRenewal:updateFlag message:messageList version:version appUrl:updateDownloadUrl];
+        }
+    }];
+}
+
+/**去除版本号的. 得到版本号*/
+- (NSInteger )AppVersion:(NSString *)version {
+    NSString *appVersion = [version stringByReplacingOccurrencesOfString:@"." withString:@""];
+    return [appVersion integerValue];
+}
+
+/**版本更新*/
+- (void)compulsoryRenewal:(BOOL)compulsory
+                  message:(NSArray *)msg
+                  version:(NSString *)version
+                   appUrl:(NSString *)appUrl {
+    if (compulsory) {
+        //强制更新
+        SKAppUpdaterView *updateview   = [SKAppUpdaterView shareInstance];
+        updateview.frame               = YFWindow.bounds;
+        updateview.center              = YFWindow.center;
+        updateview.tag                 = 123456;
+        updateview.disapperBtn.hidden  = compulsory;
+        updateview.versionList         = msg;
+        updateview.appUrl              = appUrl;
+        updateview.version.text        = [NSString stringWithFormat:@"V%@",version];
+        [YFWindow addSubview:updateview];
+    }else{
+        //非强制更新
+        SKAppUpdaterView * updateview  = [SKAppUpdaterView shareInstance];
+        updateview.frame               = YFWindow.bounds;
+        updateview.center              = YFWindow.center;
+        updateview.tag                 = 123456;
+        updateview.disapperBtn.hidden  = compulsory;
+        updateview.versionList         = msg;
+        updateview.appUrl              = appUrl;
+        updateview.version.text        = [NSString stringWithFormat:@"V%@",version];;
+        [YFWindow addSubview:updateview];
+    }
+}
+
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //    WFLoginViewController *login = [[WFLoginViewController alloc] initWithNibName:@"WFLoginViewController" bundle:[NSBundle bundleForClass:[self class]]];

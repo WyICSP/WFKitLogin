@@ -18,6 +18,8 @@
 @property (strong, nonatomic) UILabel *contentLabel;
 /**更新内容滚动效果*/
 @property (nonatomic, strong) UIScrollView *scrollView;
+/**内容*/
+@property (weak, nonatomic) IBOutlet UIView *contentsView;
 /**版本号*/
 @property (weak, nonatomic) IBOutlet UILabel *version;
 /**整个背景*/
