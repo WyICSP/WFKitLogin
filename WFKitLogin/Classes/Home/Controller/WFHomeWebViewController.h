@@ -6,15 +6,10 @@
 //
 
 #import <WFKitMain/YFBaseViewController.h>
-#import <dsBridge/dsbridge.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WFHomeWebViewController : YFBaseViewController
-/**
- DWKWebView
- */
-@property (nonatomic, strong) DWKWebView * dwebview;
 /**
  加载url
  */
