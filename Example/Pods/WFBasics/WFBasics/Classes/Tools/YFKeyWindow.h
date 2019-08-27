@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface YFKeyWindow : NSObject
 
-+(instancetype) shareInstance;
-- (void)login;
++ (instancetype) shareInstance;
 //获取当前屏幕显示的viewcontroller
 - (UIViewController *)getCurrentVC;
+
+- (UIViewController*)topViewControllerWithRootViewController:(UIViewController*)rootViewController;
 
 @end

@@ -34,11 +34,10 @@
 
 
 /**返回*/
-- (void) goBack:(NSString *)msg :(JSCallback) completionHandler
+- (void)goBack:(NSString *)msg :(JSCallback) completionHandler
 {
     [[[YFKeyWindow shareInstance] getCurrentVC].navigationController popViewControllerAnimated:YES];
     completionHandler(msg,YES);
-    
 }
 
 ///**

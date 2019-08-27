@@ -13,19 +13,13 @@ static YFKeyWindow *_instance = nil;
 @implementation YFKeyWindow
 
 
-#pragma mark 登录
--(void)login {
-//    YFLoginViewController *userLogin            = [YFLoginViewController new];
-//    userLogin.isLoginOut                        = YES;
-//    AppDelegate *Delegate                       = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//    WKTabbarController *wkTabbar                = Delegate.tabbar;
-//    WKNavigationController *navUserlogin        = [[WKNavigationController alloc]initWithRootViewController:userLogin];
-//    [wkTabbar.selectedViewController presentViewController:navUserlogin animated:YES completion:nil];
-}
-
 //获取当前屏幕显示的viewcontroller
 - (UIViewController *)getCurrentVC
 {
+    return [self topViewControllerWithRootViewController:[self getCurrentTableViewController]];
+}
+
+- (UIViewController *)getCurrentTableViewController {
     UIViewController *result = nil;
     
     UIWindow * window = [[UIApplication sharedApplication] keyWindow];
@@ -50,6 +44,22 @@ static YFKeyWindow *_instance = nil;
         result = window.rootViewController;
     return result;
 }
+
+- (UIViewController*)topViewControllerWithRootViewController:(UIViewController*)rootViewController {
+    if ([rootViewController isKindOfClass:[UITabBarController class]]) {
+        UITabBarController* tabBarController = (UITabBarController*)rootViewController;
+        return [self topViewControllerWithRootViewController:tabBarController.selectedViewController];
+    } else if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController* navigationController = (UINavigationController*)rootViewController;
+        return [self topViewControllerWithRootViewController:navigationController.visibleViewController];
+    } else if (rootViewController.presentedViewController) {
+        UIViewController* presentedViewController = rootViewController.presentedViewController;
+        return [self topViewControllerWithRootViewController:presentedViewController];
+    } else {
+        return rootViewController;
+    }
+}
+
 
 +(instancetype) shareInstance
 {
