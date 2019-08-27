@@ -6,7 +6,7 @@
 //
 
 #import <WFKitMain/YFBaseViewController.h>
-#import "dsbridge.h"
+#import <dsBridge/dsbridge.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
