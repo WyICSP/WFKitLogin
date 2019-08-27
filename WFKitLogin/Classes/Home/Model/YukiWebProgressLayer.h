@@ -7,7 +7,6 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#import <UIKit/UIKit.h>
 
 @interface YukiWebProgressLayer : CAShapeLayer
 //开始加载

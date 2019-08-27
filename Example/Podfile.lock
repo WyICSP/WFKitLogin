@@ -34,10 +34,8 @@ PODS:
     - SDWebImage
     - WFHomeAddress
     - WFKitMain
-    - WKFunComponents
   - WFKitMain (0.1.3):
     - WFBasics
-  - WKFunComponents (0.1.0)
   - WYAutoLayout (1.0.1)
 
 DEPENDENCIES:
@@ -56,7 +54,6 @@ SPEC REPOS:
     - WFBasics
     - WFHomeAddress
     - WFKitMain
-    - WKFunComponents
 
 EXTERNAL SOURCES:
   WFKitLogin:
@@ -71,9 +68,8 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   WFBasics: c00b119e2f2cdfc6c834c37fc81910bc6325e9ed
   WFHomeAddress: 5f910d0370e0b8b3c62f5b3cc5cd03a800b84125
-  WFKitLogin: ab7a3da5bc92338e262f139f81477ac883bc950e
+  WFKitLogin: 3c605e0ae973bed4a7b006bb1d1b28c4a4b0f0fd
   WFKitMain: ce8771ca853c5b5c91806e263d50c76c125e50b3
-  WKFunComponents: a4cde3e92b1c5841be91a9eefd7968c8ce903f73
   WYAutoLayout: 3cb136ddc2efa9faaecf15876e6a9b2a6fd7c6cb
 
 PODFILE CHECKSUM: 8397cd4f9b857bd307a1406abc955dbe3615252a

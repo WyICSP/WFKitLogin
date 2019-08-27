@@ -6,9 +6,10 @@
 //  Copyright © 2018年 wy. All rights reserved.
 //
 
-
 #import "YukiWebProgressLayer.h"
 #import "NSTimer+addition.h"
+#import "WKHelp.h"
+#import <UIKit/UIKit.h>
 
 static NSTimeInterval const ProgressTimeInterval = 0.03;
 
@@ -35,7 +36,7 @@ static NSTimeInterval const ProgressTimeInterval = 0.03;
     //起点
     [path moveToPoint:CGPointMake(0, 3)];
     //终点
-    [path addLineToPoint:CGPointMake([UIScreen mainScreen].bounds.size.width,3)];
+    [path addLineToPoint:CGPointMake(ScreenWidth,3)];
     
     self.path = path.CGPath;
     self.strokeEnd = 0;
