@@ -96,6 +96,8 @@
     if (!_dwebview) {
         _dwebview = [[DWKWebView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
         [_dwebview addJavascriptObject:[[JsApiTest alloc] init] namespace:nil];
+        if (@available(iOS 11.0, *))
+        _dwebview.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         _dwebview.navigationDelegate = self;
         [_dwebview setDebugMode:true];
 
