@@ -11,6 +11,7 @@
 #endif
 
 #import "WFHomeViewController.h"
+#import "WFHomeWebViewController.h"
 #import "WFOtherViewController.h"
 #import "WFHomeDataTool.h"
 #import "JsApiTest.h"

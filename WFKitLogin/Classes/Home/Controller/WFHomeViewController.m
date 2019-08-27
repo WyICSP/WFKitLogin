@@ -9,7 +9,7 @@
 #import "WFHomeViewController.h"
 #import "WFHomeFirstItemCollectionViewCell.h"
 #import "WFHomeSectionItemCollectionViewCell.h"
-//#import "WFHomeWebViewController.h"
+#import "WFHomeWebViewController.h"
 #import "YFMediatorManager+WFLogin.h"
 #import "WFOtherViewController.h"
 #import <MJExtension/MJExtension.h>
@@ -134,10 +134,10 @@
            [YFMediatorManager openMyChargePileCtrlWithController:self];
         }else if (itemModel.typeId == 2) {
             //我的收入
-//            WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
-//            web.hidesBottomBarWhenPushed = YES;
-//            web.urlString = [NSString stringWithFormat:@"%@page/myIncome.html?uuid=%@&appVersion=v%@",H5_HOST,USER_UUID,APP_VERSION];
-//            [self.navigationController pushViewController:web animated:YES];
+            WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
+            web.hidesBottomBarWhenPushed = YES;
+            web.urlString = [NSString stringWithFormat:@"%@page/myIncome.html?uuid=%@&appVersion=v%@",H5_HOST,USER_UUID,APP_VERSION];
+            [self.navigationController pushViewController:web animated:YES];
         }else if (itemModel.typeId == 3) {
             //我的钱包
             WFOtherViewController *other = [[WFOtherViewController alloc] initWithNibName:@"WFOtherViewController" bundle:[NSBundle bundleForClass:[self class]]];
