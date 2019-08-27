@@ -6,11 +6,14 @@
 //
 
 #import "WFHomeWebViewController.h"
+#import "YukiWebProgressLayer.h"
 #import "JsApiTest.h"
 #import <WebKit/WebKit.h>
 #import "WKHelp.h"
 
 @interface WFHomeWebViewController ()<WKNavigationDelegate>
+/**进度条*/
+@property (nonatomic, strong) YukiWebProgressLayer *webProgressLayer;
 @end
 
 @implementation WFHomeWebViewController

@@ -6,7 +6,6 @@
 //
 
 #import <WFKitMain/YFBaseViewController.h>
-#import "YukiWebProgressLayer.h"
 #import "dsbridge.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -16,10 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
  DWKWebView
  */
 @property (nonatomic, strong) DWKWebView * dwebview;
-/**
- 进度条
- */
-@property (nonatomic, strong) YukiWebProgressLayer *webProgressLayer;
 /**
  加载url
  */
