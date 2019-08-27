@@ -6,6 +6,7 @@
 //
 
 #import "JsApiTest.h"
+#import "dsbridge.h"
 #import "YFKeyWindow.h"
 #import "UserData.h"
 #import "YFToast.h"

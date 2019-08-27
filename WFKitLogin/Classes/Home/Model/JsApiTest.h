@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "dsbridge.h"
 
 @interface JsApiTest : NSObject
 

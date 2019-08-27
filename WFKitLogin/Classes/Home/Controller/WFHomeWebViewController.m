@@ -6,6 +6,7 @@
 //
 
 #import "WFHomeWebViewController.h"
+#import "YukiWebProgressLayer.h"
 #import "dsbridge.h"
 #import "JsApiTest.h"
 #import <WebKit/WebKit.h>
@@ -14,7 +15,8 @@
 @interface WFHomeWebViewController ()
 /**DWKWebView*/
 @property (nonatomic, strong) DWKWebView * dwebview;
-
+/**进度条*/
+@property (nonatomic, strong) YukiWebProgressLayer *webProgressLayer;
 @end
 
 @implementation WFHomeWebViewController
