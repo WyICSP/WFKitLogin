@@ -59,7 +59,6 @@
     //添加进度条
     [self.navigationController.navigationBar.layer addSublayer:self.webProgressLayer];
     //添加 webview
-    if (self.urlString.length != 0) 
     [self.dwebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]]];
 }
 
