@@ -6,17 +6,11 @@
 //
 
 #import "WFHomeWebViewController.h"
-#import "YukiWebProgressLayer.h"
-#import "dsbridge.h"
 #import "JsApiTest.h"
 #import <WebKit/WebKit.h>
 #import "WKHelp.h"
 
-@interface WFHomeWebViewController ()
-/**DWKWebView*/
-@property (nonatomic, strong) DWKWebView * dwebview;
-/**进度条*/
-@property (nonatomic, strong) YukiWebProgressLayer *webProgressLayer;
+@interface WFHomeWebViewController ()<WKNavigationDelegate>
 @end
 
 @implementation WFHomeWebViewController
@@ -59,17 +53,8 @@
     //添加进度条
     [self.navigationController.navigationBar.layer addSublayer:self.webProgressLayer];
     //添加 webview
+    if (self.urlString.length != 0) 
     [self.dwebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]]];
-    //通过 KVC 监听 webView 的 title
-    [self.dwebview addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:NULL];
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    if ([keyPath isEqualToString:@"title"]) {
-        if (object == self.dwebview) {
-            self.title = self.dwebview.title;
-        }
-    }
 }
 
 - (void)deleteWebCache {
@@ -130,9 +115,6 @@
 }
 
 - (void)dealloc {
-    
-    [self.dwebview removeObserver:self forKeyPath:@"title"];
-    
     [self.webProgressLayer closeTimer];
     [_webProgressLayer removeFromSuperlayer];
     _webProgressLayer = nil;
