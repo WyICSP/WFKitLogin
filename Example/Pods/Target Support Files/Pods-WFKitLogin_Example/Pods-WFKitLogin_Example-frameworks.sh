@@ -170,7 +170,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/WFHomeAddress/WFHomeAddress.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WFKitLogin/WFKitLogin.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WFKitMain/WFKitMain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WKFunComponents/WKFunComponents.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WYAutoLayout/WYAutoLayout.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/dsBridge/dsBridge.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
@@ -182,7 +184,9 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/WFHomeAddress/WFHomeAddress.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WFKitLogin/WFKitLogin.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WFKitMain/WFKitMain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WKFunComponents/WKFunComponents.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WYAutoLayout/WYAutoLayout.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/dsBridge/dsBridge.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

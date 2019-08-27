@@ -15,6 +15,7 @@
 #import "SKSafeObject.h"
 #import "NSString+Regular.h"
 #import "WKHelp.h"
+#import "UserData.h"
 
 @interface WFViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn;
@@ -35,7 +36,7 @@
     [lookBtn setTitle:@"查看详情" forState:(UIControlStateNormal)];
     [self.view addSubview:lookBtn];
     
-    [self updateVersion];
+//    [self updateVersion];
 }
 
 
@@ -94,23 +95,7 @@
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    WFLoginViewController *login = [[WFLoginViewController alloc] initWithNibName:@"WFLoginViewController" bundle:[NSBundle bundleForClass:[self class]]];
-//    WKNavigationController *navUserlogin    = [[WKNavigationController alloc]initWithRootViewController:login];
-//    [self presentViewController:navUserlogin animated:YES completion:nil];
-//    WFHomeViewController *login = [[WFHomeViewController alloc] init];
-//    WKNavigationController *navUserlogin    = [[WKNavigationController alloc]initWithRootViewController:login];
-//    [self presentViewController:navUserlogin animated:YES completion:nil];
-    //    login.hidesBottomBarWhenPushed = YES;
-    //    [self.navigationController pushViewController:login animated:YES];
-    SKAppUpdaterView *updateview   = [SKAppUpdaterView shareInstance];
-    updateview.frame               = YFWindow.bounds;
-    updateview.center              = YFWindow.center;
-    updateview.tag                 = 123456;
-//    updateview.disapperBtn.hidden  = compulsory;
-//    updateview.versionList         = msg;
-//    updateview.appUrl              = appUrl;
-//    updateview.version.text        = [NSString stringWithFormat:@"V%@",version];
-    [YFWindow addSubview:updateview];
+    [UserData userInfo:nil];
 }
 - (IBAction)textFieldDidChange:(UITextField *)textField {
     if ([textField.text containsString:@"元"]) {

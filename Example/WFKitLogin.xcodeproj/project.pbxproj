@@ -318,7 +318,9 @@
 				"${BUILT_PRODUCTS_DIR}/WFHomeAddress/WFHomeAddress.framework",
 				"${BUILT_PRODUCTS_DIR}/WFKitLogin/WFKitLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/WFKitMain/WFKitMain.framework",
+				"${BUILT_PRODUCTS_DIR}/WKFunComponents/WKFunComponents.framework",
 				"${BUILT_PRODUCTS_DIR}/WYAutoLayout/WYAutoLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/dsBridge/dsBridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -331,7 +333,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WFHomeAddress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WFKitLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WFKitMain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WKFunComponents.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WYAutoLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/dsBridge.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

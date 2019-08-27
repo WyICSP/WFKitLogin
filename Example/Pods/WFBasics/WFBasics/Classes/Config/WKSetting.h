@@ -26,7 +26,7 @@
 //趣商城 分享页面接口
 #define H5_SHARE_HOST_URL   @"http://39.106.62.16:8780/"
 //我的 消息 域名 开发
-#define H5_HOST             @"http://dev.jx9n.cn/yzc_app/"
+#define H5_HOST             @"http://dev.jx9n.cn/yzc_business_h5/"
 //趣商城 链接 开发
 #define H5_SHOP_URL         @"http://39.106.62.16/"
 

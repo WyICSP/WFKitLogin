@@ -30,7 +30,7 @@
         if(!lb)
         {
             lb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 260.0f, 2000.0f)];
-            lb.backgroundColor = [[UIColor colorWithWhite:0.2 alpha:1.0f] colorWithAlphaComponent:0.95f];
+            lb.backgroundColor = UIColor.blackColor;
             lb.textColor = [UIColor whiteColor];
             lb.textAlignment = NSTextAlignmentCenter;
             lb.font = [UIFont boldSystemFontOfSize:14];
