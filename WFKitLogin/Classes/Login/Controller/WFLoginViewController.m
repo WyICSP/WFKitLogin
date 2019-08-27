@@ -282,7 +282,7 @@
     [YFMediatorManager setTabbarTitleColor:NavColor titleFont:11];
 //    [YFMediatorManager setNarBarGlobalTextColor:[UIColor blackColor] andFontSize:18];
     
-    NSArray *ClassArray = [NSArray arrayWithObjects:@"WFHomeViewController",@"ViewController",@"ViewController",@"ViewController", nil];
+    NSArray *ClassArray = [NSArray arrayWithObjects:@"WFHomeViewController",@"ViewController",@"ViewController",@"WFUserCenterViewController", nil];
     NSArray *titleArray = [NSArray arrayWithObjects:@"首页",@"商城",@"商学院",@"我的", nil];
     NSArray *normalImgArray = [NSArray arrayWithObjects:@"homeNoSelect",@"shopNoSelect",@"schoolNoSelect",@"mineNoSelect", nil];
     NSArray *selectImgArray = [NSArray arrayWithObjects:@"homeSelect",@"shopSelect",@"schoolSelect",@"mineSelect", nil];

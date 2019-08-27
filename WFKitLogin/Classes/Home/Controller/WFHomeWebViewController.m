@@ -25,7 +25,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUI];
-
 }
 
 - (void)viewWillAppear:(BOOL)animated {
