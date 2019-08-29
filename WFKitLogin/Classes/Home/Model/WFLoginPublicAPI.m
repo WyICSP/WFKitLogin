@@ -65,6 +65,7 @@
     //跳转登录
     NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
     WFLoginViewController *login = [[WFLoginViewController alloc] initWithNibName:@"WFLoginViewController" bundle:currentBundle];
+    login.hidesBottomBarWhenPushed = YES;
     login.loginType = WFJumpLoginCtrlH5Tpye;
     [[[YFKeyWindow shareInstance] getCurrentVC].navigationController pushViewController:login animated:YES];
 }
