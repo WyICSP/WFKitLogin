@@ -61,11 +61,17 @@
         NSMutableDictionary *params = [NSMutableDictionary dictionary];
         [params safeSetObject:money forKey:@"money"];
         [params safeSetObject:payMethod forKey:@"payMethod"];
-//        [params safeSetObject:sn forKey:@"sn"];
-        [params safeSetObject:@"20190821182158725" forKey:@"sn"];
+        [params safeSetObject:sn forKey:@"sn"];
         [WFLoginPublicAPI getPaymentMsgWithParams:params];
     }
 }
+
+///**退出登录 跳转到登录页面*/
+//- (void)dsBLoginOut:(NSString *)msg :(JSCallback) completionHandler
+//{
+//    [WFLoginPublicAPI loginOutAndJumpLogin];
+//    completionHandler(msg,YES);
+//}
 
 
 @end

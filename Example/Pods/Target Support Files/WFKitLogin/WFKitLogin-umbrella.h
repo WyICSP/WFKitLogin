@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "WFHomeIncomeWebViewController.h"
 #import "WFHomeViewController.h"
 #import "WFHomeWebViewController.h"
 #import "WFOtherViewController.h"

@@ -11,6 +11,8 @@
 #import "WFHomeDataTool.h"
 #import "WFPayTypeMsgModel.h"
 #import "SKSafeObject.h"
+#import "YFKeyWindow.h"
+#import "UserData.h"
 #import "WKHelp.h"
 
 @implementation WFLoginPublicAPI
@@ -52,6 +54,18 @@
     [params safeSetObject:models.aliPay forKey:@"aliPayJson"];
     //调用支付
     [YFMediatorManager gotoPayFreightWithParams:params];
+}
+
+/**
+ 退出登录 跳转登录页面
+ */
++ (void)loginOutAndJumpLogin {
+    //退出登录
+    [UserData userInfo:nil];
+    //跳转登录
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    WFLoginViewController *login = [[WFLoginViewController alloc] initWithNibName:@"WFLoginViewController" bundle:currentBundle];
+    [[[YFKeyWindow shareInstance] getCurrentVC].navigationController pushViewController:login animated:YES];
 }
 
 @end

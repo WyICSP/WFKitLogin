@@ -10,6 +10,7 @@
 #import "WFHomeFirstItemCollectionViewCell.h"
 #import "WFHomeSectionItemCollectionViewCell.h"
 #import "WFHomeWebViewController.h"
+#import "WFHomeIncomeWebViewController.h"
 #import "YFMediatorManager+WFLogin.h"
 #import "WFOtherViewController.h"
 #import <MJExtension/MJExtension.h>
@@ -159,7 +160,7 @@
  查看详情 我的收入
  */
 - (void)handleHeadBtnMethod {
-    WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
+    WFHomeIncomeWebViewController *web = [[WFHomeIncomeWebViewController alloc] init];
     web.hidesBottomBarWhenPushed = YES;
     web.urlString = [NSString stringWithFormat:@"%@page/myIncome.html?uuid=%@&appVersion=v%@",H5_HOST,USER_UUID,APP_VERSION];
     [self.navigationController pushViewController:web animated:YES];

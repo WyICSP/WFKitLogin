@@ -28,6 +28,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)getPaymentMsgWithParams:(NSDictionary *)params;
 
+
+/**
+ 退出登录 跳转登录页面
+ */
++ (void)loginOutAndJumpLogin;
+
 @end
 
 NS_ASSUME_NONNULL_END

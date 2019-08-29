@@ -64,15 +64,23 @@
     [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
-- (void)viewWillDisappear:(BOOL)animated{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    // 开启
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    }
     [WKTimer cancelTask:self.task];
     [self userEnableBtn];
     [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    // 禁用返回手势
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
 }
 
 #pragma mark 接口
@@ -189,7 +197,7 @@
 }
 
 - (IBAction)clickCodeBtn:(id)sender {
-    
+    [self.view endEditing:YES];
     if ([NSString isBlankString:self.phoneTF.text] || self.phoneTF.text.length < 11) {
         [YFToast showMessage:@"请输入正确的手机号" inView:self.view];
         return;
@@ -282,7 +290,7 @@
     [YFMediatorManager setTabbarTitleColor:NavColor titleFont:11];
 //    [YFMediatorManager setNarBarGlobalTextColor:[UIColor blackColor] andFontSize:18];
     
-    NSArray *ClassArray = [NSArray arrayWithObjects:@"WFHomeViewController",@"ViewController",@"ViewController",@"WFUserCenterViewController", nil];
+    NSArray *ClassArray = [NSArray arrayWithObjects:@"WFHomeViewController",@"WFShoppingViewController",@"WFBuseSchViewController",@"WFUserCenterViewController", nil];
     NSArray *titleArray = [NSArray arrayWithObjects:@"首页",@"商城",@"商学院",@"我的", nil];
     NSArray *normalImgArray = [NSArray arrayWithObjects:@"homeNoSelect",@"shopNoSelect",@"schoolNoSelect",@"mineNoSelect", nil];
     NSArray *selectImgArray = [NSArray arrayWithObjects:@"homeSelect",@"shopSelect",@"schoolSelect",@"mineSelect", nil];

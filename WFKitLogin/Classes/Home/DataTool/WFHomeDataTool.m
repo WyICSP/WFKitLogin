@@ -9,6 +9,7 @@
 #import <MJExtension/MJExtension.h>
 #import "WFHomeDataModel.h"
 #import "WFPayTypeMsgModel.h"
+#import "NSString+Regular.h"
 #import "WKRequest.h"
 #import "YFKeyWindow.h"
 #import "WKSetting.h"
@@ -25,7 +26,7 @@
         if (CODE_ZERO) {
             resultBlock([WFHomeDataModel mj_objectWithKeyValues:baseModel.data]);
             //存储数据
-            [YFUserDefaults setObject:baseModel.data forKey:@"HomeData"];
+            [YFUserDefaults setObject:[NSString dictionTransformationJson:(NSDictionary *)baseModel.data] forKey:@"HomeData"];
         }else {
             [YFToast showMessage:baseModel.message inView:[[YFKeyWindow shareInstance] getCurrentVC].view];
         }
