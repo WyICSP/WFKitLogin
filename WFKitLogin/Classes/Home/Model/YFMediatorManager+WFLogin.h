@@ -24,6 +24,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)openMyChargePileCtrlWithController:(UIViewController *)controller;
 
+
+/**
+ 去支付
+
+ @param params 支付相关数据
+ */
++ (void)gotoPayFreightWithParams:(NSDictionary *)params;
+
 @end
 
 NS_ASSUME_NONNULL_END

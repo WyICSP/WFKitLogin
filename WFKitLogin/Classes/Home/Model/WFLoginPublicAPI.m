@@ -7,6 +7,7 @@
 //
 
 #import "WFLoginPublicAPI.h"
+#import "YFMediatorManager+WFLogin.h"
 #import "WFHomeDataTool.h"
 #import "WFPayTypeMsgModel.h"
 #import "SKSafeObject.h"
@@ -49,6 +50,8 @@
     [params safeSetObject:models.partnerKey forKey:@"wxPartnerKey"];
     [params safeSetObject:models.prepayid forKey:@"wxOrderNum"];
     [params safeSetObject:models.aliPay forKey:@"aliPayJson"];
+    //调用支付
+    [YFMediatorManager gotoPayFreightWithParams:params];
 }
 
 @end

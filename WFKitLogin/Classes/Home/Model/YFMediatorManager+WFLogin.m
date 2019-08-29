@@ -20,4 +20,8 @@
     [self performTarget:@"WFApplyAreaPublicAPI" action:@"openMyChargePileCtrlWithController:" params:controller isRequiredReturnValue:NO];
 }
 
++ (void)gotoPayFreightWithParams:(NSDictionary *)params {
+    [self performTarget:@"WFPayPublicAPI" action:@"gotoPayWithParams:" params:params isRequiredReturnValue:NO];
+}
+
 @end
