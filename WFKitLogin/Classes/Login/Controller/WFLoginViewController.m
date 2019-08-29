@@ -156,18 +156,27 @@
     [YFUserDefaults setObject:self.phoneTF.text forKey:@"USERPHONE"];
     [YFUserDefaults synchronize];
     
-    //作为跟视图的时候
-    UITabBarController *rootVC = [YFMediatorManager rootTabBarCcontroller];
-    [self addChildViewControllers];
-    [UIApplication sharedApplication].keyWindow.rootViewController = rootVC;
+    if (self.loginType == WFJumpLoginCtrlH5Tpye) {
+        [self.tabBarController setSelectedIndex:0];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+        //刷新个人中心
+        [YFNotificationCenter postNotificationName:@"reloadUserCnter" object:nil];
+    }else {
+        //作为跟视图的时候
+        UITabBarController *rootVC = [YFMediatorManager rootTabBarCcontroller];
+        [self addChildViewControllers];
+        [UIApplication sharedApplication].keyWindow.rootViewController = rootVC;
+        
+        CATransition *anim = [CATransition animation];
+        ////转场动画持续时间
+        anim.duration = 0.5;
+        anim.type = @"cube";
+        //转场动画将去的方向
+        anim.subtype = kCATransitionFromRight;
+        [[UIApplication sharedApplication].keyWindow.layer addAnimation:anim forKey:nil];
+    }
     
-    CATransition *anim = [CATransition animation];
-    ////转场动画持续时间
-    anim.duration = 0.5;
-    anim.type = @"cube";
-    //转场动画将去的方向
-    anim.subtype = kCATransitionFromRight;
-    [[UIApplication sharedApplication].keyWindow.layer addAnimation:anim forKey:nil];
+    
     
 }
 
@@ -288,7 +297,6 @@
     
     [YFMediatorManager setGlobalBackGroundColor:UIColor.whiteColor];
     [YFMediatorManager setTabbarTitleColor:NavColor titleFont:11];
-//    [YFMediatorManager setNarBarGlobalTextColor:[UIColor blackColor] andFontSize:18];
     
     NSArray *ClassArray = [NSArray arrayWithObjects:@"WFHomeViewController",@"WFShoppingViewController",@"WFBuseSchViewController",@"WFUserCenterViewController", nil];
     NSArray *titleArray = [NSArray arrayWithObjects:@"首页",@"商城",@"商学院",@"我的", nil];

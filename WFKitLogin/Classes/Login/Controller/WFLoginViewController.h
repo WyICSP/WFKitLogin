@@ -9,7 +9,14 @@
 #import <WFKitMain/YFBaseViewController.h>
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, WFJumpLoginCtrlType) {
+    WFJumpLoginCtrlAppTpye = 0,//原生
+    WFJumpLoginCtrlH5Tpye //H5
+};
+
 @interface WFLoginViewController : YFBaseViewController
+
+@property (nonatomic, assign) WFJumpLoginCtrlType loginType;
 
 + (instancetype)shareInstance;
 
