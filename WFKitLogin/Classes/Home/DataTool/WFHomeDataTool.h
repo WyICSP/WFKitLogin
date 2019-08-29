@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 @class WFHomeDataModel;
+@class WFPayTypeMsgModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -33,6 +34,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)updateAppWithParams:(NSDictionary *)params
                 resultBlock:(void(^)(NSDictionary *models))resultBlock;
+
+
+#pragma mark 获取支付参数接口
+/**
+ 获取支付信息
+
+ @param params 参数
+ @param resultBlock 返回结果
+ */
++ (void)getPayTypMessageWithParams:(NSDictionary *)params
+                       resultBlock:(void(^)(WFPayTypeMsgModel *mdoels))resultBlock;
 
 @end
 

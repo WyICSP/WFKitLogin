@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *rete;
 /**赋值*/
 @property (nonatomic, strong) WFHomeDataModel *model;
+/**点击查看详情*/
+@property (nonatomic, copy) void (^clickLookDetailBlock)(void);
 /**初始化方法*/
 + (instancetype)cellWithCollectionView:(UICollectionView *)collectionView
                              indexPath:(NSIndexPath *)indexPath;

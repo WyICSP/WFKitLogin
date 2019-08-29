@@ -53,12 +53,16 @@
     }
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 #pragma mark 设置页面
 - (void)setUI {
-    //添加进度条
-    [self.navigationController.navigationBar.layer addSublayer:self.webProgressLayer];
     //添加 webview
-    [self.dwebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]]];
+    [self.view addSubview:self.dwebview];
+    //添加进度条
+    [self.view.layer addSublayer:self.webProgressLayer];
 }
 
 - (void)deleteWebCache {
@@ -96,12 +100,11 @@
     if (!_dwebview) {
         _dwebview = [[DWKWebView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
         [_dwebview addJavascriptObject:[[JsApiTest alloc] init] namespace:nil];
+        [_dwebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]]];
         if (@available(iOS 11.0, *))
         _dwebview.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         _dwebview.navigationDelegate = self;
         [_dwebview setDebugMode:true];
-
-        [self.view addSubview:_dwebview];
     }
     return _dwebview;
 }
@@ -110,7 +113,7 @@
 -(YukiWebProgressLayer *)webProgressLayer{
     if (!_webProgressLayer) {
         _webProgressLayer = [[YukiWebProgressLayer alloc]init];
-        _webProgressLayer.frame = CGRectMake(0, 42, ScreenWidth, 3);
+        _webProgressLayer.frame = CGRectMake(0, NavHeight-3, ScreenWidth, 3);
         _webProgressLayer.strokeColor = NavColor.CGColor;
     }
     return _webProgressLayer;

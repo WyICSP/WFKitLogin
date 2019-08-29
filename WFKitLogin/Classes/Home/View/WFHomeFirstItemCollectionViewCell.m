@@ -36,4 +36,9 @@ static NSString *const cellId = @"WFHomeFirstItemCollectionViewCell";
     self.rete.text = [NSString stringWithFormat:@"%.2f",model.usage];
 }
 
+- (IBAction)clickLookBtn:(id)sender {
+    !self.clickLookDetailBlock ? : self.clickLookDetailBlock();
+}
+
+
 @end

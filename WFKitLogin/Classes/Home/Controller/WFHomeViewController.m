@@ -102,6 +102,10 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         WFHomeFirstItemCollectionViewCell *cell = [WFHomeFirstItemCollectionViewCell cellWithCollectionView:collectionView indexPath:indexPath];
+        WS(weakSelf)
+        cell.clickLookDetailBlock = ^{
+            [weakSelf handleHeadBtnMethod];
+        };
         cell.model = self.models;
         return cell;
     }
@@ -132,35 +136,33 @@
         if (itemModel.typeId == 1) {
             //我的充电桩
            [YFMediatorManager openMyChargePileCtrlWithController:self];
-        }else if (itemModel.typeId == 2) {
-            //我的收入
-            WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
-            web.hidesBottomBarWhenPushed = YES;
-            web.urlString = [NSString stringWithFormat:@"%@page/myIncome.html?uuid=%@&appVersion=v%@",H5_HOST,USER_UUID,APP_VERSION];
-            [self.navigationController pushViewController:web animated:YES];
-        }else if (itemModel.typeId == 3) {
-            //我的钱包
-            WFOtherViewController *other = [[WFOtherViewController alloc] initWithNibName:@"WFOtherViewController" bundle:[NSBundle bundleForClass:[self class]]];
-            other.hidesBottomBarWhenPushed = YES;
-            other.title = @"我的钱包";
-            [self.navigationController pushViewController:other animated:YES];
         }else if (itemModel.typeId == 4) {
             //我的片区
             [YFMediatorManager openApplyAreaCtrlWithController:self];
-        }else if (itemModel.typeId == 5) {
-            //充电桩申请
-            WFOtherViewController *other = [[WFOtherViewController alloc] initWithNibName:@"WFOtherViewController" bundle:[NSBundle bundleForClass:[self class]]];
-            other.hidesBottomBarWhenPushed = YES;
-            other.title = @"充电桩申请";
-            [self.navigationController pushViewController:other animated:YES];
         }else if (itemModel.typeId == 7) {
             //资料包
             WFOtherViewController *other = [[WFOtherViewController alloc] initWithNibName:@"WFOtherViewController" bundle:[NSBundle bundleForClass:[self class]]];
             other.hidesBottomBarWhenPushed = YES;
             other.title = @"资料包";
             [self.navigationController pushViewController:other animated:YES];
+        }else {
+            //其他
+            WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
+            web.hidesBottomBarWhenPushed = YES;
+            web.urlString = [NSString stringWithFormat:@"%@uuid=%@&appVersion=v%@",itemModel.goUrl,USER_UUID,APP_VERSION];
+            [self.navigationController pushViewController:web animated:YES];
         }
     }
+}
+
+/**
+ 查看详情 我的收入
+ */
+- (void)handleHeadBtnMethod {
+    WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
+    web.hidesBottomBarWhenPushed = YES;
+    web.urlString = [NSString stringWithFormat:@"%@page/myIncome.html?uuid=%@&appVersion=v%@",H5_HOST,USER_UUID,APP_VERSION];
+    [self.navigationController pushViewController:web animated:YES];
 }
 
 #pragma mark get set
