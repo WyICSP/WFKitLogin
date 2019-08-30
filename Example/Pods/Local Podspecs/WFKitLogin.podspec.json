@@ -1,6 +1,6 @@
 {
   "name": "WFKitLogin",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "summary": "WFKitLogin登录模块",
   "description": "WFKitLogin是云智充的登录模块主骨架组件",
   "homepage": "https://github.com/WyICSP/WFKitLogin",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/WyICSP/WFKitLogin.git",
-    "tag": "0.2.6"
+    "tag": "0.2.7"
   },
   "platforms": {
     "ios": "9.0"

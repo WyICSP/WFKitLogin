@@ -34,6 +34,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //注册通知：重新刷新页面
+    [YFNotificationCenter addObserver:self selector:@selector(getHomeData) name:@"reloadUserCnter" object:nil];
+    
     id info = [YFUserDefaults objectForKey:@"HomeData"];
     
     if (info) {
@@ -71,6 +75,10 @@
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
+}
+
+- (void)dealloc {
+    [YFNotificationCenter removeObserver:self name:@"reloadUserCnter" object:nil];
 }
 
 #pragma mark 生命周期

@@ -161,6 +161,7 @@
         [self.navigationController popToRootViewControllerAnimated:YES];
         //刷新个人中心
         [YFNotificationCenter postNotificationName:@"reloadUserCnter" object:nil];
+        
     }else {
         //作为跟视图的时候
         UITabBarController *rootVC = [YFMediatorManager rootTabBarCcontroller];
