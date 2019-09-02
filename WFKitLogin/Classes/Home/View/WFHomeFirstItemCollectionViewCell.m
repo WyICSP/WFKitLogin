@@ -26,6 +26,7 @@ static NSString *const cellId = @"WFHomeFirstItemCollectionViewCell";
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.lookBtn.layer.cornerRadius = 19.0f;
+    self.rateLbl.adjustsFontSizeToFitWidth = YES;
     // Initialization code
 }
 

@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *pileNumber;
 /**使用率*/
 @property (weak, nonatomic) IBOutlet UILabel *rete;
+@property (weak, nonatomic) IBOutlet UILabel *rateLbl;
+
 /**赋值*/
 @property (nonatomic, strong) WFHomeDataModel *model;
 /**点击查看详情*/

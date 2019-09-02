@@ -35,6 +35,8 @@
  @param sender 10 减 20 加 30 常见问题
  */
 - (IBAction)clickBtn:(UIButton *)sender {
+    [self endEditing:YES];
+    
     if (sender.tag == 10) {
         //减
         if (self.num == 0) return;
@@ -50,6 +52,7 @@
 }
 
 - (IBAction)clickAddressBtn:(id)sender {
+    [self endEditing:YES];
     
     YFAddressPickView *addressPickView = [YFAddressPickView shareInstance];
     addressPickView.addressDatas = [[WFHomeSaveDataTool shareInstance] readAddressFile];
