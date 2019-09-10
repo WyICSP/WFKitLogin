@@ -7,11 +7,13 @@
 //
 
 #import "WFApplyPartnerViewController.h"
+#import "WFHomeWebViewController.h"
 #import "WFApplyPartnerUserView.h"
 #import "NSString+Regular.h"
 #import "WFLoginDataTool.h"
 #import "SKSafeObject.h"
 #import "YFToast.h"
+#import "WKSetting.h"
 #import "WKHelp.h"
 
 @interface WFApplyPartnerViewController ()
@@ -107,6 +109,13 @@
         NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
         _applyPartnerView = [[currentBundle loadNibNamed:@"WFApplyPartnerUserView" owner:nil options:nil] firstObject];
         _applyPartnerView.frame = self.scrollView.bounds;
+        @weakify(self)
+        _applyPartnerView.clickCommonProblemBlock = ^{
+            @strongify(self)
+            WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
+            web.urlString = [NSString stringWithFormat:@"%@page/articleList.html",H5_HOST];
+            [self.navigationController pushViewController:web animated:YES];
+        };
     }
     return _applyPartnerView;
 }

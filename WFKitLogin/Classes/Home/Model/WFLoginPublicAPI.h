@@ -34,6 +34,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)loginOutAndJumpLogin;
 
+/**
+ 打电话
+ @param phone 电话号码
+ */
++ (void)callPhoneWithNumber:(NSString *)phone;
+
 @end
 
 NS_ASSUME_NONNULL_END

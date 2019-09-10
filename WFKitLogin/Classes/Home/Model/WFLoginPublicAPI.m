@@ -40,6 +40,18 @@
 }
 
 /**
+ 打电话
+ 
+ @param phone 电话号码
+ */
++ (void)callPhoneWithNumber:(NSString *)phone {
+    NSString *phoneNum = [NSString stringWithFormat:@"tel:%@",phone];
+    if (phone.length != 0) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNum]];
+    }
+}
+
+/**
  处理支付接口条用完成
 
  @param models mdoels

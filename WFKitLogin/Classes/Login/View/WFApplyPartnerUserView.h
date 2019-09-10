@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIButton *addBtn;
 /**view的高度*/
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewHeightCons;
+/**常见问题*/
+@property (nonatomic, copy) void (^clickCommonProblemBlock)(void);
 
 @end
 

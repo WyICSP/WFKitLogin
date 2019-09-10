@@ -66,6 +66,13 @@
     }
 }
 
+/**联系客服*/
+- (void)phoneCilck:(NSString *)msg :(JSCallback) completionHandler
+{
+    [WFLoginPublicAPI callPhoneWithNumber:msg];
+    completionHandler(msg,YES);
+}
+
 ///**退出登录 跳转到登录页面*/
 //- (void)dsBLoginOut:(NSString *)msg :(JSCallback) completionHandler
 //{

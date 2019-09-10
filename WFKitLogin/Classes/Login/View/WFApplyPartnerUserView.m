@@ -47,7 +47,7 @@
         self.num ++;
         self.numTF.text = [NSString stringWithFormat:@"%d",self.num];
     }else if (sender.tag == 30) {
-        
+        !self.clickCommonProblemBlock ? : self.clickCommonProblemBlock();
     }
 }
 
