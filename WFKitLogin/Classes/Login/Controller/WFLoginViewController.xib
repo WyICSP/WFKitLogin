@@ -130,7 +130,7 @@
                                 <constraint firstAttribute="width" constant="40" id="Oau-Q6-1Zh"/>
                                 <constraint firstAttribute="height" constant="40" id="XbU-to-u1P"/>
                             </constraints>
-                            <state key="normal" image="WFKitLogin.bundle/wechat"/>
+                            <state key="normal" image="WFKitLogin.bundle/weChat"/>
                         </button>
                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmv-8E-Z2g">
                             <rect key="frame" x="147.5" y="409" width="50" height="15"/>
@@ -241,6 +241,6 @@
     </objects>
     <resources>
         <image name="WFKitLogin.bundle/loginBg" width="16" height="16"/>
-        <image name="WFKitLogin.bundle/wechat" width="16" height="16"/>
+        <image name="WFKitLogin.bundle/weChat" width="16" height="16"/>
     </resources>
 </document>
