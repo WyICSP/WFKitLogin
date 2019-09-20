@@ -19,16 +19,14 @@
 //dev.old.jx9n.cn 
 
 
-//老接口域名 开发
-#define HOST_URL            @"http://dev.old.jx9n.cn:8181/api/"
-//新接口域名 开发
-#define NEW_HOST_URL        @"http://dev.jx9n.cn:10001/"
-//趣商城 分享页面接口
-#define H5_SHARE_HOST_URL   @"http://39.106.62.16:8780/"
-//我的 消息 域名 开发
-#define H5_HOST             @"http://dev.jx9n.cn/yzc_business_h5/"
-//趣商城 链接 开发
-#define H5_SHOP_URL         @"http://39.106.62.16/"
+////老接口域名 开发
+//#define HOST_URL            @"http://dev.old.jx9n.cn:8181/api/"
+////新接口域名 开发
+//#define NEW_HOST_URL        @"http://dev.jx9n.cn:10001/"
+////合作版 H5 网页
+//#define H5_HOST             @"http://dev.jx9n.cn/yzc_business_h5/"
+////合作版商城
+//#define H5_SHOP_URL         @"http://dev.jx9n.cn/yzc-union-fe/"
 
 ////老接口域名 测试
 //#define HOST_URL            @"http://test.old.jx9n.cn:8181/api/"
@@ -41,17 +39,14 @@
 ////趣商城 链接 测试
 //#define H5_SHOP_URL         @"http://39.106.62.16/"
 
-//
-////老接口域名 正式
-//#define HOST_URL          @"http://yzcapp.jx9n.com/api/"
-////新接口域名 正式
-//#define NEW_HOST_URL      @"https://prod.jx9n.com/"
-////趣商城 分享页面接口
-//#define H5_SHARE_HOST_URL @"http://api.ebus.jx9n.com/"
-////我的 消息 域名 正式
-//#define H5_HOST           @"https://prod.h5.jx9n.com/yzc_app/"
-////趣商城 链接 正式
-//#define H5_SHOP_URL       @"http://m.ebus.jx9n.com/"
+//老接口域名 正式
+#define HOST_URL          @"http://yzcapp.jx9n.com/api/"
+//新接口域名 正式
+#define NEW_HOST_URL      @"https://prod.jx9n.com/"
+//合作版 H5 网页
+#define H5_HOST           @"https://prod.h5.jx9n.com/yzc_business_h5/"
+////合作版商城
+#define H5_SHOP_URL       @"http://prod.h5.jx9n.com/yzc-union-fe/"
 
 
 
