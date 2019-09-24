@@ -31,8 +31,8 @@ static NSString *const cellId = @"WFHomeFirstItemCollectionViewCell";
 }
 
 - (void)setModel:(WFHomeDataModel *)model {
-    self.banlance.text = [NSString stringWithFormat:@"%@",@(model.income.doubleValue/100)];
-    self.dayIncome.text = [NSString stringWithFormat:@"%@",@(model.dayIncome.doubleValue/100)];
+    self.banlance.text = [NSString stringWithFormat:@"%@",@(model.income.integerValue/100.0f)];
+    self.dayIncome.text = [NSString stringWithFormat:@"%@",@(model.dayIncome.integerValue/100.0f)];
     self.pileNumber.text = [NSString stringWithFormat:@"%ld",(long)model.count];
     self.rete.text = [NSString stringWithFormat:@"%.2f",model.usage];
 }
