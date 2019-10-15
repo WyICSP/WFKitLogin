@@ -58,6 +58,10 @@
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : TabUIColorFromRGB(0x9FA0A1),NSFontAttributeName : [UIFont systemFontOfSize:titleFont]} forState:UIControlStateNormal];
     //选中
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : titleColor,NSFontAttributeName : [UIFont systemFontOfSize:titleFont]} forState:UIControlStateSelected];
+    //适配 iOS 13 的 title 点击变回默认蓝色
+    if (@available(iOS 13.0, *)) {
+        [[UITabBar appearance] setUnselectedItemTintColor:TabUIColorFromRGB(0x9FA0A1)];
+    }
 }
 
 /**

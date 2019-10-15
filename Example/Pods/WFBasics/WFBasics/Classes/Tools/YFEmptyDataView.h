@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *emptyLbl;
 /**按钮*/
 @property (weak, nonatomic) IBOutlet UIButton *emptyBtn;
+/// 距离中心高度
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *centerCons;
+
 /**按钮点击事件*/
 @property (nonatomic, copy) void (^clickEmptyBtnBlock)(void);
 /**加载当前视图*/

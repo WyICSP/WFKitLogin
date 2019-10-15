@@ -24,7 +24,7 @@
 ////新接口域名 开发
 //#define NEW_HOST_URL        @"http://dev.jx9n.cn:10001/"
 ////合作版 H5 网页
-//#define H5_HOST             @"http://dev.jx9n.cn/yzc_business_h5/"
+//#define H5_HOST             @"http://dev.jx9n.cn/"
 ////合作版商城
 //#define H5_SHOP_URL         @"http://dev.jx9n.cn/yzc-union-fe/"
 
@@ -44,7 +44,7 @@
 //新接口域名 正式
 #define NEW_HOST_URL      @"https://prod.jx9n.com/"
 //合作版 H5 网页
-#define H5_HOST           @"https://prod.h5.jx9n.com/yzc_business_h5/"
+#define H5_HOST           @"https://prod.h5.jx9n.com/"
 ////合作版商城
 #define H5_SHOP_URL       @"http://prod.h5.jx9n.com/yzc-union-fe/"
 

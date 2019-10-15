@@ -10,10 +10,13 @@
 #endif
 #endif
 
+#import "WFBaseWebViewController.h"
 #import "WFStartUpViewController.h"
 #import "WKNavigationController.h"
 #import "WKTabbarController.h"
 #import "YFBaseViewController.h"
+#import "NSTimer+WFAddition.h"
+#import "WFWebProgressLayer.h"
 #import "YFMainPublicModelAPI.h"
 #import "YFMediatorManager+YFKitMain.h"
 

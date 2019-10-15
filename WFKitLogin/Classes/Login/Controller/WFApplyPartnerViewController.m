@@ -113,7 +113,7 @@
         _applyPartnerView.clickCommonProblemBlock = ^{
             @strongify(self)
             WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
-            web.urlString = [NSString stringWithFormat:@"%@page/articleList.html",H5_HOST];
+            web.urlString = [NSString stringWithFormat:@"%@yzc_business_h5/page/articleList.html",H5_HOST];
             [self.navigationController pushViewController:web animated:YES];
         };
     }
