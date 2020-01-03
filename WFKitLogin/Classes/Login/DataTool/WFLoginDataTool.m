@@ -62,6 +62,36 @@
     }];
 }
 
++ (void)getVerificationUpdatePswCodeWithParams:(NSDictionary *)params
+                                   resultBlock:(void(^)(void))resultBlock {
+    //接口地址
+    NSString *path = [NSString stringWithFormat:@"%@app-partner/loginTemplate/findCode",NEW_HOST_URL];
+    [WKRequest postWithURLString:path parameters:params isJson:YES isShowHud:YES success:^(WKBaseModel *baseModel) {
+        if (CODE_ZERO) {
+            resultBlock();
+        }else {
+            [YFToast showMessage:baseModel.message inView:[[YFKeyWindow shareInstance] getCurrentVC].view];
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
++ (void)updatePasswordWithParams:(NSDictionary *)params
+                     resultBlock:(void(^)(void))resultBlock {
+    //接口地址
+    NSString *path = [NSString stringWithFormat:@"%@app-partner/loginTemplate/updatePassword",NEW_HOST_URL];
+    [WKRequest postWithURLString:path parameters:params isJson:YES isShowHud:YES success:^(WKBaseModel *baseModel) {
+        if (CODE_ZERO) {
+            resultBlock();
+        }else {
+            [YFToast showMessage:baseModel.message inView:[[YFKeyWindow shareInstance] getCurrentVC].view];
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
 
 #pragma mark 申请成为合伙人
 + (void)applyForPartnershipWithParams:(NSDictionary *)params

@@ -25,6 +25,7 @@
 #import "WFHomeSectionItemCollectionViewCell.h"
 #import "WFApplyPartnerViewController.h"
 #import "WFLoginViewController.h"
+#import "WFSecuritySetViewController.h"
 #import "WFLoginDataTool.h"
 #import "WFHomeSaveDataTool.h"
 #import "WFApplyPartnerUserView.h"

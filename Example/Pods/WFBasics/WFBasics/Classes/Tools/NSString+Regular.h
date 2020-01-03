@@ -287,4 +287,12 @@
  */
 + (NSString *)getCurrentDeviceModel;
 
+
+/// 获取项目名 UTF-8 编码
++ (NSString *)getProjectName;
+
+
+/// APP 名字
++ (NSString *)getAppName;
+
 @end

@@ -34,6 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)loginOutAndJumpLogin;
 
+/// 修改密码
++ (void)changePassword;
+
 /**
  打电话
  @param phone 电话号码

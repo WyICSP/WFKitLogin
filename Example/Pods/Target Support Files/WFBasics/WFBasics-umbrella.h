@@ -12,6 +12,7 @@
 
 #import "UIImage+QRCode.h"
 #import "UIView+Frame.h"
+#import "WKConfig.h"
 #import "WKHelp.h"
 #import "WKSetting.h"
 #import "YFMediatorManager.h"

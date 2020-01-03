@@ -8,6 +8,7 @@
 
 #import "WFLoginPublicAPI.h"
 #import "YFMediatorManager+WFLogin.h"
+#import "WFSecuritySetViewController.h"
 #import "WFHomeDataTool.h"
 #import "WFPayTypeMsgModel.h"
 #import "SKSafeObject.h"
@@ -80,6 +81,14 @@
     login.hidesBottomBarWhenPushed = YES;
     login.loginType = WFJumpLoginCtrlH5Tpye;
     [[[YFKeyWindow shareInstance] getCurrentVC].navigationController pushViewController:login animated:YES];
+}
+
+
+/// 修改密码
++ (void)changePassword {
+    WFSecuritySetViewController *security = [WFSecuritySetViewController shareInstance];
+    security.setType = WFSecuritySetUpgradeType;
+    [[[YFKeyWindow shareInstance] getCurrentVC].navigationController pushViewController:security animated:YES];
 }
 
 @end

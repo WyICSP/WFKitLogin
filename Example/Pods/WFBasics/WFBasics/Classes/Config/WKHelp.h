@@ -19,6 +19,8 @@
 #define TabbarHeight (NavHeight == 88.0 ? 83.0f : 49.0f)
 
 #define ISIPHONEX   (NavHeight == 88.0 ? YES : NO)
+// 刘海屏下方的间距
+#define SafeAreaBottom (ISIPHONEX ? 34.0f : 0.0f)
 
 #define XHEIGHT     24
 

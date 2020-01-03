@@ -11,16 +11,35 @@
 #import "YFMainPublicModelAPI.h"
 #import "WFViewController.h"
 #import "WKNavigationController.h"
+#import "WFUserCenterViewController.h"
 
 @implementation WFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //去掉导航栏的黑线
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    //创建window
+    UIWindow *window                         = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window                              = window;
+    [self.window setBackgroundColor:[UIColor whiteColor]];
     WFLoginViewController *login     = [WFLoginViewController shareInstance];
     self.window.rootViewController    = [[WKNavigationController alloc] initWithRootViewController:login];
     [YFMainPublicModelAPI setGlobalBackGroundColor:UIColor.whiteColor];
     [YFMainPublicModelAPI setNarBarGlobalTextColor:UIColor.blackColor andFontSize:18.0f];
+    
+    
+//    UITabBarController *rootVC        = [YFMainPublicModelAPI rootTabBarCcontroller];
+//    [YFMainPublicModelAPI addChildVC:login normalImageName:@"" selectedImageName:@"" title:@"登录"];
+//    [YFMainPublicModelAPI addChildVC:[WFUserCenterViewController new] normalImageName:@"" selectedImageName:@"" title:@"我的片区"];
+//    [YFMainPublicModelAPI addChildVC:[WFUserCenterViewController new] normalImageName:@"" selectedImageName:@"" title:@"我的"];
+//    [YFMainPublicModelAPI setGlobalBackGroundColor:[UIColor whiteColor]];
+//    [YFMainPublicModelAPI setNarBarGlobalTextColor:[UIColor blackColor] andFontSize:18];
+//
+//    [self.window setRootViewController:rootVC];
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
