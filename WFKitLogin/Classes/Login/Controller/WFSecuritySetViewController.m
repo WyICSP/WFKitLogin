@@ -61,8 +61,8 @@
         self.phone.text = [self.userPhone stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
     }else {
         //修改密码
-        NSString *loginPhone = [UserData userInfo].mobile;
-        if (loginPhone.length == 11)
+        self.userPhone = [UserData userInfo].mobile;
+        if (self.userPhone.length == 11)
         self.phone.text = [self.userPhone stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
     }
     self.titleLbl.text = self.setType == WFSecuritySetForgetPswType ? @"设置新的登录密码" : @"系统安全升级,请重设密码";
@@ -72,8 +72,10 @@
 ///发送验证码
 - (IBAction)clickCodeTFBtn:(id)sender {
     
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params safeSetObject:self.userPhone forKey:@"mobile"];
     @weakify(self)
-    [WFLoginDataTool getVerificationUpdatePswCodeWithParams:@{@"mobile":self.userPhone} resultBlock:^{
+    [WFLoginDataTool getVerificationUpdatePswCodeWithParams:params resultBlock:^{
         @strongify(self)
         [YFToast showMessage:@"验证码发送成功" inView:self.view];
         self.task = [WKTimer execTask:[WKProxy proxyWithTarget:self]
@@ -113,6 +115,7 @@
         [YFToast showMessage:@"密码不能和手机号一致" inView:self.view];
         return;
     }
+    
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     [params safeSetObject:self.passwordTF.text forKey:@"newPassword"];
     [params safeSetObject:self.codeTF.text forKey:@"code"];
@@ -160,11 +163,11 @@
 //        login.loginType = WFJumpLoginCtrlH5Tpye;
 //        [self.navigationController pushViewController:login animated:YES];
         [YFToast showMessage:@"修改成功" inView:self.view];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            //刷新个人中心
-            [YFNotificationCenter postNotificationName:@"reloadUserCnter" object:nil];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             //直接返回
             [self.navigationController popToRootViewControllerAnimated:YES];
+            //刷新个人中心
+            [YFNotificationCenter postNotificationName:@"reloadUserCnter" object:nil];
         });
     }
 }
