@@ -162,7 +162,6 @@
 //        WFLoginViewController *login = [[WFLoginViewController alloc] initWithNibName:@"WFLoginViewController" bundle:currentBundle];
 //        login.loginType = WFJumpLoginCtrlH5Tpye;
 //        [self.navigationController pushViewController:login animated:YES];
-        [YFToast showMessage:@"修改成功" inView:self.view];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             //直接返回
             [self.navigationController popToRootViewControllerAnimated:YES];
