@@ -26,8 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) WFSecuritySetViewController *(^secutityType)(WFSecuritySetType setType);
 @property (nonatomic, copy) WFSecuritySetViewController *(^userMoblie)(NSString *userPhone);
 @property (nonatomic, copy) WFSecuritySetViewController *(^userLoginInfo)(NSDictionary *userInfo);
-/// 初始化
-+ (instancetype)shareInstance;
 
 @end
 

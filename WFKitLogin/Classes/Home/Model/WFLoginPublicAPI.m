@@ -86,7 +86,7 @@
 
 /// 修改密码
 + (void)changePassword {
-    WFSecuritySetViewController *security = [WFSecuritySetViewController shareInstance];
+    WFSecuritySetViewController *security = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"WFSecuritySetViewController" owner:nil options:nil] firstObject];
     security.setType = WFSecuritySetUpgradeType;
     [[[YFKeyWindow shareInstance] getCurrentVC].navigationController pushViewController:security animated:YES];
 }

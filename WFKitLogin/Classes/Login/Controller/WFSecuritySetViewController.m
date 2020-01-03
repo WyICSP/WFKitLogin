@@ -52,16 +52,6 @@
     [self.view endEditing:YES];
 }
 
-#pragma mark 接口
-+ (instancetype)shareInstance {
-    static WFSecuritySetViewController *pswSet;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        pswSet = [[WFSecuritySetViewController alloc] initWithNibName:@"WFSecuritySetViewController" bundle:[NSBundle bundleForClass:[self class]]];
-    });
-    return pswSet;
-}
-
 #pragma mark 私有方法
 - (void)setUI {
     self.countIndex = 60;

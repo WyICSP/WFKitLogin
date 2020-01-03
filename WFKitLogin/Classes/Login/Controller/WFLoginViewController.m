@@ -157,7 +157,7 @@
 - (void)loginSuccessWithmDictionary:(NSDictionary *)mDictionary {
     if (!self.exChangeBtn.selected && [self.phoneTF.text isEqualToString:self.passwordTF.text]) {
         //密码登录的时候 手机号和密码相同 需要重新设置密码
-        WFSecuritySetViewController *security = [WFSecuritySetViewController shareInstance];
+        WFSecuritySetViewController *security = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"WFSecuritySetViewController" owner:nil options:nil] firstObject];
         security.secutityType(WFSecuritySetUpgradeType).userMoblie(self.phoneTF.text).userLoginInfo(mDictionary);
         [self.navigationController pushViewController:security animated:YES];
     }else {
@@ -270,7 +270,7 @@
 /// 忘记密码
 /// @param sender 按钮对象
 - (IBAction)clickForgetPswBtn:(id)sender {
-    WFSecuritySetViewController *security = [WFSecuritySetViewController shareInstance];
+    WFSecuritySetViewController *security = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"WFSecuritySetViewController" owner:nil options:nil] firstObject];
     security.setType = WFSecuritySetForgetPswType;
     [self.navigationController pushViewController:security animated:YES];
 }
