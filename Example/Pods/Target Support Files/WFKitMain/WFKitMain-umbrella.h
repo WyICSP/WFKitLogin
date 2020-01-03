@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "WFBaseNoNavWebViewController.h"
 #import "WFBaseWebViewController.h"
 #import "WFStartUpViewController.h"
 #import "WKNavigationController.h"

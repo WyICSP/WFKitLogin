@@ -6,6 +6,8 @@
 //
 
 #import "WFBaseWebViewController.h"
+#import "NSString+Regular.h"
+#import "UserData.h"
 #import "WKHelp.h"
 
 @interface WFBaseWebViewController () <WKNavigationDelegate,WKUIDelegate>
@@ -16,8 +18,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]]];
+    [self setUI];
+}
+
+#pragma mark 设置页面
+- (void)setUI {
+    //添加进度条
     [self.navigationController.navigationBar.layer addSublayer:self.webProgressLayer];
+    //添加 webview
+    [self.dwebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]]];
+    //通过 KVC 监听 webView 的 title
+    [self.dwebview addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:NULL];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"title"]) {
+        if (object == self.dwebview) {
+            self.title = self.dwebview.title;
+        }
+    }
+}
+
+- (void)deleteWebCache {
+    //allWebsiteDataTypes清除所有缓存
+    NSSet *types = [WKWebsiteDataStore allWebsiteDataTypes];
+    //你可以选择性的删除一些你需要删除的文件 or 也可以直接全部删除所有缓存的type
+    NSDate *dateFrom = [NSDate dateWithTimeIntervalSince1970:0];
+    [[WKWebsiteDataStore defaultDataStore] removeDataOfTypes:types
+                                               modifiedSince:dateFrom completionHandler:^{
+                                                   // code
+       }];
+}
+
+- (void)goBack {
+    [self.dwebview canGoBack] ? [self.dwebview goBack] : [super goBack];
 }
 
 // 页面开始加载时调用
@@ -39,40 +73,47 @@
      [self.webProgressLayer finishedLoadWithError:error];
 }
 #pragma mark webView
--(WKWebView *)webView{
-    if (!_webView) {
-        _webView                                = [[WKWebView alloc]initWithFrame:self.view.bounds];
-        _webView.navigationDelegate             = self;
-        _webView.UIDelegate                     = self;
-        _webView.backgroundColor                = [UIColor whiteColor];
-        [self.view addSubview:_webView];
+- (DWKWebView *)dwebview {
+    if (!_dwebview) {
+        _dwebview = [[DWKWebView alloc] initWithFrame:CGRectMake(0, NavHeight, ScreenWidth, ScreenHeight-NavHeight)];
+//        [_dwebview addJavascriptObject:[[JsApiTest alloc] init] namespace:nil];
+        _dwebview.navigationDelegate = self;
+        [_dwebview setDebugMode:true];
+        
+        [self.view addSubview:_dwebview];
     }
-    return _webView;
+    return _dwebview;
 }
 
 #pragma mark webProgressLayer
--(WFWebProgressLayer *)webProgressLayer{
+- (WFWebProgressLayer *)webProgressLayer{
     if (!_webProgressLayer) {
         _webProgressLayer                        = [[WFWebProgressLayer alloc]init];
-        _webProgressLayer.frame                  =CGRectMake(0, 42, ScreenWidth, 3);
+        _webProgressLayer.frame                  = CGRectMake(0, 42, ScreenWidth, 3);
         _webProgressLayer.strokeColor            = self.progressColor == nil ? [UIColor blueColor].CGColor : self.progressColor.CGColor;
     }
     return _webProgressLayer;
 }
 
--(void)setProgressColor:(UIColor *)progressColor{
+- (void)setProgressColor:(UIColor *)progressColor{
     self.webProgressLayer.strokeColor            = progressColor == nil ? NavColor.CGColor : progressColor.CGColor;
 }
 
--(void)backButtonClick:(UIButton *)sender{
-    [self.webView canGoBack] ? [self.webView goBack] : [self goBack];
+- (void)setUrlString:(NSString *)urlString {
+    if ([urlString containsString:@"?"]) {
+        urlString = [NSString stringWithFormat:@"%@&uuid=%@&appVersion=%@&appMode=app&appName=%@",urlString,USER_UUID,APP_VERSION,[NSString getProjectName]];
+    }else {
+        urlString = [NSString stringWithFormat:@"%@?uuid=%@&appVersion=%@&appMode=app&appName=%@",urlString,USER_UUID,APP_VERSION,[NSString getProjectName]];
+    }
+    _urlString = urlString;
 }
-
 
 - (void)dealloc {
     [self.webProgressLayer closeTimer];
     [_webProgressLayer removeFromSuperlayer];
     _webProgressLayer = nil;
+    
+    [self.dwebview removeObserver:self forKeyPath:@"title"];
 }
 
 @end

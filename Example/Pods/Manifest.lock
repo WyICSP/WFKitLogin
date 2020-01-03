@@ -15,17 +15,17 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - dsBridge (3.0.6)
-  - MJExtension (3.1.0)
-  - MJRefresh (3.2.0)
-  - SDWebImage (5.1.0):
-    - SDWebImage/Core (= 5.1.0)
-  - SDWebImage/Core (5.1.0)
+  - MJExtension (3.2.1)
+  - MJRefresh (3.2.2)
+  - SDWebImage (5.3.1):
+    - SDWebImage/Core (= 5.3.1)
+  - SDWebImage/Core (5.3.1)
   - SVProgressHUD (2.2.5)
   - WFBasics (0.3.3):
     - AFNetworking
     - SVProgressHUD
     - WYAutoLayout
-  - WFHomeAddress (0.1.4):
+  - WFHomeAddress (0.1.5):
     - MJExtension
   - WFKitLogin (0.4.1):
     - dsBridge
@@ -35,7 +35,8 @@ PODS:
     - WFHomeAddress
     - WFKitMain
     - WKFunComponents
-  - WFKitMain (0.2.0):
+  - WFKitMain (0.2.6):
+    - dsBridge
     - WFBasics
   - WKFunComponents (0.1.0)
   - WYAutoLayout (1.0.1)
@@ -65,14 +66,14 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
-  MJExtension: 6b69b3bef2864fd550ce1a184eda219e321209d2
-  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
-  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
+  SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   WFBasics: 823e6c493f61b14e94814f8dd645510c000b9d4d
-  WFHomeAddress: 5f910d0370e0b8b3c62f5b3cc5cd03a800b84125
+  WFHomeAddress: 4eb27df8a873af9161d147f8b10a1d50ba725467
   WFKitLogin: 0afbda501fc2b1779469992e4ce3b6a8c4d00104
-  WFKitMain: 4ee7dbcc5f89ae82e95b241cea1ea1aed07004e3
+  WFKitMain: 0fa22bfb094a15e8ccdc0bd11db57e264b40d3ad
   WKFunComponents: a4cde3e92b1c5841be91a9eefd7968c8ce903f73
   WYAutoLayout: 3cb136ddc2efa9faaecf15876e6a9b2a6fd7c6cb
 
