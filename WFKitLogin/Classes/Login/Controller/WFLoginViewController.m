@@ -158,7 +158,8 @@
     if (!self.exChangeBtn.selected && [self.phoneTF.text isEqualToString:self.passwordTF.text]) {
         //密码登录的时候 手机号和密码相同 需要重新设置密码
         WFSecuritySetViewController *security = [[WFSecuritySetViewController alloc] initWithNibName:@"WFSecuritySetViewController" bundle:[NSBundle bundleForClass:[self class]]];
-        security.secutityType(WFSecuritySetUpgradeType).userMoblie(self.phoneTF.text).userLoginInfo(mDictionary);
+        WFSecuritySetType sType = self.loginType == WFJumpLoginCtrlH5Tpye ? WFSecuritySetComType : WFSecuritySetUpgradeType;
+        security.secutityType(sType).userMoblie(self.phoneTF.text).userLoginInfo(mDictionary);
         [self.navigationController pushViewController:security animated:YES];
     }else {
         //存储用户信息

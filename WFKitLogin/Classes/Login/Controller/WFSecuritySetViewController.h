@@ -10,7 +10,8 @@
 
 typedef NS_ENUM(NSUInteger, WFSecuritySetType) {
     WFSecuritySetForgetPswType = 0, //修改密码
-    WFSecuritySetUpgradeType = 1 //重新设置密码
+    WFSecuritySetUpgradeType = 1, //重新设置密码
+    WFSecuritySetComType //H5-登录->到这个页面
 };
 
 NS_ASSUME_NONNULL_BEGIN
