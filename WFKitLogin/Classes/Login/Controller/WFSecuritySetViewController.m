@@ -153,15 +153,16 @@
         anim.subtype = kCATransitionFromRight;
         [[UIApplication sharedApplication].keyWindow.layer addAnimation:anim forKey:nil];
         
+    }else if (self.setType == WFSecuritySetForgetPswType) {
+        //修改密码
+        //直接返回
+        [self.navigationController popToRootViewControllerAnimated:YES];
+        //刷新个人中心
+        [YFNotificationCenter postNotificationName:@"reloadUserCnter" object:nil];
     }else {
-        //修改密码 然后去重新登录
-//        //退出登录
-//        [UserData userInfo:nil];
-//        //跳转登录
-//        NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-//        WFLoginViewController *login = [[WFLoginViewController alloc] initWithNibName:@"WFLoginViewController" bundle:currentBundle];
-//        login.loginType = WFJumpLoginCtrlH5Tpye;
-//        [self.navigationController pushViewController:login animated:YES];
+        //H5-退出登录, 登录其他账号
+        //存储用户信息
+        [UserData userInfo:self.userInfo];
         //直接返回
         [self.navigationController popToRootViewControllerAnimated:YES];
         //刷新个人中心
