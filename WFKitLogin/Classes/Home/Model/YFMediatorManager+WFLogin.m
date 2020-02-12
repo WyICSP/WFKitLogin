@@ -20,6 +20,11 @@
     [self performTarget:@"WFApplyAreaPublicAPI" action:@"openMyChargePileCtrlWithController:" params:controller isRequiredReturnValue:NO];
 }
 
+/// 打开授信充值页面
++ (void)openCreditPayCtrlWithController:(UIViewController *)controller {
+    [self performTarget:@"WFApplyAreaPublicAPI" action:@"openCreditPayCtrlWithController:" params:controller isRequiredReturnValue:NO];
+}
+
 + (void)gotoPayFreightWithParams:(NSDictionary *)params {
     [self performTarget:@"WFPayPublicAPI" action:@"gotoPayWithParams:" params:params isRequiredReturnValue:NO];
 }

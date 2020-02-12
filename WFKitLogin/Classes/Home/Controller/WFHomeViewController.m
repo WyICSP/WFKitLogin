@@ -9,6 +9,7 @@
 #import "WFHomeViewController.h"
 #import "WFHomeFirstItemCollectionViewCell.h"
 #import "WFHomeSectionItemCollectionViewCell.h"
+#import "WFHomeExplainCollectionViewCell.h"
 #import "WFHomeWebViewController.h"
 #import "WFHomeIncomeWebViewController.h"
 #import "YFMediatorManager+WFLogin.h"
@@ -113,11 +114,12 @@
 
 #pragma mark UICollectionViewDelegate,UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return section == 0 ? 1 : self.models.list.count;
+    return section == 2 ? self.models.list.count : 1;
+//    return section == 0 ? 1 : self.models.list.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -129,6 +131,9 @@
         };
         cell.model = self.models;
         return cell;
+    }else if (indexPath.section == 1) {
+        WFHomeExplainCollectionViewCell *cell = [WFHomeExplainCollectionViewCell cellWithCollectionView:collectionView indexPath:indexPath];
+        return cell;
     }
     WFHomeSectionItemCollectionViewCell *cell = [WFHomeSectionItemCollectionViewCell cellWithCollectionView:collectionView indexPath:indexPath];
     cell.model = self.models.list[indexPath.row];
@@ -136,23 +141,28 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return indexPath.section == 0 ? CGSizeMake(ScreenWidth, KHeight(335.0f)) : CGSizeMake((ScreenWidth-KWidth(22))/2, KHeight(95.0f));
+    if (indexPath.section == 0) {
+        return CGSizeMake(ScreenWidth, KHeight(335.0f));
+    }else if (indexPath.section == 1) {
+        return CGSizeMake(ScreenWidth, KHeight(55.0f));
+    }
+    return CGSizeMake((ScreenWidth-KWidth(22))/2, KHeight(95.0f));
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return section == 0 ? UIEdgeInsetsZero : UIEdgeInsetsMake(0, KWidth(10.0f), 0, KWidth(10.0f));
+    return section == 2 ? UIEdgeInsetsMake(0, KWidth(10.0f), 0, KWidth(10.0f)) : UIEdgeInsetsZero;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    return section == 1? KWidth(2.0f) : CGFLOAT_MIN;
+    return section == 2? KWidth(2.0f) : CGFLOAT_MIN;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return section == 1 ? KWidth(7.0f) : CGFLOAT_MIN;
+    return section == 2 ? KWidth(7.0f) : CGFLOAT_MIN;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 1) {
+    if (indexPath.section == 2) {
         WFHomeDataListModel *itemModel = self.models.list[indexPath.row];
         if (itemModel.typeId == 1) {
             //我的充电桩
@@ -160,7 +170,10 @@
         }else if (itemModel.typeId == 4) {
             //我的片区
             [YFMediatorManager openApplyAreaCtrlWithController:self];
-        }else if (itemModel.typeId == 7) {
+        }else if (itemModel.typeId == 8) {
+            // 授信充值
+            [YFMediatorManager openCreditPayCtrlWithController:self];
+        } else if (itemModel.typeId == 7) {
             //资料包
             WFOtherViewController *other = [[WFOtherViewController alloc] initWithNibName:@"WFOtherViewController" bundle:[NSBundle bundleForClass:[self class]]];
             other.hidesBottomBarWhenPushed = YES;
@@ -199,6 +212,7 @@
         _collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         [_collectionView registerNib:[UINib nibWithNibName:@"WFHomeFirstItemCollectionViewCell" bundle:[NSBundle bundleForClass:[self class]]] forCellWithReuseIdentifier:@"WFHomeFirstItemCollectionViewCell"];
         [_collectionView registerNib:[UINib nibWithNibName:@"WFHomeSectionItemCollectionViewCell" bundle:[NSBundle bundleForClass:[self class]]] forCellWithReuseIdentifier:@"WFHomeSectionItemCollectionViewCell"];
+        [_collectionView registerNib:[UINib nibWithNibName:@"WFHomeExplainCollectionViewCell" bundle:[NSBundle bundleForClass:[self class]]] forCellWithReuseIdentifier:@"WFHomeExplainCollectionViewCell"];
         @weakify(self)
         MJRefreshStateHeader *header = [MJRefreshStateHeader headerWithRefreshingBlock:^{
             @strongify(self)

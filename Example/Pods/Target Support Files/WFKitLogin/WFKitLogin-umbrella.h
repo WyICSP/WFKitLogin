@@ -21,6 +21,7 @@
 #import "WFPayTypeMsgModel.h"
 #import "YFMediatorManager+WFLogin.h"
 #import "SKAppUpdaterView.h"
+#import "WFHomeExplainCollectionViewCell.h"
 #import "WFHomeFirstItemCollectionViewCell.h"
 #import "WFHomeSectionItemCollectionViewCell.h"
 #import "WFApplyPartnerViewController.h"
