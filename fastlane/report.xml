@@ -5,44 +5,49 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: cocoapods" time="14.431584">
+      <testcase classname="fastlane.lanes" name="0: cocoapods" time="13.863638">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: git_add" time="0.14699">
+      <testcase classname="fastlane.lanes" name="1: git_add" time="0.145191">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: git_commit" time="0.123936">
+      <testcase classname="fastlane.lanes" name="2: git_commit" time="0.069798">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: push_to_git_remote" time="4.486936">
+      <testcase classname="fastlane.lanes" name="3: push_to_git_remote" time="5.231391">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: git_tag_exists" time="0.013233">
+      <testcase classname="fastlane.lanes" name="4: git_tag_exists" time="0.02187">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: add_git_tag" time="0.021986">
+      <testcase classname="fastlane.lanes" name="5: remove_tag" time="5.977305">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: push_git_tags" time="5.411638">
+      <testcase classname="fastlane.lanes" name="6: add_git_tag" time="0.022333">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="7: pod_push" time="796.945402">
+      <testcase classname="fastlane.lanes" name="7: push_git_tags" time="4.367835">
         
-          <failure message="/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:235:in `block in execute_action'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:227:in `chdir'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:227:in `execute_action'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:43:in `block in parsing_binding'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/lane_manager.rb:56:in `cruise_lane'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Users/wangyu/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/fastlane-2.134.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/commands_generator.rb:349:in `run'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/cli_tools_distributor.rb:119:in `take_off'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2/bin/fastlane:23:in `load'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2/bin/fastlane:23:in `&lt;main&gt;'&#10;&#10;Exit status of command 'pod repo push WFSpecs 'WFKitLogin.podspec' --allow-warnings' was 1 instead of 0.&#10;&#10;Validating spec&#10; -&gt; WFKitLogin -&gt; WFKitLogin (0.4.9)&#10;    - ERROR | [iOS] unknown: Encountered an unknown error ([!] /usr/bin/git clone https://github.com/WyICSP/WFKitMain.git /var/folders/tb/4kcnkcd5703gmc9t7ps7fzz40000gn/T/d20200213-1417-dgfq0v --template= --single-branch --depth 1 --branch 0.2.6&#10;&#10;Cloning into '/var/folders/tb/4kcnkcd5703gmc9t7ps7fzz40000gn/T/d20200213-1417-dgfq0v'...&#10;error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 54&#10;fatal: the remote end hung up unexpectedly&#10;fatal: early EOF&#10;fatal: index-pack failed&#10;) during validation.&#10;&#10;[!] The `WFKitLogin.podspec` specification does not validate.&#10;&#10;[!] Found multiple specifications for `WFKitMain (0.1.0)`:&#10;- /Users/wangyu/.cocoapods/repos/WFSpecs/WFKitMain/0.1.0/WFKitMain.podspec&#10;- /Users/wangyu/.cocoapods/repos/WKBaseSpecs/WFKitMain/0.1.0/WFKitMain.podspec&#10;&#10;[!] Found multiple specifications for `WKFunComponents (0.1.0)`:&#10;- /Users/wangyu/.cocoapods/repos/WFSpecs/WKFunComponents/0.1.0/WKFunComponents.podspec&#10;- /Users/wangyu/.cocoapods/repos/WKBaseSpecs/WKFunComponents/0.1.0/WKFunComponents.podspec&#10;" />
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="8: pod_push" time="1160.674278">
+        
+          <failure message="/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:235:in `block in execute_action'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:227:in `chdir'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:227:in `execute_action'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:43:in `block in parsing_binding'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/lane_manager.rb:56:in `cruise_lane'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Users/wangyu/.rvm/rubies/ruby-2.2.2/lib/ruby/gems/2.2.0/gems/fastlane-2.134.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/commands_generator.rb:349:in `run'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/fastlane/lib/fastlane/cli_tools_distributor.rb:119:in `take_off'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2@global/gems/fastlane-2.134.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2/bin/fastlane:23:in `load'&#10;/Users/wangyu/.rvm/gems/ruby-2.2.2/bin/fastlane:23:in `&lt;main&gt;'&#10;&#10;Exit status of command 'pod repo push WFSpecs 'WFKitLogin.podspec' --allow-warnings' was 1 instead of 0.&#10;&#10;Validating spec&#10; -&gt; WFKitLogin -&gt; WFKitLogin (0.4.9)&#10;    - ERROR | [iOS] unknown: Encountered an unknown error ([!] /usr/bin/git clone https://github.com/WyICSP/WFKitMain.git /var/folders/tb/4kcnkcd5703gmc9t7ps7fzz40000gn/T/d20200213-6470-1ugi3vg --template= --single-branch --depth 1 --branch 0.2.6&#10;&#10;Cloning into '/var/folders/tb/4kcnkcd5703gmc9t7ps7fzz40000gn/T/d20200213-6470-1ugi3vg'...&#10;error: RPC failed; curl 18 transfer closed with outstanding read data remaining&#10;fatal: the remote end hung up unexpectedly&#10;fatal: early EOF&#10;fatal: index-pack failed&#10;) during validation.&#10;&#10;[!] The `WFKitLogin.podspec` specification does not validate.&#10;&#10;[!] Found multiple specifications for `WFKitMain (0.1.0)`:&#10;- /Users/wangyu/.cocoapods/repos/WFSpecs/WFKitMain/0.1.0/WFKitMain.podspec&#10;- /Users/wangyu/.cocoapods/repos/WKBaseSpecs/WFKitMain/0.1.0/WFKitMain.podspec&#10;&#10;[!] Found multiple specifications for `WKFunComponents (0.1.0)`:&#10;- /Users/wangyu/.cocoapods/repos/WFSpecs/WKFunComponents/0.1.0/WKFunComponents.podspec&#10;- /Users/wangyu/.cocoapods/repos/WKBaseSpecs/WKFunComponents/0.1.0/WKFunComponents.podspec&#10;" />
         
       </testcase>
     
