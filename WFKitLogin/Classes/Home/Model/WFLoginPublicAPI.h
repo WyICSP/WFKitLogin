@@ -43,6 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)callPhoneWithNumber:(NSString *)phone;
 
+/// 打开授信充值页面
+/// @param controller 当前页面
++ (void)openCreditPayCtrl;
+
 @end
 
 NS_ASSUME_NONNULL_END

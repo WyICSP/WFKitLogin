@@ -183,7 +183,7 @@
             //其他
             WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
             web.hidesBottomBarWhenPushed = YES;
-            web.urlString = [NSString stringWithFormat:@"%@uuid=%@&appVersion=v%@",itemModel.goUrl,USER_UUID,APP_VERSION];
+            web.urlString = [NSString stringWithFormat:@"%@?uuid=%@&appVersion=v%@",itemModel.goUrl,USER_UUID,APP_VERSION];
             [self.navigationController pushViewController:web animated:YES];
         }
     }

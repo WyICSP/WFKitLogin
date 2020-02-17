@@ -80,5 +80,12 @@
 //    completionHandler(msg,YES);
 //}
 
+/**打开授信*/
+- (void)openCreditPay:(NSString *)msg :(JSCallback) completionHandler
+{
+    [WFLoginPublicAPI openCreditPayCtrl];
+    completionHandler(msg,YES);
+}
+
 
 @end

@@ -91,4 +91,13 @@
     [[[YFKeyWindow shareInstance] getCurrentVC].navigationController pushViewController:security animated:YES];
 }
 
+/// 打开授信充值页面
+/// @param controller 当前页面
++ (void)openCreditPayCtrl {
+    UIViewController *controller = [[YFKeyWindow shareInstance] getCurrentVC];
+    if (controller) {
+        [YFMediatorManager openCreditPayCtrlWithController:controller];
+    }
+}
+
 @end
