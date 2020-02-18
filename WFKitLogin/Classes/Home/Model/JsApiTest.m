@@ -34,6 +34,11 @@
     return ISIPHONEX ? @"1" : @"0";
 }
 
+- (NSString *)getAppVersion:(NSString *)msg
+{
+    return APP_VERSION;
+}
+
 
 /**返回*/
 - (void)goBack:(NSString *)msg :(JSCallback) completionHandler

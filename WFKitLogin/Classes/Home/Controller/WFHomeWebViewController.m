@@ -63,6 +63,13 @@
     [self.view addSubview:self.dwebview];
     //添加进度条
     [self.view.layer addSublayer:self.webProgressLayer];
+    //刷新数据
+    [YFNotificationCenter addObserver:self selector:@selector(reloadWebData) name:@"reloadApplyPileKeys" object:nil];
+}
+
+/// 刷新数据
+- (void)reloadWebData {
+    [self.dwebview reload];
 }
 
 - (void)deleteWebCache {

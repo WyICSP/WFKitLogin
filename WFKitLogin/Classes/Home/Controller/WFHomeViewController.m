@@ -195,7 +195,7 @@
 - (void)handleHeadBtnMethod {
     WFHomeIncomeWebViewController *web = [[WFHomeIncomeWebViewController alloc] init];
     web.hidesBottomBarWhenPushed = YES;
-    web.urlString = [NSString stringWithFormat:@"%@yzc_business_myIncome/#/myIncome?uuid=%@&appVersion=v%@",H5_HOST,USER_UUID,APP_VERSION];
+    web.urlString = [NSString stringWithFormat:@"%@yzc-app-partner/#/myIncome/index?uuid=%@&appVersion=v%@",H5_HOST,USER_UUID,APP_VERSION];
     [self.navigationController pushViewController:web animated:YES];
 }
 
