@@ -35,7 +35,7 @@
 + (void)openActivityOrRewardCtrlWithController:(UIViewController *)controller
                                           type:(NSInteger)type {
     NSArray *params = @[controller,@(type)];
-    [self performTarget:@"WFRewardPublicAPI" action:@"openActivityOrRewardCtrlWithParams" params:params isRequiredReturnValue:NO];
+    [self performTarget:@"WFRewardPublicAPI" action:@"openActivityOrRewardCtrlWithParams:" params:params isRequiredReturnValue:NO];
 }
 
 + (void)gotoPayFreightWithParams:(NSDictionary *)params {
