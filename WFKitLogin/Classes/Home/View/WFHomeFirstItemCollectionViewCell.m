@@ -25,20 +25,39 @@ static NSString *const cellId = @"WFHomeFirstItemCollectionViewCell";
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.lookBtn.layer.cornerRadius = 19.0f;
     self.rateLbl.adjustsFontSizeToFitWidth = YES;
-    // Initialization code
+    
+    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickMoneyTapGuetureEvent:)];
+    [self.banlance addGestureRecognizer:tap1];
+    
+    UITapGestureRecognizer *tap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickReTapGuetureEvent:)];
+    [self.rewardView addGestureRecognizer:tap2];
+    
+    UITapGestureRecognizer *tap3 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickActivityTapGuetureEvent:)];
+    [self.activityView addGestureRecognizer:tap3];
+    
 }
 
 - (void)setModel:(WFHomeDataModel *)model {
     self.banlance.text = [NSString stringWithFormat:@"%@",@(model.income.integerValue/100.0f)];
+    self.activityPrice.text = [NSString stringWithFormat:@"%@",@(model.activityMoney.intValue/100.0f)];
+    self.rewardPrice.text = [NSString stringWithFormat:@"%@",@(model.awardsMoney.intValue/100.0f)];
     self.dayIncome.text = [NSString stringWithFormat:@"%@",@(model.dayIncome.integerValue/100.0f)];
     self.pileNumber.text = [NSString stringWithFormat:@"%ld",(long)model.count];
     self.rete.text = [NSString stringWithFormat:@"%.2f",model.usage];
 }
 
-- (IBAction)clickLookBtn:(id)sender {
-    !self.clickLookDetailBlock ? : self.clickLookDetailBlock();
+- (void)clickMoneyTapGuetureEvent:(id)sender {
+    !self.clickLookDetailBlock ? : self.clickLookDetailBlock(10);
+}
+
+- (void)clickReTapGuetureEvent:(id)sender {
+    !self.clickLookDetailBlock ? : self.clickLookDetailBlock(20);
+}
+
+
+- (void)clickActivityTapGuetureEvent:(id)sender {
+    !self.clickLookDetailBlock ? : self.clickLookDetailBlock(30);
 }
 
 

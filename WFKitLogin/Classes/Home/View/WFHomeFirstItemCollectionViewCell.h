@@ -13,7 +13,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WFHomeFirstItemCollectionViewCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIButton *lookBtn;
+/// 活动金 view
+@property (weak, nonatomic) IBOutlet UIView *activityView;
+/// 奖励 view
+@property (weak, nonatomic) IBOutlet UIView *rewardView;
+/// 奖励金额
+@property (weak, nonatomic) IBOutlet UILabel *rewardPrice;
+/// 活动金额
+@property (weak, nonatomic) IBOutlet UILabel *activityPrice;
 /**余额*/
 @property (weak, nonatomic) IBOutlet UILabel *banlance;
 /**日收入*/
@@ -26,8 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**赋值*/
 @property (nonatomic, strong) WFHomeDataModel *model;
-/**点击查看详情*/
-@property (nonatomic, copy) void (^clickLookDetailBlock)(void);
+/**点击查看详情 10 钱包 20 奖励 30活动*/
+@property (nonatomic, copy) void (^clickLookDetailBlock)(NSInteger index);
 /**初始化方法*/
 + (instancetype)cellWithCollectionView:(UICollectionView *)collectionView
                              indexPath:(NSIndexPath *)indexPath;

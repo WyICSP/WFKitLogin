@@ -126,8 +126,8 @@
     if (indexPath.section == 0) {
         WFHomeFirstItemCollectionViewCell *cell = [WFHomeFirstItemCollectionViewCell cellWithCollectionView:collectionView indexPath:indexPath];
         WS(weakSelf)
-        cell.clickLookDetailBlock = ^{
-            [weakSelf handleHeadBtnMethod];
+        cell.clickLookDetailBlock = ^(NSInteger index) {
+            [weakSelf handleHeadBtnMethodWithIndex:index];
         };
         cell.model = self.models;
         return cell;
@@ -173,7 +173,10 @@
         }else if (itemModel.typeId == 8) {
             // 授信充值
             [YFMediatorManager openCreditPayCtrlWithController:self];
-        } else if (itemModel.typeId == 7) {
+        }else if (itemModel.typeId == 9) {
+            // 奖励中心
+            [YFMediatorManager openRewardCtrlWithController:self];
+        }else if (itemModel.typeId == 7) {
             //资料包
             WFOtherViewController *other = [[WFOtherViewController alloc] initWithNibName:@"WFOtherViewController" bundle:[NSBundle bundleForClass:[self class]]];
             other.hidesBottomBarWhenPushed = YES;
@@ -190,13 +193,23 @@
 }
 
 /**
- 查看详情 我的收入
+ 查看详情 我的收入 10 钱包 20 奖励 30活动
  */
-- (void)handleHeadBtnMethod {
-    WFHomeIncomeWebViewController *web = [[WFHomeIncomeWebViewController alloc] init];
-    web.hidesBottomBarWhenPushed = YES;
-    web.urlString = [NSString stringWithFormat:@"%@yzc-app-partner/#/myIncome/index?uuid=%@&appVersion=v%@",H5_HOST,USER_UUID,APP_VERSION];
-    [self.navigationController pushViewController:web animated:YES];
+- (void)handleHeadBtnMethodWithIndex:(NSInteger)index {
+    if (index == 10) {
+        //钱包
+        WFHomeIncomeWebViewController *web = [[WFHomeIncomeWebViewController alloc] init];
+        web.hidesBottomBarWhenPushed = YES;
+        web.urlString = [NSString stringWithFormat:@"%@yzc-app-partner/#/myIncome/index?uuid=%@&appVersion=v%@",H5_HOST,USER_UUID,APP_VERSION];
+        [self.navigationController pushViewController:web animated:YES];
+    }else if (index == 20) {
+        //奖励
+        [YFMediatorManager openActivityOrRewardCtrlWithController:self type:0];
+    }else if (index == 30) {
+        // 活动
+        [YFMediatorManager openActivityOrRewardCtrlWithController:self type:1];
+    }
+    
 }
 
 #pragma mark get set

@@ -25,6 +25,19 @@
     [self performTarget:@"WFApplyAreaPublicAPI" action:@"openCreditPayCtrlWithController:" params:controller isRequiredReturnValue:NO];
 }
 
+/// 打开奖励中心页面
+/// @param controller 当前页面
++ (void)openRewardCtrlWithController:(UIViewController *)controller {
+    [self performTarget:@"WFRewardPublicAPI" action:@"openRewardCtrlWithController:" params:controller isRequiredReturnValue:NO];
+}
+
+/// 打开活动收入和奖励收入页面
++ (void)openActivityOrRewardCtrlWithController:(UIViewController *)controller
+                                          type:(NSInteger)type {
+    NSArray *params = @[controller,@(type)];
+    [self performTarget:@"WFRewardPublicAPI" action:@"openActivityOrRewardCtrlWithParams" params:params isRequiredReturnValue:NO];
+}
+
 + (void)gotoPayFreightWithParams:(NSDictionary *)params {
     [self performTarget:@"WFPayPublicAPI" action:@"gotoPayWithParams:" params:params isRequiredReturnValue:NO];
 }

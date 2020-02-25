@@ -29,6 +29,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param controller 当前页面
 + (void)openCreditPayCtrlWithController:(UIViewController *)controller;
 
+/// 打开奖励中心页面
+/// @param controller 当前页面
++ (void)openRewardCtrlWithController:(UIViewController *)controller;
+
+/// 打开活动收入和奖励收入页面
+/// @param controller 当前页面
+/// @param type 0 奖励, 1 活动金
++ (void)openActivityOrRewardCtrlWithController:(UIViewController *)controller
+                                          type:(NSInteger)type;
 
 /**
  去支付
