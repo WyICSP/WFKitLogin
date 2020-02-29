@@ -92,12 +92,21 @@
 }
 
 /// 打开授信充值页面
-/// @param controller 当前页面
 + (void)openCreditPayCtrl {
     UIViewController *controller = [[YFKeyWindow shareInstance] getCurrentVC];
     if (controller) {
         [YFMediatorManager openCreditPayCtrlWithController:controller];
     }
+}
+
+/// 打开奖励收入
++ (void)openRewardCtrl {
+    UIViewController *controller = [[YFKeyWindow shareInstance] getCurrentVC];
+    if (controller) {
+        [YFMediatorManager openActivityOrRewardCtrlWithController:controller type:0];
+    }
+    
+
 }
 
 @end

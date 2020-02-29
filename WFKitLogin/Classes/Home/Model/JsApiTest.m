@@ -92,5 +92,12 @@
     completionHandler(msg,YES);
 }
 
+/**打开奖励收入*/
+- (void)toAwardsMoney:(NSString *)msg :(JSCallback) completionHandler
+{
+    [WFLoginPublicAPI openRewardCtrl];
+    completionHandler(msg,YES);
+}
+
 
 @end
