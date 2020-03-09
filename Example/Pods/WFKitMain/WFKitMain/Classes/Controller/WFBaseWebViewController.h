@@ -6,7 +6,7 @@
 //
 
 #import <WFKitMain/YFBaseViewController.h>
-#import "WFWebProgressLayer.h"
+//#import "WFWebProgressLayer.h"
 #import <WebKit/WebKit.h>
 #import <dsbridge/dsbridge.h>
 
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  进度条
  */
-@property (nonatomic, strong) WFWebProgressLayer *webProgressLayer;
+//@property (nonatomic, strong) WFWebProgressLayer *webProgressLayer;
 /**
  webView
  */
