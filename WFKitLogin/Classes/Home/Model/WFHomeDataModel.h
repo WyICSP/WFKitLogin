@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSNumber *activityMoney;
 /// 奖励收入
 @property (nonatomic, strong) NSNumber *awardsMoney;
+/// 说明
+@property (nonatomic, copy) NSString *advertisement;
 /**使用率*/
 @property (nonatomic, assign) CGFloat usage;
 /**已发货充电桩台数*/

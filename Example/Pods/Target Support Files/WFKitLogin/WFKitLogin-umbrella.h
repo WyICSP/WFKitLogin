@@ -23,6 +23,7 @@
 #import "SKAppUpdaterView.h"
 #import "WFHomeExplainCollectionViewCell.h"
 #import "WFHomeFirstItemCollectionViewCell.h"
+#import "WFHomeNullCollectionViewCell.h"
 #import "WFHomeSectionItemCollectionViewCell.h"
 #import "WFApplyPartnerViewController.h"
 #import "WFLoginViewController.h"

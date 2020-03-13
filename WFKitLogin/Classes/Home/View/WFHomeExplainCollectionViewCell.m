@@ -6,6 +6,7 @@
 //
 
 #import "WFHomeExplainCollectionViewCell.h"
+#import "WFHomeDataModel.h"
 
 @implementation WFHomeExplainCollectionViewCell
 
@@ -24,6 +25,10 @@ static NSString *const cellId = @"WFHomeExplainCollectionViewCell";
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.explanLbl.adjustsFontSizeToFitWidth = YES;
+}
+
+- (void)setModel:(WFHomeDataModel *)model {
+    self.explanLbl.text = model.advertisement.length == 0 ? @"赚钱要点：少安装，少投入，多占点，多宣传，多服务。" : model.advertisement;
 }
 
 @end

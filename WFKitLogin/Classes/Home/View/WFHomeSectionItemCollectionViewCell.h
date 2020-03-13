@@ -17,8 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UILabel *detailTitle;
-
-
 /**赋值*/
 @property (nonatomic, strong) WFHomeDataListModel *model;
 /**初始化方法*/

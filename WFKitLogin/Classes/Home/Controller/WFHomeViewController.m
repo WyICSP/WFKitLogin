@@ -10,6 +10,7 @@
 #import "WFHomeFirstItemCollectionViewCell.h"
 #import "WFHomeSectionItemCollectionViewCell.h"
 #import "WFHomeExplainCollectionViewCell.h"
+#import "WFHomeNullCollectionViewCell.h"
 #import "WFHomeWebViewController.h"
 #import "WFHomeIncomeWebViewController.h"
 #import "YFMediatorManager+WFLogin.h"
@@ -38,7 +39,7 @@
     [YFNotificationCenter addObserver:self selector:@selector(getHomeData) name:@"reloadUserCnter" object:nil];
     
     id info = [YFUserDefaults objectForKey:@"HomeData"];
-    
+
     if (info) {
         WFHomeDataModel *models = [WFHomeDataModel mj_objectWithKeyValues:info];
         [self requestSuccessWithModels:models];
@@ -105,7 +106,6 @@
 
 - (void)requestSuccessWithModels:(WFHomeDataModel * _Nonnull)models {
     self.models = models;
-    
     //结束刷新
     [self.collectionView.mj_header endRefreshing];
     
@@ -132,7 +132,14 @@
         cell.model = self.models;
         return cell;
     }else if (indexPath.section == 1) {
+        // 授信描述文字
+        if (self.models.advertisement.length == 0) {
+            // 当没有授信描述的时候
+            WFHomeNullCollectionViewCell *cell = [WFHomeNullCollectionViewCell cellWithCollectionView:collectionView indexPath:indexPath];
+            return cell;
+        }
         WFHomeExplainCollectionViewCell *cell = [WFHomeExplainCollectionViewCell cellWithCollectionView:collectionView indexPath:indexPath];
+        cell.model = self.models;
         return cell;
     }
     WFHomeSectionItemCollectionViewCell *cell = [WFHomeSectionItemCollectionViewCell cellWithCollectionView:collectionView indexPath:indexPath];
@@ -144,7 +151,7 @@
     if (indexPath.section == 0) {
         return CGSizeMake(ScreenWidth, KHeight(335.0f));
     }else if (indexPath.section == 1) {
-        return CGSizeMake(ScreenWidth, KHeight(55.0f));
+        return CGSizeMake(ScreenWidth, self.models.advertisement.length == 0 ? 2.0f : KHeight(55.0f));
     }
     return CGSizeMake((ScreenWidth-KWidth(22))/2, KHeight(95.0f));
 }
@@ -154,7 +161,7 @@
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    return section == 2? KWidth(2.0f) : CGFLOAT_MIN;
+    return section == 2 ? KWidth(2.0f) : CGFLOAT_MIN;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
@@ -226,6 +233,7 @@
         [_collectionView registerNib:[UINib nibWithNibName:@"WFHomeFirstItemCollectionViewCell" bundle:[NSBundle bundleForClass:[self class]]] forCellWithReuseIdentifier:@"WFHomeFirstItemCollectionViewCell"];
         [_collectionView registerNib:[UINib nibWithNibName:@"WFHomeSectionItemCollectionViewCell" bundle:[NSBundle bundleForClass:[self class]]] forCellWithReuseIdentifier:@"WFHomeSectionItemCollectionViewCell"];
         [_collectionView registerNib:[UINib nibWithNibName:@"WFHomeExplainCollectionViewCell" bundle:[NSBundle bundleForClass:[self class]]] forCellWithReuseIdentifier:@"WFHomeExplainCollectionViewCell"];
+        [_collectionView registerNib:[UINib nibWithNibName:@"WFHomeNullCollectionViewCell" bundle:[NSBundle bundleForClass:[self class]]] forCellWithReuseIdentifier:@"WFHomeNullCollectionViewCell"];
         @weakify(self)
         MJRefreshStateHeader *header = [MJRefreshStateHeader headerWithRefreshingBlock:^{
             @strongify(self)
