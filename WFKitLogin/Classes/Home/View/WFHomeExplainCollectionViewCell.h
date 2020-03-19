@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WFHomeExplainCollectionViewCell : UICollectionViewCell
 /// 说明
 @property (weak, nonatomic) IBOutlet UILabel *explanLbl;
+@property (weak, nonatomic) IBOutlet UIImageView *img;
+
 /// 赋值
 @property (nonatomic, strong) WFHomeDataModel *model;
 /**初始化方法*/

@@ -42,7 +42,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
             <connections>
-                <outlet property="explanLbl" destination="g8d-5V-MvT" id="h0G-Vo-PFC"/>
+                <outlet property="img" destination="C2L-z7-Bxz" id="KXL-Nz-phB"/>
             </connections>
             <point key="canvasLocation" x="136.95652173913044" y="110.15625"/>
         </collectionViewCell>
