@@ -21,8 +21,10 @@
 }
 
 /// 打开授信充值页面
-+ (void)openCreditPayCtrlWithController:(UIViewController *)controller {
-    [self performTarget:@"WFApplyAreaPublicAPI" action:@"openCreditPayCtrlWithController:" params:controller isRequiredReturnValue:NO];
++ (void)openCreditPayCtrlWithController:(UIViewController *)controller
+                                   type:(NSInteger)type {
+    NSArray *params = @[controller,@(type)];
+    [self performTarget:@"WFApplyAreaPublicAPI" action:@"openCreditPayCtrlWithController:" params:params isRequiredReturnValue:NO];
 }
 
 /// 打开奖励中心页面

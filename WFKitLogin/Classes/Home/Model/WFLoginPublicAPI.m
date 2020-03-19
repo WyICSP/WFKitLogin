@@ -95,7 +95,7 @@
 + (void)openCreditPayCtrl {
     UIViewController *controller = [[YFKeyWindow shareInstance] getCurrentVC];
     if (controller) {
-        [YFMediatorManager openCreditPayCtrlWithController:controller];
+        [YFMediatorManager openCreditPayCtrlWithController:controller type:0];
     }
 }
 

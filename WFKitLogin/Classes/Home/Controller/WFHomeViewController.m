@@ -179,7 +179,7 @@
             [YFMediatorManager openApplyAreaCtrlWithController:self];
         }else if (itemModel.typeId == 8) {
             // 授信充值
-            [YFMediatorManager openCreditPayCtrlWithController:self];
+            [YFMediatorManager openCreditPayCtrlWithController:self type:1];
         }else if (itemModel.typeId == 9) {
             // 奖励中心
             [YFMediatorManager openRewardCtrlWithController:self];

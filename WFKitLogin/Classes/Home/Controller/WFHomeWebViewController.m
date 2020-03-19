@@ -19,6 +19,13 @@
     [super viewDidLoad];
     [self.dwebview addJavascriptObject:[[JsApiTest alloc] init] namespace:nil];
     self.progressColor = NavColor;
+    
+    [YFNotificationCenter addObserver:self selector:@selector(reload) name:@"reloadApplyPileKeys" object:nil];
+    
+}
+
+- (void)reload {
+    [self.dwebview reload];
 }
 
 

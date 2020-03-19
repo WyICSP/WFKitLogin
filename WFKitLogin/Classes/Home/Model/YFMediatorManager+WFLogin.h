@@ -27,7 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 打开授信充值页面
 /// @param controller 当前页面
-+ (void)openCreditPayCtrlWithController:(UIViewController *)controller;
+/// @param type  1表示首页, 0表示申请充电桩
++ (void)openCreditPayCtrlWithController:(UIViewController *)controller type:(NSInteger)type;
 
 /// 打开奖励中心页面
 /// @param controller 当前页面
