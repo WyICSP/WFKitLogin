@@ -195,7 +195,10 @@
 
 // 消息
 - (void)rightImageButtonClick:(UIButton *)sender {
-    
+    WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
+    web.urlString = [NSString stringWithFormat:@"%@yzc-app-partner/#/msg/index",H5_HOST];
+    web.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:web animated:YES];
 }
 
 - (void)customerServiceCompleleWithIndex:(NSInteger)index {
@@ -237,7 +240,7 @@
 /// headView
 - (WFNewHomeHeadView *)headView {
     if (!_headView) {
-        _headView = [[[NSBundle mainBundle] loadNibNamed:@"WFNewHomeHeadView" owner:nil options:nil] firstObject];
+        _headView = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"WFNewHomeHeadView" owner:nil options:nil] firstObject];
         _headView.frame = CGRectMake(0, 0, ScreenWidth, KHeight(172.0f)+58.0f);
         @weakify(self)
         _headView.clickHeadEventBlock = ^(NSInteger index) {
@@ -251,7 +254,7 @@
 /// 今日收益
 - (WFNewHomeTodDayProfit *)todayView {
     if (!_todayView) {
-        _todayView = [[[NSBundle mainBundle] loadNibNamed:@"WFNewHomeTodDayProfit" owner:nil options:nil] firstObject];
+        _todayView = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"WFNewHomeTodDayProfit" owner:nil options:nil] firstObject];
         _todayView.frame = CGRectMake(0, self.headView.maxY + 10.0f, ScreenWidth, 105.0f);
         @weakify(self)
         _todayView.clickTodayEventBlock = ^(NSInteger index) {
@@ -265,7 +268,7 @@
 /// 资产
 - (WFNewHomeAssetsView *)assetsView {
     if (!_assetsView) {
-        _assetsView = [[[NSBundle mainBundle] loadNibNamed:@"WFNewHomeAssetsView" owner:nil options:nil] firstObject];
+        _assetsView = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"WFNewHomeAssetsView" owner:nil options:nil] firstObject];
         _assetsView.frame = CGRectMake(0, self.todayView.maxY + 10.0f, ScreenWidth, 105.0f);
         @weakify(self)
         _assetsView.clickAssetsEventBlock = ^(NSInteger index) {
@@ -279,7 +282,7 @@
 /// 申请片区设备
 - (WFNewHomeAppleAreaView *)applyView {
     if (!_applyView) {
-        _applyView = [[[NSBundle mainBundle] loadNibNamed:@"WFNewHomeAppleAreaView" owner:nil options:nil] firstObject];
+        _applyView = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"WFNewHomeAppleAreaView" owner:nil options:nil] firstObject];
         _applyView.frame = CGRectMake(0, self.assetsView.maxY + 10.0f, ScreenWidth, 75.0f);
         @weakify(self)
         _applyView.clickAreaEventBlock = ^(NSInteger index) {

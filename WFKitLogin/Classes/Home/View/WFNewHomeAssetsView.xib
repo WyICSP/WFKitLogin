@@ -17,10 +17,11 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWU-Ch-95p">
                     <rect key="frame" x="15" y="0.0" width="345" height="105"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_home_assets" translatesAutoresizingMaskIntoConstraints="NO" id="cVY-Nj-q6P">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WFKitLogin.bundle/new_home_assets" translatesAutoresizingMaskIntoConstraints="NO" id="cVY-Nj-q6P">
                             <rect key="frame" x="15" y="15" width="18" height="18"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="cVY-Nj-q6P" secondAttribute="height" multiplier="1:1" id="LGA-Ro-mww"/>
+                                <constraint firstAttribute="width" constant="18" id="SWk-aK-dx0"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资产情况" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cui-ea-DmT">
@@ -145,6 +146,6 @@
         </view>
     </objects>
     <resources>
-        <image name="new_home_assets" width="17" height="18"/>
+        <image name="WFKitLogin.bundle/new_home_assets" width="128" height="128"/>
     </resources>
 </document>

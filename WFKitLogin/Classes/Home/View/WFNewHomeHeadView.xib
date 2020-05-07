@@ -17,7 +17,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGP-PV-6Xh">
                     <rect key="frame" x="15" y="10" width="345" height="172"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_home_head" translatesAutoresizingMaskIntoConstraints="NO" id="xEs-OO-pXP">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WFKitLogin.bundle/new_home_head" translatesAutoresizingMaskIntoConstraints="NO" id="xEs-OO-pXP">
                             <rect key="frame" x="0.0" y="0.0" width="345" height="172"/>
                         </imageView>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSI-vW-1kl">
@@ -85,10 +85,11 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8i-OP-Rxp">
                     <rect key="frame" x="15" y="183" width="345" height="35"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_home_bell" translatesAutoresizingMaskIntoConstraints="NO" id="xCi-p0-Fsr">
-                            <rect key="frame" x="15" y="11.5" width="11.5" height="12.5"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WFKitLogin.bundle/new_home_bell" translatesAutoresizingMaskIntoConstraints="NO" id="xCi-p0-Fsr">
+                            <rect key="frame" x="15" y="11" width="11.5" height="13"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="xCi-p0-Fsr" secondAttribute="height" multiplier="11:12" id="aJe-6R-D3w"/>
+                                <constraint firstAttribute="width" constant="11.5" id="Oa2-sE-IYt"/>
+                                <constraint firstAttribute="width" secondItem="xCi-p0-Fsr" secondAttribute="height" multiplier="11:12" id="QtO-4D-Msd"/>
                             </constraints>
                         </imageView>
                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赚钱攻略：少安装少投入，多占点多宣传多服务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfB-Ls-DtQ">
@@ -131,7 +132,7 @@
         </view>
     </objects>
     <resources>
-        <image name="new_home_bell" width="11" height="12.5"/>
-        <image name="new_home_head" width="346" height="172"/>
+        <image name="WFKitLogin.bundle/new_home_bell" width="128" height="128"/>
+        <image name="WFKitLogin.bundle/new_home_head" width="128" height="128"/>
     </resources>
 </document>

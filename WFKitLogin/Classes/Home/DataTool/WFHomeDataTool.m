@@ -74,9 +74,11 @@
     [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFNewHomeModel mj_objectWithKeyValues:baseModel.data]);
+        }else {
+            failureBlock();
         }
     } failure:^(NSError *error) {
-        
+        failureBlock();
     }];
 }
 
@@ -99,9 +101,11 @@
     [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFNewHomeIncomeModel mj_objectWithKeyValues:baseModel.data]);
+        }else{
+            failureBlock();
         }
     } failure:^(NSError *error) {
-        
+        failureBlock();
     }];
 }
 
@@ -112,9 +116,11 @@
     [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFNewHomeTodayIncomeModel mj_objectWithKeyValues:baseModel.data]);
+        }else {
+            failureBlock();
         }
     } failure:^(NSError *error) {
-        
+        failureBlock();
     }];
 }
 

@@ -25,19 +25,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		880D51D523BDEBC90016A64A /* WFUserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880D51D323BDEBC90016A64A /* WFUserCenterViewController.m */; };
 		880D51D823BDEC3E0016A64A /* WFJSApiTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 880D51D623BDEC3E0016A64A /* WFJSApiTools.m */; };
-		8815C68B24518080002A24BE /* WFNewHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8815C68A24518080002A24BE /* WFNewHomeViewController.m */; };
-		8815C69024518347002A24BE /* WFNewHomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8815C68F24518347002A24BE /* WFNewHomeHeadView.m */; };
-		8815C69224518351002A24BE /* WFNewHomeHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8815C69124518351002A24BE /* WFNewHomeHeadView.xib */; };
-		8815C69524518DBC002A24BE /* WFNewHomeTodDayProfit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8815C69424518DBC002A24BE /* WFNewHomeTodDayProfit.m */; };
-		8815C69724518DC6002A24BE /* WFNewHomeTodDayProfit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8815C69624518DC6002A24BE /* WFNewHomeTodDayProfit.xib */; };
-		8815C69A24519FAA002A24BE /* WFNewHomeAssetsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8815C69924519FAA002A24BE /* WFNewHomeAssetsView.m */; };
-		8815C69C24519FB3002A24BE /* WFNewHomeAssetsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8815C69B24519FB3002A24BE /* WFNewHomeAssetsView.xib */; };
-		8815C69F2451A621002A24BE /* WFNewHomeAppleAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8815C69E2451A621002A24BE /* WFNewHomeAppleAreaView.m */; };
-		8815C6A12451A62D002A24BE /* WFNewHomeAppleAreaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8815C6A02451A62D002A24BE /* WFNewHomeAppleAreaView.xib */; };
 		88160B4E22E1A15200678A22 /* UIButton+GradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88160B4B22E1A15200678A22 /* UIButton+GradientLayer.m */; };
-		885FD5992452D1C900E0BE67 /* MLMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FD5922452D1C800E0BE67 /* MLMenuItem.m */; };
-		885FD59A2452D1C900E0BE67 /* MLMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FD5932452D1C800E0BE67 /* MLMenuCell.m */; };
-		885FD59B2452D1C900E0BE67 /* MLMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FD5942452D1C800E0BE67 /* MLMenuView.m */; };
 		E1E719610A5884D265603AFD /* Pods_WFKitLogin_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4632C6F12DEAF717A011D2 /* Pods_WFKitLogin_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,29 +68,8 @@
 		880D51D423BDEBC90016A64A /* WFUserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFUserCenterViewController.h; sourceTree = "<group>"; };
 		880D51D623BDEC3E0016A64A /* WFJSApiTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFJSApiTools.m; sourceTree = "<group>"; };
 		880D51D723BDEC3E0016A64A /* WFJSApiTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFJSApiTools.h; sourceTree = "<group>"; };
-		8815C68924518080002A24BE /* WFNewHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFNewHomeViewController.h; sourceTree = "<group>"; };
-		8815C68A24518080002A24BE /* WFNewHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFNewHomeViewController.m; sourceTree = "<group>"; };
-		8815C68E24518347002A24BE /* WFNewHomeHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFNewHomeHeadView.h; sourceTree = "<group>"; };
-		8815C68F24518347002A24BE /* WFNewHomeHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFNewHomeHeadView.m; sourceTree = "<group>"; };
-		8815C69124518351002A24BE /* WFNewHomeHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WFNewHomeHeadView.xib; sourceTree = "<group>"; };
-		8815C69324518DBC002A24BE /* WFNewHomeTodDayProfit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFNewHomeTodDayProfit.h; sourceTree = "<group>"; };
-		8815C69424518DBC002A24BE /* WFNewHomeTodDayProfit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFNewHomeTodDayProfit.m; sourceTree = "<group>"; };
-		8815C69624518DC6002A24BE /* WFNewHomeTodDayProfit.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WFNewHomeTodDayProfit.xib; sourceTree = "<group>"; };
-		8815C69824519FAA002A24BE /* WFNewHomeAssetsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFNewHomeAssetsView.h; sourceTree = "<group>"; };
-		8815C69924519FAA002A24BE /* WFNewHomeAssetsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFNewHomeAssetsView.m; sourceTree = "<group>"; };
-		8815C69B24519FB3002A24BE /* WFNewHomeAssetsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WFNewHomeAssetsView.xib; sourceTree = "<group>"; };
-		8815C69D2451A621002A24BE /* WFNewHomeAppleAreaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFNewHomeAppleAreaView.h; sourceTree = "<group>"; };
-		8815C69E2451A621002A24BE /* WFNewHomeAppleAreaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFNewHomeAppleAreaView.m; sourceTree = "<group>"; };
-		8815C6A02451A62D002A24BE /* WFNewHomeAppleAreaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WFNewHomeAppleAreaView.xib; sourceTree = "<group>"; };
 		88160B4B22E1A15200678A22 /* UIButton+GradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GradientLayer.m"; sourceTree = "<group>"; };
 		88160B4D22E1A15200678A22 /* UIButton+GradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GradientLayer.h"; sourceTree = "<group>"; };
-		885FD5922452D1C800E0BE67 /* MLMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLMenuItem.m; sourceTree = "<group>"; };
-		885FD5932452D1C800E0BE67 /* MLMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLMenuCell.m; sourceTree = "<group>"; };
-		885FD5942452D1C800E0BE67 /* MLMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLMenuView.m; sourceTree = "<group>"; };
-		885FD5952452D1C800E0BE67 /* MLMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLMenu.h; sourceTree = "<group>"; };
-		885FD5962452D1C800E0BE67 /* MLMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLMenuCell.h; sourceTree = "<group>"; };
-		885FD5972452D1C800E0BE67 /* MLMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLMenuItem.h; sourceTree = "<group>"; };
-		885FD5982452D1C800E0BE67 /* MLMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLMenuView.h; sourceTree = "<group>"; };
 		8D959E0B241C37A621504893 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A591D83C161EBA13779274EC /* WFKitLogin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WFKitLogin.podspec; path = ../WFKitLogin.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ADE29F24E79CC66E378D5B2F /* Pods-WFKitLogin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFKitLogin_Example.release.xcconfig"; path = "Target Support Files/Pods-WFKitLogin_Example/Pods-WFKitLogin_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,7 +152,6 @@
 		6003F593195388D20070C39A /* Example for WFKitLogin */ = {
 			isa = PBXGroup;
 			children = (
-				8815C68D2451808E002A24BE /* New Group */,
 				6003F59C195388D20070C39A /* WFAppDelegate.h */,
 				6003F59D195388D20070C39A /* WFAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -243,42 +209,6 @@
 				C2BD014F2F88F1397D651595 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		8815C68D2451808E002A24BE /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				885FD5912452D1C800E0BE67 /* WFMenu */,
-				8815C68924518080002A24BE /* WFNewHomeViewController.h */,
-				8815C68A24518080002A24BE /* WFNewHomeViewController.m */,
-				8815C68E24518347002A24BE /* WFNewHomeHeadView.h */,
-				8815C68F24518347002A24BE /* WFNewHomeHeadView.m */,
-				8815C69124518351002A24BE /* WFNewHomeHeadView.xib */,
-				8815C69324518DBC002A24BE /* WFNewHomeTodDayProfit.h */,
-				8815C69424518DBC002A24BE /* WFNewHomeTodDayProfit.m */,
-				8815C69624518DC6002A24BE /* WFNewHomeTodDayProfit.xib */,
-				8815C69824519FAA002A24BE /* WFNewHomeAssetsView.h */,
-				8815C69924519FAA002A24BE /* WFNewHomeAssetsView.m */,
-				8815C69B24519FB3002A24BE /* WFNewHomeAssetsView.xib */,
-				8815C69D2451A621002A24BE /* WFNewHomeAppleAreaView.h */,
-				8815C69E2451A621002A24BE /* WFNewHomeAppleAreaView.m */,
-				8815C6A02451A62D002A24BE /* WFNewHomeAppleAreaView.xib */,
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		885FD5912452D1C800E0BE67 /* WFMenu */ = {
-			isa = PBXGroup;
-			children = (
-				885FD5952452D1C800E0BE67 /* MLMenu.h */,
-				885FD5962452D1C800E0BE67 /* MLMenuCell.h */,
-				885FD5932452D1C800E0BE67 /* MLMenuCell.m */,
-				885FD5982452D1C800E0BE67 /* MLMenuView.h */,
-				885FD5942452D1C800E0BE67 /* MLMenuView.m */,
-				885FD5972452D1C800E0BE67 /* MLMenuItem.h */,
-				885FD5922452D1C800E0BE67 /* MLMenuItem.m */,
-			);
-			path = WFMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,11 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				8815C6A12451A62D002A24BE /* WFNewHomeAppleAreaView.xib in Resources */,
-				8815C69C24519FB3002A24BE /* WFNewHomeAssetsView.xib in Resources */,
-				8815C69224518351002A24BE /* WFNewHomeHeadView.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				8815C69724518DC6002A24BE /* WFNewHomeTodDayProfit.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -477,19 +403,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				885FD59B2452D1C900E0BE67 /* MLMenuView.m in Sources */,
-				8815C69A24519FAA002A24BE /* WFNewHomeAssetsView.m in Sources */,
 				6003F59E195388D20070C39A /* WFAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WFViewController.m in Sources */,
 				880D51D823BDEC3E0016A64A /* WFJSApiTools.m in Sources */,
-				8815C69024518347002A24BE /* WFNewHomeHeadView.m in Sources */,
 				880D51D523BDEBC90016A64A /* WFUserCenterViewController.m in Sources */,
-				8815C69F2451A621002A24BE /* WFNewHomeAppleAreaView.m in Sources */,
-				8815C69524518DBC002A24BE /* WFNewHomeTodDayProfit.m in Sources */,
-				885FD5992452D1C900E0BE67 /* MLMenuItem.m in Sources */,
-				8815C68B24518080002A24BE /* WFNewHomeViewController.m in Sources */,
 				88160B4E22E1A15200678A22 /* UIButton+GradientLayer.m in Sources */,
-				885FD59A2452D1C900E0BE67 /* MLMenuCell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
