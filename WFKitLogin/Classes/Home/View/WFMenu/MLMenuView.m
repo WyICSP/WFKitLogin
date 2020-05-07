@@ -296,7 +296,7 @@ static  NSString * const IDETIFIRE = @"MLMENUCELLIDETIFIRE";
 - (UIView *)coverView
 {
     if (!_coverView) {
-        _coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, k_ScreenWidth, k_ScreenHeight - _menuViewOffsetTop)];
+        _coverView = [[UIView alloc] initWithFrame:CGRectMake(0, self.showType == WFShowHasNavBarType ? 0 : NavHeight, k_ScreenWidth, k_ScreenHeight - _menuViewOffsetTop)];
         _coverView.backgroundColor = [UIColor clearColor];
         UITapGestureRecognizer *tap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapCoverAction:)];
         tap.delegate = self;

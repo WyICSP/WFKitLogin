@@ -20,6 +20,11 @@ typedef NS_ENUM(NSInteger,MLEnterAnimationStyle) {
     MLEnterAnimationStyleTop,
 };
 
+typedef NS_ENUM(NSUInteger, WFShowNavType) {
+    WFShowHasNavBarType = 0,// 有导航栏
+    WFShowNoHasNavBarType, // 没有导航栏
+};
+
 typedef void(^MLDidSelectBlock)(NSInteger index);
 
 typedef void(^DissaperBlock)(void);
@@ -80,6 +85,9 @@ typedef void(^DissaperBlock)(void);
  设置标题颜色
  */
 @property (nonatomic, strong) UIColor *titleColor;
+
+/// 当前页面是否有导航栏
+@property (nonatomic, assign) WFShowNavType showType;
 
 /**
  设置字体大小
