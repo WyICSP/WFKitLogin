@@ -40,6 +40,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)openActivityOrRewardCtrlWithController:(UIViewController *)controller
                                           type:(NSInteger)type;
 
+/// 直接打开申请片区
+/// @param controller 当前页面
++ (void)gotoAppleAreaCtrlWithController:(UIViewController *)controller;
+
 /**
  去支付
 

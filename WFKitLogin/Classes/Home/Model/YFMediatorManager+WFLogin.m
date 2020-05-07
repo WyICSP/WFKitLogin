@@ -40,6 +40,11 @@
     [self performTarget:@"WFRewardPublicAPI" action:@"openActivityOrRewardCtrlWithParams:" params:params isRequiredReturnValue:NO];
 }
 
+/// 直接打开申请片区
++ (void)gotoAppleAreaCtrlWithController:(UIViewController *)controller {
+    [self performTarget:@"WFApplyAreaPublicAPI" action:@"gotoAppleAreaCtrlWithController:" params:controller isRequiredReturnValue:NO];
+}
+
 + (void)gotoPayFreightWithParams:(NSDictionary *)params {
     [self performTarget:@"WFPayPublicAPI" action:@"gotoPayWithParams:" params:params isRequiredReturnValue:NO];
 }

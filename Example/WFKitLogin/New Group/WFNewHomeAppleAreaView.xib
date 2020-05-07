@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WFNewHomeAppleAreaView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="90" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNq-Ya-ono">
+                    <rect key="frame" x="217" y="15" width="169" height="46"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="申请片区">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="BxN-CU-pOo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="80" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZD-NT-upI">
+                    <rect key="frame" x="28" y="15" width="169" height="46"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="E5k-gy-TT7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="申请设备">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="abb-ce-qhP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FNq-Ya-ono" firstAttribute="height" secondItem="dZD-NT-upI" secondAttribute="height" id="IxN-wG-GDU"/>
+                <constraint firstItem="FNq-Ya-ono" firstAttribute="centerY" secondItem="dZD-NT-upI" secondAttribute="centerY" id="Orl-kX-9Mk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FNq-Ya-ono" secondAttribute="trailing" constant="28" id="YIb-Pg-8ES"/>
+                <constraint firstItem="FNq-Ya-ono" firstAttribute="leading" secondItem="dZD-NT-upI" secondAttribute="trailing" constant="20" id="lQg-8x-kGi"/>
+                <constraint firstItem="dZD-NT-upI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="mFJ-bx-PcV"/>
+                <constraint firstItem="dZD-NT-upI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vtF-Kx-dZg"/>
+                <constraint firstItem="FNq-Ya-ono" firstAttribute="width" secondItem="dZD-NT-upI" secondAttribute="width" id="wEI-xx-XEZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="applyArea" destination="FNq-Ya-ono" id="fAK-rs-8ST"/>
+                <outlet property="applyPileBtn" destination="dZD-NT-upI" id="zG2-qL-Tmr"/>
+            </connections>
+            <point key="canvasLocation" x="177" y="50"/>
+        </view>
+    </objects>
+</document>

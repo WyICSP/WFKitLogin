@@ -28,6 +28,10 @@
     [self.dwebview reload];
 }
 
+- (void)dealloc {
+    [YFNotificationCenter removeObserver:self name:@"reloadApplyPileKeys" object:nil];
+}
+
 
 
 

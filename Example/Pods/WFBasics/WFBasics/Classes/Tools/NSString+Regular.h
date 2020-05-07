@@ -300,4 +300,8 @@
 /// @param position 保留的小数位数
 + (NSString *)rounding:(double)price afterPoint:(int)position;
 
+/// 处理精度缺失问题
+/// @param conversionValue 传入的 double 类型值
++ (NSString *)decimalNumberWithDouble:(double)conversionValue;
+
 @end

@@ -12,6 +12,8 @@
 #import "WFViewController.h"
 #import "WKNavigationController.h"
 #import "WFUserCenterViewController.h"
+#import "WFNewHomeViewController.h"
+#import "YFMediatorManager+YFKitMain.h"
 
 @implementation WFAppDelegate
 
@@ -19,17 +21,18 @@
 {
     // Override point for customization after application launch.
     //去掉导航栏的黑线
-    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
-    //创建window
-    UIWindow *window                         = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window                              = window;
-    [self.window setBackgroundColor:[UIColor whiteColor]];
-    WFLoginViewController *login     = [WFLoginViewController shareInstance];
-    self.window.rootViewController    = [[WKNavigationController alloc] initWithRootViewController:login];
-    [YFMainPublicModelAPI setGlobalBackGroundColor:UIColor.whiteColor];
-    [YFMainPublicModelAPI setNarBarGlobalTextColor:UIColor.blackColor andFontSize:18.0f];
+//    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+//    //创建window
+//    UIWindow *window                         = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window                              = window;
+//    [self.window setBackgroundColor:[UIColor whiteColor]];
+////    WFLoginViewController *login     = [WFLoginViewController shareInstance];
+//    WFNewHomeViewController *home     = [[WFNewHomeViewController alloc] init];
+//    self.window.rootViewController    = [[WKNavigationController alloc] initWithRootViewController:home];
+//    [YFMainPublicModelAPI setGlobalBackGroundColor:UIColor.whiteColor];
+//    [YFMainPublicModelAPI setNarBarGlobalTextColor:UIColor.blackColor andFontSize:18.0f];
     
-    
+    [self createTabbar];
 //    UITabBarController *rootVC        = [YFMainPublicModelAPI rootTabBarCcontroller];
 //    [YFMainPublicModelAPI addChildVC:login normalImageName:@"" selectedImageName:@"" title:@"登录"];
 //    [YFMainPublicModelAPI addChildVC:[WFUserCenterViewController new] normalImageName:@"" selectedImageName:@"" title:@"我的片区"];
@@ -43,6 +46,37 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+#pragma mark 创建tabbar
+-(void)createTabbar{
+    
+    //去掉导航栏的黑线
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    //创建window
+    UIWindow *window                         = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window                              = window;
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    // 取出沙盒中存储的上次使用软件的版本号
+//    NSUserDefaults *defaults                 = [NSUserDefaults standardUserDefaults];
+//    NSString *lastVersion                    = [defaults stringForKey:key];
+//    // 获得当前软件的版本号
+//    NSString *currentVersion                 = [NSString getAppVersion];
+        //如果没有登录
+        WFLoginViewController *login     = [WFLoginViewController shareInstance];
+            UITabBarController *rootVC        = [YFMediatorManager rootTabBarCcontroller];
+            [YFMediatorManager addChildVC:login normalImageName:@"videoImg" selectedImageName:@"videoImg" title:@"商城"];
+            [YFMediatorManager addChildVC:[WFNewHomeViewController new] normalImageName:@"videoImg" selectedImageName:@"videoImg" title:@"我的"];
+            [YFMediatorManager setGlobalBackGroundColor:[UIColor whiteColor]];
+            [YFMediatorManager setNarBarGlobalTextColor:[UIColor blackColor] andFontSize:18];
+            
+            [self.window setRootViewController:rootVC];
+    
+    [self.window makeKeyAndVisible];
+    
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

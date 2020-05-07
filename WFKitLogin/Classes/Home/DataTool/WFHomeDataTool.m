@@ -10,6 +10,7 @@
 #import "WFHomeDataModel.h"
 #import "WFPayTypeMsgModel.h"
 #import "NSString+Regular.h"
+#import "WFNewHomeModel.h"
 #import "WKRequest.h"
 #import "YFKeyWindow.h"
 #import "WKSetting.h"
@@ -60,6 +61,57 @@
             resultBlock([WFPayTypeMsgModel mj_objectWithKeyValues:baseModel.data]);
         }else {
             [YFToast showMessage:baseModel.message inView:[[YFKeyWindow shareInstance] getCurrentVC].view];
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
++ (void)geHomeAssetsInfoWithParams:(NSDictionary *)params
+                       resultBlock:(void(^)(WFNewHomeModel *models))resultBlock
+                      failureBlock:(void(^)(void))failureBlock {
+    NSString *path = [NSString stringWithFormat:@"%@app-partner-setmeal/v1/home/pageInfo/assetsInfo",NEW_HOST_URL];
+    [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
+        if (CODE_ZERO) {
+            resultBlock([WFNewHomeModel mj_objectWithKeyValues:baseModel.data]);
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
++ (void)getCustomerServiceWithParams:(NSDictionary *)params
+                         resultBlock:(void(^)(WFNewHomeServiceModel *cModel))resultBlock {
+    NSString *path = [NSString stringWithFormat:@"%@app-partner-setmeal/v1/home/pageInfo/headAd",NEW_HOST_URL];
+    [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
+        if (CODE_ZERO) {
+            resultBlock([WFNewHomeServiceModel mj_objectWithKeyValues:baseModel.data]);
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
++ (void)getHomeTotalIncomeWithParams:(NSDictionary *)params
+                         resultBlock:(void(^)(WFNewHomeIncomeModel *models))resultBlock
+                        failureBlock:(void(^)(void))failureBlock {
+    NSString *path = [NSString stringWithFormat:@"%@yzc-partner-statistics-api/v1/page/getIncome",NEW_HOST_URL];
+    [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
+        if (CODE_ZERO) {
+            resultBlock([WFNewHomeIncomeModel mj_objectWithKeyValues:baseModel.data]);
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
++ (void)getHomeTodayIncomeWithParams:(NSDictionary *)params
+                         resultBlock:(void(^)(WFNewHomeTodayIncomeModel *models))resultBlock
+                        failureBlock:(void(^)(void))failureBlock {
+    NSString *path = [NSString stringWithFormat:@"%@yzc-partner-statistics-api/v1/page/todayBusiness",NEW_HOST_URL];
+    [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
+        if (CODE_ZERO) {
+            resultBlock([WFNewHomeTodayIncomeModel mj_objectWithKeyValues:baseModel.data]);
         }
     } failure:^(NSError *error) {
         

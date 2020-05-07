@@ -824,4 +824,11 @@
 }
 
 
++ (NSString *)decimalNumberWithDouble:(double)conversionValue {
+    NSString *doubleString = [NSString stringWithFormat:@"%lf", conversionValue];
+    NSDecimalNumber *decNumber = [NSDecimalNumber decimalNumberWithString:doubleString];
+    return [decNumber stringValue];
+}
+
+
 @end
