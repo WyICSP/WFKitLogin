@@ -97,7 +97,7 @@
     }];
 }
 
-/// 获取当天收入
+/// 获取今日经营
 - (void)getTodayIncome {
     @weakify(self)
     [WFHomeDataTool getHomeTodayIncomeWithParams:@{} resultBlock:^(WFNewHomeTodayIncomeModel * _Nonnull models) {

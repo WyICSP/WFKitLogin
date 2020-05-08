@@ -97,7 +97,7 @@
 + (void)getHomeTotalIncomeWithParams:(NSDictionary *)params
                          resultBlock:(void(^)(WFNewHomeIncomeModel *models))resultBlock
                         failureBlock:(void(^)(void))failureBlock {
-    NSString *path = [NSString stringWithFormat:@"%@yzc-partner-statistics-api/v1/page/getIncome",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@yzc-partner-statistics-api/v1/index/getIncome",NEW_HOST_URL];
     [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFNewHomeIncomeModel mj_objectWithKeyValues:baseModel.data]);
@@ -112,7 +112,7 @@
 + (void)getHomeTodayIncomeWithParams:(NSDictionary *)params
                          resultBlock:(void(^)(WFNewHomeTodayIncomeModel *models))resultBlock
                         failureBlock:(void(^)(void))failureBlock {
-    NSString *path = [NSString stringWithFormat:@"%@yzc-partner-statistics-api/v1/page/todayBusiness",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@yzc-partner-statistics-api/v1/index/todayManage",NEW_HOST_URL];
     [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFNewHomeTodayIncomeModel mj_objectWithKeyValues:baseModel.data]);
