@@ -84,7 +84,10 @@
     NSString *path = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
     DLog(@"接口 + 参数:%@-----------%@",urlString,[self dictionTransformationJson:parameters]);
-    [manager GET:path parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    
+    [manager GET:path parameters:parameters headers:@{} progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [SVProgressHUD dismiss];
         if (successBlock) {
             NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
@@ -131,7 +134,11 @@
     NSString *path = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
     DLog(@"接口 + 参数:%@-----------%@",urlString,[self dictionTransformationJson:parameters]);
-    [manager POST:path parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    
+    
+    [manager POST:path parameters:parameters headers:@{} progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [SVProgressHUD dismiss];
         if (successBlock) {
             if (isJson) {
@@ -178,7 +185,7 @@
     //2.上传文件
     NSString *hostUrl = urlString;
     DLog(@"接口 + 参数:%@-----------%@",urlString,[self dictionTransformationJson:parameters]);
-    [manager POST:hostUrl parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    [manager POST:hostUrl parameters:nil headers:@{} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         
         NSData *data = UIImageJPEGRepresentation(image, 0.1);
         //上传文件参数

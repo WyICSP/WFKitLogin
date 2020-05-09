@@ -1,18 +1,18 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - dsBridge (3.0.6)
   - MJExtension (3.2.1)
@@ -21,7 +21,7 @@ PODS:
     - SDWebImage/Core (= 5.3.1)
   - SDWebImage/Core (5.3.1)
   - SVProgressHUD (2.2.5)
-  - WFBasics (0.3.5):
+  - WFBasics (0.3.6):
     - AFNetworking
     - SVProgressHUD
     - WYAutoLayout
@@ -39,7 +39,7 @@ PODS:
     - dsBridge
     - WFBasics
   - WKFunComponents (0.1.1)
-  - WYAutoLayout (1.0.1)
+  - WYAutoLayout (1.1.0)
 
 DEPENDENCIES:
   - WFKitLogin (from `../`)
@@ -64,18 +64,18 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
   MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
   SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  WFBasics: 14f06bb607c33d8d684bfa4af39a84945bdd8d2f
+  WFBasics: c3366758f139a46e33df0845d4d41bee2d9a13d6
   WFHomeAddress: 4eb27df8a873af9161d147f8b10a1d50ba725467
   WFKitLogin: 784fa986b4f95f7855d1cd830d4a4c9acbd75675
   WFKitMain: 847fc0c1d2b49ff6578e067cb36221e4e5f9fb3b
   WKFunComponents: 359e5059c096338eee60fee1d7146b701ed30372
-  WYAutoLayout: 3cb136ddc2efa9faaecf15876e6a9b2a6fd7c6cb
+  WYAutoLayout: 7bc596f94be915e1f690f316ac859287c8ec9d51
 
 PODFILE CHECKSUM: 8397cd4f9b857bd307a1406abc955dbe3615252a
 
