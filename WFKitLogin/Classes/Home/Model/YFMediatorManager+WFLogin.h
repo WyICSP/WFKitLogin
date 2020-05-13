@@ -51,6 +51,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)gotoPayFreightWithParams:(NSDictionary *)params;
 
+/// 保存存片
+/// @param params 参数
++ (void)savePhotoWithParams:(NSArray *)params;
+
 @end
 
 NS_ASSUME_NONNULL_END

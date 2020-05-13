@@ -214,7 +214,7 @@
         [self.navigationController pushViewController:web animated:YES];
     }else {
         // 电话客服
-        [WFLoginPublicAPI callPhoneWithNumber:self.cModel.customerServiceUrl];
+        [WFLoginPublicAPI callPhoneWithNumber:self.cModel.customerMobile];
     }
 }
 

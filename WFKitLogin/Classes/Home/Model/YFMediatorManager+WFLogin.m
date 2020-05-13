@@ -49,4 +49,8 @@
     [self performTarget:@"WFPayPublicAPI" action:@"gotoPayWithParams:" params:params isRequiredReturnValue:NO];
 }
 
++ (void)savePhotoWithParams:(NSArray *)params {
+    [self performTarget:@"WFShareHelpTool" action:@"saveImageToAlbumWithUrls:" params:params isRequiredReturnValue:NO];
+}
+
 @end
