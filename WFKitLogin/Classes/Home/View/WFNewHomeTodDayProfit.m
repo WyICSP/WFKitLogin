@@ -40,7 +40,7 @@
 }
 
 - (void)setModel:(WFNewHomeTodayIncomeModel *)model {
-    NSString *chargingIncome = [NSString stringWithFormat:@"%@",[NSString decimalNumberWithDouble:model.chargingIncome.doubleValue/1000]];
+    NSString *chargingIncome = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.chargingIncome.doubleValue/1000]];
     self.todayIncome.text = [NSString stringWithFormat:@"%@",chargingIncome];
     
     self.chargeNum.text = [NSString stringWithFormat:@"%ld",model.orderNum];

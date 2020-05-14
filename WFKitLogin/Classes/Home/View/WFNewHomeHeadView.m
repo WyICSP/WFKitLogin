@@ -57,13 +57,13 @@
 }
 
 - (void)setModel:(WFNewHomeIncomeModel *)model {
-    NSString *totalPrice = [NSString stringWithFormat:@"%@",[NSString decimalNumberWithDouble:model.totalRevenue.doubleValue/1000]];
+    NSString *totalPrice = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.totalRevenue.doubleValue/1000]];
     self.totalMoney.text = [NSString stringWithFormat:@"%@",totalPrice];
     
-    NSString *chargePrice = [NSString stringWithFormat:@"%@",[NSString decimalNumberWithDouble:model.chargingIncome.doubleValue/1000]];
+    NSString *chargePrice = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.chargingIncome.doubleValue/1000]];
     self.chargeMoney.text = [NSString stringWithFormat:@"%@",chargePrice];
     
-    NSString *rewardPrice = [NSString stringWithFormat:@"%@",[NSString decimalNumberWithDouble:model.bonusIncome.doubleValue/1000]];
+    NSString *rewardPrice = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.bonusIncome.doubleValue/1000]];
     self.rewardMoney.text = [NSString stringWithFormat:@"%@",rewardPrice];
     
     self.marqueeControl.marqueeLabel.text = [NSString stringWithFormat:@"%@",model.advertisementName];
