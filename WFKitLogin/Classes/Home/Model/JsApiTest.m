@@ -104,7 +104,6 @@
 - (void)saveImg:(NSString *)msg :(JSCallback) completionHandler
 {
     if (msg.length != 0) {
-        msg = @"https://www.baidu.com/img/superlogo_c4d7df0a003d3db9b65e9ef0fe6da1ec.png?qua=high&where=super";
         UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:msg]]];
         if (image != nil)
         [YFMediatorManager savePhotoWithParams:@[image]];

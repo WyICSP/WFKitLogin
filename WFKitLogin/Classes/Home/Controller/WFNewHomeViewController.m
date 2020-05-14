@@ -59,6 +59,8 @@
     [self netWork];
     // 获取客服信息
     [self getCustomerService];
+    //注册通知：重新刷新页面
+    [YFNotificationCenter addObserver:self selector:@selector(netWork) name:@"reloadUserCnter" object:nil];
 }
 
 /// 获取数据
