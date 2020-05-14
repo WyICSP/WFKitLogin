@@ -81,6 +81,12 @@ NS_ASSUME_NONNULL_BEGIN
                          resultBlock:(void(^)(WFNewHomeTodayIncomeModel *models))resultBlock
                         failureBlock:(void(^)(void))failureBlock;
 
+/// 获取未读消息
+/// @param params 参数
+/// @param resultBlock 返回结果
++ (void)getMessageUnReadCountWithParams:(NSDictionary *)params
+                            resultBlock:(void(^)(NSDictionary *dict))resultBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

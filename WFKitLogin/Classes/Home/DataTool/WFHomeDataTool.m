@@ -124,4 +124,16 @@
     }];
 }
 
++ (void)getMessageUnReadCountWithParams:(NSDictionary *)params
+                            resultBlock:(void(^)(NSDictionary *dict))resultBlock {
+    NSString *path = [NSString stringWithFormat:@"%@app-partner-setmeal/v1/message/getMessageNum",NEW_HOST_URL];
+    [WKRequest getWithURLString:path parameters:params isShowHud:NO success:^(WKBaseModel *baseModel) {
+        if (CODE_ZERO) {
+            resultBlock(baseModel.mDictionary);
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
 @end

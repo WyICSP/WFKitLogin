@@ -39,6 +39,8 @@
 @property (nonatomic, strong, nullable) WFNewHomeServiceModel *cModel;
 /// 菜单
 @property (nonatomic, strong, nullable) MLMenuView *menuView;
+/**消息未读*/
+@property (nonatomic, strong) UILabel *countLbl;
 @end
 
 @implementation WFNewHomeViewController
@@ -47,6 +49,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUI];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // 获取未读消息
+    [self getUserUnReadMessage];
 }
 
 #pragma mark 页面相关方法调用
@@ -120,6 +128,18 @@
         self.cModel = cModel;
         self.cModel.customerMobile = cModel.customerMobile.length == 0 ? @"4008251068" : cModel.customerMobile;
         self.cModel.customerServiceUrl = cModel.customerServiceUrl.length == 0 ? @"https://chat.sobot.com/chat/h5/v2/index.html?sysnum=5671d20094344db1abd7c0386cdbd5a8&source=2" : cModel.customerServiceUrl;
+    }];
+}
+
+/**
+ 获取用户未读消息
+ */
+- (void)getUserUnReadMessage {
+    @weakify(self)
+    [WFHomeDataTool getMessageUnReadCountWithParams:@{} resultBlock:^(NSDictionary * _Nonnull dict) {
+        @strongify(self)
+        NSString *dataCount = [NSString stringWithFormat:@"%@",[dict objectForKey:@"data"]];
+        self.countLbl.hidden = [dataCount intValue] == 0;
     }];
 }
 
@@ -314,6 +334,26 @@
         };
     }
     return _menuView;
+}
+
+/**
+ 消息数量
+
+ @return countLbl
+ */
+- (UILabel *)countLbl {
+    if (!_countLbl) {
+        _countLbl = [[UILabel alloc] initWithFrame:CGRectMake(8, -4, 10, 10)];
+        _countLbl.textColor = [UIColor whiteColor];
+        _countLbl.backgroundColor = UIColorFromRGB(0xFC3712);
+        _countLbl.layer.masksToBounds = YES;
+        _countLbl.layer.cornerRadius = 5;
+        _countLbl.hidden = YES;
+        _countLbl.font = [UIFont systemFontOfSize:9];
+        _countLbl.textAlignment = NSTextAlignmentCenter;
+        [self.rightImageBtn addSubview:_countLbl];
+    }
+    return _countLbl;
 }
 
 @end

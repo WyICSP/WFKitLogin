@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *nearRate;
 /// 更新 btn
 @property (weak, nonatomic) IBOutlet UIButton *updateBtn;
+/// 7 ri 
+@property (weak, nonatomic) IBOutlet UILabel *nearLbl;
 
 /// 点击事件
 @property (copy, nonatomic) void (^clickTodayEventBlock)(NSInteger index);

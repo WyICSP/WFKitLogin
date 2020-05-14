@@ -16,6 +16,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.contentsView.layer.cornerRadius = 10.0f;
+    self.nearLbl.adjustsFontSizeToFitWidth = YES;
     
     //添加手势
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickTodayEvent:)];
