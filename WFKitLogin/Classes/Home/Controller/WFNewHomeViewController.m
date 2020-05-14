@@ -39,6 +39,8 @@
 @property (nonatomic, strong, nullable) WFNewHomeServiceModel *cModel;
 /// 菜单
 @property (nonatomic, strong, nullable) MLMenuView *menuView;
+///是否可以侧滑
+@property (nonatomic,assign) BOOL isCanSideBack;
 /**消息未读*/
 @property (nonatomic, strong) UILabel *countLbl;
 @end
@@ -53,8 +55,22 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self disableSideBack];
     // 获取未读消息
     [self getUserUnReadMessage];
+}
+
+///禁用侧滑返回
+- (void)disableSideBack{
+    self.isCanSideBack = NO;
+    if([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+    }
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer*)gestureRecognizer {
+    return self.isCanSideBack;
 }
 
 #pragma mark 页面相关方法调用
