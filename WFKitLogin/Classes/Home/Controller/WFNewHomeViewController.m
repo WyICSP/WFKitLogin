@@ -106,6 +106,7 @@
         [self.scrollView.mj_header endRefreshing];
     } failureBlock:^{
         @strongify(self)
+        self.headView.model = nil;
         [self.scrollView.mj_header endRefreshing];
     }];
 }
@@ -215,7 +216,7 @@
         [self.navigationController pushViewController:web animated:YES];
     }else if (index == 120) {
         //奖励收入
-        [YFMediatorManager openRewardCtrlWithController:self];
+        [YFMediatorManager openActivityOrRewardCtrlWithController:self type:0];
     }else if (index == 130) {
         //公告
     }

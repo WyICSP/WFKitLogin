@@ -67,7 +67,8 @@
     NSString *rewardPrice = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.bonusIncome.doubleValue/1000]];
     [AttributedLbl setRichTextOnlyFont:self.rewardMoney titleString:rewardPrice textFont:[UIFont boldSystemFontOfSize:14.0f] fontRang:NSMakeRange(rewardPrice.length-4, 4)];
     
-    self.marqueeControl.marqueeLabel.text = [NSString stringWithFormat:@"%@",model.advertisementName];
+    NSString *adver = model.advertisementName.length == 0 ? @"赚钱攻略：少安装少投入，多占点多宣传多服务" : model.advertisementName;
+    self.marqueeControl.marqueeLabel.text = [NSString getNullOrNoNull:adver];
     
 }
 
