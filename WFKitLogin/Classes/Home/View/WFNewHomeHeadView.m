@@ -10,6 +10,7 @@
 #import "WFNewHomeModel.h"
 #import "NSString+Regular.h"
 #import "WFHorseRaceLamp.h"
+#import "AttributedLbl.h"
 #import "WKConfig.h"
 
 @interface WFNewHomeHeadView ()
@@ -58,13 +59,13 @@
 
 - (void)setModel:(WFNewHomeIncomeModel *)model {
     NSString *totalPrice = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.totalRevenue.doubleValue/1000]];
-    self.totalMoney.text = [NSString stringWithFormat:@"%@",totalPrice];
+    [AttributedLbl setRichTextOnlyFont:self.totalMoney titleString:totalPrice textFont:[UIFont boldSystemFontOfSize:16.0f] fontRang:NSMakeRange(totalPrice.length-4, 4)];
     
     NSString *chargePrice = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.chargingIncome.doubleValue/1000]];
-    self.chargeMoney.text = [NSString stringWithFormat:@"%@",chargePrice];
+    [AttributedLbl setRichTextOnlyFont:self.chargeMoney titleString:chargePrice textFont:[UIFont boldSystemFontOfSize:14.0f] fontRang:NSMakeRange(chargePrice.length-4, 4)];
     
     NSString *rewardPrice = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.bonusIncome.doubleValue/1000]];
-    self.rewardMoney.text = [NSString stringWithFormat:@"%@",rewardPrice];
+    [AttributedLbl setRichTextOnlyFont:self.rewardMoney titleString:rewardPrice textFont:[UIFont boldSystemFontOfSize:14.0f] fontRang:NSMakeRange(rewardPrice.length-4, 4)];
     
     self.marqueeControl.marqueeLabel.text = [NSString stringWithFormat:@"%@",model.advertisementName];
     

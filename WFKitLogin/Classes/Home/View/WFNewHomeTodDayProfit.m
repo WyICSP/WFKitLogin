@@ -9,6 +9,7 @@
 #import "WFNewHomeTodDayProfit.h"
 #import "NSString+Regular.h"
 #import "WFNewHomeModel.h"
+#import "AttributedLbl.h"
 #import "WKConfig.h"
 
 @implementation WFNewHomeTodDayProfit
@@ -41,7 +42,8 @@
 
 - (void)setModel:(WFNewHomeTodayIncomeModel *)model {
     NSString *chargingIncome = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.chargingIncome.doubleValue/1000]];
-    self.todayIncome.text = [NSString stringWithFormat:@"%@",chargingIncome];
+    
+    [AttributedLbl setRichTextOnlyFont:self.todayIncome titleString:chargingIncome textFont:[UIFont boldSystemFontOfSize:12.0f] fontRang:NSMakeRange(chargingIncome.length-4, 4)];
     
     self.chargeNum.text = [NSString stringWithFormat:@"%ld",model.orderNum];
     
