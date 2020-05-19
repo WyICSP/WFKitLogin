@@ -87,6 +87,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)getMessageUnReadCountWithParams:(NSDictionary *)params
                             resultBlock:(void(^)(NSDictionary *dict))resultBlock;
 
+/// 获取合伙人身份信息
+/// @param params 参数
+/// @param resultBlock 返回结果
++ (void)getPartnerInfoWithParams:(NSDictionary *)params
+                     resultBlock:(void(^)(NSDictionary *dict))resultBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

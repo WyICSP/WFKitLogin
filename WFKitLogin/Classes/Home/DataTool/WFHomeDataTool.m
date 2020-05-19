@@ -136,4 +136,16 @@
     }];
 }
 
++ (void)getPartnerInfoWithParams:(NSDictionary *)params
+                     resultBlock:(void(^)(NSDictionary *dict))resultBlock {
+    NSString *path = [NSString stringWithFormat:@"%@app-partner-setmeal/v1/home/admin/getPartnerInfo",NEW_HOST_URL];
+    [WKRequest getWithURLString:path parameters:params isShowHud:NO success:^(WKBaseModel *baseModel) {
+        if (CODE_ZERO) {
+            resultBlock(baseModel.mDictionary);
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
 @end
