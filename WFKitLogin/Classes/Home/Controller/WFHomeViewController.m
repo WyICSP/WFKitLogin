@@ -176,7 +176,7 @@
            [YFMediatorManager openMyChargePileCtrlWithController:self];
         }else if (itemModel.typeId == 4) {
             //我的片区
-            [YFMediatorManager openApplyAreaCtrlWithController:self];
+            [YFMediatorManager openApplyAreaCtrlWithController:self partnerRole:1];
         }else if (itemModel.typeId == 8) {
             // 授信充值
             [YFMediatorManager openCreditPayCtrlWithController:self type:1];

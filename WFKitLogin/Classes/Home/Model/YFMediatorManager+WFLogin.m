@@ -12,8 +12,10 @@
 /**
  打开片区申请页面
  */
-+ (void)openApplyAreaCtrlWithController:(UIViewController *)controller {
-    [self performTarget:@"WFApplyAreaPublicAPI" action:@"openApplyAreaCtrlWithController:" params:controller isRequiredReturnValue:NO];
++ (void)openApplyAreaCtrlWithController:(UIViewController *)controller
+                            partnerRole:(NSInteger)partnerRole {
+    NSArray *params = @[controller,@(partnerRole)];
+    [self performTarget:@"WFApplyAreaPublicAPI" action:@"openApplyAreaCtrlWithController:" params:params isRequiredReturnValue:NO];
 }
 
 + (void)openMyChargePileCtrlWithController:(UIViewController *)controller {

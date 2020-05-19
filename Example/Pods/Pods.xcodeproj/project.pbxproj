@@ -7,22 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00175AE463070F2CFC19148022E32BD7 /* WFOtherViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 87FE2DE9F94336F5952494EAE5D68CC3 /* WFOtherViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0013FC29D5D84D24D7775849FC0516FF /* WFNewHomeTodDayProfit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3219076FCB6F28862CD40B254AE44C /* WFNewHomeTodDayProfit.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		00175AE463070F2CFC19148022E32BD7 /* WFOtherViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84273FE62859CC9C8DEAE1EA04CA2B36 /* WFOtherViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		003D89AD1395F22A2C979C26D11F98A3 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 958E93C1F0B6F02F600199CFCD9D64BE /* MJFoundation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0045192CC42452AEEE73FD080D6CD0EA /* SDImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ACF3D142BCE37836C97F26A101C219 /* SDImageGIFCoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		004E6DD9092A628406589556D189C790 /* SDAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFC4463118633635E628FB081331718 /* SDAnimatedImageView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0052DAFBAC687408EBF431490EFED058 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CE7030217A102E8663CE1F03BFBFD0 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0107A3973E5C8C3AE95758FF0D20E082 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1106F047BDF725343F87261B3FF05F7 /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		012711AD36726DBF48B521436E0B3993 /* updateView@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78AD9F537C38C9AD11CED11F968E3FDD /* updateView@3x.png */; };
-		016BCD2C1AA31FB20D0D26DA448C9714 /* YFMediatorManager+WFLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C37BA64875A8F9D35B5EC2B5CE91745 /* YFMediatorManager+WFLogin.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0292DEF164F8BE000DCE0670F4557DDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75CF98811046B6FDB420EA8EAD4A05 /* Foundation.framework */; };
 		0358B27D840471F2AC85DFBA9807F6B1 /* YFAddressPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52083D4A1EC9B5288613789B09F721C7 /* YFAddressPickView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		036E44EC6CD7F6EDA591806365394052 /* WFHomeFirstItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22980B7563A2CC2A5087B61AB473F3FB /* WFHomeFirstItemCollectionViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		03BF064D6BC40BFC0FE52246B44B99A1 /* updateView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AE6D3EA548DE0D1406DD183B8DB90D6 /* updateView@2x.png */; };
 		040B2E724A0C2D443890247DF7A988DF /* UIImage+MemoryCacheCost.h in Headers */ = {isa = PBXBuildFile; fileRef = 7439C823A92EB57BEBDD743DA7907647 /* UIImage+MemoryCacheCost.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0436F6C9BEF923B753D80583B040E068 /* SDWebImageCacheSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = D493243509614673D2F2CBB787BCD13B /* SDWebImageCacheSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04C05FAC9F11C57DD8E00392470578E8 /* WFHomeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D71225034AB4B9F6399CAF9E86A64 /* WFHomeWebViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		04D741EDB45C100ABF22BC176E99635A /* JsApiTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874E139B237FB50B85EA53AB3AC0D64 /* JsApiTest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		050A189DF0B4F405E9D3389F24EDF835 /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = A918A4436C38EDDA1D6053BB5E008CD5 /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05F6FC4ABD764D06F179D98ADE97E183 /* WFStartUpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B57527DD6983667D4E56EFC988B5DE0 /* WFStartUpViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06277E1098C61B9E40CBBC17D7FA3AF3 /* WKTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B20885E25B50FE57250F708B80747A8E /* WKTimer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -34,16 +31,16 @@
 		07E08C56386C02093F27CF28E4D01F11 /* WKWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FD3D00891ABC95D72138CC4FDE8155C8 /* WKWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0871413C0C27054F410374B8203AC890 /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 66BCC5A22918F4473A26BF1696819A28 /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08833EDC45601293A040E75EF87172C7 /* SDImageCoderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D95B877567DF791A410969AC03932F7 /* SDImageCoderHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D0E1AFBC2E2AEFCFE032E3F2A38A2A /* WFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29237B8EB396DEA307FF3F4FE00BE732 /* WFLoginViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		08D5C0606D6FBFB4877FC3C3FF4A2208 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF47D23A9CE08765E9EC95D203370D72 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08EBE08A122F75E13F4A4B1DF7FD0391 /* Pods-WFKitLogin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8497363FB322D9638D266C1C4C6C1AF1 /* Pods-WFKitLogin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09E9A5E360AAAEAFBE32506C28BD0979 /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E02B80B0F3B8694EFBCA9C336A3F8F /* UIImage+ForceDecode.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0AB5B1BA41B41BE497C7630320E91038 /* UIColor+HexString.h in Headers */ = {isa = PBXBuildFile; fileRef = B68C95CF7C8DD2AC2C343DB90C0F570F /* UIColor+HexString.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		0B189A6E978F2DCE028BB5E1C56D5A50 /* WFKitLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AFBFECF70C29020D43DEB1DC51FA90 /* WFKitLogin-dummy.m */; };
 		0B3243940A6A4CB1C21B3D678BD426E2 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 530090DC187A2E603FEC10AD376FF67E /* NSObject+MJClass.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0C4F6F470088EE899DC85F189EA6900B /* WFNewHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4BE60C183813510AD8EBE2EF19A4A /* WFNewHomeModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0C5B53B929EF340D04E92BE8C8D91ED7 /* WFApplyAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1289AF12234278CFCC423857BB29C34A /* WFApplyAddressModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0C834DBE73C7D78BD061B3086C183097 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8270F067729D7EDFD7ACD6202894C5C7 /* AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = BD7C8CA3F6E75C066617D17DA6B5079D /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EFD1BDB623145AC15B2718734105AD9 /* WFSecuritySetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1009F00C98403B785AD3A51554FD3DE /* WFSecuritySetViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0F47C7DE634D4FE07B595912093139FE /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CEFA32651BC0199B38271C608802642 /* MJRefresh.bundle */; };
 		0F4A31BE327137D38EC9B706B3E2A73B /* new_home_drop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 022F7682742B7E27182341C8FF9ABE76 /* new_home_drop@3x.png */; };
 		0F681177C47951DDE239D183D1881A74 /* empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09453E6E6ED86E1F81D01A153F0C1FFB /* empty@2x.png */; };
@@ -55,8 +52,10 @@
 		12FC369201605C12E3EA6C0BABE16BA2 /* WYAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0096AF5F20ECE29327F16569914F0D02 /* WYAutoLayout.framework */; };
 		13611CB0839D7F8C3EFCB9F9ED5495BD /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = BCF914094981DCA43D89248C664F1653 /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		137FB127AFB23E186B4D756C8CB668BB /* SDImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBA25BA81D1712025A9B76380D6F6DE /* SDImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B2F4D7D4B5E19289D1DFE3C7B40FA0 /* WFHomeSectionItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC52CF73EBED81423DCA47B534A8C5 /* WFHomeSectionItemCollectionViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1541612B84098C0D5F847E797503745C /* WKConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 31FF889D1E3DFE6B7D10F31A3D0C301B /* WKConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		156CE99BB4E6DD3B1DC6F5AE6ECC41D1 /* SDWebImageDownloaderDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 472040EE2D543B30EFA45F003E4C90F6 /* SDWebImageDownloaderDecryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15746E403B45C37378405AA545BEEA07 /* SKAppUpdaterView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 2D79382309D5DDFF35F3D6D2BBF07042 /* SKAppUpdaterView.xib */; };
 		15CA65626BF77382E9181459B6B2FB08 /* SDWebImageDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B6DD74D5E25588863822804298000 /* SDWebImageDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		163B07BE98EAA270AF0A7AA82F84208E /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 206D18D6E2EB14DB9F3EDC0784891DE5 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		171150D9915E2D7F7FAE1A896A1BA452 /* homeHeadBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D6E6B7E6D37229AC9BD3ED3BA28AFD /* homeHeadBg@2x.png */; };
@@ -68,11 +67,10 @@
 		1A6B69DDDE879B157C8623B1E61F4549 /* WFKitMain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E8708DE24DBBB3B97F454DD33463351 /* WFKitMain.bundle */; };
 		1A77DFAE248B95AB1F39B3ED0D7A07ED /* AttributedLbl.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D86CBE9762D5238B1B054AB6190A2A /* AttributedLbl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A8D763FAD32C53AB94B047867F96A1A /* SDAsyncBlockOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E03126559A77EA19D38E8CF59CA75E4 /* SDAsyncBlockOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1AD0FF5A9D5A089F5B9225AD2B7B9511 /* WFLoginDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32994C39DA23AD0435241EF59DA190 /* WFLoginDataTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1B026FFF23680567AB0F3EBABA76D9EF /* dsBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC287DE3B99939C30A988A9D704575D /* dsBridge.framework */; };
 		1BFC5712E7AEAAD411975977AF3CCA9A /* WFPopTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A4D886E53A99D70A5510898EBD1B51 /* WFPopTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1C4A293920395AB21494EE8B86FDA7D0 /* WFNewHomeAssetsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 231860D52188A153FA2AA63E74963357 /* WFNewHomeAssetsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C88AC8BB96EAB1DE953C5915323E2A5 /* WFHomeSectionItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC52CF73EBED81423DCA47B534A8C5 /* WFHomeSectionItemCollectionViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1C7F17E9CA56FABBC7A6ABAAE3B85156 /* WFHomeFirstItemCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 46565D0F91E9CB71DAC39EB803E83B2D /* WFHomeFirstItemCollectionViewCell.xib */; };
 		1CB44CFFE7FFFD194E27C87BC6301FB8 /* SDWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 603435D8E3154B1555EC301CBE316EF2 /* SDWeakProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1D1637BEB4D496536D4BCD24A3E82729 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6FF137E6AA1B11D37F4998A1DB851F /* SDWebImage.framework */; };
 		1D8C867BF8A7B4EADC2EE988A111F6FE /* SDImageTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 31EA2A71CCE77BF0F906E1BC24C21D3B /* SDImageTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -80,7 +78,7 @@
 		1FBDF9E9320A6F29D092072224CD9BF1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64852705DCAFFBABD228BAEDE2FF8B39 /* ImageIO.framework */; };
 		20D7E48C26BEF0F138B9375C2A886C7B /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C11496ECAA98E02D2CD0297584B14EF /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		210A1320B00B87DD09FA0523F9DBF2C0 /* UITextField+RYNumberKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A694F7EA54E91CC459AAEAF4102A72E /* UITextField+RYNumberKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21A2DEC3264A18ED504857B6EB6FD38C /* WFHomeNullCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0150F9A28434AF721D4B4DBD1491E5F /* WFHomeNullCollectionViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		216283C451E12DABCF627D706D460093 /* MLMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7CFF1EBBDA33C9E3DA07208AE3451 /* MLMenuView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		22288CE3C870F67A2C1107EF8A8E7514 /* UIImage+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 64198444517223C870B9D9642266EFC7 /* UIImage+QRCode.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		22DDC4AD3A7D3DC91B2C07FB99D461DA /* dsBridge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3937A693A72906190B28860E09EDD71E /* dsBridge-dummy.m */; };
 		2489EA71AAE173CC404785BA51AB6CEC /* UIImage+QRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 762F6150D8A0CC225D701F55CB898EAE /* UIImage+QRCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -96,10 +94,10 @@
 		2850409B6DFFC681F172F6716DB12920 /* jumpNext@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4FE934EDEEF31B20E96366B25F4798 /* jumpNext@3x.png */; };
 		2859C7BA46061F14E962B77D730F803F /* WKNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 65788EFC2EF6E8933D50725D0A167829 /* WKNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28BE705052AF2D2A92DDD95DB0E77DE8 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EDDFDB64C077DB947E3B9D0AC261FF9 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28F4CDC6973028F903A8C051D57CB6F4 /* WFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29237B8EB396DEA307FF3F4FE00BE732 /* WFLoginViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2AB5C7D99BD529942B2C81AB0CD8A600 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A3CA6D0FFD643202C6D3900984FD36 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AFA9AEFF23F279FECAA4B1A62F48150 /* WFBaseWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4276833A13F5CC15E1268A468DA9F3 /* WFBaseWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B054A6D747A1380B55B0062593E5975 /* new_msg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94131B79F63C3EF285B875A96ED0E2DE /* new_msg@3x.png */; };
+		2B8F2F5151768B050262160E9B4B09C8 /* WFLoginPublicAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 399143B3511CEDD523140DBC87120B6B /* WFLoginPublicAPI.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2C7CE2FB09EAA52D3A751CC4B8894CD7 /* WFHorseRaceLamp.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED625FA8E03B69A3A214C24DE3EF6B0 /* WFHorseRaceLamp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D06065FF3E70E3592F1FB4CDC09B51C /* SKSingle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ECFEC307909B9078D02F334522F5FC1 /* SKSingle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D1C7BB39B430F1BB5A454D10DB39150 /* SDAnimatedImagePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA5E6DF7C65716638A7763BC8125D29 /* SDAnimatedImagePlayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -107,30 +105,29 @@
 		2D2801427B88163A3FE72A41B896508F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7D5772676B004EA9D30649D8A35527 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2D6BE05EF444A3C7E1C67D760F85D41C /* SDImageCachesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E4A7301D9CC6841DBF13AF57FF53E4 /* SDImageCachesManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D956655EDA5D77373B5D237BA603152 /* NSButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F4F276C25C3FC23FA5ABB3D069E192 /* NSButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D96291DCFC768AFE1B1F0E7882670B0 /* WFPayTypeMsgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B13B1189A4830FA4DA118EC240E033 /* WFPayTypeMsgModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2DC11A07A4C6969EF11E0BCD6523AACB /* WFApplyPartnerUserView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8225F4FB3A3CFFB3D3821442383B3787 /* WFApplyPartnerUserView.xib */; };
-		2DFD153602FCFA3FAE5BC7A18A24DACE /* WFSecuritySetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1009F00C98403B785AD3A51554FD3DE /* WFSecuritySetViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2E36B85981DDEC269B2416D573992054 /* WFHomeAddress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FD51BE9DBA3D2252DB3B43A6CAB7FE /* WFHomeAddress-dummy.m */; };
 		2E37104AC869899926BAC7254E480314 /* new_msg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 285B05B53EC1B08B81B64DAC21322030 /* new_msg@2x.png */; };
 		2ED115BD1302B54241440A86FE48569F /* SDWebImageDownloaderRequestModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 13688042388614AE259AB7CC2A2026D6 /* SDWebImageDownloaderRequestModifier.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2F33112D18E69AC8ADAA1884EF8A524E /* new_home_profit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DDAA1EDF3B3798EB0226A7542D213F /* new_home_profit@3x.png */; };
 		3059F5EDB6ED27DA11A18C0975E73A52 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B52DBED870B123577C989AA19664CFC /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3069A83363AFFAD7103A2308153F9015 /* WFLoginDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F32994C39DA23AD0435241EF59DA190 /* WFLoginDataTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		30B8C0D1EAFBD03D48A0CD4C2C6C9B26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75CF98811046B6FDB420EA8EAD4A05 /* Foundation.framework */; };
 		30ED16BA5BEC0898CCF38B60CF338917 /* YukiWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4025769FF151869AF0A301172228C /* YukiWebViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3105FCF63BA5E9C4B248076B5369A69C /* WFNewHomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F600A1C1FDF7120DBF85C96C617E865 /* WFNewHomeHeadView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3117EFFC676393090B01A6617E72C19E /* WKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 876CE93D463781BA7E984A659D793693 /* WKNavigationController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		312627858483FB566827F9B806122996 /* new_home_head@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FDD8E6715C025D2D6618CF91C774661 /* new_home_head@2x.png */; };
 		31D728B4EDE6DCC6287ED88AEA7DE61B /* WKRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFE2C1CE929C7BC7BD6D2EF20755EB5 /* WKRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32621D840AA60386AD552314FCE4CD15 /* JSBUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 569E3E31366BC1E75DA354010024970D /* JSBUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3336854D90EBC9C0FED3FC5E9531E4C8 /* new_service@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AA28967A0F14E671C1D65FD638FAD16 /* new_service@2x.png */; };
 		337F43118F131A6EC4CB6569896253BD /* WYAutoLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE5A681B4EC4DCD191A203AB2AF91302 /* WYAutoLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		338D876A45EA676544C650CB0940087D /* WFApplyPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D12C4A9FB6DFC816EC77E999C4583EDC /* WFApplyPartnerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		33F9DA28F3CEF816843D7ED6302EEDBC /* TitleScrollHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EF84B6ADADF2B281D4D6A9C91085DE4B /* TitleScrollHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		347F0800468EB45F3EFBE8CB4A56A0E6 /* WFNewHomeHeadView.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AA7A634A8A0904313D962350A4DBFC /* WFNewHomeHeadView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36DBE6A88AC31FA8F3C111D53A8C6EAD /* WFHomeIncomeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79248CC6BC4C8CBC5BFE2A7A66CFA92 /* WFHomeIncomeWebViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		36FDC042203AD6A95F0C91BEAE32F4A4 /* SDWebImageDownloaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A744BF794CC64FAFDF760AE43C5E21 /* SDWebImageDownloaderConfig.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		371791BDCCAA5506146CDADC37C6198C /* WFNewHomeAssetsView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6D42610324707F5D430EC24BF0FF679F /* WFNewHomeAssetsView.xib */; };
 		3720863D989F0012CEFA8259465B25C7 /* WKFunComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 272E9BB723BFC28A3BCE519A5EE18582 /* WKFunComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3758C7466CF4539520FE9ECD024E86A8 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9D0CB29E0D066307301B2897A8EEE /* AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3781619BA80098F4F304C7684CC53632 /* WFLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 85DA51008BD5001350933FC9F7F10730 /* WFLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37C8E9B0F67C3605B30588216904E549 /* SKAppUpdaterView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 2D79382309D5DDFF35F3D6D2BBF07042 /* SKAppUpdaterView.xib */; };
 		3814C213A587426FB1E5288D452EEB28 /* UILabel+aptateFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8279FDCA426E366F8456CC4F26C8D549 /* UILabel+aptateFont.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3837502F6279F082D584E8D5FED955FA /* deleteLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD56E33FEC523D2F878EBB51EEE6B37A /* deleteLogo@2x.png */; };
 		3875B34FC620501780A2362D2BDAE5CF /* WFHomeSaveDataTool.h in Headers */ = {isa = PBXBuildFile; fileRef = F78EDE9635C0884B9654294EB4115FE9 /* WFHomeSaveDataTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -141,10 +138,10 @@
 		3A058EF8BD9AA961E7AF7E8A2387C569 /* UIFont+Main.h in Headers */ = {isa = PBXBuildFile; fileRef = 57563F5021F7A71100B59953A32E29B9 /* UIFont+Main.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A2357DFD59EA8BCC1606EA646022E66 /* UIImage+Metadata.m in Sources */ = {isa = PBXBuildFile; fileRef = CB538B2D62B71C2A91609D3D81DDADA4 /* UIImage+Metadata.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3A3ADF7781F89394826F7D9A303D4A73 /* SDWebImageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 009A015B204988D247F55ADCABD79828 /* SDWebImageIndicator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3ADBC9F1CE58F1C60A1538F14336482B /* JsApiTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874E139B237FB50B85EA53AB3AC0D64 /* JsApiTest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3B18785CA7CE9D932EA95C168882C77D /* SDDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2B38E0AACA15D7FC903BE1256AF888 /* SDDisplayLink.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3B18A330603BFAA72F0170D22FE1B9D9 /* WFHomeExplainCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B32F8C45E6EC1415944029CD531C3D9 /* WFHomeExplainCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B43F7CEB90ABC56F07FF53FA27A84F4 /* WFWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEBAA04AE8BB7AFC7FE919D3E3F0EFC /* WFWebProgressLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3B9FF7A9C4CDC17EA1CB1A6CBC5BE453 /* WFHomeExplainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A82605D3245F9CF8D223A68AE62DD372 /* WFHomeExplainCollectionViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3BF8F68F0919686184EEB88880725D84 /* YFFunctionPublicAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 590198FDB269743642B0957C54A01C37 /* YFFunctionPublicAPI.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3BFBF913FD8F237E01D5E2A16807BA3E /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2163CD0AD26F97628373848E61224BF7 /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C68928953F8E834582989090AA727D2 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EF65D5EAAEB65A4E950FA3635C337A4 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -154,29 +151,29 @@
 		3CB86559F22E2AC4CEC3342CAD2B1410 /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70422FAF0FA2D7BA5FE7F318812D14A9 /* MJRefresh-dummy.m */; };
 		3CC9F5A7112C4B34AF06CF4F838FB674 /* WYAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433CF70DE15FEC5253A78ED1B8C7D22 /* WYAutoLayout-dummy.m */; };
 		3D81C8D175945555D3EB7A3D7E877148 /* WYHead.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A4D0AEF51ACD2586437F3F26010511 /* WYHead.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DD9DA1FCB8EEE879097CE21A36F16CF /* WFHomeWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CAD4D9855E46E7E0DF0456B97ECEB2A1 /* WFHomeWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DD9DA1FCB8EEE879097CE21A36F16CF /* WFHomeWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 17BFE9E94BCCC3088C6DF3530B8130CF /* WFHomeWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E164D4ACA83E6E1CDE2528CA279ADDB /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EE3185B3766841470185015843ECF4 /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3E338F7FB736973E314326E14C3FE7E6 /* dsBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC287DE3B99939C30A988A9D704575D /* dsBridge.framework */; };
 		3EA56200A1855C8FBBB6A373F6D75D42 /* homeItem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E978FAF448980869CAEC5BF691CD18EB /* homeItem@2x.png */; };
 		40426F061CD9B0B435C690CAFEA2BD00 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6478CFDDEA9ADF558AA2ACE0864B2382 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		404E80924F8BDAA4E76A4C02AF6D3FC7 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA43A7F56B04892A586F254EE2756B /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		405C8263993C102091958144C9C534F7 /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDEC24690624BA66BA1CF39E1B16137 /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40F1FE7A39A31CC7E549106B4D160817 /* WFSecuritySetViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = C99D89087D216D893359B43A1ADA9AE3 /* WFSecuritySetViewController.xib */; };
 		4186E0275FDBC95B88FA4E1AB0F8334F /* WFApplyPartnerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B44FFF2523470D2567BE75E1081C1C6 /* WFApplyPartnerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41BBD20F99D3D0EFD9D38337503D4C1F /* MJExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A200BD5D2065538F9A581B257FA1C49B /* MJExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41E0491A73BF00FDDC8BF70B61AC671A /* Pods-WFKitLogin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8260F8ABB88C10F852671042EE823152 /* Pods-WFKitLogin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41EEF3908139BD0F9409324DDF2FFF57 /* dissKeyborad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19BA4C80D759E7428A45F54331B9A202 /* dissKeyborad@2x.png */; };
 		41EFE08C4F6813F38694895A0CEB4B75 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE25494CE373D41ECF95DFFFB3D89682 /* AFSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		421F94243A7833B76CD8C71D54112774 /* WFHomeSaveDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4B0C3D4BC1C5E127F1B1671115D095 /* WFHomeSaveDataTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		42B34C3E9B5D970B85C054F7BE5C4626 /* new_service@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 038C8E3262B8B1702224759155BE1D06 /* new_service@3x.png */; };
 		434B2267AC7A07EEC798EB43B3F77322 /* UIImage+MemoryCacheCost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1057EC249CFB20F51313914914350BB4 /* UIImage+MemoryCacheCost.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4414B06D0B206B644E21B1C9A9DBA189 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE6654CAC0B67253EC827A43A8E3CF7 /* AFNetworking-dummy.m */; };
 		442CD8878EC5AEB24CA764ECF5C75D6A /* SDAnimatedImagePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 117A966A8656BB5DA094C8FE4130348B /* SDAnimatedImagePlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44A3FE3EE6F7C5F9F0E5CE079EA02DFA /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F604D5E7DD4D697FA51A851BAC7D0F /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		44A83DB6E367679C433D4C8DC383BEC2 /* SDmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F4859E8190B0625C66B30E06D154288C /* SDmetamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		4577417BDA5B44ED36CB0A7B324DEFA3 /* WFApplyPartnerUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ACB5C5C655E1DC7EDAE837F3878469 /* WFApplyPartnerUserView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		451EAE5060245F9E132984369CF63E68 /* WFNewHomeAssetsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710F394DD23B40B93AEC9DAA8A4DB30 /* WFNewHomeAssetsView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4583409C21FCF11CB11FE51B0B235A00 /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = F9049CCBA118E0FEB2F18FF8EB9E17B0 /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45B77AA6CB07D080781A8AB7CD3AB4EE /* WFHomeFirstItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22980B7563A2CC2A5087B61AB473F3FB /* WFHomeFirstItemCollectionViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		45BCEF0211ABB2F5D255CAF88E5FD548 /* SDImageCachesManagerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2178FEB241EDDAB7CEA1F060A678B5F7 /* SDImageCachesManagerOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		46094BFFDC9F6904EA76608D3AEC45FC /* WFLoginViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 648C3991072BA3752C0F99CC28A4EE6A /* WFLoginViewController.xib */; };
 		4622AA09FABA9C6B6E5DF4B59F1022ED /* YFToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2C2E980960802ED2E6C81D0326772 /* YFToast.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		474982E855E239A4D3059140F9B7A4D0 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 86532074779754D8947123A966213FBE /* UIColor+HexString.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4827A774FA7C69FA11FFE8785A647475 /* WFLocationTools.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFCA533F426660C7ACB47C665A17A89 /* WFLocationTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -191,10 +188,12 @@
 		4D1F904B253059DB61A13B464B80491F /* NSLayoutConstraint+adaptateScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AC3C25E411AF41C0BE9E6C6C77AD20 /* NSLayoutConstraint+adaptateScreen.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4DEC4219BCC7CBB74937C2D78E1713D1 /* dsBridge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 662CBC430F262A212E6FA2D89ADA11F9 /* dsBridge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E127420F5DE9AE63CF56B0F37A5A75D /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1B65A5295B5D43CE306303FDCCCF12 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E3C3418929611CEA6E03C9D2B988CE0 /* WFPayTypeMsgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B13B1189A4830FA4DA118EC240E033 /* WFPayTypeMsgModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4F5A97CA16447E2BDF919A40C1652E9F /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F46E3DE3D50F9972AA67329D4960A9FD /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FBDC285BFAF275C475B57D3CDFBDB20 /* YFEmptyDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF32528A185AF3820D89E4B941B500A8 /* YFEmptyDataView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4FCA4E8703DBF3D3FB7D5BA06229159D /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 520047A3E487FDAAFB7E733E3A922D47 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5017F297AAA171A30A29BC2F85D30D1B /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D52D845815B05ED156C265624E2D51 /* SVIndefiniteAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		503F75B598F5962C97B9B7819C4CF80A /* WFHomeExplainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A82605D3245F9CF8D223A68AE62DD372 /* WFHomeExplainCollectionViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		508D99EA49368298B9C5E00340E7D085 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9695696D2944114A88CEFC7630C0BB /* UserData.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		509EED17618978239C5A82FED1535BB6 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E24D2C5E647DD9C33C971552C2D9D92 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5166484460CE9EEC0EB2D9ECC75DD0DF /* WFHomeFirstItemCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 542A16BA438E1A716C6BBB25A97A1A63 /* WFHomeFirstItemCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -203,25 +202,25 @@
 		52A614BE38DD245A96EC95E885CD4234 /* SDImageIOAnimatedCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E685A11238D61753C415D2E13C10D650 /* SDImageIOAnimatedCoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		52CBDC536212622A2EB093B39C257AD1 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EEF07993BD3455A42B164959B891BF /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		539D386CD71B4B6FFBC96146BAAB8B6C /* SDMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 273A47CB0F0CB3C9EEABB22D73BD3A4C /* SDMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54C00769C026C8C1CA621EFD46537AAD /* MLMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B77CB19E488EAB0090C98328E7BD5A /* MLMenuItem.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		54CD5539362B765472CF8A978AF3A9BC /* WKTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD891BF3C89BEC77AE56CDE15A7B6C7 /* WKTabbarController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		54D8306DDF777BBD732E71BF93C121C1 /* dsbridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 240FF1A92CBC40CDAC22DC69133FA373 /* dsbridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54E4946F56DE4C626662D0347A5A5861 /* WFHomeExplainCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 119D0B6665DD45543330B9C93F5F69AB /* WFHomeExplainCollectionViewCell.xib */; };
 		556E97A557FD4027449B5EC0CC073CDF /* YFMediatorManager+YFKitMain.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D46562DDF17EDB640D8893021201BC /* YFMediatorManager+YFKitMain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56EABD03D9FF4FBCD054090969E69B8D /* SDImageLoadersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FCFAAC0CE16E022F5351496E4DDA59EC /* SDImageLoadersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		576F905E304A8F49EE6FBFA2E95867F5 /* Pods-WFKitLogin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A307E97D3EE3CCBCBC2C097206A1B /* Pods-WFKitLogin_Tests-dummy.m */; };
 		57C087F7B98CE9FF501482A517F47D57 /* YFEmptyDataView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 53088D3278535EE63F4A9A6586B3564F /* YFEmptyDataView.xib */; };
-		586AB8C00D205E5C51C2280C187E028D /* WFNewHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D02583C660399F32BE893B85F2CD6 /* WFNewHomeViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		580FF87F6A404C5C9B6B1713ED5CAE1C /* MLMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82984848A8091C140A2D776E23F61282 /* MLMenuCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		589C4F7CED640C41BF3722230F66057B /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = F099043134C773ABED3FAC42635C84BA /* MJPropertyType.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		595527C54E24251571AA3B9E61D616BE /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = E30FDAFBEE132106D013FBFA7AA5198D /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59F730C7356F73565A3B50E4C15AF4FB /* WFKitLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7F217B76B872816E8BA48D48A9F416 /* WFKitLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A72C23EAB42506A12A3E21DC0AB6A80 /* WFBaseNoNavWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8F16E0AF849FE6C7C30085F5A848B6 /* WFBaseNoNavWebViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5AF3E729A6347DCFB2B7ECFE2A991342 /* SKAppUpdaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1A9BBD765816957C55AE76CB7C2265 /* SKAppUpdaterView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5B1FEB3F1D77A08735D61035F1E01AF0 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = C5DC60C7B0F7C878D94CD81529D7680F /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B2E247EC99A8B1B27891B24284F9C4E /* SDImageAssetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BE02CFF05C11EDB9EFB12D3DE2CDDEED /* SDImageAssetManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5B306866B3FBA80135893535E7F3EC42 /* new_pop_service@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F526BF6CB30526DF9E954E974F7BE1C /* new_pop_service@3x.png */; };
 		5B655712913007734AC419D2C3B6CEB3 /* JsApiTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7775D4A4C75CBBFB84CACBAD112C9B39 /* JsApiTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BDF19AD59E897A0FD66A46082A7F891 /* SDImageIOAnimatedCoderInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = CB69F1E096CDB51BE26AAD1AD7CF2C18 /* SDImageIOAnimatedCoderInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		602F1AB4FBBFFF967966CF7FFFD03B87 /* WFNewHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FECCFA1401C06974A1B72EA1FAA3BA /* WFNewHomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C8CDFB97AF9C46120E6C725BAF5AC25 /* WFHomeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531CC015451AB225391741AE630E423 /* WFHomeDataModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		602F1AB4FBBFFF967966CF7FFFD03B87 /* WFNewHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F5709A4CFBF24B5F102CE9C7BD75C72 /* WFNewHomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60D06F3FACA7E2CDE61EC4976D843148 /* UserInfoData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A60385CC9FC1AD5B4F1A01305983D2D /* UserInfoData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		614DB0C7C9E14AC2EDA9F9026D5B48E8 /* WFLocationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 060B623028D0308967545486DC14BAD7 /* WFLocationTools.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		618F832BB0E7DDC9166633D2E84133EC /* SDWebImageDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D851F105158EF04CAD815DF3C0A182 /* SDWebImageDefine.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -235,9 +234,7 @@
 		631D040839D74A480591D7B1E2712CB1 /* MJExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAD7FA19A0B4C5758A2D6BB979AB8C7 /* MJExtension.framework */; };
 		632671D0539ACFDF6B6110A9B7256D35 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 2187A5778DD9D6E264DE4E8276C53BC8 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		649438922ACF1D4A72646C83A5ED01AB /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8C57CEE7B7857E4B8D03CF26B5BC10 /* NSString+MJExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		64B6B6EC903FC5F24B4FED361ED7B69A /* WFHomeNullCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 078D3AEC4F2AB2DD9CE2E4C6135FF4D2 /* WFHomeNullCollectionViewCell.xib */; };
 		64D56B4AE9655CE3D510E17156FDD36C /* WFBasics.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D148F5CA96341B689FD2B1A95C7BE465 /* WFBasics.bundle */; };
-		64E928D10893BE59B7FA059F63812111 /* WFLoginPublicAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 399143B3511CEDD523140DBC87120B6B /* WFLoginPublicAPI.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		65260F75CDAFDF23E731A5E01864DAF8 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF8C7A692B8BBDDB02761C91EADE211 /* UIRefreshControl+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6583D24C6E45C96D3C9E03B168A812DB /* NSImage+Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 75DFB6D76E4145114BAD1CF0DC121E58 /* NSImage+Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65BDBC69122910A5701C0B6A8E259D09 /* TitleScrollHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DBA8479870176EDF8928A60DEDBC19 /* TitleScrollHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -250,18 +247,18 @@
 		673A0A4E8097D8F12AA87F6A1B9DF024 /* YFMainPublicModelAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3673679D360612D22459A08DFA40BD4A /* YFMainPublicModelAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		673C40DCCE27E76658E77FFC2866C81C /* disapper@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8475E754A7C0028CD973065CBD74193 /* disapper@3x.png */; };
 		674E628BFE4DEF4C8C4B1700D5F134FC /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86D79EDA05A32A6065AFC32BAAE83E /* MJRefreshAutoStateFooter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		67537738711CF6E0B2C0F7F11319837A /* MLMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE7CFF1EBBDA33C9E3DA07208AE3451 /* MLMenuView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		675A5052CB318D32BEF54BB8AC0BF3FD /* WFHomeDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 904C9C1D63CD87AFD799CF205A4494EC /* WFHomeDataTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		683B03AD91A54D245DAE4072A7972A0D /* WFSecuritySetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 50208040A6C5A234B981947A3D577583 /* WFSecuritySetViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69242DD735A0446635A43D196C4C2EF3 /* WFHomeSectionItemCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 7D60FE9766D375BFB848334C7EC8EACD /* WFHomeSectionItemCollectionViewCell.xib */; };
 		69267322A4961300F8D7BC79157922CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75CF98811046B6FDB420EA8EAD4A05 /* Foundation.framework */; };
 		696BEC58A027BCCDFB378637C75C78A5 /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 23A0B630E58CCCEE2332415855E876A0 /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69CF456978A98A7E27120D7FFD8425C8 /* WFLoginViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 648C3991072BA3752C0F99CC28A4EE6A /* WFLoginViewController.xib */; };
 		6AA90FE30CEE400284FF80B7DF112620 /* WFNewHomeAppleAreaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08764665E39F5B2CC0F803BEC980BBDE /* WFNewHomeAppleAreaView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6AEEE77E538DC7576ADE317B6EDA7611 /* WFHomeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531CC015451AB225391741AE630E423 /* WFHomeDataModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6B0CE44DE96450CF743B54EB48C86891 /* TitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE15A50F700AC6DE6C476BFDCE5A2F1 /* TitleScrollView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6BA39C9A47EB98297A19A87138D78C48 /* WKSetting.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5E4010EC5C53FA133474B281EDFDB9 /* WKSetting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C1461ED2AF53643934B4B97E9BB8A7D /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDECCEA83809BF1AF5129E8EF6085D2 /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C6C2718F0DC81C728B84F21960539CC /* new_phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3D1C14B09B69FAC2BB4136444320053 /* new_phone@2x.png */; };
 		6D381C70CC3BF69B963AC0EE41F04752 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63D4A2F409750710E0598DF5CCA4A92 /* SVProgressHUD.framework */; };
+		6DE29402FE4CF666C2404DF5286E788E /* WFNewHomeHeadView.xib in Sources */ = {isa = PBXBuildFile; fileRef = D41467BB244397884339518639FB3AC7 /* WFNewHomeHeadView.xib */; };
 		6E1D2D98FD721D1E09E454757D5BA232 /* new_home_drop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FC94E6F113AC58C236E3EEC28750FA0 /* new_home_drop@2x.png */; };
 		6E91D8927351E2B818E9E2E808FEB452 /* new_pop_service@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76FEB690EA71CCE6CC4B3428AE24F027 /* new_pop_service@2x.png */; };
 		6E9CE5A4FE304BF707B78F41FBA2E3B9 /* SKSafeObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 68596568FC233312346FC1F905067524 /* SKSafeObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -271,7 +268,6 @@
 		6EF8DA03856D65583CA8F38BB1BA28FC /* SVProgressHUD+YFHud.m in Sources */ = {isa = PBXBuildFile; fileRef = DA290C112F0D26B4FB0B9F0FAFFBACED /* SVProgressHUD+YFHud.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6F5BF0025C8EBEC6A76A21061EEA57EA /* MJExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAD7FA19A0B4C5758A2D6BB979AB8C7 /* MJExtension.framework */; };
 		6F6987CC1E6A8ECF0D3CB4B945C8B8C4 /* YFFunctionPublicAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A0340C1209A0D48D121360F6189427 /* YFFunctionPublicAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		709C991778FAAA32566ADD90ABA861FA /* WFNewHomeTodDayProfit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3219076FCB6F28862CD40B254AE44C /* WFNewHomeTodDayProfit.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		70CBC98D296E454D712F690C3D70E20E /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 23336A538AFC5F329AC1D27D082D5D4C /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		710200F11DC7A1879D4DD570EAC49AEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75CF98811046B6FDB420EA8EAD4A05 /* Foundation.framework */; };
 		714197F0A919BCD520B938B59EE671C1 /* WKProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A82ED454AC01598DDBB07DF1AEA0C /* WKProxy.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -285,10 +281,10 @@
 		7575D520EEB471C2E7986B4E17E50DDF /* SDImageGIFCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE087DCF5B8445853F7EBAFAC1C006CD /* SDImageGIFCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75DD53A217C9A29FECBA06E36AFCF8AC /* SDImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B8190825BC4083DB6E2970C2AE58C0 /* SDImageIOCoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		75E59920AF725E5CA318899A1AF1560A /* SDMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE3E8B2DFC7078D5AF3A8CC7F97542D /* SDMemoryCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		75EDA6EBA535C14B807812CF621D649D /* WFHomeNullCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 078D3AEC4F2AB2DD9CE2E4C6135FF4D2 /* WFHomeNullCollectionViewCell.xib */; };
 		763C75EBF2422D2C5A38B0DE976DAD6B /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143E60F3CAF570ACD058A941948FA63F /* AFNetworking.framework */; };
 		772956B3927190C35B2C632E8984BEBF /* WKProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E83FDEC5044AB97CEE1B5719E3C06E84 /* WKProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77376F14B66CDB736B471439759402CC /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABF728529AE3E311B935CC15067852F /* MJRefreshNormalHeader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		781F2C8CDCF2C572A9CE9E27410EDE49 /* WFNewHomeHeadView.xib in Sources */ = {isa = PBXBuildFile; fileRef = D41467BB244397884339518639FB3AC7 /* WFNewHomeHeadView.xib */; };
 		7895244D9A49A09C387B30615955B4EB /* updateBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3F974F60C71D0856388C03F497EAD73 /* updateBtn@2x.png */; };
 		789CD9323C9B6F0CF2AE342C26044F64 /* DWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 378661D7D853794224CAE000193996B0 /* DWKWebView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		78FFAFA1FA01BDCF930561FAC2E57B70 /* WFPopTool.h in Headers */ = {isa = PBXBuildFile; fileRef = F42872A89CDBF51EA8D6D90A50BB4F7A /* WFPopTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -302,17 +298,15 @@
 		7E3E89250D41E59D06403CF5DA6AE3FA /* Pods-WFKitLogin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032A76CFE73BE1671BA334C5E1D6746 /* Pods-WFKitLogin_Example-dummy.m */; };
 		7E8D53991C02BD33A2C9B09F5C3B37D2 /* WFNewHomeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C651A6F656CAE09C914BB123440E2FB5 /* WFNewHomeModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7EB29D2459C36551BA9392DEA292F0DC /* UIImage+Metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 5626DA725542FC209DDDD0F4C3F404E3 /* UIImage+Metadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F1C8296E625C3FA67A8919C9A7BEBEC /* WFHomeIncomeWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0A269BADA5CA578F4D153DEB4CF4AB /* WFHomeIncomeWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F1C8296E625C3FA67A8919C9A7BEBEC /* WFHomeIncomeWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5998E2E621E66713D04DF678ED547DBE /* WFHomeIncomeWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		802ACD655108A7B78EDDEBACA5331509 /* WFApplyPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D12C4A9FB6DFC816EC77E999C4583EDC /* WFApplyPartnerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8094B601CBBDA148EF3FFA92C097B732 /* NSBezierPath+RoundedCorners.h in Headers */ = {isa = PBXBuildFile; fileRef = 88CAE58EBCDDE63E125610C060C864B3 /* NSBezierPath+RoundedCorners.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		814C3A6D8C7C72853F7547729B9270DF /* WFHomeFirstItemCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 46565D0F91E9CB71DAC39EB803E83B2D /* WFHomeFirstItemCollectionViewCell.xib */; };
 		81951E8D8CCACB5D68FC6BF130F041E5 /* SDImageCoderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E07ABBA1F1316F52B35DDB749107F8 /* SDImageCoderHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		81FA5C6251DC13B46837BF1E4872C927 /* WFHomeExplainCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 119D0B6665DD45543330B9C93F5F69AB /* WFHomeExplainCollectionViewCell.xib */; };
 		82B6798AE7DCE65A994547B012E213DD /* RYNumberKeyboard.xib in Sources */ = {isa = PBXBuildFile; fileRef = F8009F70258051F653BB2FAE795BAC31 /* RYNumberKeyboard.xib */; };
 		842ED3E4317CAB728C312378EC66DA7F /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C3C4F0C476B036BE5E1269A1E6A510 /* MJProperty.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8471C946816DD33274B8458881E14D0D /* WFLoginDataTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 71EFA12E42D9C41DC7B75BE0ACD46426 /* WFLoginDataTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		852887173A1F802E93E8BF3FEDD3B8BD /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C02E6E2D1C627749931E462BE2BF5D /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8638BD5B0012059ABB8B3C588633667C /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8AD71B49D226F71BD9C0B4F3C017C2 /* MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8674677F4236AFD21E3E52041D6E9D8A /* MLMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82984848A8091C140A2D776E23F61282 /* MLMenuCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		871DEE70EA9C8353A1D09D0F8C5334BD /* SDImageIOAnimatedCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8D0298D3406865D6341D7E2BB65968 /* SDImageIOAnimatedCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		873BA9C736CAC9740EE9245E2C20DF35 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C192C05457DA1DC7DA4081199238D2 /* MJRefreshFooter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		87535661BC158DBEC1BE75C740C8CD49 /* MJRefreshConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F0CBD0A8A62CE9A2B051E4EF6D4C39 /* MJRefreshConfig.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -328,18 +322,22 @@
 		8CF950FD5FD5F6DEF3CA7DBB200BE235 /* NSTimer+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = BD097AC880A36EE97DD393DA0087EE5B /* NSTimer+addition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8D060BB549FA8C46C8A5E230C7E00CFE /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 826F79D847DB1AC04ED31E231B559DAC /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DF0DC4143E2DD6455F12E7366F3051A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75CF98811046B6FDB420EA8EAD4A05 /* Foundation.framework */; };
+		8E5134028F00ECCBBB50FE109E116FBA /* WFApplyPartnerUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1ACB5C5C655E1DC7EDAE837F3878469 /* WFApplyPartnerUserView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8EC8C137DA64DF8C83C96FECC2C64C03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75CF98811046B6FDB420EA8EAD4A05 /* Foundation.framework */; };
 		8FC29E832DDAB80383225B6835060BA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75CF98811046B6FDB420EA8EAD4A05 /* Foundation.framework */; };
 		904C2EFAA65168F389A75527AAB34B77 /* WFHomeDataTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 708248AE77AD20B32ADF1B682273EC20 /* WFHomeDataTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91169F6E9AA5CA7A8669CF28D811C016 /* SDImageGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 3931242E10345222D76E231EFE4C5658 /* SDImageGraphics.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		912758556B9AB1DEEABE189955C5B8F2 /* MJExtensionConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3C2F323C61033E8D53105755ED921C /* MJExtensionConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		913FBDE529283BE62DEC71FA8CB9874B /* WFNewHomeAppleAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = C78159DC382786C6616168062343C1F6 /* WFNewHomeAppleAreaView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		91622A975384A6ED70663123CBACC316 /* WKFunComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41E3B8C3D852C4B2523FEF15B1E08A5 /* WKFunComponents.framework */; };
+		91A1D4AFC039E8D19547F9E0E1AF17CD /* openApplyAreaCtrlWithController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE29AF22BB4B6793D3A27B2B78B0AC16 /* openApplyAreaCtrlWithController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		91A3501668545A15F5567E47C37B4C55 /* homeHeadBg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD89FA9BFD5DCB5074226DCBB1F6E29E /* homeHeadBg@3x.png */; };
 		938366F7F2618A90CCEA8A2CE7D68EC4 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E2DB6FACD3A7AF5BF2E9E5F138F572 /* MJRefresh.framework */; };
 		93AF09F26F017067CCA9FDC17C8A4B95 /* TitleScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = AF13861C45B2B5BA91F7F09A474F40D1 /* TitleScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94940A2C852223F20EE7ED83A9BB5179 /* MJRefreshConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 835ED93D6A34E44D3FC2C452E0A02C26 /* MJRefreshConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95B79625990C7EE0715433A6758C913C /* WKBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E5EDDBCD028E5F3E3E02C8312A7DAE59 /* WKBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95BD9ECE799ABE9F7F41DB1D4F44DE31 /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = A2BF2EC45F371B5A42F5235F9E32B11E /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		963C50244462DDB5BDF2FAC0955397FB /* WFHomeDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 904C9C1D63CD87AFD799CF205A4494EC /* WFHomeDataTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		96E5F3BE92532A60881B062ABC2ACC6C /* Back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC19C63632C30861283C0B816D3D1F4B /* Back@3x.png */; };
 		96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F524ABBD0484BCCE01D0F89CDEDF3C3 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9754BAC22C53ABFB5A913BE5346D3B39 /* SDAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E022D06A67B1EA80307E1808BFB251C /* SDAnimatedImage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -351,32 +349,33 @@
 		9990DF0A5E0942235D1298520AEEFF29 /* SDDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A980BC34A1A5F697F74289AF34A468C /* SDDisplayLink.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		99C11AFFE53FC540A076D217A12A4F00 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 79745876CEEEFD879CF128E178A8CE97 /* MJRefreshGifHeader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9A6E20A602ABC2B7F0F2F82F0DD4F341 /* SKAppUpdaterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83809F49572AF0F06C448B2E8A3427B7 /* SKAppUpdaterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BB318D0D8BE9F38CF6BB7B0B20D1B49 /* WFKitLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AFBFECF70C29020D43DEB1DC51FA90 /* WFKitLogin-dummy.m */; };
 		9C0AF1A27DB0156E7872BED9E78551E4 /* Back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4D082CBA1CEB3BB2F8E181877311489 /* Back@2x.png */; };
 		9C3ABDF4DE0DA87FCC14EE6AA1FBE4B2 /* RYNumberKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 35598EFE4FC396E3E7A5C6D6E80FEAA2 /* RYNumberKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C8AA66AE6130C05B60B144551C53B8F /* WFHomeAddress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B128FBC5705E0A600324069FEA6820E /* WFHomeAddress.framework */; };
-		9DFFF73D52953AC935E282AD0C47DAC2 /* WFHomeSectionItemCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 7D60FE9766D375BFB848334C7EC8EACD /* WFHomeSectionItemCollectionViewCell.xib */; };
 		9E647ACD0AC6497AFB48A0338F0AFA8F /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = C90D7F5D7544FDEAD341CC39E3B476E1 /* NSObject+MJProperty.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9E82042012034264289FA84D13660421 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D239BBB6C805216CED6094B6B27D3C7 /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9F2329CBE7CC500D6D85B983EB63B3CB /* WFSecuritySetViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = C99D89087D216D893359B43A1ADA9AE3 /* WFSecuritySetViewController.xib */; };
 		9F5D0D62AD2815F0F7939809D9E3188C /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 44540AB2CF00A0768C33FCFC1CD08699 /* UIButton+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9F5FA71E246E0F518DBFC51CF690A476 /* SDDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3143D8C5B760311A668DAF9B68AD446 /* SDDeviceHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A0120997F40067337EFA0C1D85FC4270 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE594DEF3DDF101CEAF9786D5DC4E22 /* MJRefreshBackGifFooter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A0B0A636ED9A0CAA444EE2755B68A14B /* SDImageCacheDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D0B6F9E0A44F4461CBA7D5BF7F0196 /* SDImageCacheDefine.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A11FF75530457185EF0DDC5741F4F4F3 /* WFOtherViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 36CBF21F3948688D2BFA8A7DEA587FB3 /* WFOtherViewController.xib */; };
 		A2A7199207F9AB6A29CC631E0C124444 /* home_horn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 585956E8BFCE825368A3DEEDF9C3B7BE /* home_horn@3x.png */; };
 		A2EFA6476359EB0B4DF1710C13F02CC7 /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F10EA2698AA3AFBCA9BE256279EEA4 /* NSButton+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A324593EAC397A8B1B1CF58F87BA50B9 /* WFBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6731A09225025A33171BD1D2F5D67F9E /* WFBaseWebViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A37DCF8542852303EB789AA0B621EF38 /* WFNewHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4BE60C183813510AD8EBE2EF19A4A /* WFNewHomeModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A37E03DA2AF88381EE0D0E028032BF31 /* WFKitLogin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F054D9FE8F0152D6AFCF1F4647FAD1BB /* WFKitLogin.bundle */; };
 		A453959CC3D475CC099CE87D904479F7 /* WFStartUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF90B5F2222E4239DA655568F56F931 /* WFStartUpViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A47472F50A3A7869A644789159571A5C /* MJPropertyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 49146FF6E15913A1D3A38CC2B3284090 /* MJPropertyKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6ACE67FDF467367DA7BE14736181968 /* SDWebImageError.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FDEBABA27614B51899E8E89C9BD825 /* SDWebImageError.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A749635DFBBA18EEE7E27936C2BA05F6 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A34727FCBDA1B8301B23FC53E9D7A84 /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7E6C236F5C97B35484B553454B609B0 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C17A1D6B55B1FA8A2DCD6546054DA4B /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A917FDACC52415FF50CB19A444B0A3FE /* MLMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B77CB19E488EAB0090C98328E7BD5A /* MLMenuItem.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A92297680DB73941B4F3D172EE80EF27 /* YukiWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A938FCFBF9318F2DAE980BDE7E11F86F /* YukiWebProgressLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A977FE327BE4384C9E126EC48DC94DDB /* RSAEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 86259E045EF7FA8CB03951AE02A0E220 /* RSAEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA403E5FFA99DB732969E407CA5CEDF8 /* WFNewHomeAssetsView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6D42610324707F5D430EC24BF0FF679F /* WFNewHomeAssetsView.xib */; };
 		AA452017162D79028F5DC46655234A1B /* WFBaseNoNavWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6E4F24ECF170542ACC449D985953CA /* WFBaseNoNavWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AAE04E30A37790C736E8E50468E9D8EC /* WFNewHomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F600A1C1FDF7120DBF85C96C617E865 /* WFNewHomeHeadView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AB3215B44422240C40D3AFCB8224291B /* SDAnimatedImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC6A33FA4FDD159154E4430DB88985E /* SDAnimatedImageRep.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		AE7749A11431B7CBA765A9F00EFE5BB8 /* WFNewHomeAppleAreaView.xib in Sources */ = {isa = PBXBuildFile; fileRef = CF688E368AF5301AC3DDAD14A106586D /* WFNewHomeAppleAreaView.xib */; };
 		AECFCA2598AABAEB044F6C4594F3222F /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6193F1434EB7E0614D5906237703C0E6 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF2E9D07EE26EFCC0F44BAC131F00D2B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFABD2E8D9FA2AC3FC947E0D2098E5 /* Reachability.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AF50A26BEE80B2AF8F202E1675531D3A /* WFKitMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA6B827EC7D0BB6FAB0E21C96D8E909 /* WFKitMain.framework */; };
@@ -386,11 +385,13 @@
 		B1008363926DF87F71B2851C1C52E817 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF24CD25F82FE5CFD830DFC954F42 /* MJRefreshBackNormalFooter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B1328284282829CAEC3AA4B80B906927 /* SDImageFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF1C85E7DEC6A15660CA685CD47396F /* SDImageFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1804A434AE16D69296E5FFC22405710 /* YFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4481BEE2082CF5887A989A1FDE645DC /* YFBaseViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B32E6F1D2CED1EEF3715865999FBBBED /* WFNewHomeAppleAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = C78159DC382786C6616168062343C1F6 /* WFNewHomeAppleAreaView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B3600CFE3684CC4FCE2780BD2E1EF54A /* SKAppUpdaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1A9BBD765816957C55AE76CB7C2265 /* SKAppUpdaterView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B3FF9560B93AF3F8ED15EF446E9DBF26 /* SDImageAPNGCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C44CE89AA8AEC81762C213F723BD2F8B /* SDImageAPNGCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4268336F80ACC2FC7E7E4682BF8FE1D /* WKHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 7578262F07CEF154263588C50D0BF23C /* WKHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4658F8495B18BD4EB5D893CAFF3BBBC /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 43952111A3D08C35FFB1B24D4EA99B3A /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B545FC64504EB25999F30CFC1E27E702 /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F8B9383C3D5C591B243819049C9ABD /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6B8BF786E0E879344A88B33F3D052B0 /* WFHomeNullCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0150F9A28434AF721D4B4DBD1491E5F /* WFHomeNullCollectionViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B71564F555A81A0E46846199508B93AE /* WFOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A281B31223A04196DFD1140CDFC4CD /* WFOtherViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B730EAD16D6AD78D56B6AD84B5B305D5 /* WKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D29EE9C2664211EC75A2924FB1F5FAC /* WKRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B77BB55392FDCF6053CD32D75561654F /* SDImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = EB12C0D1C6C42EF0B74CAC0AF081C46B /* SDImageLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B93EF3F139F957853B5D14864E66BF5B /* WFBasics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 792796236BFB81A358E29C0BDA6AAF9A /* WFBasics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -399,7 +400,6 @@
 		B9A96DAC3A918A78B30E7CB509606755 /* SDWebImageError.h in Headers */ = {isa = PBXBuildFile; fileRef = 775B6235F8F839EC37005510B4444ED2 /* SDWebImageError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA0DACE77A1030475A3577BA2F9DB9DB /* NSBezierPath+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D1C5D4ECCD9737A01634733EFC3D9E /* NSBezierPath+RoundedCorners.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BA626D8E8D99B8A436901EFD159B8125 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 74511FA77406141A86606C0AC902135D /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BAC0417FA316B0C0B71A27E063001AD4 /* WFHomeSaveDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4B0C3D4BC1C5E127F1B1671115D095 /* WFHomeSaveDataTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BB8129A824BEC6290AEFF56EDE50F3C3 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F25CCBBC994C4BB3483D4D63EB09035B /* NSBundle+MJRefresh.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BB835EE378732C46B5F597D0938A7479 /* WKTabbarController.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB04792F4AAF11A5B1B736676CF6193 /* WKTabbarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBDBA8112FABF30312EAB296D21AFFE6 /* new_home_rise@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9821844C52922DCF26829A56D153B5DD /* new_home_rise@2x.png */; };
@@ -410,10 +410,8 @@
 		BD992FED6DB1AD72F7F8B2935D2BDF92 /* jumpNext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8882D67794B994A605D55CAFC87BE20 /* jumpNext@2x.png */; };
 		BD9A09840189D37657887D1467CAA330 /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9214BC4CDC24FDFE7DEE4404EE993537 /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE7771F000A75785BD4737778FD7DE4C /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BBFC9128753D845F6FC0D3B623E3B8 /* SVProgressHUD-dummy.m */; };
-		BF2C96BA2F423FC6436588204057DE76 /* WFOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D978DFF273DEFCD19848FACC6DDD4B /* WFOtherViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BFC1C75B0003E4EF05702AB7F59315F1 /* WFHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B3CA3879D70F7F9181105624404EBD95 /* WFHomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFC1C75B0003E4EF05702AB7F59315F1 /* WFHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CA4085B440BFCF97C69EE60ED0F1A3 /* WFHomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFDBA5E26772792CC3B2547C5EADEA13 /* YFKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 356D583BC3324F8C989544A8998694E3 /* YFKeyWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C09B6ACCE4675EABAFDB30424C33F986 /* WFNewHomeTodDayProfit.xib in Sources */ = {isa = PBXBuildFile; fileRef = 7A22D04B6BD8BF163D3A42BA8BDC8C3E /* WFNewHomeTodDayProfit.xib */; };
 		C0B2C760334561E4910FADD8520C85C3 /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = CD94EFB732BE6EED4481D6878BF19674 /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0C8961B2EAF90DA7244B427C569FCFD /* NSObject+MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E91705F1F169468F3B25CD81C5C9080 /* NSObject+MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0E18A54CC8B62F95B615EB24163FF4D /* WFHomeAddress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 525023AD5E6AC165BAE9A9662B457177 /* WFHomeAddress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -421,7 +419,6 @@
 		C165CD0A674529916B64A7504AEBD1F4 /* SDInternalMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F8EB9617349583475F041B5BD97F61FB /* SDInternalMacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C28B333DC81A45E54531668D733A7EB9 /* YFAddCartAnimationTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DFE6D7A83067ACFE0231D89DDFCABE0 /* YFAddCartAnimationTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2A4A332725D36BEC1E8CEB8FB76DA95 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A1BEE1C363412E55B6ACFF3C972260 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2C838BAC71F684886CC6BE529E50D1F /* WFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD612B3B79C382762AED115C747ECC77 /* WFHomeViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C39387910C172067E52F7498C4C365F5 /* DWKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E382B0A18B3D68BB0132F89E850BAC6 /* DWKWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3B6220655C8EDE13D822C6F8E8C6F22 /* YukiWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 823D152E851CE77C04719BA027A27B4B /* YukiWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3B8CBE726AD2110DA617BFA199E905F /* SDImageIOCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 598E45CEFBEF190E0783E043807DD035 /* SDImageIOCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -443,6 +440,7 @@
 		CBDC089A3E26FC6825F64E078195BF01 /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D97E87511BE073A3011342441D6D075 /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCA4F0C6298200E85F63BFBC124223EE /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BD4CF6A62451FBA98E55932A64341E /* MJRefreshComponent.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CD23195BDD71CBAC77FDF0E61562E71A /* WFBasics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C83262CAD1EC8A63AF3786A3BDAB41 /* WFBasics-dummy.m */; };
+		CD3E301D9E02BFF6150D03699CB58294 /* WFNewHomeTodDayProfit.xib in Sources */ = {isa = PBXBuildFile; fileRef = 7A22D04B6BD8BF163D3A42BA8BDC8C3E /* WFNewHomeTodDayProfit.xib */; };
 		CE7004AFA3B30D672A4DD9B4D3E6915B /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 17327ADADD2618505882E86680EF9F9A /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEDCFAB24A2344011258D93339452828 /* SDImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA76488AEEC230FE1C2B6EA4AAE2D5 /* SDImageTransformer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D012018DB42F268DDF217901DE751890 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6415609AA51C36CBC6726C36E191DF /* UIProgressView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -466,6 +464,7 @@
 		D8CCF22650DA9C047ECAD494FD78C22A /* SDAnimatedImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F0883CC8FB9F4BCD27EE1F21A98950 /* SDAnimatedImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D9BA7D96939D51208B59CB4F49F1C208 /* SDWebImageDownloaderResponseModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 74237F104C248CAA04E3EB7CCB488B9E /* SDWebImageDownloaderResponseModifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9ED215BE51A82E4D9622E1E91BBB0E1 /* SDImageHEICCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DF22D4AA6FE674505F1D37B0E5A68 /* SDImageHEICCoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DAE1BD43E840DF5982479ECB70ABC6BC /* WFApplyPartnerUserView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8225F4FB3A3CFFB3D3821442383B3787 /* WFApplyPartnerUserView.xib */; };
 		DAFA95410CF96D4D93078F63372C23BD /* SDImageHEICCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = E3969EBA6C796AF8B8AD61971DB1129B /* SDImageHEICCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB19804BA6B117B4B5CBB959C9C3AFFB /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9502BDBEC5E16E27884ADEE962F7015E /* SVRadialGradientLayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DC26DE00DD2151088B3F487A3E81A95D /* WKBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C431E73EC9266E9DE9959D88C62D2FB /* WKBaseModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -486,11 +485,13 @@
 		E5A0E47C11E244B198423E1448D4EB78 /* UserInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEE9116F781C77F72FCC89ABD57868A /* UserInfoData.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E5C42D7EDFE4ABCC456CFFDDDB821588 /* SDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAA2DEDC3F05CAF173FE0135298CC8 /* SDImageCoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E7BE6DF5C400CA2249E6036281DA81C4 /* WFHorseRaceLamp.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DDF0C321CE67E2118C8904BCFE8A59 /* WFHorseRaceLamp.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E7C4186B5BE79590F08DF98076990000 /* YFMediatorManager+WFLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C37BA64875A8F9D35B5EC2B5CE91745 /* YFMediatorManager+WFLogin.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E810B27F250CD7BC15AAF0841B80C78D /* SDAsyncBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F49FF329A1FEBA59E868509948D5DEC /* SDAsyncBlockOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E81B06109E84E2F933E23FC285B8ED97 /* YFAddCartAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B25996EAC4A7384990F2EB3FB49C1D /* YFAddCartAnimationTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E8A61A684C5102B92057FB3B4EF4960D /* SDImageCachesManagerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 38439A7A7B6916B2C300E8075A2255DB /* SDImageCachesManagerOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8EB9F2CFC54AFE86B618DB528647311 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C2DDB5CF0249CDEBF5F526A0A2E3D73E /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E944D4226032BA109953B44C056D7B49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75CF98811046B6FDB420EA8EAD4A05 /* Foundation.framework */; };
+		EADDC1ADCEB19DE672900968F5A33B82 /* WFHomeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDF533F1748B07F4E4E9FFCA2D639CB /* WFHomeWebViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EB2A3D4F1B6565386576266A4C5BBFA4 /* MLMenuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B60D3A35CB5897CD98A90AEBFA31A4E /* MLMenuCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC08F1099F1B416E51D56818B4A79682 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75CF98811046B6FDB420EA8EAD4A05 /* Foundation.framework */; };
 		ED03692D1EA2A644C6A1879A8066B994 /* SDAnimatedImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9F5F1BF2C380975B0CF2254DDCF106 /* SDAnimatedImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -524,19 +525,18 @@
 		F72A973B262142EA704A0B7BB42D8E39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75CF98811046B6FDB420EA8EAD4A05 /* Foundation.framework */; };
 		F7ABBFD6C4DD0672CA3715638F94D66E /* itemImgLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A995CFA0B4E6D3BF2AAEA9F076965E0 /* itemImgLogo@2x.png */; };
 		F897EC30E9AAD30380A01CA10807A0A8 /* deleteLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF58BAF3CD39CB9568848F126B88899 /* deleteLogo@3x.png */; };
-		F8B07E75E1521AA8BC1D6BB8AF01F602 /* WFOtherViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = D91F0C90B707572A0D7A49333CF9C7D0 /* WFOtherViewController.xib */; };
 		F8D5A5B97A9582E07BB28A17D7956B29 /* UILabel+aptateFont.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B582843ED395311B450C7363AEC083 /* UILabel+aptateFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8FEE7862418213AB261FA3A510D1FAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E588EFCFC617D97A6DC5C4E91D44C2D6 /* UIKit.framework */; };
 		F917E60F6521A089BC94543FC39D8660 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 255AA39A3F8DD995991DC8FB84A665A6 /* UIView+Frame.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F920408F437C02877DC245F93EB01549 /* SDWebImageDownloaderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE226484828BAAE9DC5E3498C51946A /* SDWebImageDownloaderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F93C77894239C755B2EBEF21E9265DB7 /* updateBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D19394284B36017DACFA1C1D3CE97FA1 /* updateBtn@3x.png */; };
 		FAB7CF107E7E3EE6FA7949CF18B8BA12 /* MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C6E3A45AFBF267B7BB45A0CCF0699CB /* MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAE1069858AAEE0F6244CFDFE09A4D46 /* WFNewHomeAssetsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710F394DD23B40B93AEC9DAA8A4DB30 /* WFNewHomeAssetsView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FB5D88C3D815E66487B8550A0E3A61BD /* WFHomeIncomeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D9EA1396C3770B4F5B4263EDECFE2A /* WFHomeIncomeWebViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FB850C7E296E10CA501E58370D415972 /* new_home_assets@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD09B03EFA7E665F0B5DEACB9F8941AC /* new_home_assets@3x.png */; };
 		FC079B72B435F7467C66ED28C60EA292 /* RYNumberKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 26172ECAD6368DD520B9A8F2E54DEB9A /* RYNumberKeyboard.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FC80EAFB7024E4295D129EF83F602FA3 /* SDImageGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 960FF42F00677C6A9ABDA8F35EE1E6EF /* SDImageGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD067B4A4ED9EED92C3DEDE44B4BE3D4 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD05B7D299E2D9490EDC044E11FB4CC /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDDF8D088188C8C0EA3EF4903F1EC4FB /* WFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 718B61B3F24A9DD7FA88A4AD1642DAE9 /* WFHomeViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FF308F8AADC7D2DCBB9449A2D00F78EE /* WFNewHomeAppleAreaView.xib in Sources */ = {isa = PBXBuildFile; fileRef = CF688E368AF5301AC3DDAD14A106586D /* WFNewHomeAppleAreaView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -802,6 +802,7 @@
 		15B77CB19E488EAB0090C98328E7BD5A /* MLMenuItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLMenuItem.m; sourceTree = "<group>"; };
 		171ED08668F6A24D80BDCED68DF73D90 /* YFEmptyDataView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YFEmptyDataView.h; path = WFBasics/Classes/Tools/YFEmptyDataView.h; sourceTree = "<group>"; };
 		17327ADADD2618505882E86680EF9F9A /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
+		17BFE9E94BCCC3088C6DF3530B8130CF /* WFHomeWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeWebViewController.h; sourceTree = "<group>"; };
 		17F83AB7AD8F1383A091AAAE1900C4E9 /* MJExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJExtension-dummy.m"; sourceTree = "<group>"; };
 		1874E139B237FB50B85EA53AB3AC0D64 /* JsApiTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JsApiTest.m; sourceTree = "<group>"; };
 		19619ED61C2A3B0F571107A7DFC79C90 /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/Core/UIView+WebCache.m"; sourceTree = "<group>"; };
@@ -854,7 +855,6 @@
 		285B05B53EC1B08B81B64DAC21322030 /* new_msg@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "new_msg@2x.png"; path = "WFKitLogin/Assets/new_msg@2x.png"; sourceTree = "<group>"; };
 		29237B8EB396DEA307FF3F4FE00BE732 /* WFLoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFLoginViewController.m; sourceTree = "<group>"; };
 		29E2DB6FACD3A7AF5BF2E9E5F138F572 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A0A269BADA5CA578F4D153DEB4CF4AB /* WFHomeIncomeWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeIncomeWebViewController.h; sourceTree = "<group>"; };
 		2A695E75209F28E99065341CF4E406A3 /* Pods-WFKitLogin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WFKitLogin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2A95F88F39EA28697A819165C5723A8B /* YFMediatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YFMediatorManager.m; path = WFBasics/Classes/MediatorManager/YFMediatorManager.m; sourceTree = "<group>"; };
 		2AC566BED96AAFCA63D292923B02C2A0 /* MLMenuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLMenuView.h; sourceTree = "<group>"; };
@@ -881,13 +881,14 @@
 		3331061F5363E88386801DB1B0DAF4B7 /* YFAddressPickView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YFAddressPickView.h; path = WFHomeAddress/Classes/Address/YFAddressPickView.h; sourceTree = "<group>"; };
 		336902D9F6E05F14F362ACBA422BA13B /* WFBasics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WFBasics.xcconfig; sourceTree = "<group>"; };
 		3479EA8DF50428084F2D03F0A6A0E4C0 /* MJRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.xcconfig; sourceTree = "<group>"; };
+		34A281B31223A04196DFD1140CDFC4CD /* WFOtherViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFOtherViewController.m; sourceTree = "<group>"; };
 		34C104263F5EF68DCA67E3093A6A905F /* YFBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YFBaseViewController.h; path = WFKitMain/Classes/Controller/YFBaseViewController.h; sourceTree = "<group>"; };
 		34D851F105158EF04CAD815DF3C0A182 /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/Core/SDWebImageDefine.m; sourceTree = "<group>"; };
 		35598EFE4FC396E3E7A5C6D6E80FEAA2 /* RYNumberKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RYNumberKeyboard.h; path = WKFunComponents/Classes/KeyBoard/RYNumberKeyboard.h; sourceTree = "<group>"; };
 		356D583BC3324F8C989544A8998694E3 /* YFKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YFKeyWindow.h; path = WFBasics/Classes/Tools/YFKeyWindow.h; sourceTree = "<group>"; };
-		358D02583C660399F32BE893B85F2CD6 /* WFNewHomeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFNewHomeViewController.m; sourceTree = "<group>"; };
 		35F4025769FF151869AF0A301172228C /* YukiWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YukiWebViewController.m; path = WKFunComponents/Classes/BaseWebView/YukiWebViewController.m; sourceTree = "<group>"; };
 		3673679D360612D22459A08DFA40BD4A /* YFMainPublicModelAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YFMainPublicModelAPI.h; path = WFKitMain/Classes/PublicModelAPI/YFMainPublicModelAPI.h; sourceTree = "<group>"; };
+		36CBF21F3948688D2BFA8A7DEA587FB3 /* WFOtherViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = WFOtherViewController.xib; sourceTree = "<group>"; };
 		378661D7D853794224CAE000193996B0 /* DWKWebView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DWKWebView.m; path = dsbridge/DWKWebView.m; sourceTree = "<group>"; };
 		38439A7A7B6916B2C300E8075A2255DB /* SDImageCachesManagerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManagerOperation.h; path = SDWebImage/Private/SDImageCachesManagerOperation.h; sourceTree = "<group>"; };
 		391DF3013900D797A43907F2D32A2B5A /* UIView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
@@ -968,11 +969,13 @@
 		569E3E31366BC1E75DA354010024970D /* JSBUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSBUtil.h; path = dsbridge/JSBUtil.h; sourceTree = "<group>"; };
 		56AAE61EDBEC0F6E7300225DA83AD42C /* WFKitLogin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WFKitLogin-prefix.pch"; sourceTree = "<group>"; };
 		57563F5021F7A71100B59953A32E29B9 /* UIFont+Main.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+Main.h"; path = "WYAutoLayout/Classes/WYAutoLayout/UIFont+Main.h"; sourceTree = "<group>"; };
+		57CA4085B440BFCF97C69EE60ED0F1A3 /* WFHomeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeViewController.h; sourceTree = "<group>"; };
 		585956E8BFCE825368A3DEEDF9C3B7BE /* home_horn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "home_horn@3x.png"; path = "WFKitLogin/Assets/home_horn@3x.png"; sourceTree = "<group>"; };
 		58C02E6E2D1C627749931E462BE2BF5D /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
 		58FDC6E4C68AD5EFBB6B148CDEACA60B /* NSImage+Compatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+Compatibility.m"; path = "SDWebImage/Core/NSImage+Compatibility.m"; sourceTree = "<group>"; };
 		590198FDB269743642B0957C54A01C37 /* YFFunctionPublicAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YFFunctionPublicAPI.m; path = WFBasics/Classes/Tools/YFFunctionPublicAPI.m; sourceTree = "<group>"; };
 		598E45CEFBEF190E0783E043807DD035 /* SDImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOCoder.h; path = SDWebImage/Core/SDImageIOCoder.h; sourceTree = "<group>"; };
+		5998E2E621E66713D04DF678ED547DBE /* WFHomeIncomeWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeIncomeWebViewController.h; sourceTree = "<group>"; };
 		5AAA3FE3FC83EC9C1834292C4F7FF480 /* WFKitLogin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WFKitLogin.modulemap; sourceTree = "<group>"; };
 		5B128FBC5705E0A600324069FEA6820E /* WFHomeAddress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WFHomeAddress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEBAA04AE8BB7AFC7FE919D3E3F0EFC /* WFWebProgressLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WFWebProgressLayer.m; path = WFKitMain/Classes/Model/WFWebProgressLayer.m; sourceTree = "<group>"; };
@@ -1027,6 +1030,7 @@
 		70422FAF0FA2D7BA5FE7F318812D14A9 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
 		708248AE77AD20B32ADF1B682273EC20 /* WFHomeDataTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeDataTool.h; sourceTree = "<group>"; };
 		71637BE34EFFD5DB13DC5FC3C3971DCD /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/Core/SDWebImageCompat.h; sourceTree = "<group>"; };
+		718B61B3F24A9DD7FA88A4AD1642DAE9 /* WFHomeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeViewController.m; sourceTree = "<group>"; };
 		71C192C05457DA1DC7DA4081199238D2 /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
 		71EFA12E42D9C41DC7B75BE0ACD46426 /* WFLoginDataTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFLoginDataTool.h; sourceTree = "<group>"; };
 		72B9D0CB29E0D066307301B2897A8EEE /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
@@ -1042,7 +1046,6 @@
 		775B6235F8F839EC37005510B4444ED2 /* SDWebImageError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageError.h; path = SDWebImage/Core/SDWebImageError.h; sourceTree = "<group>"; };
 		7775D4A4C75CBBFB84CACBAD112C9B39 /* JsApiTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JsApiTest.h; sourceTree = "<group>"; };
 		77A3CA6D0FFD643202C6D3900984FD36 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		77D9EA1396C3770B4F5B4263EDECFE2A /* WFHomeIncomeWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeIncomeWebViewController.m; sourceTree = "<group>"; };
 		78073B007CA0B33E2EC0CA0A53BDAD9F /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
 		782AE1734CA50641A99FA1B42F6A10B8 /* InternalApis.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = InternalApis.m; path = dsbridge/InternalApis.m; sourceTree = "<group>"; };
 		78AD9F537C38C9AD11CED11F968E3FDD /* updateView@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "updateView@3x.png"; path = "WFKitLogin/Assets/updateView@3x.png"; sourceTree = "<group>"; };
@@ -1066,6 +1069,7 @@
 		7D13143BA1F4F25CF5E050F1A50F685F /* Pods_WFKitLogin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WFKitLogin_Example.framework; path = "Pods-WFKitLogin_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D60FE9766D375BFB848334C7EC8EACD /* WFHomeSectionItemCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = WFHomeSectionItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		7F32994C39DA23AD0435241EF59DA190 /* WFLoginDataTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFLoginDataTool.m; sourceTree = "<group>"; };
+		7F5709A4CFBF24B5F102CE9C7BD75C72 /* WFNewHomeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFNewHomeViewController.h; sourceTree = "<group>"; };
 		7F600A1C1FDF7120DBF85C96C617E865 /* WFNewHomeHeadView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFNewHomeHeadView.m; sourceTree = "<group>"; };
 		7FB4BE60C183813510AD8EBE2EF19A4A /* WFNewHomeModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFNewHomeModel.m; sourceTree = "<group>"; };
 		7FC94E6F113AC58C236E3EEC28750FA0 /* new_home_drop@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "new_home_drop@2x.png"; path = "WFKitLogin/Assets/new_home_drop@2x.png"; sourceTree = "<group>"; };
@@ -1086,6 +1090,7 @@
 		835ED93D6A34E44D3FC2C452E0A02C26 /* MJRefreshConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConfig.h; path = MJRefresh/MJRefreshConfig.h; sourceTree = "<group>"; };
 		83809F49572AF0F06C448B2E8A3427B7 /* SKAppUpdaterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKAppUpdaterView.h; sourceTree = "<group>"; };
 		84194FF74C02AD35949E1623C28CAAD5 /* WKFunComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WKFunComponents.framework; path = WKFunComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84273FE62859CC9C8DEAE1EA04CA2B36 /* WFOtherViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFOtherViewController.h; sourceTree = "<group>"; };
 		8497363FB322D9638D266C1C4C6C1AF1 /* Pods-WFKitLogin_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WFKitLogin_Example-umbrella.h"; sourceTree = "<group>"; };
 		84A744BF794CC64FAFDF760AE43C5E21 /* SDWebImageDownloaderConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderConfig.m; path = SDWebImage/Core/SDWebImageDownloaderConfig.m; sourceTree = "<group>"; };
 		85A13DD4A11C73A1F7DCE629061CAAC3 /* SDWebImageOptionsProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageOptionsProcessor.m; path = SDWebImage/Core/SDWebImageOptionsProcessor.m; sourceTree = "<group>"; };
@@ -1093,13 +1098,11 @@
 		86259E045EF7FA8CB03951AE02A0E220 /* RSAEncryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSAEncryptor.h; path = WFBasics/Classes/Tools/RSAEncryptor.h; sourceTree = "<group>"; };
 		86532074779754D8947123A966213FBE /* UIColor+HexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "SDWebImage/Private/UIColor+HexString.m"; sourceTree = "<group>"; };
 		876CE93D463781BA7E984A659D793693 /* WKNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKNavigationController.m; path = WFKitMain/Classes/Controller/WKNavigationController.m; sourceTree = "<group>"; };
-		87FE2DE9F94336F5952494EAE5D68CC3 /* WFOtherViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFOtherViewController.h; sourceTree = "<group>"; };
 		88AD3D74D538E4E144B7C32AD23447A3 /* NSString+Regular.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Regular.h"; path = "WFBasics/Classes/Tools/NSString+Regular.h"; sourceTree = "<group>"; };
 		88CAE58EBCDDE63E125610C060C864B3 /* NSBezierPath+RoundedCorners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+RoundedCorners.h"; path = "SDWebImage/Private/NSBezierPath+RoundedCorners.h"; sourceTree = "<group>"; };
 		88FDB5912942DF7F65D08111DA33661C /* WYAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WYAutoLayout.xcconfig; sourceTree = "<group>"; };
 		89802A4E39DD5AB88D29871899D3C7F2 /* WYAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYAutoLayout-prefix.pch"; sourceTree = "<group>"; };
 		89CF5E475584F6BA25F4FE048D5C632C /* Pods-WFKitLogin_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WFKitLogin_Tests-Info.plist"; sourceTree = "<group>"; };
-		89D978DFF273DEFCD19848FACC6DDD4B /* WFOtherViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFOtherViewController.m; sourceTree = "<group>"; };
 		8A8D59D0315BEB2ABD845D3C4B6E0DC0 /* dissKeyborad@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "dissKeyborad@3x.png"; path = "WKFunComponents/Assets/dissKeyborad@3x.png"; sourceTree = "<group>"; };
 		8AC2C2E980960802ED2E6C81D0326772 /* YFToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YFToast.m; path = WFBasics/Classes/Tools/YFToast.m; sourceTree = "<group>"; };
 		8B5DC98A330A12FCB80D297366BB9CD2 /* SDImageAssetManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAssetManager.m; path = SDWebImage/Private/SDImageAssetManager.m; sourceTree = "<group>"; };
@@ -1174,8 +1177,6 @@
 		B1ACB5C5C655E1DC7EDAE837F3878469 /* WFApplyPartnerUserView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFApplyPartnerUserView.m; sourceTree = "<group>"; };
 		B20885E25B50FE57250F708B80747A8E /* WKTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WKTimer.m; path = WFBasics/Classes/Tools/WKTimer.m; sourceTree = "<group>"; };
 		B2776029EA0E8A99D3BD13B3BD1C1A27 /* SDWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImage.h; path = WebImage/SDWebImage.h; sourceTree = "<group>"; };
-		B3CA3879D70F7F9181105624404EBD95 /* WFHomeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeViewController.h; sourceTree = "<group>"; };
-		B41D71225034AB4B9F6399CAF9E86A64 /* WFHomeWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeWebViewController.m; sourceTree = "<group>"; };
 		B4E6398DD5243E9DD682E094674409FE /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		B5BBC2610FFE06E1B609E90FCF48EEA8 /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
 		B5C2BB6919DAF0FAD1B9C27E7B046BE9 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
@@ -1200,6 +1201,7 @@
 		BD82F110F8C269945187AD01ADB66664 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
 		BDAC7F4BE07870EF0F0CC866E59402E6 /* WFHomeAddress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WFHomeAddress.xcconfig; sourceTree = "<group>"; };
 		BDC287DE3B99939C30A988A9D704575D /* dsBridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dsBridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDF533F1748B07F4E4E9FFCA2D639CB /* WFHomeWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeWebViewController.m; sourceTree = "<group>"; };
 		BE02CFF05C11EDB9EFB12D3DE2CDDEED /* SDImageAssetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAssetManager.h; path = SDWebImage/Private/SDImageAssetManager.h; sourceTree = "<group>"; };
 		BE952441FB37BFC97B30C1CF7239DD23 /* new_home_rise@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "new_home_rise@3x.png"; path = "WFKitLogin/Assets/new_home_rise@3x.png"; sourceTree = "<group>"; };
 		BF3CAD9F731FA980AD66E47B28499710 /* YFMediatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YFMediatorManager.h; path = WFBasics/Classes/MediatorManager/YFMediatorManager.h; sourceTree = "<group>"; };
@@ -1208,7 +1210,6 @@
 		BFFC013E1B93EDD4BE773777591F7ABB /* AFNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFNetworking-Info.plist"; sourceTree = "<group>"; };
 		C0818C1D9A333A393D017F98EB9458B8 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/Core/UIButton+WebCache.h"; sourceTree = "<group>"; };
 		C0BD61B9E0FB6C5E31AC93CB8C70C976 /* WFHomeAddress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WFHomeAddress.framework; path = WFHomeAddress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0FECCFA1401C06974A1B72EA1FAA3BA /* WFNewHomeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFNewHomeViewController.h; sourceTree = "<group>"; };
 		C1009F00C98403B785AD3A51554FD3DE /* WFSecuritySetViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFSecuritySetViewController.m; sourceTree = "<group>"; };
 		C1743117590B0BB4B08CB4E277A2E2FA /* WFHomeAddress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WFHomeAddress.modulemap; sourceTree = "<group>"; };
 		C1B88830EB487570B0AE9EE4D6F3DBEB /* SDWebImageDownloaderResponseModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderResponseModifier.m; path = SDWebImage/Core/SDWebImageDownloaderResponseModifier.m; sourceTree = "<group>"; };
@@ -1231,7 +1232,6 @@
 		C9D2E44F54FFE7D74067A4F51AD9FF46 /* SDImageLoadersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoadersManager.m; path = SDWebImage/Core/SDImageLoadersManager.m; sourceTree = "<group>"; };
 		CA4B0C3D4BC1C5E127F1B1671115D095 /* WFHomeSaveDataTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeSaveDataTool.m; sourceTree = "<group>"; };
 		CA8F9C49EA424A797CC1620A82521F4B /* SDDeviceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDeviceHelper.h; path = SDWebImage/Private/SDDeviceHelper.h; sourceTree = "<group>"; };
-		CAD4D9855E46E7E0DF0456B97ECEB2A1 /* WFHomeWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WFHomeWebViewController.h; sourceTree = "<group>"; };
 		CB538B2D62B71C2A91609D3D81DDADA4 /* UIImage+Metadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Metadata.m"; path = "SDWebImage/Core/UIImage+Metadata.m"; sourceTree = "<group>"; };
 		CB69F1E096CDB51BE26AAD1AD7CF2C18 /* SDImageIOAnimatedCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOAnimatedCoderInternal.h; path = SDWebImage/Private/SDImageIOAnimatedCoderInternal.h; sourceTree = "<group>"; };
 		CB747BF56F97E0DBAD797619BA776E34 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
@@ -1264,7 +1264,6 @@
 		D8882D67794B994A605D55CAFC87BE20 /* jumpNext@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "jumpNext@2x.png"; path = "WFKitLogin/Assets/jumpNext@2x.png"; sourceTree = "<group>"; };
 		D8C39CBAE50A96C0C5BAC8D5ED4AC465 /* WFKitMain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WFKitMain-dummy.m"; sourceTree = "<group>"; };
 		D8D7F85DCD4F819E26755BD1D4C7F09F /* WFKitLogin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WFKitLogin.xcconfig; sourceTree = "<group>"; };
-		D91F0C90B707572A0D7A49333CF9C7D0 /* WFOtherViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = WFOtherViewController.xib; sourceTree = "<group>"; };
 		D9B1D570F75CEBED683A8280A35D4377 /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/Core/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
 		DA290C112F0D26B4FB0B9F0FAFFBACED /* SVProgressHUD+YFHud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SVProgressHUD+YFHud.m"; path = "WFBasics/Classes/WKRequest/SVProgressHUD+YFHud.m"; sourceTree = "<group>"; };
 		DA75CF98811046B6FDB420EA8EAD4A05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -1272,7 +1271,6 @@
 		DB30C6353037E27250805C6E46B95507 /* SDWebImageDownloaderDecryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderDecryptor.m; path = SDWebImage/Core/SDWebImageDownloaderDecryptor.m; sourceTree = "<group>"; };
 		DBB6972814DACAD78083EE68DC796641 /* SDImageFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageFrame.m; path = SDWebImage/Core/SDImageFrame.m; sourceTree = "<group>"; };
 		DC762904303E86E0ED740AD863CE22C7 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/Core/SDWebImageDownloader.h; sourceTree = "<group>"; };
-		DD612B3B79C382762AED115C747ECC77 /* WFHomeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeViewController.m; sourceTree = "<group>"; };
 		DD89FA9BFD5DCB5074226DCBB1F6E29E /* homeHeadBg@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "homeHeadBg@3x.png"; path = "WFKitLogin/Assets/homeHeadBg@3x.png"; sourceTree = "<group>"; };
 		DE25494CE373D41ECF95DFFFB3D89682 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
 		DEE594DEF3DDF101CEAF9786D5DC4E22 /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackGifFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
@@ -1299,6 +1297,7 @@
 		E685A11238D61753C415D2E13C10D650 /* SDImageIOAnimatedCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageIOAnimatedCoder.m; path = SDWebImage/Core/SDImageIOAnimatedCoder.m; sourceTree = "<group>"; };
 		E6B582843ED395311B450C7363AEC083 /* UILabel+aptateFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+aptateFont.h"; path = "WYAutoLayout/Classes/WYAutoLayout/UILabel+aptateFont.h"; sourceTree = "<group>"; };
 		E7067D274703AB488167E53932477D25 /* WKFunComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WKFunComponents-prefix.pch"; sourceTree = "<group>"; };
+		E79248CC6BC4C8CBC5BFE2A7A66CFA92 /* WFHomeIncomeWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WFHomeIncomeWebViewController.m; sourceTree = "<group>"; };
 		E83A15D7F5C1BADAC7F8E35E54925F31 /* SDDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDiskCache.m; path = SDWebImage/Core/SDDiskCache.m; sourceTree = "<group>"; };
 		E83FDEC5044AB97CEE1B5719E3C06E84 /* WKProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WKProxy.h; path = WFBasics/Classes/Tools/WKProxy.h; sourceTree = "<group>"; };
 		E8A1BEE1C363412E55B6ACFF3C972260 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/Core/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
@@ -1344,6 +1343,7 @@
 		FD3D00891ABC95D72138CC4FDE8155C8 /* WKWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WKWebView+AFNetworking.h"; path = "UIKit+AFNetworking/WKWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		FD6415609AA51C36CBC6726C36E191DF /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		FE1C5D349A189BFB8175D0EF5A25FF29 /* WYAutoLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WYAutoLayout.modulemap; sourceTree = "<group>"; };
+		FE29AF22BB4B6793D3A27B2B78B0AC16 /* openApplyAreaCtrlWithController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = openApplyAreaCtrlWithController.m; sourceTree = "<group>"; };
 		FE2CD79B536D94AE4BB1093BB83383AD /* MJExtensionConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJExtensionConst.m; path = MJExtension/MJExtensionConst.m; sourceTree = "<group>"; };
 		FE456D9262E8F4AA1CB12A4B6A6339F9 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
 		FE50F95806ABC11E9720E8F270DD9766 /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
@@ -1836,6 +1836,25 @@
 			name = UIKit;
 			sourceTree = "<group>";
 		};
+		4918446AA641A5D9F44CFD0ED840708A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE29AF22BB4B6793D3A27B2B78B0AC16 /* openApplyAreaCtrlWithController.m */,
+				5998E2E621E66713D04DF678ED547DBE /* WFHomeIncomeWebViewController.h */,
+				E79248CC6BC4C8CBC5BFE2A7A66CFA92 /* WFHomeIncomeWebViewController.m */,
+				57CA4085B440BFCF97C69EE60ED0F1A3 /* WFHomeViewController.h */,
+				718B61B3F24A9DD7FA88A4AD1642DAE9 /* WFHomeViewController.m */,
+				17BFE9E94BCCC3088C6DF3530B8130CF /* WFHomeWebViewController.h */,
+				BDDF533F1748B07F4E4E9FFCA2D639CB /* WFHomeWebViewController.m */,
+				7F5709A4CFBF24B5F102CE9C7BD75C72 /* WFNewHomeViewController.h */,
+				84273FE62859CC9C8DEAE1EA04CA2B36 /* WFOtherViewController.h */,
+				34A281B31223A04196DFD1140CDFC4CD /* WFOtherViewController.m */,
+				36CBF21F3948688D2BFA8A7DEA587FB3 /* WFOtherViewController.xib */,
+			);
+			name = Controller;
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		49540D59535BAF7BCEA63B44AFBDEA42 /* WYAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -2042,25 +2061,6 @@
 				50208040A6C5A234B981947A3D577583 /* WFSecuritySetViewController.h */,
 				C1009F00C98403B785AD3A51554FD3DE /* WFSecuritySetViewController.m */,
 				C99D89087D216D893359B43A1ADA9AE3 /* WFSecuritySetViewController.xib */,
-			);
-			name = Controller;
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		82CD3F7F25B75AC1F81B8E8C14E50072 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				2A0A269BADA5CA578F4D153DEB4CF4AB /* WFHomeIncomeWebViewController.h */,
-				77D9EA1396C3770B4F5B4263EDECFE2A /* WFHomeIncomeWebViewController.m */,
-				B3CA3879D70F7F9181105624404EBD95 /* WFHomeViewController.h */,
-				DD612B3B79C382762AED115C747ECC77 /* WFHomeViewController.m */,
-				CAD4D9855E46E7E0DF0456B97ECEB2A1 /* WFHomeWebViewController.h */,
-				B41D71225034AB4B9F6399CAF9E86A64 /* WFHomeWebViewController.m */,
-				C0FECCFA1401C06974A1B72EA1FAA3BA /* WFNewHomeViewController.h */,
-				358D02583C660399F32BE893B85F2CD6 /* WFNewHomeViewController.m */,
-				87FE2DE9F94336F5952494EAE5D68CC3 /* WFOtherViewController.h */,
-				89D978DFF273DEFCD19848FACC6DDD4B /* WFOtherViewController.m */,
-				D91F0C90B707572A0D7A49333CF9C7D0 /* WFOtherViewController.xib */,
 			);
 			name = Controller;
 			path = Controller;
@@ -2288,7 +2288,7 @@
 		AE610CEC0FC1147FB047B3DC24E9D687 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				82CD3F7F25B75AC1F81B8E8C14E50072 /* Controller */,
+				4918446AA641A5D9F44CFD0ED840708A /* Controller */,
 				AE1AB1265D52043B0DA7D54439818B30 /* DataTool */,
 				90178F957441658E54554AC13597C878 /* Model */,
 				6146D0872C7FAD342593D4EA0B409FCA /* View */,
@@ -3185,7 +3185,7 @@
 			buildConfigurationList = 81DDF7BEC94439DD72132E6E2FD67D30 /* Build configuration list for PBXNativeTarget "WFKitLogin" */;
 			buildPhases = (
 				CD6281CE24FA9B4190963D6B7F29A5AA /* Headers */,
-				AD004109A0434F67DED7AF56AABD89EF /* Sources */,
+				F5BF619EC5904C134FB4C4719E138668 /* Sources */,
 				6B51643E4E83299E8D2A24C6A5DA2385 /* Frameworks */,
 				BC549795A56D1FB801BF88AEFA4965A4 /* Resources */,
 			);
@@ -3763,57 +3763,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD004109A0434F67DED7AF56AABD89EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04D741EDB45C100ABF22BC176E99635A /* JsApiTest.m in Sources */,
-				8674677F4236AFD21E3E52041D6E9D8A /* MLMenuCell.m in Sources */,
-				54C00769C026C8C1CA621EFD46537AAD /* MLMenuItem.m in Sources */,
-				67537738711CF6E0B2C0F7F11319837A /* MLMenuView.m in Sources */,
-				5AF3E729A6347DCFB2B7ECFE2A991342 /* SKAppUpdaterView.m in Sources */,
-				37C8E9B0F67C3605B30588216904E549 /* SKAppUpdaterView.xib in Sources */,
-				4577417BDA5B44ED36CB0A7B324DEFA3 /* WFApplyPartnerUserView.m in Sources */,
-				2DC11A07A4C6969EF11E0BCD6523AACB /* WFApplyPartnerUserView.xib in Sources */,
-				338D876A45EA676544C650CB0940087D /* WFApplyPartnerViewController.m in Sources */,
-				6AEEE77E538DC7576ADE317B6EDA7611 /* WFHomeDataModel.m in Sources */,
-				675A5052CB318D32BEF54BB8AC0BF3FD /* WFHomeDataTool.m in Sources */,
-				3B9FF7A9C4CDC17EA1CB1A6CBC5BE453 /* WFHomeExplainCollectionViewCell.m in Sources */,
-				81FA5C6251DC13B46837BF1E4872C927 /* WFHomeExplainCollectionViewCell.xib in Sources */,
-				036E44EC6CD7F6EDA591806365394052 /* WFHomeFirstItemCollectionViewCell.m in Sources */,
-				814C3A6D8C7C72853F7547729B9270DF /* WFHomeFirstItemCollectionViewCell.xib in Sources */,
-				FB5D88C3D815E66487B8550A0E3A61BD /* WFHomeIncomeWebViewController.m in Sources */,
-				21A2DEC3264A18ED504857B6EB6FD38C /* WFHomeNullCollectionViewCell.m in Sources */,
-				64B6B6EC903FC5F24B4FED361ED7B69A /* WFHomeNullCollectionViewCell.xib in Sources */,
-				BAC0417FA316B0C0B71A27E063001AD4 /* WFHomeSaveDataTool.m in Sources */,
-				1C88AC8BB96EAB1DE953C5915323E2A5 /* WFHomeSectionItemCollectionViewCell.m in Sources */,
-				9DFFF73D52953AC935E282AD0C47DAC2 /* WFHomeSectionItemCollectionViewCell.xib in Sources */,
-				C2C838BAC71F684886CC6BE529E50D1F /* WFHomeViewController.m in Sources */,
-				04C05FAC9F11C57DD8E00392470578E8 /* WFHomeWebViewController.m in Sources */,
-				0B189A6E978F2DCE028BB5E1C56D5A50 /* WFKitLogin-dummy.m in Sources */,
-				1AD0FF5A9D5A089F5B9225AD2B7B9511 /* WFLoginDataTool.m in Sources */,
-				64E928D10893BE59B7FA059F63812111 /* WFLoginPublicAPI.m in Sources */,
-				28F4CDC6973028F903A8C051D57CB6F4 /* WFLoginViewController.m in Sources */,
-				46094BFFDC9F6904EA76608D3AEC45FC /* WFLoginViewController.xib in Sources */,
-				B32E6F1D2CED1EEF3715865999FBBBED /* WFNewHomeAppleAreaView.m in Sources */,
-				AE7749A11431B7CBA765A9F00EFE5BB8 /* WFNewHomeAppleAreaView.xib in Sources */,
-				FAE1069858AAEE0F6244CFDFE09A4D46 /* WFNewHomeAssetsView.m in Sources */,
-				AA403E5FFA99DB732969E407CA5CEDF8 /* WFNewHomeAssetsView.xib in Sources */,
-				AAE04E30A37790C736E8E50468E9D8EC /* WFNewHomeHeadView.m in Sources */,
-				781F2C8CDCF2C572A9CE9E27410EDE49 /* WFNewHomeHeadView.xib in Sources */,
-				0C4F6F470088EE899DC85F189EA6900B /* WFNewHomeModel.m in Sources */,
-				709C991778FAAA32566ADD90ABA861FA /* WFNewHomeTodDayProfit.m in Sources */,
-				C09B6ACCE4675EABAFDB30424C33F986 /* WFNewHomeTodDayProfit.xib in Sources */,
-				586AB8C00D205E5C51C2280C187E028D /* WFNewHomeViewController.m in Sources */,
-				BF2C96BA2F423FC6436588204057DE76 /* WFOtherViewController.m in Sources */,
-				F8B07E75E1521AA8BC1D6BB8AF01F602 /* WFOtherViewController.xib in Sources */,
-				2D96291DCFC768AFE1B1F0E7882670B0 /* WFPayTypeMsgModel.m in Sources */,
-				2DFD153602FCFA3FAE5BC7A18A24DACE /* WFSecuritySetViewController.m in Sources */,
-				40F1FE7A39A31CC7E549106B4D160817 /* WFSecuritySetViewController.xib in Sources */,
-				016BCD2C1AA31FB20D0D26DA448C9714 /* YFMediatorManager+WFLogin.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D9DC984804CC2B88F9646B185973F662 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3852,6 +3801,57 @@
 				180C7DE2F35D07A1291EEFC0655530C8 /* UIFont+Main.m in Sources */,
 				3814C213A587426FB1E5288D452EEB28 /* UILabel+aptateFont.m in Sources */,
 				3CC9F5A7112C4B34AF06CF4F838FB674 /* WYAutoLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5BF619EC5904C134FB4C4719E138668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ADBC9F1CE58F1C60A1538F14336482B /* JsApiTest.m in Sources */,
+				580FF87F6A404C5C9B6B1713ED5CAE1C /* MLMenuCell.m in Sources */,
+				A917FDACC52415FF50CB19A444B0A3FE /* MLMenuItem.m in Sources */,
+				216283C451E12DABCF627D706D460093 /* MLMenuView.m in Sources */,
+				91A1D4AFC039E8D19547F9E0E1AF17CD /* openApplyAreaCtrlWithController.m in Sources */,
+				B3600CFE3684CC4FCE2780BD2E1EF54A /* SKAppUpdaterView.m in Sources */,
+				15746E403B45C37378405AA545BEEA07 /* SKAppUpdaterView.xib in Sources */,
+				8E5134028F00ECCBBB50FE109E116FBA /* WFApplyPartnerUserView.m in Sources */,
+				DAE1BD43E840DF5982479ECB70ABC6BC /* WFApplyPartnerUserView.xib in Sources */,
+				802ACD655108A7B78EDDEBACA5331509 /* WFApplyPartnerViewController.m in Sources */,
+				5C8CDFB97AF9C46120E6C725BAF5AC25 /* WFHomeDataModel.m in Sources */,
+				963C50244462DDB5BDF2FAC0955397FB /* WFHomeDataTool.m in Sources */,
+				503F75B598F5962C97B9B7819C4CF80A /* WFHomeExplainCollectionViewCell.m in Sources */,
+				54E4946F56DE4C626662D0347A5A5861 /* WFHomeExplainCollectionViewCell.xib in Sources */,
+				45B77AA6CB07D080781A8AB7CD3AB4EE /* WFHomeFirstItemCollectionViewCell.m in Sources */,
+				1C7F17E9CA56FABBC7A6ABAAE3B85156 /* WFHomeFirstItemCollectionViewCell.xib in Sources */,
+				36DBE6A88AC31FA8F3C111D53A8C6EAD /* WFHomeIncomeWebViewController.m in Sources */,
+				B6B8BF786E0E879344A88B33F3D052B0 /* WFHomeNullCollectionViewCell.m in Sources */,
+				75EDA6EBA535C14B807812CF621D649D /* WFHomeNullCollectionViewCell.xib in Sources */,
+				421F94243A7833B76CD8C71D54112774 /* WFHomeSaveDataTool.m in Sources */,
+				13B2F4D7D4B5E19289D1DFE3C7B40FA0 /* WFHomeSectionItemCollectionViewCell.m in Sources */,
+				69242DD735A0446635A43D196C4C2EF3 /* WFHomeSectionItemCollectionViewCell.xib in Sources */,
+				FDDF8D088188C8C0EA3EF4903F1EC4FB /* WFHomeViewController.m in Sources */,
+				EADDC1ADCEB19DE672900968F5A33B82 /* WFHomeWebViewController.m in Sources */,
+				9BB318D0D8BE9F38CF6BB7B0B20D1B49 /* WFKitLogin-dummy.m in Sources */,
+				3069A83363AFFAD7103A2308153F9015 /* WFLoginDataTool.m in Sources */,
+				2B8F2F5151768B050262160E9B4B09C8 /* WFLoginPublicAPI.m in Sources */,
+				08D0E1AFBC2E2AEFCFE032E3F2A38A2A /* WFLoginViewController.m in Sources */,
+				69CF456978A98A7E27120D7FFD8425C8 /* WFLoginViewController.xib in Sources */,
+				913FBDE529283BE62DEC71FA8CB9874B /* WFNewHomeAppleAreaView.m in Sources */,
+				FF308F8AADC7D2DCBB9449A2D00F78EE /* WFNewHomeAppleAreaView.xib in Sources */,
+				451EAE5060245F9E132984369CF63E68 /* WFNewHomeAssetsView.m in Sources */,
+				371791BDCCAA5506146CDADC37C6198C /* WFNewHomeAssetsView.xib in Sources */,
+				3105FCF63BA5E9C4B248076B5369A69C /* WFNewHomeHeadView.m in Sources */,
+				6DE29402FE4CF666C2404DF5286E788E /* WFNewHomeHeadView.xib in Sources */,
+				A37DCF8542852303EB789AA0B621EF38 /* WFNewHomeModel.m in Sources */,
+				0013FC29D5D84D24D7775849FC0516FF /* WFNewHomeTodDayProfit.m in Sources */,
+				CD3E301D9E02BFF6150D03699CB58294 /* WFNewHomeTodDayProfit.xib in Sources */,
+				B71564F555A81A0E46846199508B93AE /* WFOtherViewController.m in Sources */,
+				A11FF75530457185EF0DDC5741F4F4F3 /* WFOtherViewController.xib in Sources */,
+				4E3C3418929611CEA6E03C9D2B988CE0 /* WFPayTypeMsgModel.m in Sources */,
+				0EFD1BDB623145AC15B2718734105AD9 /* WFSecuritySetViewController.m in Sources */,
+				9F2329CBE7CC500D6D85B983EB63B3CB /* WFSecuritySetViewController.xib in Sources */,
+				E7C4186B5BE79590F08DF98076990000 /* YFMediatorManager+WFLogin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
