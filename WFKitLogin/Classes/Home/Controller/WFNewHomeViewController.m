@@ -199,8 +199,7 @@
         [self.navigationController pushViewController:web animated:YES];
     }else if (index == 40) {
         // 片区数量
-        if (self.partnerRole!= 3)
-            [YFMediatorManager openApplyAreaCtrlWithController:self partnerRole:self.partnerRole];
+        [YFMediatorManager openApplyAreaCtrlWithController:self partnerRole:self.partnerRole];
     }else if (index == 50) {
         // 设备数量
         [YFMediatorManager openMyChargePileCtrlWithController:self];
