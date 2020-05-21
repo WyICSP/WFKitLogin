@@ -39,6 +39,10 @@
     // 奖励收入
     UITapGestureRecognizer *tap3 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickRewardEvent:)];
     [self.rewardMoney addGestureRecognizer:tap3];
+    
+    // 商城收入
+    UITapGestureRecognizer *tap4 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickShopEvent:)];
+    [self.shopIncomeMoney addGestureRecognizer:tap4];
 }
 
 - (void)clickBellEvent:(UITapGestureRecognizer *)sender {
@@ -57,6 +61,10 @@
     !self.clickHeadEventBlock ? : self.clickHeadEventBlock(120);
 }
 
+- (void)clickShopEvent:(UITapGestureRecognizer *)sender {
+    !self.clickHeadEventBlock ? : self.clickHeadEventBlock(140);
+}
+
 - (void)setModel:(WFNewHomeIncomeModel *)model {
     NSString *totalPrice = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.totalRevenue.doubleValue/1000]];
     [AttributedLbl setRichTextOnlyFont:self.totalMoney titleString:totalPrice textFont:[UIFont boldSystemFontOfSize:16.0f] fontRang:NSMakeRange(totalPrice.length-4, 4)];
@@ -66,6 +74,9 @@
     
     NSString *rewardPrice = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.bonusIncome.doubleValue/1000]];
     [AttributedLbl setRichTextOnlyFont:self.rewardMoney titleString:rewardPrice textFont:[UIFont boldSystemFontOfSize:14.0f] fontRang:NSMakeRange(rewardPrice.length-4, 4)];
+    
+    NSString *shopPrice = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.shoppingIncome.doubleValue/1000]];
+    [AttributedLbl setRichTextOnlyFont:self.shopIncomeMoney titleString:shopPrice textFont:[UIFont boldSystemFontOfSize:14.0f] fontRang:NSMakeRange(shopPrice.length-4, 4)];
     
     NSString *adver = model.advertisementName.length == 0 ? @"赚钱攻略：少安装少投入，多占点多宣传多服务" : model.advertisementName;
     self.marqueeControl.marqueeLabel.text = [NSString getNullOrNoNull:adver];

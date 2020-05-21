@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *chargeMoney;
 /// 奖励收入
 @property (weak, nonatomic) IBOutlet UILabel *rewardMoney;
+/// 商城收入
+@property (weak, nonatomic) IBOutlet UILabel *shopIncomeMoney;
+
 /// 小铃铛
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 /// 点击事件

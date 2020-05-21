@@ -60,6 +60,7 @@
     [self disableSideBack];
     // 获取未读消息
     [self getUserUnReadMessage];
+    [self.scrollView setContentOffset:CGPointZero];
 }
 
 ///禁用侧滑返回
@@ -235,6 +236,9 @@
         [YFMediatorManager openActivityOrRewardCtrlWithController:self type:0];
     }else if (index == 130) {
         //公告
+    }else if (index == 140) {
+        //商城收入
+        [YFMediatorManager gotoCommunityServicePageWithController:self];
     }
 }
 

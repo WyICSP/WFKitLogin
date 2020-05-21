@@ -45,6 +45,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param controller 当前页面
 + (void)gotoAppleAreaCtrlWithController:(UIViewController *)controller;
 
+/// 打开社区服务
+/// @param controller 控制器
++ (void)gotoCommunityServicePageWithController:(UIViewController *)controller;
+
 /**
  去支付
 

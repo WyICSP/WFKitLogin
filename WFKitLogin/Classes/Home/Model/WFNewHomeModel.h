@@ -38,6 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSNumber *totalRevenue;
 /// 奖励收入
 @property (nonatomic, strong) NSNumber *bonusIncome;
+/// 商城收入
+@property (nonatomic, strong) NSNumber *shoppingIncome;
 /// 公告
 @property (nonatomic, copy) NSString *advertisementName;
 @end

@@ -47,6 +47,10 @@
     [self performTarget:@"WFApplyAreaPublicAPI" action:@"gotoAppleAreaCtrlWithController:" params:controller isRequiredReturnValue:NO];
 }
 
++ (void)gotoCommunityServicePageWithController:(UIViewController *)controller {
+    [self performTarget:@"WFApplyAreaPublicAPI" action:@"gotoCommunityServicePageWithController:" params:controller isRequiredReturnValue:NO];
+}
+
 + (void)gotoPayFreightWithParams:(NSDictionary *)params {
     [self performTarget:@"WFPayPublicAPI" action:@"gotoPayWithParams:" params:params isRequiredReturnValue:NO];
 }
