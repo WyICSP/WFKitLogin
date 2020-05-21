@@ -15,6 +15,7 @@
     [super awakeFromNib];
     SKViewsBorder(self.applyPileBtn, 46.0f/2, 0.5, UIColorFromRGB(0xE4E4E4));
     SKViewsBorder(self.applyArea, 46.0f/2, 0.5, UIColorFromRGB(0xE4E4E4));
+    SKViewsBorder(self.buyBtn, 46.0f/2, 0.5, UIColorFromRGB(0xE4E4E4));
 }
 - (IBAction)clickBtn:(UIButton *)sender {
     !self.clickAreaEventBlock ? : self.clickAreaEventBlock(sender.tag);

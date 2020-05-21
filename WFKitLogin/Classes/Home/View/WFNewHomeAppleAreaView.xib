@@ -15,7 +15,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" tag="90" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNq-Ya-ono">
-                    <rect key="frame" x="217" y="15" width="169" height="46"/>
+                    <rect key="frame" x="276.5" y="15" width="122.5" height="46"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="申请片区">
                         <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -25,7 +25,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="80" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZD-NT-upI">
-                    <rect key="frame" x="28" y="15" width="169" height="46"/>
+                    <rect key="frame" x="15" y="15" width="122.5" height="46"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="46" id="E5k-gy-TT7"/>
@@ -38,22 +38,39 @@
                         <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="abb-ce-qhP"/>
                     </connections>
                 </button>
+                <button opaque="NO" tag="91" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyG-ds-ToV">
+                    <rect key="frame" x="145.5" y="15" width="123" height="46"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="购买设备">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="nGT-XE-2Ac"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="FNq-Ya-ono" firstAttribute="width" secondItem="dZD-NT-upI" secondAttribute="width" id="50u-5H-ITa"/>
                 <constraint firstItem="FNq-Ya-ono" firstAttribute="height" secondItem="dZD-NT-upI" secondAttribute="height" id="IxN-wG-GDU"/>
                 <constraint firstItem="FNq-Ya-ono" firstAttribute="centerY" secondItem="dZD-NT-upI" secondAttribute="centerY" id="Orl-kX-9Mk"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FNq-Ya-ono" secondAttribute="trailing" constant="28" id="YIb-Pg-8ES"/>
-                <constraint firstItem="FNq-Ya-ono" firstAttribute="leading" secondItem="dZD-NT-upI" secondAttribute="trailing" constant="20" id="lQg-8x-kGi"/>
-                <constraint firstItem="dZD-NT-upI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="mFJ-bx-PcV"/>
+                <constraint firstItem="FNq-Ya-ono" firstAttribute="leading" secondItem="hyG-ds-ToV" secondAttribute="trailing" constant="8" id="UhO-pf-s7k"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FNq-Ya-ono" secondAttribute="trailing" constant="15" id="YIb-Pg-8ES"/>
+                <constraint firstItem="hyG-ds-ToV" firstAttribute="leading" secondItem="dZD-NT-upI" secondAttribute="trailing" constant="8" id="foY-ca-NPs"/>
+                <constraint firstItem="dZD-NT-upI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="mFJ-bx-PcV"/>
+                <constraint firstItem="hyG-ds-ToV" firstAttribute="centerY" secondItem="dZD-NT-upI" secondAttribute="centerY" id="tH3-MB-0vh"/>
                 <constraint firstItem="dZD-NT-upI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vtF-Kx-dZg"/>
                 <constraint firstItem="FNq-Ya-ono" firstAttribute="width" secondItem="dZD-NT-upI" secondAttribute="width" id="wEI-xx-XEZ"/>
+                <constraint firstItem="hyG-ds-ToV" firstAttribute="width" secondItem="dZD-NT-upI" secondAttribute="width" id="yfv-jA-1qk"/>
+                <constraint firstItem="hyG-ds-ToV" firstAttribute="height" secondItem="dZD-NT-upI" secondAttribute="height" id="zFh-iV-ynz"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="applyArea" destination="FNq-Ya-ono" id="fAK-rs-8ST"/>
                 <outlet property="applyPileBtn" destination="dZD-NT-upI" id="zG2-qL-Tmr"/>
+                <outlet property="buyBtn" destination="hyG-ds-ToV" id="Ocj-P7-Rrl"/>
             </connections>
             <point key="canvasLocation" x="177" y="50"/>
         </view>

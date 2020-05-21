@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIButton *applyPileBtn;
 /// 申请片区
 @property (weak, nonatomic) IBOutlet UIButton *applyArea;
+/// 购买
+@property (weak, nonatomic) IBOutlet UIButton *buyBtn;
 
 @property (copy, nonatomic) void (^clickAreaEventBlock)(NSInteger index);
 @end

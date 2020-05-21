@@ -39,6 +39,8 @@
 @property (nonatomic, strong, nullable) WFNewHomeServiceModel *cModel;
 /// 菜单
 @property (nonatomic, strong, nullable) MLMenuView *menuView;
+/// 淘宝链接
+@property (nonatomic, copy, nullable) NSString *paySkipUrl;
 /// 合伙人身份
 @property (nonatomic, assign) NSInteger partnerRole;
 ///是否可以侧滑
@@ -108,6 +110,7 @@
     [WFHomeDataTool getHomeTotalIncomeWithParams:@{} resultBlock:^(WFNewHomeIncomeModel * _Nonnull models) {
         @strongify(self)
         self.headView.model = models;
+        self.paySkipUrl = models.paySkipUrl;
         [self.scrollView.mj_header endRefreshing];
     } failureBlock:^{
         @strongify(self)
@@ -225,6 +228,11 @@
     }else if (index == 90) {
         //申请片区
         [YFMediatorManager gotoAppleAreaCtrlWithController:self];
+    }else if (index == 91) {
+        //打开浏览器
+        if (self.paySkipUrl.length != 0)
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.paySkipUrl]];
+        
     }else if (index == 100 || index == 110) {
         //总收入 充电收入
         WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];

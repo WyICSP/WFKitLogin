@@ -40,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSNumber *bonusIncome;
 /// 商城收入
 @property (nonatomic, strong) NSNumber *shoppingIncome;
+/// 淘宝链接
+@property (nonatomic, copy) NSString *paySkipUrl;
 /// 公告
 @property (nonatomic, copy) NSString *advertisementName;
 @end
