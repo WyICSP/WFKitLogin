@@ -231,7 +231,8 @@
     }else if (index == 91) {
         //打开浏览器
         if (self.paySkipUrl.length != 0)
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.paySkipUrl]];
+            [self jumpToAnotherApp];
+//            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.paySkipUrl]];
         
     }else if (index == 100 || index == 110) {
         //总收入 充电收入
@@ -250,6 +251,7 @@
     }
 }
 
+
 // 客服
 - (void)leftImageButtonClick:(UIButton *)sender {
     sender.selected =! sender.selected;
@@ -257,6 +259,30 @@
         [self.menuView showMenuEnterAnimation:MLEnterAnimationStyleRight];
     }else {
         [self.menuView hidMenuExitAnimation:MLEnterAnimationStyleRight];
+    }
+}
+
+/// 跳转到淘宝
+- (void)jumpToAnotherApp {
+    NSArray *pathArray = [self.paySkipUrl componentsSeparatedByString:@"//"];
+    NSString *path;
+    if (pathArray.count != 0)
+        path = [NSString stringWithFormat:@"tbopen://%@",pathArray.lastObject];
+    
+    NSURL *url = [NSURL URLWithString:path];
+    BOOL isCanOpen = [[UIApplication sharedApplication] canOpenURL:url];
+    if (isCanOpen) {
+        #ifdef NSFoundationVersionNumber_iOS_10_0
+            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:^(BOOL success) {
+                
+            }];
+        #else
+            [[UIApplication sharedApplication] openURL:url];
+        #endif
+        DLog(@"App1打开App2");
+    }else{
+        DLog(@"设备没有安装App2");
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.paySkipUrl]];
     }
 }
 
