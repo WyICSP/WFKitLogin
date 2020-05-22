@@ -59,4 +59,8 @@
     [self performTarget:@"WFShareHelpTool" action:@"saveImageToAlbumWithUrls:" params:params isRequiredReturnValue:NO];
 }
 
++ (void)bindUserUuid {
+    [self performTarget:@"WFPushDataTool" action:@"bindUserUuid" params:@{} isRequiredReturnValue:NO];
+}
+
 @end

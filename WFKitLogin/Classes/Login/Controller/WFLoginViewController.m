@@ -10,6 +10,7 @@
 #import "WFLoginViewController.h"
 #import "WFApplyPartnerViewController.h"
 #import "YFMediatorManager+YFKitMain.h"
+#import "YFMediatorManager+WFLogin.h"
 #import "WFSecuritySetViewController.h"
 #import "WFHomeSaveDataTool.h"
 #import "NSString+Regular.h"
@@ -167,6 +168,9 @@
         //存储用户账号信息
         [YFUserDefaults setObject:self.phoneTF.text forKey:@"USERPHONE"];
         [YFUserDefaults synchronize];
+        
+        // 绑定 push id
+        [YFMediatorManager bindUserUuid];
                 
         if (self.loginType == WFJumpLoginCtrlH5Tpye) {
             [self.tabBarController setSelectedIndex:0];

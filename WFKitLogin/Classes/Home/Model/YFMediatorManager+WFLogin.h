@@ -60,6 +60,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param params 参数
 + (void)savePhotoWithParams:(NSArray *)params;
 
+/// 绑定 cid
+/// @param params  参数
++ (void)bindUserUuid;
+
 @end
 
 NS_ASSUME_NONNULL_END
