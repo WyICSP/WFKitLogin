@@ -15,6 +15,7 @@
 #import "YFMediatorManager+WFLogin.h"
 #import "WFHomeWebViewController.h"
 #import "WFNewHomeTodayDescView.h"
+#import "WFNewHomeAssetsDsecView.h"
 #import "WFLoginPublicAPI.h"
 #import "WFHomeDataTool.h"
 #import "WFNewHomeModel.h"
@@ -40,6 +41,8 @@
 @property (nonatomic, strong, nullable) WFNewHomeServiceModel *cModel;
 /// 进入说明弹出
 @property (nonatomic, strong, nullable) WFNewHomeTodayDescView *descView;
+/// 插座说明
+@property (nonatomic, strong, nullable) WFNewHomeAssetsDsecView *assetsDesView;
 /// 菜单
 @property (nonatomic, strong, nullable) MLMenuView *menuView;
 /// 淘宝链接
@@ -254,6 +257,9 @@
     }else if (index == 180) {
         // 收入说明
         [[WFPopTool sharedInstance] popView:self.descView animated:YES];
+    }else if (index == 190) {
+        // 资产说明
+        [[WFPopTool sharedInstance] popView:self.assetsDesView animated:YES];
     }
 }
 
@@ -423,6 +429,17 @@
         };
     }
     return _descView;
+}
+
+/// 插座说明
+- (WFNewHomeAssetsDsecView *)assetsDesView {
+    if (!_assetsDesView) {
+        _assetsDesView = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"WFNewHomeAssetsDsecView" owner:nil options:nil] firstObject];
+        _assetsDesView.clickDissaperBlock = ^{
+            [[WFPopTool sharedInstance] closeAnimated:YES];
+        };
+    }
+    return _assetsDesView;
 }
 
 /**

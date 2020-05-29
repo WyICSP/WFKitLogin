@@ -32,6 +32,7 @@
 #import "MLMenuItem.h"
 #import "MLMenuView.h"
 #import "WFNewHomeAppleAreaView.h"
+#import "WFNewHomeAssetsDsecView.h"
 #import "WFNewHomeAssetsView.h"
 #import "WFNewHomeHeadView.h"
 #import "WFNewHomeTodayDescView.h"

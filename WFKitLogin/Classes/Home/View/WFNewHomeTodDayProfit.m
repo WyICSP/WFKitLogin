@@ -17,7 +17,6 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.contentsView.layer.cornerRadius = 10.0f;
-    self.nearLbl.adjustsFontSizeToFitWidth = YES;
     
     //添加手势
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickTodayEvent:)];
@@ -50,9 +49,9 @@
     [AttributedLbl setRichTextOnlyFont:self.todayIncome titleString:chargingIncome textFont:[UIFont boldSystemFontOfSize:12.0f] fontRang:NSMakeRange(chargingIncome.length-4, 4)];
     
     // 昨日收
-    self.yesterdayIncome.text = [NSString stringWithFormat:@"%ld",model.commissionIncome];
+    self.yesterdayIncome.text = [NSString stringWithFormat:@"%ld",model.commissionOrderNum];
     
-    self.chargeNum.text = [NSString stringWithFormat:@"%ld",model.orderNum];
+//    self.chargeNum.text = [NSString stringWithFormat:@"%ld",model.orderNum];
     
     self.nearRate.text = [NSString stringWithFormat:@"%@",[NSString decimalNumberWithDouble:model.utilizationRate]];
     

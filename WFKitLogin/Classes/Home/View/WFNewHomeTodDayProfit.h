@@ -17,16 +17,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIView *contentsView;
 /// 今日收入
 @property (weak, nonatomic) IBOutlet UILabel *todayIncome;
-/// 昨日收入
+/// 分佣订单
 @property (weak, nonatomic) IBOutlet UILabel *yesterdayIncome;
-/// 充电数量
-@property (weak, nonatomic) IBOutlet UILabel *chargeNum;
 ///  7 日使用率
 @property (weak, nonatomic) IBOutlet UILabel *nearRate;
 /// 更新 btn
 @property (weak, nonatomic) IBOutlet UIButton *updateBtn;
-/// 7 ri 
-@property (weak, nonatomic) IBOutlet UILabel *nearLbl;
 
 /// 点击事件
 @property (copy, nonatomic) void (^clickTodayEventBlock)(NSInteger index);

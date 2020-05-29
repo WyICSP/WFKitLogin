@@ -137,6 +137,17 @@
                                 <constraint firstItem="WrX-PA-XRN" firstAttribute="centerY" secondItem="acD-Vd-z0y" secondAttribute="centerY" id="gC5-L0-3Fb"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QC-Pp-Jpm">
+                            <rect key="frame" x="107" y="9" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="SAz-S1-Auh"/>
+                                <constraint firstAttribute="height" constant="30" id="wxZ-NJ-lzd"/>
+                            </constraints>
+                            <state key="normal" image="WFKitLogin.bundle/today_logo"/>
+                            <connections>
+                                <action selector="clickPileBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="bdG-lg-YU9"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
@@ -158,6 +169,7 @@
                         <constraint firstItem="e1W-HJ-S9F" firstAttribute="centerY" secondItem="FUn-Xl-0ZU" secondAttribute="centerY" id="Vaf-Wu-IjK"/>
                         <constraint firstItem="OfV-Yg-L7m" firstAttribute="centerY" secondItem="e1W-HJ-S9F" secondAttribute="centerY" id="Wu3-em-SQL"/>
                         <constraint firstItem="HWX-tu-LfC" firstAttribute="top" secondItem="9Rn-zu-IgY" secondAttribute="top" id="X4m-Zp-8kc"/>
+                        <constraint firstItem="8QC-Pp-Jpm" firstAttribute="leading" secondItem="cui-ea-DmT" secondAttribute="trailing" id="aqG-xn-u4T"/>
                         <constraint firstItem="Wyt-na-iPl" firstAttribute="width" secondItem="9Rn-zu-IgY" secondAttribute="width" id="bJz-PA-kQk"/>
                         <constraint firstItem="HWX-tu-LfC" firstAttribute="bottom" secondItem="9Rn-zu-IgY" secondAttribute="bottom" id="dqa-mn-eIc"/>
                         <constraint firstItem="qGW-y4-kzh" firstAttribute="bottom" secondItem="Wyt-na-iPl" secondAttribute="bottom" id="g7V-Sj-swE"/>
@@ -168,6 +180,7 @@
                         <constraint firstItem="qGW-y4-kzh" firstAttribute="leading" secondItem="Wyt-na-iPl" secondAttribute="trailing" id="o0g-zi-doA"/>
                         <constraint firstItem="U1w-II-MPj" firstAttribute="centerY" secondItem="3WY-aZ-TMl" secondAttribute="centerY" id="o5M-SD-sZf"/>
                         <constraint firstItem="HWX-tu-LfC" firstAttribute="height" secondItem="9Rn-zu-IgY" secondAttribute="height" id="yJp-Kx-0qp"/>
+                        <constraint firstItem="8QC-Pp-Jpm" firstAttribute="centerY" secondItem="cui-ea-DmT" secondAttribute="centerY" id="zUj-lD-4JM"/>
                     </constraints>
                 </view>
             </subviews>
@@ -194,5 +207,6 @@
     </objects>
     <resources>
         <image name="WFKitLogin.bundle/new_home_assets" width="128" height="128"/>
+        <image name="WFKitLogin.bundle/today_logo" width="128" height="128"/>
     </resources>
 </document>

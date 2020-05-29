@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 总收入
 @property (nonatomic, assign) NSInteger orderNum;
 // 今日分佣  
-@property (nonatomic, assign) NSInteger commissionIncome;
+@property (nonatomic, assign) NSInteger commissionOrderNum;
 /// 奖励收入
 @property (nonatomic, assign) double utilizationRate;
 /// 上升还是下降

@@ -54,5 +54,8 @@
     // 插座总数量
     self.sctTotalNum.text = [NSString stringWithFormat:@"/%ld",(long)model.totalNum];
 }
+- (IBAction)clickPileBtn:(id)sender {
+    !self.clickAssetsEventBlock ? : self.clickAssetsEventBlock(190);
+}
 
 @end
