@@ -50,6 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WFNewHomeTodayIncomeModel : NSObject
 /// 充电收入
 @property (nonatomic, strong) NSNumber *chargingIncome;
+/// 昨日
+@property (nonatomic, strong) NSNumber *yesterdayChargingIncome;
 /// 总收入
 @property (nonatomic, assign) NSInteger orderNum;
 /// 奖励收入

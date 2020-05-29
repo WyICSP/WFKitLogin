@@ -41,9 +41,15 @@
 }
 
 - (void)setModel:(WFNewHomeTodayIncomeModel *)model {
+    // 今日收入
     NSString *chargingIncome = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.chargingIncome.doubleValue/1000]];
     
     [AttributedLbl setRichTextOnlyFont:self.todayIncome titleString:chargingIncome textFont:[UIFont boldSystemFontOfSize:12.0f] fontRang:NSMakeRange(chargingIncome.length-4, 4)];
+    
+    // 昨日收入
+    NSString *yesterdayIncome = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.yesterdayChargingIncome.doubleValue/1000]];
+    
+    [AttributedLbl setRichTextOnlyFont:self.yesterdayIncome titleString:yesterdayIncome textFont:[UIFont boldSystemFontOfSize:12.0f] fontRang:NSMakeRange(yesterdayIncome.length-4, 4)];
     
     self.chargeNum.text = [NSString stringWithFormat:@"%ld",model.orderNum];
     

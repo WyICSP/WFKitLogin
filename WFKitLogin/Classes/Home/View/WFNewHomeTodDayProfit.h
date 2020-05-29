@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIView *contentsView;
 /// 今日收入
 @property (weak, nonatomic) IBOutlet UILabel *todayIncome;
+/// 昨日收入
+@property (weak, nonatomic) IBOutlet UILabel *yesterdayIncome;
 /// 充电数量
 @property (weak, nonatomic) IBOutlet UILabel *chargeNum;
 ///  7 日使用率

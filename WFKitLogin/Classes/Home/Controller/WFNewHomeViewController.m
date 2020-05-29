@@ -376,6 +376,7 @@
 - (WFNewHomeAppleAreaView *)applyView {
     if (!_applyView) {
         _applyView = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"WFNewHomeAppleAreaView" owner:nil options:nil] firstObject];
+        _applyView.hidden = YES;
         _applyView.frame = CGRectMake(0, self.assetsView.maxY + 10.0f, ScreenWidth, 75.0f);
         @weakify(self)
         _applyView.clickAreaEventBlock = ^(NSInteger index) {
