@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WFNewHomeTodayDescView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDV-CL-rhn">
+                    <rect key="frame" x="22" y="179" width="370" height="538"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WFKitLogin.bundle/today_desc" translatesAutoresizingMaskIntoConstraints="NO" id="BaW-5O-rJs">
+                            <rect key="frame" x="0.0" y="0.0" width="370" height="483.5"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09w-oV-UNn">
+                            <rect key="frame" x="100" y="423.5" width="170" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.42745098040000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="92f-Zd-uid"/>
+                                <constraint firstAttribute="width" constant="170" id="QO3-3y-XUT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <state key="normal" title="知道了">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="kEI-s1-tSa"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="09w-oV-UNn" firstAttribute="centerX" secondItem="BaW-5O-rJs" secondAttribute="centerX" id="3lw-VS-WKj"/>
+                        <constraint firstItem="BaW-5O-rJs" firstAttribute="top" secondItem="oDV-CL-rhn" secondAttribute="top" id="Hh8-bF-oW1"/>
+                        <constraint firstItem="09w-oV-UNn" firstAttribute="bottom" secondItem="BaW-5O-rJs" secondAttribute="bottom" constant="-20" id="HsS-Jf-mcH"/>
+                        <constraint firstAttribute="width" secondItem="oDV-CL-rhn" secondAttribute="height" multiplier="330:480" id="Sp2-pu-enS"/>
+                        <constraint firstAttribute="bottom" secondItem="BaW-5O-rJs" secondAttribute="bottom" constant="54.5" id="glI-Jn-uYY"/>
+                        <constraint firstAttribute="trailing" secondItem="BaW-5O-rJs" secondAttribute="trailing" id="qz7-BA-Nkn"/>
+                        <constraint firstItem="BaW-5O-rJs" firstAttribute="leading" secondItem="oDV-CL-rhn" secondAttribute="leading" id="xO3-I6-EWh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="oDV-CL-rhn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DcQ-dA-ZbT"/>
+                <constraint firstItem="oDV-CL-rhn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="22" id="YK1-OC-8D1"/>
+                <constraint firstItem="oDV-CL-rhn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hYm-Cb-Wca"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btn" destination="09w-oV-UNn" id="K06-To-6qu"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WFKitLogin.bundle/today_desc" width="128" height="128"/>
+    </resources>
+</document>

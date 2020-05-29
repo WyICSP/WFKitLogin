@@ -14,6 +14,7 @@
 #import "WFBaseWebViewController.h"
 #import "YFMediatorManager+WFLogin.h"
 #import "WFHomeWebViewController.h"
+#import "WFNewHomeTodayDescView.h"
 #import "WFLoginPublicAPI.h"
 #import "WFHomeDataTool.h"
 #import "WFNewHomeModel.h"
@@ -37,6 +38,8 @@
 @property (nonatomic, strong, nullable) WFNewHomeModel *assetsInfoModel;
 /// 客服
 @property (nonatomic, strong, nullable) WFNewHomeServiceModel *cModel;
+/// 进入说明弹出
+@property (nonatomic, strong, nullable) WFNewHomeTodayDescView *descView;
 /// 菜单
 @property (nonatomic, strong, nullable) MLMenuView *menuView;
 /// 淘宝链接
@@ -248,6 +251,9 @@
     }else if (index == 140) {
         //商城收入
         [YFMediatorManager gotoCommunityServicePageWithController:self];
+    }else if (index == 180) {
+        // 收入说明
+        [[WFPopTool sharedInstance] popView:self.descView animated:YES];
     }
 }
 
@@ -406,6 +412,17 @@
         };
     }
     return _menuView;
+}
+
+/// 今日收益说明
+- (WFNewHomeTodayDescView *)descView {
+    if (!_descView) {
+        _descView = [[[NSBundle bundleForClass:[self class]] loadNibNamed:@"WFNewHomeTodayDescView" owner:nil options:nil] firstObject];
+        _descView.clickDissaperBlock = ^{
+            [[WFPopTool sharedInstance] closeAnimated:YES];
+        };
+    }
+    return _descView;
 }
 
 /**

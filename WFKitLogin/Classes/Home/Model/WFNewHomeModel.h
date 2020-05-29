@@ -54,6 +54,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSNumber *yesterdayChargingIncome;
 /// 总收入
 @property (nonatomic, assign) NSInteger orderNum;
+// 今日分佣  
+@property (nonatomic, assign) NSInteger commissionIncome;
 /// 奖励收入
 @property (nonatomic, assign) double utilizationRate;
 /// 上升还是下降

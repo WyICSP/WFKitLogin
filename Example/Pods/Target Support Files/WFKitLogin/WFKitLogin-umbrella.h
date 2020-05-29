@@ -34,6 +34,7 @@
 #import "WFNewHomeAppleAreaView.h"
 #import "WFNewHomeAssetsView.h"
 #import "WFNewHomeHeadView.h"
+#import "WFNewHomeTodayDescView.h"
 #import "WFNewHomeTodDayProfit.h"
 #import "WFApplyPartnerViewController.h"
 #import "WFLoginViewController.h"

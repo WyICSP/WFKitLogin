@@ -28,10 +28,13 @@
     CGPoint point = [sender locationInView:self.contentsView];
     CGFloat x = point.x;
     CGFloat screenWidth = ScreenWidth - 30.0f;
-    if (x <= screenWidth/3) {
+    if (x <= screenWidth/4) {
         // 今日收入
         !self.clickTodayEventBlock ? : self.clickTodayEventBlock(10);
-    } else if (x > screenWidth/3 && x < screenWidth/3*2) {
+    } else if (x > screenWidth/4 && x < screenWidth/4*2) {
+        // 今日分佣
+        !self.clickTodayEventBlock ? : self.clickTodayEventBlock(10);
+    } else if (x > screenWidth/4*2 && x < screenWidth/4*3) {
         //充电订单
         !self.clickTodayEventBlock ? : self.clickTodayEventBlock(20);
     } else {
@@ -46,10 +49,8 @@
     
     [AttributedLbl setRichTextOnlyFont:self.todayIncome titleString:chargingIncome textFont:[UIFont boldSystemFontOfSize:12.0f] fontRang:NSMakeRange(chargingIncome.length-4, 4)];
     
-    // 昨日收入
-    NSString *yesterdayIncome = [NSString stringWithFormat:@"%.3f",[NSString decimalPriceWithDouble:model.yesterdayChargingIncome.doubleValue/1000]];
-    
-    [AttributedLbl setRichTextOnlyFont:self.yesterdayIncome titleString:yesterdayIncome textFont:[UIFont boldSystemFontOfSize:12.0f] fontRang:NSMakeRange(yesterdayIncome.length-4, 4)];
+    // 昨日收
+    self.yesterdayIncome.text = [NSString stringWithFormat:@"%ld",model.commissionIncome];
     
     self.chargeNum.text = [NSString stringWithFormat:@"%ld",model.orderNum];
     
@@ -57,6 +58,10 @@
     
     // yes 表示上升
     self.updateBtn.selected = model.userRateStatus;
+}
+
+- (IBAction)clickDescBtn:(id)sender {
+    !self.clickTodayEventBlock ? : self.clickTodayEventBlock(180);
 }
 
 @end
