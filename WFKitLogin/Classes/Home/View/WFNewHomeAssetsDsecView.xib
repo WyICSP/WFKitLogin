@@ -18,13 +18,13 @@
                     <rect key="frame" x="30" y="190.5" width="354" height="515"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WFKitLogin.bundle/new_home_assets_desc" translatesAutoresizingMaskIntoConstraints="NO" id="odU-iN-Vhu">
-                            <rect key="frame" x="0.0" y="0.0" width="354" height="440"/>
+                            <rect key="frame" x="0.0" y="37.5" width="354" height="440"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="odU-iN-Vhu" secondAttribute="height" multiplier="370:460" id="v3G-Ir-ASg"/>
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjx-DL-Jnm">
-                            <rect key="frame" x="92" y="370" width="170" height="40"/>
+                            <rect key="frame" x="92" y="407.5" width="170" height="40"/>
                             <color key="backgroundColor" red="1" green="0.42745098040000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="sK2-WA-lfC"/>
@@ -42,8 +42,8 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="bjx-DL-Jnm" firstAttribute="centerX" secondItem="odU-iN-Vhu" secondAttribute="centerX" id="3bO-Zh-FCj"/>
-                        <constraint firstItem="odU-iN-Vhu" firstAttribute="top" secondItem="FOK-D3-ogA" secondAttribute="top" id="F0V-80-O7P"/>
                         <constraint firstAttribute="width" secondItem="FOK-D3-ogA" secondAttribute="height" multiplier="330:480" id="Ozb-Ax-1Ed"/>
+                        <constraint firstItem="odU-iN-Vhu" firstAttribute="centerY" secondItem="FOK-D3-ogA" secondAttribute="centerY" id="ZPT-6N-PcC"/>
                         <constraint firstItem="bjx-DL-Jnm" firstAttribute="bottom" secondItem="odU-iN-Vhu" secondAttribute="bottom" constant="-30" id="ZmV-bU-gii"/>
                         <constraint firstItem="odU-iN-Vhu" firstAttribute="leading" secondItem="FOK-D3-ogA" secondAttribute="leading" id="nMd-hw-qYM"/>
                         <constraint firstAttribute="trailing" secondItem="odU-iN-Vhu" secondAttribute="trailing" id="sQm-BB-N0J"/>

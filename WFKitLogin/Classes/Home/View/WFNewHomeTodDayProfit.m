@@ -27,16 +27,13 @@
     CGPoint point = [sender locationInView:self.contentsView];
     CGFloat x = point.x;
     CGFloat screenWidth = ScreenWidth - 30.0f;
-    if (x <= screenWidth/4) {
-        // 今日收入
+    if (x <= screenWidth/3) {
+        // 充电收入
         !self.clickTodayEventBlock ? : self.clickTodayEventBlock(10);
-    } else if (x > screenWidth/4 && x < screenWidth/4*2) {
-        // 今日分佣
+    } else if (x > screenWidth/3 && x < screenWidth/3*2) {
+        // 分佣订单
         !self.clickTodayEventBlock ? : self.clickTodayEventBlock(10);
-    } else if (x > screenWidth/4*2 && x < screenWidth/4*3) {
-        //充电订单
-        !self.clickTodayEventBlock ? : self.clickTodayEventBlock(20);
-    } else {
+    }else {
         // 7日使用率
         !self.clickTodayEventBlock ? : self.clickTodayEventBlock(30);
     }

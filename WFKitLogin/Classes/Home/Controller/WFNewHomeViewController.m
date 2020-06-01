@@ -88,6 +88,7 @@
 - (void)setUI {
     [self addLeftImageBtn:@"new_service"];
     [self addRightImageBtn:@"new_msg"];
+    self.leftImageBtn.hidden = YES;
     self.leftImageBtn.width = self.leftImageBtn.height = 40.0f;
     [self.view addSubview:self.scrollView];
     // 获取数据
@@ -180,9 +181,15 @@
     [WFHomeDataTool getPartnerInfoWithParams:@{} resultBlock:^(NSDictionary * _Nonnull dict) {
         @strongify(self)
         NSString *partnerRole = [[dict safeJsonObjForKey:@"data"] stringObjectForKey:@"partnerRole"];
+        
+        // 存储当前状态
+        [YFUserDefaults setObject:partnerRole forKey:@"partnerRole"];
+        [YFUserDefaults synchronize];
+        
         self.partnerRole = [partnerRole integerValue];
         //1 市场合伙人  2 管理合伙人 3 物业
         self.applyView.hidden = [partnerRole integerValue] == 3 ? YES : NO;
+        self.leftImageBtn.hidden = [partnerRole integerValue] == 3 ? YES : NO;
     }];
 }
 
