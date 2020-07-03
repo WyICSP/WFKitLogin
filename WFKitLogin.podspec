@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WFKitLogin'
-  s.version          = '0.7.6'
+  s.version          = '1.0.0'
   s.summary          = 'WFKitLogin登录模块'
 
 # This description is used to generate tags and improve search results.
