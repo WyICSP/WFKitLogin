@@ -226,8 +226,12 @@
         return;
     }
     
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params safeSetObject:self.phoneTF.text forKey:@"mobile"];
+    [params safeSetObject:@"7" forKey:@"type"];
+    
     @weakify(self)
-    [WFLoginDataTool getVerificationCodeWithParams:@{@"mobile":self.phoneTF.text} resultBlock:^{
+    [WFLoginDataTool getVerificationCodeWithParams:params resultBlock:^{
         @strongify(self)
         [YFToast showMessage:@"验证码发送成功" inView:self.view];
         self.task = [WKTimer execTask:[WKProxy proxyWithTarget:self]

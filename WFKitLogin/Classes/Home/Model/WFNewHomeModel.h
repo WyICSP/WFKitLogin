@@ -33,17 +33,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WFNewHomeIncomeModel : NSObject
 /// 充电收入
-@property (nonatomic, strong) NSNumber *chargingIncome;
+@property (nonatomic, strong) NSNumber *summaryIncome;
 /// 总收入
-@property (nonatomic, strong) NSNumber *totalRevenue;
+@property (nonatomic, strong) NSNumber *summaryChargeIncome;
 /// 奖励收入
-@property (nonatomic, strong) NSNumber *bonusIncome;
-/// 商城收入
+@property (nonatomic, strong) NSNumber *summaryAwardIncome;
+/// 商城收入 (已经不要了)
 @property (nonatomic, strong) NSNumber *shoppingIncome;
 /// 淘宝链接
-@property (nonatomic, copy) NSString *paySkipUrl;
+@property (nonatomic, copy) NSString *partnerPaySkipUrl;
 /// 公告
-@property (nonatomic, copy) NSString *advertisementName;
+@property (nonatomic, copy) NSString *partnerHomePageAdText;
+/// 公告跳转链接 没有就不跳
+@property (nonatomic, copy) NSString *partnerHomePageAdUrl;
 @end
 
 

@@ -117,7 +117,7 @@
     [WFHomeDataTool getHomeTotalIncomeWithParams:@{} resultBlock:^(WFNewHomeIncomeModel * _Nonnull models) {
         @strongify(self)
         self.headView.model = models;
-        self.paySkipUrl = models.paySkipUrl;
+        self.paySkipUrl = models.partnerPaySkipUrl;
         [self.scrollView.mj_header endRefreshing];
     } failureBlock:^{
         @strongify(self)
