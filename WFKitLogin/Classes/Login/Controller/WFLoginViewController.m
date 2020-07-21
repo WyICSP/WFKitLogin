@@ -120,7 +120,7 @@
     //倒计时初始值
     self.countIndex = 60;
     //获取地址信息
-    if ([[WFHomeSaveDataTool shareInstance] readAddressFile].count == 0) [self getAddress];
+//    if ([[WFHomeSaveDataTool shareInstance] readAddressFile].count == 0) [self getAddress];
     
 }
 

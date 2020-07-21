@@ -275,6 +275,7 @@
     [manager.requestSerializer setValue:timestamp forHTTPHeaderField:@"timestamp"];
     [manager.requestSerializer setValue:[UserData userInfo].uuid forHTTPHeaderField:@"userId"];
     [manager.requestSerializer setValue:[UserData userInfo].uuid forHTTPHeaderField:@"uuid"];
+    [manager.requestSerializer setValue:[UserData userInfo].token forHTTPHeaderField:@"Authorization"];
     [manager.requestSerializer setValue:@"1.0.0" forHTTPHeaderField:@"version"];
     
     return manager;

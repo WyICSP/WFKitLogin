@@ -21,6 +21,7 @@
 #import "RSAEncryptor.h"
 #import "SKSafeObject.h"
 #import "SKSingle.h"
+#import "UIButton+GradientLayer.h"
 #import "UITableView+YFExtension.h"
 #import "WFLocationTools.h"
 #import "WFPopTool.h"

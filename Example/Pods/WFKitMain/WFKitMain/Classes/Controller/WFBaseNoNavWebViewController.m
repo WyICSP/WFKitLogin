@@ -126,9 +126,9 @@
 
 - (void)setUrlString:(NSString *)urlString {
     if ([urlString containsString:@"?"]) {
-        urlString = [NSString stringWithFormat:@"%@&uuid=%@&appVersion=%@&appMode=app&appName=%@",urlString,USER_UUID,APP_VERSION,[NSString getProjectName]];
+        urlString = [NSString stringWithFormat:@"%@&appVersion=%@&appMode=app&appName=partner&appType=native",urlString,APP_VERSION];
     }else {
-        urlString = [NSString stringWithFormat:@"%@?uuid=%@&appVersion=%@&appMode=app&appName=%@",urlString,USER_UUID,APP_VERSION,[NSString getProjectName]];
+        urlString = [NSString stringWithFormat:@"%@?appVersion=%@&appMode=app&appName=partner&appType=native",urlString,APP_VERSION];
     }
     _urlString = urlString;
 }
@@ -136,9 +136,9 @@
 /// 进度条
 - (UIProgressView *)progressView {
     if (!_progressView) {
-        _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, NavHeight-2, ScreenWidth, 2)];
-        _progressView.backgroundColor = [UIColor whiteColor];
-        _progressView.trackTintColor = UIColor.whiteColor;
+        _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 2, ScreenWidth, 5)];
+        _progressView.backgroundColor = [UIColor clearColor];
+        _progressView.trackTintColor = UIColor.clearColor;
         //设置进度条的高度，下面这句代码表示进度条的宽度变为原来的1倍，高度变为原来的1.5倍.
         _progressView.transform = CGAffineTransformMakeScale(1.0f, 1.2f);
     }

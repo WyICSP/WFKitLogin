@@ -25,7 +25,7 @@
 @implementation JsApiTest
 
 /**同步*/
-- (NSString *) getUserId: (NSString *) msg
+- (NSString *)getUserId: (NSString *) msg
 {
     return [UserData userInfo].uuid;
 }
@@ -40,6 +40,10 @@
     return APP_VERSION;
 }
 
+- (void)getToken:(NSString *)msg :(JSCallback) completionHandler
+{
+    completionHandler([UserData userInfo].token,YES);
+}
 
 /**返回*/
 - (void)goBack:(NSString *)msg :(JSCallback) completionHandler

@@ -40,7 +40,7 @@
 
 + (void)updateAppWithParams:(NSDictionary *)params
                 resultBlock:(void(^)(NSDictionary *models))resultBlock {
-    NSString *path = [NSString stringWithFormat:@"%@app-system/app-system/v1/get/app/version",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@yzsh-system/v1/system/get/app/version",NEW_HOST_URL];
     [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([baseModel.mDictionary objectForKey:@"data"]);
