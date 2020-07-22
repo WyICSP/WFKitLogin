@@ -68,6 +68,9 @@
     [self disableSideBack];
     // 获取未读消息
     [self getUserUnReadMessage];
+    // 获取客服信息
+    [self getCustomerService];
+    
     [self.scrollView setContentOffset:CGPointZero];
 }
 
@@ -93,8 +96,6 @@
     [self.view addSubview:self.scrollView];
     // 获取数据
     [self netWork];
-    // 获取客服信息
-    [self getCustomerService];
     //注册通知：重新刷新页面
     [YFNotificationCenter addObserver:self selector:@selector(netWork) name:@"reloadUserCnter" object:nil];
 }
@@ -158,8 +159,9 @@
     [WFHomeDataTool getCustomerServiceWithParams:@{} resultBlock:^(WFNewHomeServiceModel * _Nonnull cModel) {
         @strongify(self)
         self.cModel = cModel;
-        self.cModel.customerMobile = cModel.customerMobile.length == 0 ? @"4008251068" : cModel.customerMobile;
-        self.cModel.customerServiceUrl = cModel.customerServiceUrl.length == 0 ? @"https://chat.sobot.com/chat/h5/v2/index.html?sysnum=5671d20094344db1abd7c0386cdbd5a8&source=2" : cModel.customerServiceUrl;
+        if (![NSString isBlankString:self.cModel.customerMobile] && ![NSString isBlankString:self.cModel.customerServiceUrl]) {
+           self.leftImageBtn.hidden = NO;
+        }
     }];
 }
 
@@ -182,14 +184,9 @@
         @strongify(self)
         NSString *partnerRole = [[dict safeJsonObjForKey:@"data"] stringObjectForKey:@"partnerRole"];
         
-        // 存储当前状态
-        [YFUserDefaults setObject:partnerRole forKey:@"partnerRole"];
-        [YFUserDefaults synchronize];
-        
         self.partnerRole = [partnerRole integerValue];
         //0 市场合伙人  1 管理合伙人 2 分佣合伙人 3购买设备合伙人 4 公司账号
         self.applyView.hidden = [partnerRole integerValue] == 2 ? YES : NO;
-        self.leftImageBtn.hidden = [partnerRole integerValue] == 2 ? YES : NO;
     }];
 }
 

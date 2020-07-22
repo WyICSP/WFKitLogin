@@ -12,12 +12,14 @@
 #import "YFMediatorManager+YFKitMain.h"
 #import "YFMediatorManager+WFLogin.h"
 #import "WFSecuritySetViewController.h"
+#import "WFHomeWebViewController.h"
 #import "WFHomeSaveDataTool.h"
 #import "NSString+Regular.h"
 #import "WFLoginDataTool.h"
 #import "SKSafeObject.h"
 #import "UserData.h"
 #import "YFToast.h"
+#import "WKSetting.h"
 #import "WKProxy.h"
 #import "WKTimer.h"
 #import "WKHelp.h"
@@ -279,6 +281,24 @@
     security.setType = WFSecuritySetForgetPswType;
     [self.navigationController pushViewController:security animated:YES];
 }
+
+/// 协议
+- (IBAction)clickPryBtn:( UIButton *)sender {
+    if (sender.tag == 101) {
+        // 用户协议
+        WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
+        web.urlString = [NSString stringWithFormat:@"%@yzsh-app-partner/#/userCenter/setting/userAgreement",H5_HOST];
+        web.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:web animated:YES];
+    } else if (sender.tag == 102) {
+        // 隐私协议
+        WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
+        web.urlString = [NSString stringWithFormat:@"%@yzsh-app-partner/#/userCenter/setting/privacyPolicy",H5_HOST];
+        web.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:web animated:YES];
+    }
+}
+
 
 /**
  监听输入框
