@@ -4,7 +4,7 @@
 //
 //  Created by 王宇 on 2018/4/28.
 //  Copyright © 2018年 wy. All rights reserved.
-////#define HOST_URL      @"https://prod.old.jx9n.com/api/"
+////#define HOST_URL      @"https://prod.old.jx9n.com/api/"  
 /**
  开发环境域名: dev.jx9n.cn
  测试环境域名: test.jx9n.cn
@@ -16,13 +16,13 @@
 //http://api.jx9n.com/api/
 
 //test.old.jx9n.cn
-//dev.old.jx9n.cn
+//dev.old.jx9n.cn 
 
 
 //老接口域名 开发
 #define HOST_URL            @"http://dev.old.jx9n.cn:8181/api/"
 //新接口域名 开发
-#define NEW_HOST_URL        @"http://47.111.174.164:10001/"
+#define NEW_HOST_URL      @"http://47.111.174.164:10001/"
 //合作版 H5 网页
 #define H5_HOST             @"http://dev.jx9n.cn/"
 //合作版商城 不带 https 的

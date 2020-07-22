@@ -32,7 +32,7 @@
     SKViewsBorder(self.version, 8.5, 0, [UIColor redColor]);
     SKViewsBorder(self.updateBgView, 8.5, 0, [UIColor redColor]);
     self.contentsView.layer.cornerRadius = 10.0f;
-    self.version.layer.backgroundColor = UIColorFromRGB(0xFF8554).CGColor;
+    self.version.layer.backgroundColor = NavColor.CGColor;
     self.version.layer.cornerRadius = self.version.height / 2.0f;
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.contentView.bounds];

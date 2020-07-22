@@ -187,9 +187,9 @@
         [YFUserDefaults synchronize];
         
         self.partnerRole = [partnerRole integerValue];
-        //1 市场合伙人  2 管理合伙人 3 物业
-        self.applyView.hidden = [partnerRole integerValue] == 3 ? YES : NO;
-        self.leftImageBtn.hidden = [partnerRole integerValue] == 3 ? YES : NO;
+        //0 市场合伙人  1 管理合伙人 2 分佣合伙人 3购买设备合伙人 4 公司账号
+        self.applyView.hidden = [partnerRole integerValue] == 2 ? YES : NO;
+        self.leftImageBtn.hidden = [partnerRole integerValue] == 2 ? YES : NO;
     }];
 }
 
