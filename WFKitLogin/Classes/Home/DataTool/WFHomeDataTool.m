@@ -55,7 +55,7 @@
 + (void)getPayTypMessageWithParams:(NSDictionary *)params
                        resultBlock:(void(^)(WFPayTypeMsgModel *models))resultBlock {
     //接口地址
-    NSString *path = [NSString stringWithFormat:@"%@app-partner/applyTemplate/unifiedOrder",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@yzsh-partner-apply/V1/applyCharge/payFreight",NEW_HOST_URL];
     [WKRequest postWithURLString:path parameters:params isJson:YES isShowHud:YES success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFPayTypeMsgModel mj_objectWithKeyValues:baseModel.data]);

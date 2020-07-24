@@ -188,7 +188,7 @@
                         <button opaque="NO" tag="101" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asR-s9-1ri">
                             <rect key="frame" x="92.5" y="243.5" width="160" height="27"/>
                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
-                            <state key="normal" title="《金雕生活合作版用户协议》">
+                            <state key="normal" title="《金雕充电合作版用户协议》">
                                 <color key="titleColor" red="1" green="0.74117647060000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
