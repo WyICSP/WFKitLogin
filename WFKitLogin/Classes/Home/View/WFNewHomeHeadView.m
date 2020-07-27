@@ -58,7 +58,7 @@
 }
 
 - (void)clickRewardEvent:(UITapGestureRecognizer *)sender {
-    !self.clickHeadEventBlock ? : self.clickHeadEventBlock(120);
+//    !self.clickHeadEventBlock ? : self.clickHeadEventBlock(120);
 }
 
 - (void)clickShopEvent:(UITapGestureRecognizer *)sender {
