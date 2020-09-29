@@ -40,7 +40,7 @@
 
 + (void)updateAppWithParams:(NSDictionary *)params
                 resultBlock:(void(^)(NSDictionary *models))resultBlock {
-    NSString *path = [NSString stringWithFormat:@"%@yzsh-system/v1/system/get/app/version",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@app-system/app-system/v1/get/app/version",NEW_HOST_URL];
     [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([baseModel.mDictionary objectForKey:@"data"]);
@@ -55,7 +55,7 @@
 + (void)getPayTypMessageWithParams:(NSDictionary *)params
                        resultBlock:(void(^)(WFPayTypeMsgModel *models))resultBlock {
     //接口地址
-    NSString *path = [NSString stringWithFormat:@"%@yzsh-partner-apply/V1/applyCharge/payFreight",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@app-partner/applyTemplate/unifiedOrder",NEW_HOST_URL];
     [WKRequest postWithURLString:path parameters:params isJson:YES isShowHud:YES success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFPayTypeMsgModel mj_objectWithKeyValues:baseModel.data]);
@@ -70,7 +70,7 @@
 + (void)geHomeAssetsInfoWithParams:(NSDictionary *)params
                        resultBlock:(void(^)(WFNewHomeModel *models))resultBlock
                       failureBlock:(void(^)(void))failureBlock {
-    NSString *path = [NSString stringWithFormat:@"%@yzsh-partner-apply/V1/assets/assetsInfo",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@app-partner-setmeal/v1/home/pageInfo/assetsInfo",NEW_HOST_URL];
     [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFNewHomeModel mj_objectWithKeyValues:baseModel.data]);
@@ -84,7 +84,7 @@
 
 + (void)getCustomerServiceWithParams:(NSDictionary *)params
                          resultBlock:(void(^)(WFNewHomeServiceModel *cModel))resultBlock {
-    NSString *path = [NSString stringWithFormat:@"%@yzsh-partner-apply/V1/customer/headAd",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@app-partner-setmeal/v1/home/pageInfo/headAd",NEW_HOST_URL];
     [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFNewHomeServiceModel mj_objectWithKeyValues:baseModel.data]);
@@ -97,7 +97,7 @@
 + (void)getHomeTotalIncomeWithParams:(NSDictionary *)params
                          resultBlock:(void(^)(WFNewHomeIncomeModel *models))resultBlock
                         failureBlock:(void(^)(void))failureBlock {
-    NSString *path = [NSString stringWithFormat:@"%@yzsh-statistics-api/v1/partner/income/getSummaryIncome",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@yzc-partner-statistics-api/v1/index/getIncome",NEW_HOST_URL];
     [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFNewHomeIncomeModel mj_objectWithKeyValues:baseModel.data]);
@@ -112,7 +112,7 @@
 + (void)getHomeTodayIncomeWithParams:(NSDictionary *)params
                          resultBlock:(void(^)(WFNewHomeTodayIncomeModel *models))resultBlock
                         failureBlock:(void(^)(void))failureBlock {
-    NSString *path = [NSString stringWithFormat:@"%@yzsh-statistics-api/v1/partner/income/todayManage",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@yzc-partner-statistics-api/v1/index/todayManage",NEW_HOST_URL];
     [WKRequest getWithURLString:path parameters:nil isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([WFNewHomeTodayIncomeModel mj_objectWithKeyValues:baseModel.data]);
@@ -126,7 +126,7 @@
 
 + (void)getMessageUnReadCountWithParams:(NSDictionary *)params
                             resultBlock:(void(^)(NSDictionary *dict))resultBlock {
-    NSString *path = [NSString stringWithFormat:@"%@yzsh-partner-apply/v1/message/getMessageNum",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@app-partner-setmeal/v1/message/getMessageNum",NEW_HOST_URL];
     [WKRequest getWithURLString:path parameters:params isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock(baseModel.mDictionary);
@@ -138,7 +138,7 @@
 
 + (void)getPartnerInfoWithParams:(NSDictionary *)params
                      resultBlock:(void(^)(NSDictionary *dict))resultBlock {
-    NSString *path = [NSString stringWithFormat:@"%@yzsh-partner-apply/V1/partner/getPartnerInfo",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@app-partner-setmeal/v1/home/admin/getPartnerInfo",NEW_HOST_URL];
     [WKRequest getWithURLString:path parameters:params isShowHud:NO success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock(baseModel.mDictionary);

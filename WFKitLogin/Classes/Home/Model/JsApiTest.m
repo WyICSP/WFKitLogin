@@ -16,17 +16,16 @@
 #import "WKHelp.h"
 
 @interface JsApiTest(){
-    NSTimer * timer ;
-    void(^hanlder)(id value,BOOL isComplete);
-    int value;
-    BOOL _isNotification;
+  NSTimer * timer ;
+  void(^hanlder)(id value,BOOL isComplete);
+  int value;
 }
 @end
 
 @implementation JsApiTest
 
 /**同步*/
-- (NSString *)getUserId: (NSString *) msg
+- (NSString *) getUserId: (NSString *) msg
 {
     return [UserData userInfo].uuid;
 }
@@ -41,59 +40,12 @@
     return APP_VERSION;
 }
 
-- (void)getToken:(NSString *)msg :(JSCallback) completionHandler
-{
-    completionHandler([UserData userInfo].token,YES);
-}
 
 /**返回*/
 - (void)goBack:(NSString *)msg :(JSCallback) completionHandler
 {
     [[[YFKeyWindow shareInstance] getCurrentVC].navigationController popViewControllerAnimated:YES];
     completionHandler(msg,YES);
-}
-
-
-/**
- 获取支付信息
-
- @param msg msg
- @param completionHandler completionHandler
- */
-- (void)placeOrder:(NSDictionary *)msg :(JSCallback) completionHandler
-{
-    if ([msg isKindOfClass:[NSDictionary class]]) {
-        if (msg.count == 1) {
-            NSString *result = [NSString stringWithFormat:@"%@",[msg safeJsonObjForKey:@"result"]];
-            completionHandler([result intValue] == 1 ? @(1) : @(0),YES);
-        } else {
-            // 支付的回调
-            if (!_isNotification) {
-                [YFNotificationCenter addObserver:self selector:@selector(addressInfo:) name:@"payResultKeys" object:nil];
-                _isNotification = YES;
-            }
-            //金额
-            NSString *money = [NSString stringWithFormat:@"%@",[msg safeJsonObjForKey:@"count"]];
-            //支付方式
-            NSString *payMethod = [NSString stringWithFormat:@"%@",[msg safeJsonObjForKey:@"id"]];
-            //订单号
-            NSString *sn = [NSString stringWithFormat:@"%@",[msg safeJsonObjForKey:@"sn"]];
-            NSMutableDictionary *params = [NSMutableDictionary dictionary];
-            [params safeSetObject:money forKey:@"money"];
-            [params safeSetObject:payMethod forKey:@"payMethod"];
-            [params safeSetObject:sn forKey:@"sn"];
-            [WFLoginPublicAPI getPaymentMsgWithParams:params];
-        }
-    }
-}
-
-- (void)addressInfo:(NSNotification *)notification {
-    NSDictionary *dict = notification.userInfo;
-    
-    [self placeOrder:dict :^(NSString * _Nullable result, BOOL complete) {
-        
-    }];
-    
 }
 
 
@@ -159,8 +111,5 @@
     completionHandler(msg,YES);
 }
 
-- (void)dealloc {
-    [YFNotificationCenter removeObserver:self name:@"payResultKeys" object:nil];
-}
 
 @end

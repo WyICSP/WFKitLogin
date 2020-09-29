@@ -19,7 +19,7 @@
 + (void)loginWithParams:(NSDictionary *)params
             resultBlock:(void(^)(NSDictionary *models))resultBlock {
     //接口地址
-    NSString *path = [NSString stringWithFormat:@"%@yzsh-partner/v1/login/login",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@app-partner/loginTemplate/passwordlogin",NEW_HOST_URL];
     [WKRequest postWithURLString:path parameters:params isJson:YES isShowHud:YES success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([baseModel.mDictionary objectForKey:@"data"]);
@@ -34,7 +34,7 @@
 + (void)quickLoginWithParams:(NSDictionary *)params
                  resultBlock:(void(^)(NSDictionary *models))resultBlock {
     //接口地址
-    NSString *path = [NSString stringWithFormat:@"%@yzsh-partner/v1/login/quickLogin",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@app-partner/loginTemplate/quickLogin",NEW_HOST_URL];
     [WKRequest postWithURLString:path parameters:params isJson:YES isShowHud:YES success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock([baseModel.mDictionary objectForKey:@"data"]);
@@ -50,7 +50,7 @@
 + (void)getVerificationCodeWithParams:(NSDictionary *)params
                           resultBlock:(void(^)(void))resultBlock {
     //接口地址
-    NSString *path = [NSString stringWithFormat:@"%@yzsh-system/v1/sms/send/code",NEW_HOST_URL];
+    NSString *path = [NSString stringWithFormat:@"%@app-partner/loginTemplate/getCode",NEW_HOST_URL];
     [WKRequest postWithURLString:path parameters:params isJson:YES isShowHud:YES success:^(WKBaseModel *baseModel) {
         if (CODE_ZERO) {
             resultBlock();

@@ -12,14 +12,12 @@
 #import "YFMediatorManager+YFKitMain.h"
 #import "YFMediatorManager+WFLogin.h"
 #import "WFSecuritySetViewController.h"
-#import "WFHomeWebViewController.h"
 #import "WFHomeSaveDataTool.h"
 #import "NSString+Regular.h"
 #import "WFLoginDataTool.h"
 #import "SKSafeObject.h"
 #import "UserData.h"
 #import "YFToast.h"
-#import "WKSetting.h"
 #import "WKProxy.h"
 #import "WKTimer.h"
 #import "WKHelp.h"
@@ -87,6 +85,10 @@
     }
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 #pragma mark 接口
 + (instancetype)shareInstance {
     static WFLoginViewController *login;
@@ -118,7 +120,7 @@
     //倒计时初始值
     self.countIndex = 60;
     //获取地址信息
-//    if ([[WFHomeSaveDataTool shareInstance] readAddressFile].count == 0) [self getAddress];
+    if ([[WFHomeSaveDataTool shareInstance] readAddressFile].count == 0) [self getAddress];
     
 }
 
@@ -224,12 +226,8 @@
         return;
     }
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    [params safeSetObject:self.phoneTF.text forKey:@"mobile"];
-    [params safeSetObject:@"7" forKey:@"type"];
-    
     @weakify(self)
-    [WFLoginDataTool getVerificationCodeWithParams:params resultBlock:^{
+    [WFLoginDataTool getVerificationCodeWithParams:@{@"mobile":self.phoneTF.text} resultBlock:^{
         @strongify(self)
         [YFToast showMessage:@"验证码发送成功" inView:self.view];
         self.task = [WKTimer execTask:[WKProxy proxyWithTarget:self]
@@ -259,7 +257,7 @@
  */
 - (void)userEnableBtn {
     [self.codeButton setTitle:@"获取验证码" forState:UIControlStateNormal];
-    [self.codeButton setTitleColor:NavColor forState:0];
+    [self.codeButton setTitleColor:UIColorFromRGB(0xF78556) forState:0];
     self.codeButton.userInteractionEnabled = YES;
     self.countIndex = 60;
 }
@@ -281,24 +279,6 @@
     security.setType = WFSecuritySetForgetPswType;
     [self.navigationController pushViewController:security animated:YES];
 }
-
-/// 协议
-- (IBAction)clickPryBtn:( UIButton *)sender {
-    if (sender.tag == 101) {
-        // 用户协议
-        WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
-        web.urlString = [NSString stringWithFormat:@"%@yzsh-app-partner/#/userCenter/setting/userAgreement",H5_HOST];
-        web.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:web animated:YES];
-    } else if (sender.tag == 102) {
-        // 隐私协议
-        WFHomeWebViewController *web = [[WFHomeWebViewController alloc] init];
-        web.urlString = [NSString stringWithFormat:@"%@yzsh-app-partner/#/userCenter/setting/privacyPolicy",H5_HOST];
-        web.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:web animated:YES];
-    }
-}
-
 
 /**
  监听输入框
